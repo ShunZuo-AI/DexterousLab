@@ -12,6 +12,7 @@
 
 <p align="center">
   <a href="#news">📰 News</a> &nbsp; · &nbsp;
+  <a href="#introduction">🧭 项目介绍</a> &nbsp; · &nbsp;
   <a href="#features">✨ 当前能力</a> &nbsp; · &nbsp;
   <a href="#quick-start">🚀 快速开始</a> &nbsp; · &nbsp;
   <a href="#experiments">🧪 实验结果</a> &nbsp; · &nbsp;
@@ -28,6 +29,16 @@
 ## 📰 News
 
 - **2026-11-10** — DexterousLab 已发布到 GitHub，开放项目代码、配置、文档与实验记录。
+
+<a id="introduction"></a>
+
+## 🧭 项目介绍
+
+**DexterousLab** 是基于 **NVIDIA Isaac Sim、Isaac Lab 和 IsaacLab-Arena** 的开源模块化科研框架，面向多指灵巧手抓取、操作控制与仿真数据采集。
+
+项目将**灵巧手、物体、场景、任务和实验记录**统一组织，通过配置组合实验条件，减少重复搭建环境和处理资产的工作，让研究者专注于算法开发与实验分析。
+
+其核心作用是提供统一的实验基础：管理多手型资产、构建桌面仿真、执行控制尝试，并保存状态、接触和结果，为抓取算法接入、对照研究与数据集构建提供支持。当前实现范围见下表。
 
 <a id="features"></a>
 
