@@ -3,10 +3,6 @@
 </h1>
 
 <p align="center">
-  <strong>基于 Isaac Sim · Isaac Lab · IsaacLab-Arena 的多指灵巧抓取研究框架</strong>
-</p>
-
-<p align="center">
   <img src="docs/media/readme-badges.svg" alt="Research Preview · Python 3.12 · PhysX · Configuration driven · Built on IsaacLab-Arena" width="720" />
 </p>
 
