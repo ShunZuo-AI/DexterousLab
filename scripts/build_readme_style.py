@@ -94,7 +94,7 @@ def main():
         save('nav-'+key+'.svg',180,48,chinese,small)
         save('icon-'+key+'.svg',32,32,chinese,icon(key,3,3,26))
 
-    body = '<rect width="1080" height="220" rx="20" fill="url(#wash)"/>'
+    body = '<rect width="1080" height="220" fill="url(#wash)"/>'
     body += '<path d="M140 126C245 185 830 185 950 58" stroke="#d3e8fc" stroke-width="1.3" fill="none"/>'
     body += letters('DexterousLab',540,121,108,SERIF,'url(#ink)',anchor='middle')
     body += letters('A shared workspace for dexterous manipulation research',540,174,22,SANS,MUTED,anchor='middle')
