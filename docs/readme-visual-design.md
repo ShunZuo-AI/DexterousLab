@@ -12,7 +12,7 @@
 
 ## 视觉规范
 
-- 正标题：顶部居中的DexterousLab使用Unicode花体文字 `𝓓𝓮𝔁𝓽𝓮𝓻𝓸𝓾𝓼𝓛𝓪𝓫`，不使用图片；标题的title属性保留常规拼写。
+- 正标题：顶部居中的DexterousLab使用 `wordmark.svg` 艺术字图片，采用Noto Serif Display Italic衬线斜体和深蓝至浅蓝渐变。
 - 子标题：全部使用可选择、可复制的Markdown文字，主要章节配简洁图标；步骤标题也使用文字，不使用标题图片。
 - 图标：项目内绘制的轨道、火箭、灵巧手、烧瓶、层级、盾牌和书籍线条图标。
 - 配色：深蓝 `#173d68`、强调蓝 `#4d88c6`、灰蓝 `#7893ae`、浅蓝白底。
@@ -20,7 +20,7 @@
 
 ## GitHub显示
 
-正标题是实际Unicode文字，使用HTML h1的align属性居中，具体字形由读者设备字体呈现。Unicode NFKC归一化后的拼写为DexterousLab，正文也保留常规拼写供搜索。每张展示图保留alt说明，文字章节保留显式锚点。README使用GitHub可呈现的文字标题、图片、链接、表格、Mermaid和details，未依赖README内自定义CSS。此前生成的正标题和章节装饰SVG保留为历史素材，当前README不再引用这些标题图片。
+正标题艺术字转换为SVG路径，使用HTML h1的align属性居中，不依赖读者设备安装特定字体。标题图片保留DexterousLab的alt说明，正文也保留常规拼写供搜索。每张展示图保留alt说明，文字章节保留显式锚点。README使用GitHub可呈现的文字标题、图片、链接、表格、Mermaid和details，未依赖README内自定义CSS。此前生成的章节装饰SVG保留为历史素材，当前子标题不再引用这些图片。
 
 概念封面和厂商商品图继续分别维护来源，见 [视觉素材说明](media/README.md)。事实统计、失败实验结果、算法实现状态和原有启动命令保持原义。
 

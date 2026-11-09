@@ -1,4 +1,6 @@
-<h1 align="center" title="DexterousLab">𝓓𝓮𝔁𝓽𝓮𝓻𝓸𝓾𝓼𝓛𝓪𝓫</h1>
+<h1 align="center">
+  <img src="docs/media/readme-style/wordmark.svg" alt="DexterousLab" width="820" />
+</h1>
 
 <p align="center">
   <strong>多种灵巧手 · 可组合的场景 · 可复核的实验</strong><br />
