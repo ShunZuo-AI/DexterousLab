@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="88" viewBox="0 0 240 88" role="img" aria-labelledby="title">
+<title id="title">2 Tabletop embodiments</title>
+<defs>
+  <linearGradient id="wash"><stop stop-color="#f0f7ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="ink"><stop stop-color="#143b69"/><stop offset="1" stop-color="#6ba8dd"/></linearGradient>
+  <linearGradient id="rule"><stop stop-color="#91bce6"/><stop offset="1" stop-color="#eaf4ff"/></linearGradient>
+</defs>
+<rect width="240" height="88" rx="12" fill="#f4f9ff"/><path transform="translate(102.66 65) scale(1 -1)" fill="url(#ink)" d="M0.51 0.00 L1.86 5.18 L17.09 18.75 Q21.44 22.66 23.71 25.66 Q25.98 28.67 26.81 31.48 Q27.65 34.30 27.65 37.38 Q27.65 41.86 26.14 43.78 Q24.64 45.70 21.82 45.70 Q17.54 45.70 15.42 42.50 Q13.31 39.30 12.67 33.47 Q10.69 33.47 9.41 34.43 Q8.13 35.39 8.13 37.57 Q8.13 39.81 9.76 41.79 Q11.39 43.78 14.52 45.06 Q17.66 46.34 22.08 46.34 Q28.10 46.34 31.14 43.84 Q34.18 41.34 34.18 36.99 Q34.18 32.51 30.66 28.16 Q27.14 23.81 19.58 18.05 L2.62 5.12 L23.36 5.12 Q26.30 5.12 27.68 6.59 Q29.06 8.06 29.76 9.92 L30.14 10.94 L30.78 10.94 L28.22 0.00 L0.51 0.00 Z"/>
+</svg>
