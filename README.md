@@ -12,13 +12,13 @@
 </p>
 
 <p align="center">
-  <a href="#overview"><img src="docs/media/readme-style/nav-overview.svg" alt="项目概览" width="156" /></a>
-  <a href="#quick-start"><img src="docs/media/readme-style/nav-quick-start.svg" alt="快速开始" width="156" /></a>
-  <a href="#hand-assets"><img src="docs/media/readme-style/nav-hand-assets.svg" alt="灵巧手资产" width="156" /></a>
+  <a href="#overview">🧭 项目概览</a> &nbsp; · &nbsp;
+  <a href="#quick-start">🚀 快速开始</a> &nbsp; · &nbsp;
+  <a href="#hand-assets">🖐️ 灵巧手资产</a>
   <br />
-  <a href="#experiments"><img src="docs/media/readme-style/nav-experiments.svg" alt="实验展示" width="156" /></a>
-  <a href="#architecture"><img src="docs/media/readme-style/nav-architecture.svg" alt="框架逻辑" width="156" /></a>
-  <a href="#documentation"><img src="docs/media/readme-style/nav-documentation.svg" alt="文档中心" width="156" /></a>
+  <a href="#experiments">🧪 实验展示</a> &nbsp; · &nbsp;
+  <a href="#architecture">🧩 框架逻辑</a> &nbsp; · &nbsp;
+  <a href="#documentation">📚 文档中心</a>
 </p>
 
 <p align="center">
@@ -33,9 +33,7 @@
 
 <a id="overview"></a>
 
-<h2>
-  <img src="docs/media/readme-style/overview.svg" alt="Overview · 项目概览" width="100%" />
-</h2>
+## 🧭 项目概览
 
 **DexterousLab 是一个面向多指灵巧抓取研究的配置驱动框架。** 基于 Isaac Sim、Isaac Lab 与 IsaacLab-Arena，将资产管理、场景构建、动作执行、状态采集和结果评测连接到同一工作流。
 
@@ -43,16 +41,14 @@
 
 <table>
   <tr>
-    <td align="center" width="25%"><img src="docs/media/readme-style/stat-assets.svg" alt="22" width="130" /><br />通过物理验证的资产配置<br /><sub>型号 / 左右手 / 版本分别计数</sub></td>
-    <td align="center" width="25%"><img src="docs/media/readme-style/stat-makers.svg" alt="17" width="130" /><br />覆盖的厂商 / 项目<br /><sub>以已通过资产级验证的记录计</sub></td>
-    <td align="center" width="25%"><img src="docs/media/readme-style/stat-hands.svg" alt="2" width="130" /><br />已接入桌面任务的手型<br /><sub>Allegro · Shadow</sub></td>
-    <td align="center" width="25%"><img src="docs/media/readme-style/stat-objects.svg" alt="3" width="130" /><br />程序化物体类型<br /><sub>Cube · Cylinder · Sphere</sub></td>
+    <td align="center" width="25%"><strong>22</strong><br />通过物理验证的资产配置<br /><sub>型号 / 左右手 / 版本分别计数</sub></td>
+    <td align="center" width="25%"><strong>17</strong><br />覆盖的厂商 / 项目<br /><sub>以已通过资产级验证的记录计</sub></td>
+    <td align="center" width="25%"><strong>2</strong><br />已接入桌面任务的手型<br /><sub>Allegro · Shadow</sub></td>
+    <td align="center" width="25%"><strong>3</strong><br />程序化物体类型<br /><sub>Cube · Cylinder · Sphere</sub></td>
   </tr>
 </table>
 
-<p align="center">
-  <img src="docs/media/readme-style/pillars.svg" alt="Curate · 资产与配置 / Simulate · 场景与物理 / Understand · 观测与结果" width="100%" />
-</p>
+### 从资产到实验
 
 | 资产与配置 | 场景与物理 | 观测与结果 |
 |---|---|---|
@@ -64,13 +60,11 @@
 
 <a id="quick-start"></a>
 
-<h2>
-  <img src="docs/media/readme-style/quick-start.svg" alt="Getting Started · 快速开始" width="100%" />
-</h2>
+## 🚀 快速开始
 
 以下命令针对**当前已经安装并验证的 GPUFree 服务器**。共享环境为 `/root/gpufree-data/IsaacLab-Arena/.venv`，项目代码与自有资产位于 `/root/gpufree-data/DexterousLab`。当前采用源码方式运行，尚未验证独立 wheel 或任意机器上的全新安装流程。
 
-<h3><img src="docs/media/readme-style/step-check.svg" alt="Check the environment · 检查环境" width="760" /></h3>
+### 01 · 检查环境
 
 ```bash
 cd /root/gpufree-data/DexterousLab
@@ -83,7 +77,7 @@ dexlab scene list
 
 启动器自动使用已有 Python，并在启动前将 Torch CUDA 动态库目录加入 `LD_LIBRARY_PATH`。无需新建 conda / venv、重新安装 Isaac Sim 或执行 `uv sync`。Arena 路径变化时，设置 `DEXLAB_ARENA_ROOT` 指向对应 checkout。
 
-<h3><img src="docs/media/readme-style/step-scene.svg" alt="Build a scene · 运行桌面场景" width="760" /></h3>
+### 02 · 运行桌面场景
 
 ```bash
 # 先检查配置，不启动仿真
@@ -97,7 +91,7 @@ dexlab scene run --hand shadow --object cube --physics physx
 
 这些命令执行 **zero-action 冒烟测试**，用于检查机器人、物体、物理属性和仿真步进。它们不执行抓取动作，也不产生抓取成功结论。当前 scene CLI 支持 PhysX；未知手型、物体或未实现后端会明确报错。
 
-<h3><img src="docs/media/readme-style/step-grasp.svg" alt="Run an experiment · 执行抓取尝试" width="760" /></h3>
+### 03 · 执行抓取尝试
 
 ```bash
 # 使用同一个共享Python；脚本自动设置运行环境
@@ -119,9 +113,7 @@ Allegro 桌面机器人是 **KUKA iiwa7 + Allegro**，共 23 个物理关节和 
 
 <a id="hand-assets"></a>
 
-<h2>
-  <img src="docs/media/readme-style/hand-assets.svg" alt="The Hand Collection · 灵巧手资产" width="100%" />
-</h2>
+## 🖐️ 灵巧手资产
 
 <details>
 <summary><strong>◇ 展开查看带型号名称的 18 张官方商品图</strong></summary>
@@ -162,9 +154,7 @@ dexlab assets preview --id unitree/dex5_1/right
 
 <a id="experiments"></a>
 
-<h2>
-  <img src="docs/media/readme-style/experiments.svg" alt="Experiments · 实验展示" width="100%" />
-</h2>
+## 🧪 实验展示
 
 下面的图片来自实际抓取尝试的**闭合阶段**。物体在 reset 后未被直接移动、附着或吸附；实验执行完成与抓取成功分别记录。
 
@@ -202,9 +192,7 @@ dexlab assets preview --id unitree/dex5_1/right
 
 <a id="architecture"></a>
 
-<h2>
-  <img src="docs/media/readme-style/architecture.svg" alt="Inside the Framework · 框架逻辑" width="100%" />
-</h2>
+## 🧩 框架逻辑
 
 **选择配置 → 构建环境 → 执行动作 → 采集状态 → 判定并保存结果。**
 
@@ -242,9 +230,7 @@ flowchart LR
 
 <a id="research"></a>
 
-<h2>
-  <img src="docs/media/readme-style/research.svg" alt="Research in Progress · 算法与接口状态" width="100%" />
-</h2>
+## 🔬 算法与接口状态
 
 | 模块 | 状态 | 当前范围 |
 |---|---|---|
@@ -258,9 +244,7 @@ flowchart LR
 
 <a id="validation"></a>
 
-<h2>
-  <img src="docs/media/readme-style/validation.svg" alt="Reproducibility · 测试与可复现性" width="100%" />
-</h2>
+## ✅ 测试与可复现性
 
 ```bash
 # 单元测试：不启动Isaac Sim
@@ -277,9 +261,7 @@ dexlab arena run dexsuite_lift --steps 100 --num-envs 1 --backend physx
 
 <a id="documentation"></a>
 
-<h2>
-  <img src="docs/media/readme-style/documentation.svg" alt="Explore the Docs · 文档中心" width="100%" />
-</h2>
+## 📚 文档中心
 
 | <img src="docs/media/readme-style/icon-quick-start.svg" alt="" width="22" /> 开始使用 | <img src="docs/media/readme-style/icon-research.svg" alt="" width="22" /> 深入研究 | <img src="docs/media/readme-style/icon-validation.svg" alt="" width="22" /> 验证与溯源 |
 |---|---|---|
@@ -300,7 +282,7 @@ DexterousLab 使用已安装的 Isaac Sim、Isaac Lab 和 IsaacLab-Arena，并�
 ---
 
 <p align="center">
-  <img src="docs/media/readme-style/footer.svg" alt="From many hands to meaningful experiments. DexterousLab · Research Preview" width="900" /><br />
+  <em>From many hands to meaningful experiments.</em><br /><sub>DexterousLab · Research Preview</sub><br /><br />
   <a href="#quick-start">开始实验</a> &nbsp; · &nbsp;
   <a href="#documentation">查阅文档</a> &nbsp; · &nbsp;
   <a href="#overview">返回顶部</a><br /><br />

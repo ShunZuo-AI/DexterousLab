@@ -2,7 +2,7 @@
 
 ## 艺术字与图标排版
 
-`readme-style/` 提供品牌艺术字、双语章节标题、线条图标、导航按钮、数字概览与页脚。全部为自包含SVG，文字转换为字形路径，支持在GitHub直接显示；正文与命令保持可复制文本。[设计规范、参考项目与生成方式](../readme-visual-design.md)。
+当前README仅在顶部居中的DexterousLab正标题使用 `readme-style/wordmark.svg` 艺术字；所有章节和步骤子标题、数字概览、导航与页脚使用文字。小型图标和技术徽章继续使用本地SVG，旧版章节装饰素材保留但不再引用。[设计规范、参考项目与生成方式](../readme-visual-design.md)。
 
 ## 项目封面
 
