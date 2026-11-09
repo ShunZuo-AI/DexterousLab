@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "objects": [
+    {
+      "category": "objects",
+      "asset_id": "ycb/collection",
+      "manufacturer": null,
+      "model": "ycb",
+      "variant": "collection",
+      "source_repository": "https://www.ycbbenchmarks.com/object-models/",
+      "source_commit": null,
+      "source_file_path": null,
+      "local_raw_path": null,
+      "local_processed_path": null,
+      "isaaclab_asset_path": null,
+      "license": {
+        "status": "per_object_review_required"
+      },
+      "download_status": "not_downloaded",
+      "conversion_status": "not_run",
+      "simulation_status": "not_run",
+      "fetch_enabled": false,
+      "notes": [
+        "Collection metadata only; no per-object mesh or ready-to-use dataset claimed"
+      ],
+      "updated_utc": "2026-11-06T07:56:46.786010+00:00"
+    },
+    {
+      "category": "objects",
+      "asset_id": "dexgraspnet/collection",
+      "manufacturer": null,
+      "model": "dexgraspnet",
+      "variant": "collection",
+      "source_repository": "https://github.com/PKU-EPIC/DexGraspNet",
+      "source_commit": "bd1b13d7248729af117e1d46aaa6266b147a3c7b",
+      "source_file_path": null,
+      "local_raw_path": null,
+      "local_processed_path": null,
+      "isaaclab_asset_path": null,
+      "license": {
+        "status": "per_object_review_required"
+      },
+      "download_status": "not_downloaded",
+      "conversion_status": "not_run",
+      "simulation_status": "not_run",
+      "fetch_enabled": false,
+      "notes": [
+        "Collection metadata only; no per-object mesh or ready-to-use dataset claimed"
+      ],
+      "updated_utc": "2026-11-06T07:56:46.786487+00:00"
+    },
+    {
+      "category": "objects",
+      "asset_id": "objaverse/collection",
+      "manufacturer": null,
+      "model": "objaverse",
+      "variant": "collection",
+      "source_repository": "https://objaverse.allenai.org/",
+      "source_commit": null,
+      "source_file_path": null,
+      "local_raw_path": null,
+      "local_processed_path": null,
+      "isaaclab_asset_path": null,
+      "license": {
+        "status": "per_object_review_required"
+      },
+      "download_status": "not_downloaded",
+      "conversion_status": "not_run",
+      "simulation_status": "not_run",
+      "fetch_enabled": false,
+      "notes": [
+        "Collection metadata only; no per-object mesh or ready-to-use dataset claimed"
+      ],
+      "updated_utc": "2026-11-06T07:56:46.786905+00:00"
+    },
+    {
+      "category": "objects",
+      "asset_id": "maniskill/collection",
+      "manufacturer": null,
+      "model": "maniskill",
+      "variant": "collection",
+      "source_repository": "https://github.com/haosulab/ManiSkill",
+      "source_commit": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+      "source_file_path": null,
+      "local_raw_path": null,
+      "local_processed_path": null,
+      "isaaclab_asset_path": null,
+      "license": {
+        "status": "per_object_review_required"
+      },
+      "download_status": "not_downloaded",
+      "conversion_status": "not_run",
+      "simulation_status": "not_run",
+      "fetch_enabled": false,
+      "notes": [
+        "Collection metadata only; no per-object mesh or ready-to-use dataset claimed"
+      ],
+      "updated_utc": "2026-11-06T07:56:46.787329+00:00"
+    },
+    {
+      "category": "objects",
+      "asset_id": "custom/cube",
+      "manufacturer": "dexterouslab",
+      "model": "cube",
+      "variant": "procedural_v1",
+      "source_repository": "/root/gpufree-data/DexterousLab",
+      "source_commit": null,
+      "source_file_path": "configs/objects/cube.toml",
+      "local_raw_path": "/root/gpufree-data/DexterousLab/assets/objects/custom/cube/raw/mesh.obj",
+      "local_processed_path": null,
+      "isaaclab_asset_path": "dexterous_lab.assets.primitives:Cube",
+      "license": {
+        "status": "project_generated_geometry"
+      },
+      "download_status": "generated",
+      "conversion_status": "not_run",
+      "simulation_status": "passed",
+      "fetch_enabled": true,
+      "scene_object": "cube",
+      "notes": [
+        "Simulation status will only be updated from a new successful validation run"
+      ],
+      "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/objects/custom/cube/checksums.json",
+      "updated_utc": "2026-11-06T07:56:46.787730+00:00",
+      "last_run": "/root/gpufree-data/DexterousLab/assets/objects/custom/cube/runs/20261106T072302Z-scene-c512b7d3"
+    },
+    {
+      "category": "objects",
+      "asset_id": "custom/cylinder",
+      "manufacturer": "dexterouslab",
+      "model": "cylinder",
+      "variant": "procedural_v1",
+      "source_repository": "/root/gpufree-data/DexterousLab",
+      "source_commit": null,
+      "source_file_path": "configs/objects/cylinder.toml",
+      "local_raw_path": "/root/gpufree-data/DexterousLab/assets/objects/custom/cylinder/raw/mesh.obj",
+      "local_processed_path": null,
+      "isaaclab_asset_path": "dexterous_lab.assets.primitives:Cylinder",
+      "license": {
+        "status": "project_generated_geometry"
+      },
+      "download_status": "generated",
+      "conversion_status": "not_run",
+      "simulation_status": "passed",
+      "fetch_enabled": true,
+      "scene_object": "cylinder",
+      "notes": [
+        "Simulation status will only be updated from a new successful validation run"
+      ],
+      "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/objects/custom/cylinder/checksums.json",
+      "updated_utc": "2026-11-06T07:56:46.788125+00:00",
+      "last_run": "/root/gpufree-data/DexterousLab/assets/objects/custom/cylinder/runs/20261106T072320Z-scene-2cac6902"
+    },
+    {
+      "category": "objects",
+      "asset_id": "custom/sphere",
+      "manufacturer": "dexterouslab",
+      "model": "sphere",
+      "variant": "procedural_v1",
+      "source_repository": "/root/gpufree-data/DexterousLab",
+      "source_commit": null,
+      "source_file_path": "configs/objects/sphere.toml",
+      "local_raw_path": "/root/gpufree-data/DexterousLab/assets/objects/custom/sphere/raw/mesh.obj",
+      "local_processed_path": null,
+      "isaaclab_asset_path": "dexterous_lab.assets.primitives:Sphere",
+      "license": {
+        "status": "project_generated_geometry"
+      },
+      "download_status": "generated",
+      "conversion_status": "not_run",
+      "simulation_status": "passed",
+      "fetch_enabled": true,
+      "scene_object": "sphere",
+      "notes": [
+        "Simulation status will only be updated from a new successful validation run"
+      ],
+      "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/objects/custom/sphere/checksums.json",
+      "updated_utc": "2026-11-06T09:54:05.884406+00:00",
+      "last_run": "/root/gpufree-data/DexterousLab/assets/objects/custom/sphere/runs/20261106T095348Z-scene-9bc1c816"
+    }
+  ]
+}

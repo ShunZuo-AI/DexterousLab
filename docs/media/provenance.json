@@ -1,0 +1,19 @@
+{
+  "generator": "scripts/build_readme_visuals.py",
+  "overview": "Editable SVG, rasterized with Chrome; no generated simulation imagery.",
+  "screenshots": {
+    "allegro": {
+      "source": "outputs/20261106T122416Z-first-grasp-allegro-b8586ceb/close.png",
+      "published": "docs/media/allegro-tabletop.jpg",
+      "phase": "close",
+      "grasp_success": false
+    },
+    "shadow": {
+      "source": "outputs/20261106T122645Z-first-grasp-shadow-863d5980/close.png",
+      "published": "docs/media/shadow-tabletop.jpg",
+      "phase": "close",
+      "grasp_success": false
+    }
+  },
+  "notice": "Frames show the close phase of failed grasp attempts, not successful lifts."
+}

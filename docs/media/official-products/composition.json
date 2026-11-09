@@ -1,0 +1,393 @@
+{
+  "generator": "scripts/build_official_product_cover.py",
+  "cover": "docs/media/dexterouslab-official.png",
+  "size": [
+    2800,
+    1600
+  ],
+  "image_count": 18,
+  "manufacturer_count": 15,
+  "operations": [
+    {
+      "id": "allegro-01",
+      "local_sha256": "b4cc60a3b52657aa85e28986c0c625672c48ee305949ce9a3e2a1b6c79b2e27e",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        1,
+        1,
+        240,
+        320
+      ],
+      "output": "docs/media/official-products/cutouts/allegro-01.png"
+    },
+    {
+      "id": "shadow-02",
+      "local_sha256": "b77b68db4d23b19f487061abaa1f26c6d4a4ded6e004b5976787114372835a01",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        22,
+        10,
+        182,
+        489
+      ],
+      "output": "docs/media/official-products/cutouts/shadow-02.png"
+    },
+    {
+      "id": "unitree-03",
+      "local_sha256": "d838ed890310b2c6ee199f9dcb94b39891ed754a2fe360f6ff5af81d6a5bd472",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        144,
+        71,
+        587,
+        724
+      ],
+      "output": "docs/media/official-products/cutouts/unitree-03.png"
+    },
+    {
+      "id": "unitree-04",
+      "local_sha256": "42259b04c5ff65172e9de6c0977cc8ebc5c443283e6fe6378cd90fd2ef8d825a",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        159,
+        76,
+        576,
+        721
+      ],
+      "output": "docs/media/official-products/cutouts/unitree-04.png"
+    },
+    {
+      "id": "unitree-05",
+      "local_sha256": "4a77bfd33003f2c7f346e0ef59d469820a9ce9d45881901592a3ac01d91580e5",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        217,
+        85,
+        576,
+        726
+      ],
+      "output": "docs/media/official-products/cutouts/unitree-05.png"
+    },
+    {
+      "id": "wuji-06",
+      "local_sha256": "fb27ab0defdc60bdb06963f315fb324051ba89467a2bff74246f574de75141c2",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        398,
+        139,
+        654,
+        544
+      ],
+      "output": "docs/media/official-products/cutouts/wuji-06.png"
+    },
+    {
+      "id": "wuji-07",
+      "local_sha256": "33d13898f3e28bc139d9f46c6da2bed3a4317613dac68eb3431f5482779ef42b",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        32,
+        131,
+        1562,
+        1345
+      ],
+      "output": "docs/media/official-products/cutouts/wuji-07.png"
+    },
+    {
+      "id": "brainco-08",
+      "local_sha256": "9b4739817fdf7f9fb93b5a9ef64aa0ed851d56230227950c2a895c986c340761",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        2,
+        0,
+        324,
+        414
+      ],
+      "output": "docs/media/official-products/cutouts/brainco-08.png"
+    },
+    {
+      "id": "robotera-09",
+      "local_sha256": "48b680b4811376c1ae4cab9d6813745a8426c874e9636814fb060dc66c670bff",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        26,
+        141,
+        359,
+        468
+      ],
+      "output": "docs/media/official-products/cutouts/robotera-09.png"
+    },
+    {
+      "id": "tesollo-10",
+      "local_sha256": "eef9e6d2d3db1ff312621046151d8318d12b3a2b00a73bcf0c94a066320031d2",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        345,
+        108,
+        1103,
+        1471
+      ],
+      "output": "docs/media/official-products/cutouts/tesollo-10.png"
+    },
+    {
+      "id": "schunk-11",
+      "local_sha256": "d7f774b55f7fc10e8ba15165281c4641682aed15f8d56485cd059b2a6d60b599",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        2,
+        2,
+        336,
+        598
+      ],
+      "output": "docs/media/official-products/cutouts/schunk-11.png"
+    },
+    {
+      "id": "robotis-12",
+      "local_sha256": "0ed6b64ba5e5a115d7d664b87efe51f64f61522bde15025b6676a19023194045",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        64,
+        5,
+        330,
+        400
+      ],
+      "output": "docs/media/official-products/cutouts/robotis-12.png"
+    },
+    {
+      "id": "orca-13",
+      "local_sha256": "9529c9088a1393aeaf00ca576d2402790b6177311ef9a1956e9d1845a83bca25",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        1,
+        1,
+        514,
+        1548
+      ],
+      "output": "docs/media/official-products/cutouts/orca-13.png"
+    },
+    {
+      "id": "dexrobot-14",
+      "local_sha256": "3b5aab60cd48b02631d64e31cb014fba790dc9fe7be94f04b54e58df43391423",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        69,
+        130,
+        374,
+        375
+      ],
+      "output": "docs/media/official-products/cutouts/dexrobot-14.png"
+    },
+    {
+      "id": "oymotion-15",
+      "local_sha256": "85d11ae88bcfd11e162ab0116f6f0722675a2e40dfdef383b5325ac75f77b165",
+      "method": "Remove external ROH dimension annotation regions; keep product RGB unchanged",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        5,
+        9,
+        351,
+        602
+      ],
+      "output": "docs/media/official-products/cutouts/oymotion-15.png"
+    },
+    {
+      "id": "linkerbot-16",
+      "local_sha256": "19f35cfab963257a9d96358da57ce10f9b7d6fb697bb1c23cb68c221e5226092",
+      "method": "Traced foreground silhouette from official L20 detail-3; no product recoloring",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        206,
+        72,
+        413,
+        435
+      ],
+      "output": "docs/media/official-products/cutouts/linkerbot-16.png"
+    },
+    {
+      "id": "sharpa-17",
+      "local_sha256": "e049f2cfdb56fa473d38f4b38691de603253abf9821218946ec079f31107e86a",
+      "method": "Original transparent background",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        61,
+        20,
+        364,
+        411
+      ],
+      "output": "docs/media/official-products/cutouts/sharpa-17.png"
+    },
+    {
+      "id": "barrett-18",
+      "local_sha256": "617e2e2b6cbf6e1d47d72091ded944458d3133309bacaca09692bfdedd975d46",
+      "method": "Remove edge-connected near-white PDF background; product RGB unchanged",
+      "crop_fraction": null,
+      "trim_box_after_crop": [
+        1360,
+        206,
+        2512,
+        1363
+      ],
+      "output": "docs/media/official-products/cutouts/barrett-18.png"
+    }
+  ],
+  "layout": [
+    [
+      "allegro-01",
+      1155,
+      1230,
+      305,
+      390,
+      32
+    ],
+    [
+      "shadow-02",
+      1570,
+      1270,
+      260,
+      440,
+      8
+    ],
+    [
+      "unitree-03",
+      1400,
+      290,
+      240,
+      300,
+      24
+    ],
+    [
+      "unitree-04",
+      1790,
+      190,
+      235,
+      260,
+      -5
+    ],
+    [
+      "unitree-05",
+      2330,
+      295,
+      270,
+      300,
+      -40
+    ],
+    [
+      "wuji-06",
+      2600,
+      555,
+      250,
+      300,
+      -72
+    ],
+    [
+      "wuji-07",
+      2140,
+      1310,
+      365,
+      390,
+      -18
+    ],
+    [
+      "brainco-08",
+      1435,
+      660,
+      255,
+      290,
+      40
+    ],
+    [
+      "robotera-09",
+      2080,
+      490,
+      240,
+      310,
+      -35
+    ],
+    [
+      "tesollo-10",
+      2560,
+      1100,
+      300,
+      380,
+      -55
+    ],
+    [
+      "schunk-11",
+      1770,
+      510,
+      235,
+      320,
+      0
+    ],
+    [
+      "robotis-12",
+      1125,
+      735,
+      255,
+      300,
+      58
+    ],
+    [
+      "orca-13",
+      2550,
+      140,
+      190,
+      270,
+      -90
+    ],
+    [
+      "dexrobot-14",
+      2415,
+      795,
+      260,
+      250,
+      -45
+    ],
+    [
+      "oymotion-15",
+      1310,
+      980,
+      240,
+      280,
+      52
+    ],
+    [
+      "linkerbot-16",
+      1860,
+      1070,
+      290,
+      320,
+      20
+    ],
+    [
+      "sharpa-17",
+      2450,
+      1330,
+      270,
+      320,
+      -25
+    ],
+    [
+      "barrett-18",
+      1100,
+      360,
+      270,
+      230,
+      28
+    ]
+  ],
+  "notice": "Native manufacturer imagery, no local hand renders or generated hands. Resizing/rotation/background compositing only. Decorative cube is not a simulation result."
+}

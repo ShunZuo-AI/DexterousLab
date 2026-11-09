@@ -1,0 +1,259 @@
+[
+  {
+    "category": "hands",
+    "asset_id": "unitree/dex1_1/unspecified",
+    "manufacturer": "unitree",
+    "model": "dex1_1",
+    "variant": "unspecified",
+    "source_repository": "https://github.com/unitreerobotics/unitree_ros",
+    "source_commit": "41dec58c7a3ccb3050243ef16ac2ca74b2b0f9ca",
+    "source_file_path": "robots/dexterous_hand_description/dex1_1/dex1_1.urdf",
+    "local_raw_path": null,
+    "local_processed_path": null,
+    "isaaclab_asset_path": null,
+    "license": {
+      "status": "reviewed",
+      "expression": "BSD-3-Clause",
+      "evidence_paths": [
+        "LICENSE"
+      ]
+    },
+    "download_status": "not_downloaded",
+    "conversion_status": "not_run",
+    "simulation_status": "not_run",
+    "fetch_enabled": false,
+    "notes": [],
+    "source_package": "robots/dexterous_hand_description/dex1_1",
+    "reference_checkout": "unitree_ros",
+    "asset_directory": "/root/gpufree-data/dexlab-assets/hands/unitree/dex1_1/unspecified"
+  },
+  {
+    "category": "hands",
+    "asset_id": "unitree/dex2_5/left",
+    "manufacturer": "unitree",
+    "model": "dex2_5",
+    "variant": "left",
+    "source_repository": "https://github.com/unitreerobotics/unitree_ros",
+    "source_commit": "41dec58c7a3ccb3050243ef16ac2ca74b2b0f9ca",
+    "source_file_path": "robots/dexterous_hand_description/dex2_5/Left_Hand.urdf",
+    "local_raw_path": null,
+    "local_processed_path": null,
+    "isaaclab_asset_path": null,
+    "license": {
+      "status": "reviewed",
+      "expression": "BSD-3-Clause",
+      "evidence_paths": [
+        "LICENSE"
+      ]
+    },
+    "download_status": "not_downloaded",
+    "conversion_status": "not_run",
+    "simulation_status": "not_run",
+    "fetch_enabled": false,
+    "notes": [],
+    "source_package": "robots/dexterous_hand_description/dex2_5",
+    "reference_checkout": "unitree_ros",
+    "asset_directory": "/root/gpufree-data/dexlab-assets/hands/unitree/dex2_5/left"
+  },
+  {
+    "category": "hands",
+    "asset_id": "unitree/dex2_5/right",
+    "manufacturer": "unitree",
+    "model": "dex2_5",
+    "variant": "right",
+    "source_repository": "https://github.com/unitreerobotics/unitree_ros",
+    "source_commit": "41dec58c7a3ccb3050243ef16ac2ca74b2b0f9ca",
+    "source_file_path": "robots/dexterous_hand_description/dex2_5/Right_Hand.urdf",
+    "local_raw_path": null,
+    "local_processed_path": null,
+    "isaaclab_asset_path": null,
+    "license": {
+      "status": "reviewed",
+      "expression": "BSD-3-Clause",
+      "evidence_paths": [
+        "LICENSE"
+      ]
+    },
+    "download_status": "not_downloaded",
+    "conversion_status": "not_run",
+    "simulation_status": "not_run",
+    "fetch_enabled": false,
+    "notes": [],
+    "source_package": "robots/dexterous_hand_description/dex2_5",
+    "reference_checkout": "unitree_ros",
+    "asset_directory": "/root/gpufree-data/dexlab-assets/hands/unitree/dex2_5/right"
+  },
+  {
+    "category": "hands",
+    "asset_id": "unitree/dex2_5/left_g1_5010_wrist",
+    "manufacturer": "unitree",
+    "model": "dex2_5",
+    "variant": "left_g1_5010_wrist",
+    "source_repository": "https://github.com/unitreerobotics/unitree_ros",
+    "source_commit": "41dec58c7a3ccb3050243ef16ac2ca74b2b0f9ca",
+    "source_file_path": "robots/dexterous_hand_description/dex2_5/Left_Hand_G1_5010_Wrist.urdf",
+    "local_raw_path": null,
+    "local_processed_path": null,
+    "isaaclab_asset_path": null,
+    "license": {
+      "status": "reviewed",
+      "expression": "BSD-3-Clause",
+      "evidence_paths": [
+        "LICENSE"
+      ]
+    },
+    "download_status": "not_downloaded",
+    "conversion_status": "not_run",
+    "simulation_status": "not_run",
+    "fetch_enabled": false,
+    "notes": [],
+    "source_package": "robots/dexterous_hand_description/dex2_5",
+    "reference_checkout": "unitree_ros",
+    "asset_directory": "/root/gpufree-data/dexlab-assets/hands/unitree/dex2_5/left_g1_5010_wrist"
+  },
+  {
+    "category": "hands",
+    "asset_id": "unitree/dex2_5/right_g1_5010_wrist",
+    "manufacturer": "unitree",
+    "model": "dex2_5",
+    "variant": "right_g1_5010_wrist",
+    "source_repository": "https://github.com/unitreerobotics/unitree_ros",
+    "source_commit": "41dec58c7a3ccb3050243ef16ac2ca74b2b0f9ca",
+    "source_file_path": "robots/dexterous_hand_description/dex2_5/Right_Hand_G1_5010_Wrist.urdf",
+    "local_raw_path": null,
+    "local_processed_path": null,
+    "isaaclab_asset_path": null,
+    "license": {
+      "status": "reviewed",
+      "expression": "BSD-3-Clause",
+      "evidence_paths": [
+        "LICENSE"
+      ]
+    },
+    "download_status": "not_downloaded",
+    "conversion_status": "not_run",
+    "simulation_status": "not_run",
+    "fetch_enabled": false,
+    "notes": [],
+    "source_package": "robots/dexterous_hand_description/dex2_5",
+    "reference_checkout": "unitree_ros",
+    "asset_directory": "/root/gpufree-data/dexlab-assets/hands/unitree/dex2_5/right_g1_5010_wrist"
+  },
+  {
+    "category": "hands",
+    "asset_id": "unitree/dex3_1/left",
+    "manufacturer": "unitree",
+    "model": "dex3_1",
+    "variant": "left",
+    "source_repository": "https://github.com/unitreerobotics/unitree_ros",
+    "source_commit": "41dec58c7a3ccb3050243ef16ac2ca74b2b0f9ca",
+    "source_file_path": "robots/dexterous_hand_description/dex3_1/dex3_1_l.urdf",
+    "local_raw_path": null,
+    "local_processed_path": null,
+    "isaaclab_asset_path": null,
+    "license": {
+      "status": "reviewed",
+      "expression": "BSD-3-Clause",
+      "evidence_paths": [
+        "LICENSE"
+      ]
+    },
+    "download_status": "not_downloaded",
+    "conversion_status": "not_run",
+    "simulation_status": "not_run",
+    "fetch_enabled": true,
+    "notes": [],
+    "source_package": "robots/dexterous_hand_description/dex3_1",
+    "reference_checkout": "unitree_ros",
+    "asset_directory": "/root/gpufree-data/dexlab-assets/hands/unitree/dex3_1/left"
+  },
+  {
+    "category": "hands",
+    "asset_id": "unitree/dex3_1/right",
+    "manufacturer": "unitree",
+    "model": "dex3_1",
+    "variant": "right",
+    "source_repository": "https://github.com/unitreerobotics/unitree_ros",
+    "source_commit": "41dec58c7a3ccb3050243ef16ac2ca74b2b0f9ca",
+    "source_file_path": "robots/dexterous_hand_description/dex3_1/dex3_1_r.urdf",
+    "local_raw_path": "/root/gpufree-data/dexlab-assets/hands/unitree/dex3_1/right/raw/robots/dexterous_hand_description/dex3_1/dex3_1_r.urdf",
+    "local_processed_path": "/root/gpufree-data/dexlab-assets/hands/unitree/dex3_1/right/processed/20261106T071831Z-convert-fb197cf8/dex3_1_r/dex3_1_r.usda",
+    "isaaclab_asset_path": "/root/gpufree-data/dexlab-assets/hands/unitree/dex3_1/right/processed/20261106T071831Z-convert-fb197cf8/dex3_1_r/dex3_1_r.usda",
+    "license": {
+      "status": "reviewed",
+      "expression": "BSD-3-Clause",
+      "evidence_paths": [
+        "LICENSE"
+      ]
+    },
+    "download_status": "fetched",
+    "conversion_status": "converted",
+    "simulation_status": "passed",
+    "fetch_enabled": true,
+    "notes": [],
+    "source_package": "robots/dexterous_hand_description/dex3_1",
+    "reference_checkout": "unitree_ros",
+    "asset_directory": "/root/gpufree-data/dexlab-assets/hands/unitree/dex3_1/right",
+    "checksum_manifest": "/root/gpufree-data/dexlab-assets/hands/unitree/dex3_1/right/checksums.json",
+    "updated_utc": "2026-11-06T07:23:04.721177+00:00",
+    "processed_sha256": "c2223f55d4bc5ba4a2c12aecfff7fb273489cb2e53c60ef8727c49774c1da3c4",
+    "last_run": "/root/gpufree-data/dexlab-assets/hands/unitree/dex3_1/right/runs/20261106T072235Z-validate-799f95fb",
+    "processed_checksum_manifest": "/root/gpufree-data/dexlab-assets/hands/unitree/dex3_1/right/processed/20261106T071831Z-convert-fb197cf8/checksums.json"
+  },
+  {
+    "category": "hands",
+    "asset_id": "unitree/dex5_1/left",
+    "manufacturer": "unitree",
+    "model": "dex5_1",
+    "variant": "left",
+    "source_repository": "https://github.com/unitreerobotics/unitree_ros",
+    "source_commit": "41dec58c7a3ccb3050243ef16ac2ca74b2b0f9ca",
+    "source_file_path": "robots/dexterous_hand_description/dex5_1/Dex5-URDF-L/Dex5-URDF-L.urdf",
+    "local_raw_path": null,
+    "local_processed_path": null,
+    "isaaclab_asset_path": null,
+    "license": {
+      "status": "reviewed",
+      "expression": "BSD-3-Clause",
+      "evidence_paths": [
+        "LICENSE"
+      ]
+    },
+    "download_status": "not_downloaded",
+    "conversion_status": "not_run",
+    "simulation_status": "not_run",
+    "fetch_enabled": false,
+    "notes": [],
+    "source_package": "robots/dexterous_hand_description/dex5_1",
+    "reference_checkout": "unitree_ros",
+    "asset_directory": "/root/gpufree-data/dexlab-assets/hands/unitree/dex5_1/left"
+  },
+  {
+    "category": "hands",
+    "asset_id": "unitree/dex5_1/right",
+    "manufacturer": "unitree",
+    "model": "dex5_1",
+    "variant": "right",
+    "source_repository": "https://github.com/unitreerobotics/unitree_ros",
+    "source_commit": "41dec58c7a3ccb3050243ef16ac2ca74b2b0f9ca",
+    "source_file_path": "robots/dexterous_hand_description/dex5_1/Dex5-URDF-R/Dex5-URDF-R.urdf",
+    "local_raw_path": null,
+    "local_processed_path": null,
+    "isaaclab_asset_path": null,
+    "license": {
+      "status": "reviewed",
+      "expression": "BSD-3-Clause",
+      "evidence_paths": [
+        "LICENSE"
+      ]
+    },
+    "download_status": "not_downloaded",
+    "conversion_status": "not_run",
+    "simulation_status": "not_run",
+    "fetch_enabled": false,
+    "notes": [],
+    "source_package": "robots/dexterous_hand_description/dex5_1",
+    "reference_checkout": "unitree_ros",
+    "asset_directory": "/root/gpufree-data/dexlab-assets/hands/unitree/dex5_1/right"
+  }
+]

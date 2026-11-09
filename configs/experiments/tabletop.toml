@@ -1,0 +1,5 @@
+hand = "allegro"
+object = "cube"
+scene = "tabletop"
+task = "lift"
+backend = "physx"

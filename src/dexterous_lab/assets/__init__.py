@@ -1,0 +1,1 @@
+"""Asset definitions and registration."""

@@ -1,0 +1,2930 @@
+{
+  "recorded_utc": "2026-11-06T06:52:49.906382+00:00",
+  "repositories": {
+    "DexGraspNet": {
+      "path": "/root/gpufree-data/research-repos/DexGraspNet",
+      "commit": "bd1b13d7248729af117e1d46aaa6266b147a3c7b",
+      "working_tree_status": "",
+      "files": {
+        "README.md": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/README.md",
+          "sha256": "c553ce950cd36fe70e547b75a6aae7254de31f5e6742f474154b7d9e85535f2c"
+        },
+        "grasp_generation/README.md": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/README.md",
+          "sha256": "c64da1611ade0b4e80550e0133b463772d3e859627d9996564b9652a031f91ce"
+        },
+        "grasp_generation/main.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/main.py",
+          "sha256": "ad166e3ccbdca95e965281d0a5115232d87a38910ad226e816bad96f810a2e15",
+          "declarations": []
+        },
+        "grasp_generation/scripts/generate_grasps.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/scripts/generate_grasps.py",
+          "sha256": "5091e2ba4a7377345d67d74d1273e02f6bf1fcd284c8e82740553adf58fe2242",
+          "declarations": [
+            {
+              "name": "generate",
+              "line": 40,
+              "end_line": 155
+            }
+          ]
+        },
+        "grasp_generation/scripts/validate_grasps.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/scripts/validate_grasps.py",
+          "sha256": "a61e1ae916818287a3b2247433eac3e93f97a8d9c82450b40103ff1b4dedbb3b",
+          "declarations": []
+        },
+        "grasp_generation/utils/hand_model.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/utils/hand_model.py",
+          "sha256": "ac11af8ae3001abb8003e06aa9f642878859831f9feab8d09ae408b365eda168",
+          "declarations": [
+            {
+              "name": "HandModel",
+              "line": 21,
+              "end_line": 364
+            },
+            {
+              "name": "HandModel.__init__",
+              "line": 22,
+              "end_line": 160
+            },
+            {
+              "name": "HandModel.__init__.build_mesh_recurse",
+              "line": 59,
+              "end_line": 102
+            },
+            {
+              "name": "HandModel.__init__.set_joint_range_recurse",
+              "line": 111,
+              "end_line": 117
+            },
+            {
+              "name": "HandModel.set_parameters",
+              "line": 162,
+              "end_line": 191
+            },
+            {
+              "name": "HandModel.cal_distance",
+              "line": 193,
+              "end_line": 236
+            },
+            {
+              "name": "HandModel.self_penetration",
+              "line": 238,
+              "end_line": 262
+            },
+            {
+              "name": "HandModel.get_surface_points",
+              "line": 264,
+              "end_line": 282
+            },
+            {
+              "name": "HandModel.get_contact_candidates",
+              "line": 284,
+              "end_line": 302
+            },
+            {
+              "name": "HandModel.get_penetraion_keypoints",
+              "line": 304,
+              "end_line": 322
+            },
+            {
+              "name": "HandModel.get_plotly_data",
+              "line": 324,
+              "end_line": 364
+            }
+          ]
+        },
+        "grasp_generation/utils/object_model.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/utils/object_model.py",
+          "sha256": "c868e41c7c10b13b36d8bf3b780a1e7ba46ae5cb208618ee8a3a777f963a9fef",
+          "declarations": [
+            {
+              "name": "ObjectModel",
+              "line": 18,
+              "end_line": 161
+            },
+            {
+              "name": "ObjectModel.__init__",
+              "line": 20,
+              "end_line": 45
+            },
+            {
+              "name": "ObjectModel.initialize",
+              "line": 47,
+              "end_line": 81
+            },
+            {
+              "name": "ObjectModel.cal_distance",
+              "line": 83,
+              "end_line": 131
+            },
+            {
+              "name": "ObjectModel.get_plotly_data",
+              "line": 133,
+              "end_line": 161
+            }
+          ]
+        },
+        "grasp_generation/utils/initializations.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/utils/initializations.py",
+          "sha256": "9580c140afde6c4e9030000e825bc50240bfbf87f4051409beb2416228b3ac0e",
+          "declarations": [
+            {
+              "name": "initialize_convex_hull",
+              "line": 17,
+              "end_line": 104
+            }
+          ]
+        },
+        "grasp_generation/utils/energy.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/utils/energy.py",
+          "sha256": "1515eb6c32526846182096000411b0c4894add2669e47823caf05a83aa60dce6",
+          "declarations": [
+            {
+              "name": "cal_energy",
+              "line": 10,
+              "end_line": 47
+            }
+          ]
+        },
+        "grasp_generation/utils/optimizer.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/utils/optimizer.py",
+          "sha256": "4060829d6d347b4c418f0910ad3a6f4acaad57f7d3fa8408cf99f0ec818a67c0",
+          "declarations": [
+            {
+              "name": "Annealing",
+              "line": 10,
+              "end_line": 127
+            },
+            {
+              "name": "Annealing.__init__",
+              "line": 11,
+              "end_line": 55
+            },
+            {
+              "name": "Annealing.try_step",
+              "line": 57,
+              "end_line": 91
+            },
+            {
+              "name": "Annealing.accept_step",
+              "line": 93,
+              "end_line": 120
+            },
+            {
+              "name": "Annealing.zero_grad",
+              "line": 122,
+              "end_line": 127
+            }
+          ]
+        },
+        "grasp_generation/utils/isaac_validator.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/utils/isaac_validator.py",
+          "sha256": "0f14610a52f3a55c45095c697e3ecb042afd5aaed8593ddcc1913d1d9774c773",
+          "declarations": [
+            {
+              "name": "IsaacValidator",
+              "line": 15,
+              "end_line": 326
+            },
+            {
+              "name": "IsaacValidator.__init__",
+              "line": 17,
+              "end_line": 130
+            },
+            {
+              "name": "IsaacValidator.set_asset",
+              "line": 132,
+              "end_line": 136
+            },
+            {
+              "name": "IsaacValidator.add_env",
+              "line": 138,
+              "end_line": 207
+            },
+            {
+              "name": "IsaacValidator.add_env_single",
+              "line": 209,
+              "end_line": 278
+            },
+            {
+              "name": "IsaacValidator.run_sim",
+              "line": 280,
+              "end_line": 304
+            },
+            {
+              "name": "IsaacValidator.reset_simulator",
+              "line": 306,
+              "end_line": 321
+            },
+            {
+              "name": "IsaacValidator.destroy",
+              "line": 323,
+              "end_line": 326
+            }
+          ]
+        },
+        "grasp_generation/mjcf/shadow_hand_wrist_free.xml": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/mjcf/shadow_hand_wrist_free.xml",
+          "sha256": "39b1f1e1150c9c3821748ba70cfaeaefc2517100d45b5d6d5ef683a7d132de8a"
+        },
+        "grasp_generation/mjcf/contact_points.json": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/mjcf/contact_points.json",
+          "sha256": "d42c91d5666f33098b4bcff2a0f8012dafd0f2ea9c54e967e7f72468a4b4f37a"
+        },
+        "grasp_generation/mjcf/penetration_points.json": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/grasp_generation/mjcf/penetration_points.json",
+          "sha256": "e292470cc60def791c83b29b5789ce9fa8ca7c0ac77c70671b8bafae1902006b"
+        },
+        "asset_process/README.md": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/asset_process/README.md",
+          "sha256": "df067f6d7192572cff19540058e32129b9a0c2ede6d00971e898557d6b8f447c"
+        },
+        "asset_process/normalize.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/asset_process/normalize.py",
+          "sha256": "30b3f9336d0d82df379de73a0bb598f5f82f38575a0bfd65f5293da97edf4db4",
+          "declarations": []
+        },
+        "asset_process/decompose.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet/asset_process/decompose.py",
+          "sha256": "f5d2e46edb4acb763fbf1b3f8046e8387ea46154a0f398af1a20a97de7a42066",
+          "declarations": [
+            {
+              "name": "export_urdf",
+              "line": 9,
+              "end_line": 169
+            },
+            {
+              "name": "decompose",
+              "line": 172,
+              "end_line": 184
+            }
+          ]
+        }
+      }
+    },
+    "GenDexGrasp": {
+      "path": "/root/gpufree-data/research-repos/GenDexGrasp",
+      "commit": "29fe7efc558b8cc3ce2d8e67c9c22b014adc21c7",
+      "working_tree_status": "",
+      "files": {
+        "README.md": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/README.md",
+          "sha256": "06a65feb7d15861567cf77b01188bf3133a87ef41a15b933761b2071d56f52ba"
+        },
+        "requirements.yaml": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/requirements.yaml",
+          "sha256": "9f859fa8c7b659d4fe9d033bfc0803d42fe2308849b6e5c3836753d62350b2ab"
+        },
+        "train_cvae.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/train_cvae.py",
+          "sha256": "e18938507953bdc6e127b6e0ea1756a387057b46adfa436730639edcd6c0bda8",
+          "declarations": [
+            {
+              "name": "get_parser",
+              "line": 28,
+              "end_line": 56
+            },
+            {
+              "name": "plot_mesh_from_name",
+              "line": 59,
+              "end_line": 64
+            },
+            {
+              "name": "visualize_results",
+              "line": 67,
+              "end_line": 80
+            },
+            {
+              "name": "validate",
+              "line": 83,
+              "end_line": 121
+            },
+            {
+              "name": "train",
+              "line": 124,
+              "end_line": 165
+            }
+          ]
+        },
+        "train_cvae_criterion.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/train_cvae_criterion.py",
+          "sha256": "bf60e4678490d4310946b9ab5596b3546ffeaa4cbfcf2c5877d3f00e99d4c548",
+          "declarations": [
+            {
+              "name": "VAECriterion",
+              "line": 5,
+              "end_line": 43
+            },
+            {
+              "name": "VAECriterion.__init__",
+              "line": 6,
+              "end_line": 15
+            },
+            {
+              "name": "VAECriterion.forward",
+              "line": 17,
+              "end_line": 34
+            },
+            {
+              "name": "VAECriterion.metrics",
+              "line": 37,
+              "end_line": 38
+            },
+            {
+              "name": "VAECriterion.apply_iter",
+              "line": 40,
+              "end_line": 43
+            },
+            {
+              "name": "VAEAttnCriterion",
+              "line": 46,
+              "end_line": 93
+            },
+            {
+              "name": "VAEAttnCriterion.__init__",
+              "line": 47,
+              "end_line": 58
+            },
+            {
+              "name": "VAEAttnCriterion.forward",
+              "line": 60,
+              "end_line": 80
+            },
+            {
+              "name": "VAEAttnCriterion.metrics",
+              "line": 83,
+              "end_line": 88
+            },
+            {
+              "name": "VAEAttnCriterion.apply_iter",
+              "line": 90,
+              "end_line": 93
+            }
+          ]
+        },
+        "inf_cvae.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/inf_cvae.py",
+          "sha256": "dc2ebe16ecdda3608ee1856712465d8ba219c37f5e4ad23a7296f855b006e03e",
+          "declarations": [
+            {
+              "name": "get_parser",
+              "line": 20,
+              "end_line": 32
+            },
+            {
+              "name": "pre_process_sharp_clamp",
+              "line": 35,
+              "end_line": 42
+            },
+            {
+              "name": "identity_map",
+              "line": 45,
+              "end_line": 46
+            }
+          ]
+        },
+        "run_grasp_gen.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/run_grasp_gen.py",
+          "sha256": "f64419c0536b8e975cb7f6416c8c59d24cf9e3d15817ca5081fc95ad5bc20c42",
+          "declarations": [
+            {
+              "name": "get_parser",
+              "line": 15,
+              "end_line": 34
+            }
+          ]
+        },
+        "run_grasp_test.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/run_grasp_test.py",
+          "sha256": "7180bee5c576e1a617788aef735ed07336afdbb914029eccbd96fb1054fac2fb",
+          "declarations": [
+            {
+              "name": "get_parser",
+              "line": 19,
+              "end_line": 32
+            },
+            {
+              "name": "get_sim_param",
+              "line": 35,
+              "end_line": 50
+            },
+            {
+              "name": "compute_penetration",
+              "line": 53,
+              "end_line": 86
+            }
+          ]
+        },
+        "utils_model/PointNetCVAE.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/utils_model/PointNetCVAE.py",
+          "sha256": "09bec81e252d883f9637206eeb048dc2bf9d1364301afaf7b86739da7c79888c",
+          "declarations": [
+            {
+              "name": "PointNetEncoder",
+              "line": 9,
+              "end_line": 34
+            },
+            {
+              "name": "PointNetEncoder.__init__",
+              "line": 10,
+              "end_line": 21
+            },
+            {
+              "name": "PointNetEncoder.forward",
+              "line": 23,
+              "end_line": 34
+            },
+            {
+              "name": "PointNetDecoder",
+              "line": 37,
+              "end_line": 114
+            },
+            {
+              "name": "PointNetDecoder.__init__",
+              "line": 38,
+              "end_line": 76
+            },
+            {
+              "name": "PointNetDecoder.forward",
+              "line": 78,
+              "end_line": 114
+            },
+            {
+              "name": "PointNetCVAE",
+              "line": 117,
+              "end_line": 178
+            },
+            {
+              "name": "PointNetCVAE.__init__",
+              "line": 118,
+              "end_line": 136
+            },
+            {
+              "name": "PointNetCVAE.forward",
+              "line": 138,
+              "end_line": 149
+            },
+            {
+              "name": "PointNetCVAE.inference",
+              "line": 151,
+              "end_line": 158
+            },
+            {
+              "name": "PointNetCVAE.reparameterize",
+              "line": 160,
+              "end_line": 163
+            },
+            {
+              "name": "PointNetCVAE.forward_encoder",
+              "line": 165,
+              "end_line": 169
+            },
+            {
+              "name": "PointNetCVAE.forward_decoder",
+              "line": 171,
+              "end_line": 178
+            }
+          ]
+        },
+        "utils_model/CMapAdam.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/utils_model/CMapAdam.py",
+          "sha256": "7f59c8a30f36c16390bdef9b0de0e2978a5bf93090fbda34bc48ce22c8f1a83e",
+          "declarations": [
+            {
+              "name": "CMapAdam",
+              "line": 12,
+              "end_line": 258
+            },
+            {
+              "name": "CMapAdam.__init__",
+              "line": 13,
+              "end_line": 49
+            },
+            {
+              "name": "CMapAdam.reset",
+              "line": 51,
+              "end_line": 117
+            },
+            {
+              "name": "CMapAdam.compute_energy_euclidean_dist",
+              "line": 119,
+              "end_line": 158
+            },
+            {
+              "name": "CMapAdam.compute_energy_align_dist",
+              "line": 160,
+              "end_line": 228
+            },
+            {
+              "name": "CMapAdam.step",
+              "line": 230,
+              "end_line": 238
+            },
+            {
+              "name": "CMapAdam.do_pruning",
+              "line": 240,
+              "end_line": 248
+            },
+            {
+              "name": "CMapAdam.get_opt_q",
+              "line": 250,
+              "end_line": 251
+            },
+            {
+              "name": "CMapAdam.set_opt_q",
+              "line": 253,
+              "end_line": 254
+            },
+            {
+              "name": "CMapAdam.get_plotly_data",
+              "line": 256,
+              "end_line": 258
+            }
+          ]
+        },
+        "utils_model/AdamGrasp.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/utils_model/AdamGrasp.py",
+          "sha256": "9b3fd17480f88e3c6d6ee2dc179749fb690dc14c4978fc72dbdc5841926c2ac1",
+          "declarations": [
+            {
+              "name": "AdamGrasp",
+              "line": 6,
+              "end_line": 46
+            },
+            {
+              "name": "AdamGrasp.__init__",
+              "line": 7,
+              "end_line": 23
+            },
+            {
+              "name": "AdamGrasp.run_adam",
+              "line": 25,
+              "end_line": 46
+            }
+          ]
+        },
+        "utils_model/HandModel.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/utils_model/HandModel.py",
+          "sha256": "979b1ab751bc4294c12e3af3ea893a5681f53311274ec864c865499faa10b560",
+          "declarations": [
+            {
+              "name": "HandModel",
+              "line": 24,
+              "end_line": 458
+            },
+            {
+              "name": "HandModel.__init__",
+              "line": 25,
+              "end_line": 215
+            },
+            {
+              "name": "HandModel.update_kinematics",
+              "line": 218,
+              "end_line": 222
+            },
+            {
+              "name": "HandModel.get_contact_points",
+              "line": 260,
+              "end_line": 282
+            },
+            {
+              "name": "HandModel.get_contact_points_and_normal",
+              "line": 284,
+              "end_line": 319
+            },
+            {
+              "name": "HandModel.get_surface_points_prior",
+              "line": 321,
+              "end_line": 335
+            },
+            {
+              "name": "HandModel.get_surface_points",
+              "line": 337,
+              "end_line": 351
+            },
+            {
+              "name": "HandModel.get_surface_points_new",
+              "line": 353,
+              "end_line": 368
+            },
+            {
+              "name": "HandModel.get_surface_points_paml",
+              "line": 370,
+              "end_line": 389
+            },
+            {
+              "name": "HandModel.get_surface_points_and_normals",
+              "line": 391,
+              "end_line": 408
+            },
+            {
+              "name": "HandModel.get_key_points",
+              "line": 410,
+              "end_line": 422
+            },
+            {
+              "name": "HandModel.get_meshes_from_q",
+              "line": 424,
+              "end_line": 439
+            },
+            {
+              "name": "HandModel.get_plotly_data",
+              "line": 441,
+              "end_line": 458
+            }
+          ]
+        },
+        "utils/get_models.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/utils/get_models.py",
+          "sha256": "2dee54f2ff108d0d56a5b2f8402f7611832e59e57421dde1c4d1d3a5002b6fd3",
+          "declarations": [
+            {
+              "name": "get_handmodel",
+              "line": 5,
+              "end_line": 10
+            }
+          ]
+        },
+        "envs/tasks/grasp_test_force_shadowhand.py": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/envs/tasks/grasp_test_force_shadowhand.py",
+          "sha256": "99f1bc29cf2a38ce64b385cf8a42f96f5625473c5caf98ba9826d7e28bb1481a",
+          "declarations": [
+            {
+              "name": "quat_axis",
+              "line": 25,
+              "end_line": 29
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand",
+              "line": 32,
+              "end_line": 658
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.__init__",
+              "line": 34,
+              "end_line": 147
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.__del__",
+              "line": 152,
+              "end_line": 157
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._load_meta_data",
+              "line": 159,
+              "end_line": 203
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._get_num_envs",
+              "line": 205,
+              "end_line": 206
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.is_obj_stable",
+              "line": 208,
+              "end_line": 219
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.step_sim_q",
+              "line": 221,
+              "end_line": 238
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._set_init_pose",
+              "line": 240,
+              "end_line": 246
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._set_normal_force_pose",
+              "line": 248,
+              "end_line": 287
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.push_object",
+              "line": 289,
+              "end_line": 300
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._push_object_with_direction",
+              "line": 302,
+              "end_line": 328
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.create_sim",
+              "line": 330,
+              "end_line": 339
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._load_agent",
+              "line": 341,
+              "end_line": 423
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.prepare_ik",
+              "line": 425,
+              "end_line": 433
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.q_transfer_o2s",
+              "line": 435,
+              "end_line": 463
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.step_opt_q",
+              "line": 465,
+              "end_line": 485
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.get_q_as_opt",
+              "line": 487,
+              "end_line": 505
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand.get_obj_pos",
+              "line": 507,
+              "end_line": 508
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._get_dof_property",
+              "line": 510,
+              "end_line": 523
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._load_obj_asset",
+              "line": 525,
+              "end_line": 589
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._load_obj",
+              "line": 591,
+              "end_line": 614
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._place_agents",
+              "line": 616,
+              "end_line": 638
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._create_ground_plane",
+              "line": 640,
+              "end_line": 646
+            },
+            {
+              "name": "IsaacGraspTestForce_shadowhand._draw_line",
+              "line": 648,
+              "end_line": 658
+            },
+            {
+              "name": "orientation_error",
+              "line": 686,
+              "end_line": 689
+            },
+            {
+              "name": "control_ik",
+              "line": 692,
+              "end_line": 701
+            },
+            {
+              "name": "relative_pose",
+              "line": 704,
+              "end_line": 709
+            },
+            {
+              "name": "get_sim_param",
+              "line": 712,
+              "end_line": 727
+            },
+            {
+              "name": "compute_rotation_matrix_from_ortho6d",
+              "line": 730,
+              "end_line": 750
+            },
+            {
+              "name": "robust_compute_rotation_matrix_from_ortho6d",
+              "line": 753,
+              "end_line": 778
+            },
+            {
+              "name": "cross_product",
+              "line": 781,
+              "end_line": 789
+            },
+            {
+              "name": "normalize_vector",
+              "line": 792,
+              "end_line": 798
+            },
+            {
+              "name": "quaternion_to_axis_angle",
+              "line": 801,
+              "end_line": 829
+            },
+            {
+              "name": "get_rot6d_from_rpy",
+              "line": 835,
+              "end_line": 839
+            }
+          ]
+        },
+        "envs/tasks/grasp_test_force.yaml": {
+          "path": "/root/gpufree-data/research-repos/GenDexGrasp/envs/tasks/grasp_test_force.yaml",
+          "sha256": "31382b6696a9d9a3a674c682764e4e7c9470520b05db011b6cf97d98cfb4848b"
+        }
+      }
+    },
+    "DexGraspNet2": {
+      "path": "/root/gpufree-data/research-repos/DexGraspNet2",
+      "commit": "26ecd76121e3c8218ad53db9840cf34f6b81b076",
+      "working_tree_status": "",
+      "files": {
+        "README.md": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/README.md",
+          "sha256": "4919074edb0af357cb180cf4c4c7806273accc5bffd6919fbfe8cfb3afd1ef7f"
+        },
+        "src/train.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/train.py",
+          "sha256": "3e7ebd523d64ef514f474b5956947cc11b70b11927a0a1e2a135a56e20ddd0d2",
+          "declarations": [
+            {
+              "name": "main",
+              "line": 37,
+              "end_line": 110
+            }
+          ]
+        },
+        "src/network/model.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/network/model.py",
+          "sha256": "4155a7519df6395a4e30a46ea84293d97946107223541a6c762ab12b7db27939",
+          "declarations": [
+            {
+              "name": "get_model",
+              "line": 6,
+              "end_line": 14
+            }
+          ]
+        },
+        "src/network/graspness_sample.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/network/graspness_sample.py",
+          "sha256": "5ce157563d06f4c985f6ace81bc94518e75ecd22f907203f0bb91a01d2395a18",
+          "declarations": [
+            {
+              "name": "GraspnessSample",
+              "line": 17,
+              "end_line": 407
+            },
+            {
+              "name": "GraspnessSample.__init__",
+              "line": 18,
+              "end_line": 60
+            },
+            {
+              "name": "GraspnessSample.get_feature",
+              "line": 62,
+              "end_line": 77
+            },
+            {
+              "name": "GraspnessSample.pred_score",
+              "line": 79,
+              "end_line": 93
+            },
+            {
+              "name": "GraspnessSample.sample_grasp",
+              "line": 95,
+              "end_line": 149
+            },
+            {
+              "name": "GraspnessSample.to_voxel_center",
+              "line": 151,
+              "end_line": 159
+            },
+            {
+              "name": "GraspnessSample.get_euc_rot",
+              "line": 161,
+              "end_line": 186
+            },
+            {
+              "name": "GraspnessSample.forward",
+              "line": 188,
+              "end_line": 284
+            },
+            {
+              "name": "GraspnessSample.sample_points",
+              "line": 286,
+              "end_line": 294
+            },
+            {
+              "name": "GraspnessSample.sample",
+              "line": 296,
+              "end_line": 407
+            }
+          ]
+        },
+        "src/eval/predict_dexterous.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/eval/predict_dexterous.py",
+          "sha256": "8ee6aa4a18fca005e73e2984387050636c78799deecb4505032a230b331a6b58",
+          "declarations": []
+        },
+        "src/eval/evaluate_dexterous.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/eval/evaluate_dexterous.py",
+          "sha256": "eb13f8fbcdbcec340eb964253eb5c030fca8bd2726e7fd9a8f49b895cfc90d48",
+          "declarations": []
+        },
+        "src/utils/robot_model.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/utils/robot_model.py",
+          "sha256": "06e3055051fb83c6bc72413d8c952b71b798455a786567fc01738af528f70fa1",
+          "declarations": [
+            {
+              "name": "RobotPoints",
+              "line": 17,
+              "end_line": 127
+            },
+            {
+              "name": "RobotPoints.__init__",
+              "line": 22,
+              "end_line": 52
+            },
+            {
+              "name": "RobotPoints.device",
+              "line": 55,
+              "end_line": 59
+            },
+            {
+              "name": "RobotPoints.n_points",
+              "line": 62,
+              "end_line": 66
+            },
+            {
+              "name": "RobotPoints.to",
+              "line": 68,
+              "end_line": 79
+            },
+            {
+              "name": "RobotPoints.get_link_points",
+              "line": 81,
+              "end_line": 88
+            },
+            {
+              "name": "RobotPoints.get_points",
+              "line": 90,
+              "end_line": 127
+            },
+            {
+              "name": "RobotModel",
+              "line": 130,
+              "end_line": 790
+            },
+            {
+              "name": "RobotModel.__init__",
+              "line": 135,
+              "end_line": 165
+            },
+            {
+              "name": "RobotModel._compute_joint_order",
+              "line": 167,
+              "end_line": 187
+            },
+            {
+              "name": "RobotModel._build_articulation",
+              "line": 189,
+              "end_line": 222
+            },
+            {
+              "name": "RobotModel._build_geometry",
+              "line": 224,
+              "end_line": 284
+            },
+            {
+              "name": "RobotModel._build_collision_mask",
+              "line": 286,
+              "end_line": 302
+            },
+            {
+              "name": "RobotModel._get_frame_transform",
+              "line": 305,
+              "end_line": 317
+            },
+            {
+              "name": "RobotModel.get_default_joint_indices",
+              "line": 319,
+              "end_line": 329
+            },
+            {
+              "name": "RobotModel.forward_kinematics",
+              "line": 331,
+              "end_line": 383
+            },
+            {
+              "name": "RobotModel.clamp_qpos",
+              "line": 385,
+              "end_line": 398
+            },
+            {
+              "name": "RobotModel.link_names",
+              "line": 401,
+              "end_line": 405
+            },
+            {
+              "name": "RobotModel.get_ft_center",
+              "line": 407,
+              "end_line": 425
+            },
+            {
+              "name": "RobotModel.get_link_mesh",
+              "line": 427,
+              "end_line": 441
+            },
+            {
+              "name": "RobotModel.sample_surface_points_full",
+              "line": 444,
+              "end_line": 464
+            },
+            {
+              "name": "RobotModel.sample_surface_points",
+              "line": 466,
+              "end_line": 526
+            },
+            {
+              "name": "RobotModel.cal_distance",
+              "line": 528,
+              "end_line": 587
+            },
+            {
+              "name": "RobotModel.cal_self_distance",
+              "line": 589,
+              "end_line": 655
+            },
+            {
+              "name": "RobotModel.self_penetration",
+              "line": 657,
+              "end_line": 683
+            },
+            {
+              "name": "RobotModel.cal_dis_plane_each",
+              "line": 685,
+              "end_line": 755
+            },
+            {
+              "name": "RobotModel.cal_dis_plane",
+              "line": 757,
+              "end_line": 790
+            }
+          ]
+        },
+        "src/utils/collision_checker.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/utils/collision_checker.py",
+          "sha256": "25c34623d6529a9f248998656ac128a2eeda14700b782d388b9352d162bb9482",
+          "declarations": [
+            {
+              "name": "CollisionChecker",
+              "line": 6,
+              "end_line": 84
+            },
+            {
+              "name": "CollisionChecker.__init__",
+              "line": 11,
+              "end_line": 30
+            },
+            {
+              "name": "CollisionChecker.check_collision_batch",
+              "line": 32,
+              "end_line": 84
+            }
+          ]
+        },
+        "src/utils/data_evaluator/simulation_evaluator.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/utils/data_evaluator/simulation_evaluator.py",
+          "sha256": "8352b11510804cff6b6da73ab47ebdc7e0e5964a5df6682c02b9dffa4dffb2b3",
+          "declarations": [
+            {
+              "name": "SimulationEvaluator",
+              "line": 14,
+              "end_line": 408
+            },
+            {
+              "name": "SimulationEvaluator.__init__",
+              "line": 19,
+              "end_line": 43
+            },
+            {
+              "name": "SimulationEvaluator.set_environments",
+              "line": 45,
+              "end_line": 128
+            },
+            {
+              "name": "SimulationEvaluator._compute_waypoints",
+              "line": 130,
+              "end_line": 255
+            },
+            {
+              "name": "SimulationEvaluator._check_collision",
+              "line": 257,
+              "end_line": 279
+            },
+            {
+              "name": "SimulationEvaluator._reset_environments",
+              "line": 281,
+              "end_line": 323
+            },
+            {
+              "name": "SimulationEvaluator._execute_waypoints",
+              "line": 325,
+              "end_line": 348
+            },
+            {
+              "name": "SimulationEvaluator._get_sim_successes",
+              "line": 350,
+              "end_line": 367
+            },
+            {
+              "name": "SimulationEvaluator.evaluate_data",
+              "line": 369,
+              "end_line": 408
+            }
+          ]
+        },
+        "src/utils/simulator/isaacgym_simulator.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/utils/simulator/isaacgym_simulator.py",
+          "sha256": "18624e5f1a71ff7dbd7a8cd68bb38346a34b999e0fdba3a004b919cb6abddf2c",
+          "declarations": [
+            {
+              "name": "IsaacGymSimulator",
+              "line": 13,
+              "end_line": 807
+            },
+            {
+              "name": "IsaacGymSimulator.__init__",
+              "line": 27,
+              "end_line": 71
+            },
+            {
+              "name": "IsaacGymSimulator._init_sim",
+              "line": 73,
+              "end_line": 109
+            },
+            {
+              "name": "IsaacGymSimulator.register_asset",
+              "line": 111,
+              "end_line": 198
+            },
+            {
+              "name": "IsaacGymSimulator.create_env",
+              "line": 200,
+              "end_line": 213
+            },
+            {
+              "name": "IsaacGymSimulator.create_actor",
+              "line": 215,
+              "end_line": 342
+            },
+            {
+              "name": "IsaacGymSimulator._tensorfy_actor_indices",
+              "line": 344,
+              "end_line": 378
+            },
+            {
+              "name": "IsaacGymSimulator._acquire_state_tensors",
+              "line": 380,
+              "end_line": 422
+            },
+            {
+              "name": "IsaacGymSimulator._create_viewer",
+              "line": 424,
+              "end_line": 454
+            },
+            {
+              "name": "IsaacGymSimulator.prepare_sim",
+              "line": 456,
+              "end_line": 485
+            },
+            {
+              "name": "IsaacGymSimulator._refresh",
+              "line": 487,
+              "end_line": 495
+            },
+            {
+              "name": "IsaacGymSimulator.get_actor_states",
+              "line": 497,
+              "end_line": 592
+            },
+            {
+              "name": "IsaacGymSimulator._to_tensor",
+              "line": 594,
+              "end_line": 610
+            },
+            {
+              "name": "IsaacGymSimulator.set_actor_states",
+              "line": 612,
+              "end_line": 667
+            },
+            {
+              "name": "IsaacGymSimulator._flush_states",
+              "line": 669,
+              "end_line": 676
+            },
+            {
+              "name": "IsaacGymSimulator.set_actor_actions",
+              "line": 678,
+              "end_line": 694
+            },
+            {
+              "name": "IsaacGymSimulator._flush_actions",
+              "line": 696,
+              "end_line": 701
+            },
+            {
+              "name": "IsaacGymSimulator.disable_gravity",
+              "line": 703,
+              "end_line": 721
+            },
+            {
+              "name": "IsaacGymSimulator.enable_gravity",
+              "line": 723,
+              "end_line": 740
+            },
+            {
+              "name": "IsaacGymSimulator.step",
+              "line": 742,
+              "end_line": 799
+            },
+            {
+              "name": "IsaacGymSimulator.close",
+              "line": 801,
+              "end_line": 807
+            }
+          ]
+        },
+        "src/preprocess/refine_dataset.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/preprocess/refine_dataset.py",
+          "sha256": "ecc84e51d67863b8fe5b3b33e2b075ae5231897f6653ee1cc385b1d0ef551fa5",
+          "declarations": [
+            {
+              "name": "main",
+              "line": 20,
+              "end_line": 61
+            }
+          ]
+        },
+        "src/preprocess/dex_graspness.py": {
+          "path": "/root/gpufree-data/research-repos/DexGraspNet2/src/preprocess/dex_graspness.py",
+          "sha256": "a904757a285544d2ba4cbf256d6ddfdd2c7fb841580f4605b62a24129a2f8881",
+          "declarations": [
+            {
+              "name": "get_orig_scene",
+              "line": 24,
+              "end_line": 28
+            },
+            {
+              "name": "get_weight",
+              "line": 65,
+              "end_line": 95
+            },
+            {
+              "name": "allocate_sample_weights",
+              "line": 98,
+              "end_line": 131
+            },
+            {
+              "name": "cal_palm_tip_transform",
+              "line": 133,
+              "end_line": 146
+            },
+            {
+              "name": "get_graspness_weighted",
+              "line": 148,
+              "end_line": 197
+            },
+            {
+              "name": "get_keypoints",
+              "line": 199,
+              "end_line": 215
+            },
+            {
+              "name": "get_collision_free_grasps",
+              "line": 220,
+              "end_line": 295
+            },
+            {
+              "name": "load_collision_free_grasps",
+              "line": 297,
+              "end_line": 318
+            },
+            {
+              "name": "load_scene",
+              "line": 320,
+              "end_line": 350
+            },
+            {
+              "name": "generate_graspness",
+              "line": 352,
+              "end_line": 433
+            }
+          ]
+        }
+      }
+    },
+    "TorchSDF": {
+      "path": "/root/gpufree-data/research-repos/TorchSDF",
+      "commit": "f2e82262f03809c40d81ec6c6933e08e4ee5600d",
+      "working_tree_status": "",
+      "files": {
+        "README.md": {
+          "path": "/root/gpufree-data/research-repos/TorchSDF/README.md",
+          "sha256": "efc49fe5a5d0e39774a9f5c72806f550c3333670fb4108f3e7ec3f0d01316e47"
+        },
+        "LICENSE": {
+          "path": "/root/gpufree-data/research-repos/TorchSDF/LICENSE",
+          "sha256": "1f81d44e1506aef37184653d2d31d00ae6e4f453d431de971c2879be960665b8"
+        },
+        "torchsdf/sdf.py": {
+          "path": "/root/gpufree-data/research-repos/TorchSDF/torchsdf/sdf.py",
+          "sha256": "b86fd646d9b04b7e49d12897262425e97c14d24e504ae8d7682df7d5e0244328",
+          "declarations": [
+            {
+              "name": "index_vertices_by_faces",
+              "line": 5,
+              "end_line": 31
+            },
+            {
+              "name": "compute_sdf",
+              "line": 34,
+              "end_line": 35
+            },
+            {
+              "name": "_UnbatchedTriangleDistanceCuda",
+              "line": 38,
+              "end_line": 64
+            },
+            {
+              "name": "_UnbatchedTriangleDistanceCuda.forward",
+              "line": 40,
+              "end_line": 54
+            },
+            {
+              "name": "_UnbatchedTriangleDistanceCuda.backward",
+              "line": 57,
+              "end_line": 64
+            }
+          ]
+        },
+        "torchsdf/csrc/unbatched_triangle_distance.cpp": {
+          "path": "/root/gpufree-data/research-repos/TorchSDF/torchsdf/csrc/unbatched_triangle_distance.cpp",
+          "sha256": "b39288f44001944ed92c0dd839a5cbd985818552b710da76daad126200b339a6"
+        }
+      }
+    },
+    "IsaacLab-Arena": {
+      "path": "/root/gpufree-data/IsaacLab-Arena",
+      "commit": "5fb3bd8a639578d46f4b5ed67b9b5239e1281b9a",
+      "working_tree_status": "M isaaclab_arena_environments/lift_object_environment.py\n M isaaclab_arena_environments/pick_and_place_maple_table_environment.py\n M isaaclab_arena_gr00t/tests/test_data/test_g1_hdf5_to_lerobot.hdf5\n M submodules/Isaac-GR00T\n M submodules/IsaacLab\n M uv.lock\n?? uv.lock.official.backup",
+      "files": {
+        "README.md": {
+          "path": "/root/gpufree-data/IsaacLab-Arena/README.md",
+          "sha256": "54a823222b40c105066741688c3ee05524ddebc39af8c32452cb75bc67b244a6"
+        },
+        "isaaclab_arena/environments/arena_env_builder.py": {
+          "path": "/root/gpufree-data/IsaacLab-Arena/isaaclab_arena/environments/arena_env_builder.py",
+          "sha256": "d60b21816ff26293fddba2bf58b5cce44d461bcb9ec15de607041919e1ca1311",
+          "declarations": [
+            {
+              "name": "_configure_arena_visualizer_defaults",
+              "line": 82,
+              "end_line": 99
+            },
+            {
+              "name": "ArenaEnvBuilder",
+              "line": 102,
+              "end_line": 720
+            },
+            {
+              "name": "ArenaEnvBuilder.__init__",
+              "line": 105,
+              "end_line": 133
+            },
+            {
+              "name": "ArenaEnvBuilder._apply_camera_resolution_mode",
+              "line": 135,
+              "end_line": 156
+            },
+            {
+              "name": "ArenaEnvBuilder.resolved_physics_backend",
+              "line": 159,
+              "end_line": 161
+            },
+            {
+              "name": "ArenaEnvBuilder._prepare_relation_placement",
+              "line": 163,
+              "end_line": 221
+            },
+            {
+              "name": "ArenaEnvBuilder.get_all_variations",
+              "line": 223,
+              "end_line": 232
+            },
+            {
+              "name": "ArenaEnvBuilder.get_variations_catalogue_as_string",
+              "line": 234,
+              "end_line": 237
+            },
+            {
+              "name": "ArenaEnvBuilder._build_variation_events_cfg",
+              "line": 239,
+              "end_line": 263
+            },
+            {
+              "name": "ArenaEnvBuilder._apply_build_time_variations",
+              "line": 265,
+              "end_line": 274
+            },
+            {
+              "name": "ArenaEnvBuilder._modify_recorder_cfg_dataset_filename",
+              "line": 276,
+              "end_line": 282
+            },
+            {
+              "name": "ArenaEnvBuilder._build_metrics_cfg",
+              "line": 284,
+              "end_line": 289
+            },
+            {
+              "name": "ArenaEnvBuilder._build_termination_manager_cfg",
+              "line": 291,
+              "end_line": 313
+            },
+            {
+              "name": "ArenaEnvBuilder._build_episode_recorders_cfg",
+              "line": 315,
+              "end_line": 335
+            },
+            {
+              "name": "ArenaEnvBuilder.build_env_cfg",
+              "line": 337,
+              "end_line": 603
+            },
+            {
+              "name": "ArenaEnvBuilder.get_entry_point",
+              "line": 605,
+              "end_line": 614
+            },
+            {
+              "name": "ArenaEnvBuilder.build_registered",
+              "line": 616,
+              "end_line": 675
+            },
+            {
+              "name": "ArenaEnvBuilder.build_registered.create_env",
+              "line": 649,
+              "end_line": 654
+            },
+            {
+              "name": "ArenaEnvBuilder.make_registered",
+              "line": 677,
+              "end_line": 697
+            },
+            {
+              "name": "ArenaEnvBuilder.make_registered_and_return_cfg",
+              "line": 699,
+              "end_line": 720
+            }
+          ]
+        },
+        "isaaclab_arena/environments/arena_environment_factory.py": {
+          "path": "/root/gpufree-data/IsaacLab-Arena/isaaclab_arena/environments/arena_environment_factory.py",
+          "sha256": "40ab7d4ad87eda2f229435e2a5948cb0c580a1d56f05cbcb5eb1e069e12d3792",
+          "declarations": [
+            {
+              "name": "ArenaEnvironmentCfg",
+              "line": 19,
+              "end_line": 23
+            },
+            {
+              "name": "ArenaEnvironmentFactory",
+              "line": 29,
+              "end_line": 45
+            },
+            {
+              "name": "ArenaEnvironmentFactory.__init__",
+              "line": 35,
+              "end_line": 40
+            },
+            {
+              "name": "ArenaEnvironmentFactory.build",
+              "line": 43,
+              "end_line": 45
+            }
+          ]
+        },
+        "isaaclab_arena/embodiments/embodiment_base.py": {
+          "path": "/root/gpufree-data/IsaacLab-Arena/isaaclab_arena/embodiments/embodiment_base.py",
+          "sha256": "956998d3484e09f2c3f76037b7ddeb85a07fc374131fa17db8c4083d5861ede1",
+          "declarations": [
+            {
+              "name": "ArticulationGeometrySpec",
+              "line": 32,
+              "end_line": 42
+            },
+            {
+              "name": "EmbodimentBase",
+              "line": 45,
+              "end_line": 360
+            },
+            {
+              "name": "EmbodimentBase.__init__",
+              "line": 61,
+              "end_line": 92
+            },
+            {
+              "name": "EmbodimentBase.get_placement_geometry_source",
+              "line": 94,
+              "end_line": 106
+            },
+            {
+              "name": "EmbodimentBase.get_bounding_box",
+              "line": 108,
+              "end_line": 121
+            },
+            {
+              "name": "EmbodimentBase.get_collision_mesh",
+              "line": 123,
+              "end_line": 129
+            },
+            {
+              "name": "EmbodimentBase._set_initial_pose",
+              "line": 131,
+              "end_line": 134
+            },
+            {
+              "name": "EmbodimentBase._get_initial_pose_as_pose",
+              "line": 136,
+              "end_line": 139
+            },
+            {
+              "name": "EmbodimentBase._build_reset_event",
+              "line": 141,
+              "end_line": 163
+            },
+            {
+              "name": "EmbodimentBase.set_joint_initial_pos",
+              "line": 165,
+              "end_line": 170
+            },
+            {
+              "name": "EmbodimentBase.get_initial_pose",
+              "line": 172,
+              "end_line": 183
+            },
+            {
+              "name": "EmbodimentBase.configure_physics_backend",
+              "line": 185,
+              "end_line": 194
+            },
+            {
+              "name": "EmbodimentBase._configure_physics_backend",
+              "line": 196,
+              "end_line": 197
+            },
+            {
+              "name": "EmbodimentBase._apply_spawn_cfg_addons",
+              "line": 199,
+              "end_line": 211
+            },
+            {
+              "name": "EmbodimentBase.get_scene_cfg",
+              "line": 213,
+              "end_line": 226
+            },
+            {
+              "name": "EmbodimentBase.get_action_cfg",
+              "line": 228,
+              "end_line": 229
+            },
+            {
+              "name": "EmbodimentBase.get_observation_cfg",
+              "line": 231,
+              "end_line": 240
+            },
+            {
+              "name": "EmbodimentBase.get_rewards_cfg",
+              "line": 242,
+              "end_line": 243
+            },
+            {
+              "name": "EmbodimentBase.get_curriculum_cfg",
+              "line": 245,
+              "end_line": 246
+            },
+            {
+              "name": "EmbodimentBase.get_commands_cfg",
+              "line": 248,
+              "end_line": 249
+            },
+            {
+              "name": "EmbodimentBase.get_events_cfg",
+              "line": 251,
+              "end_line": 261
+            },
+            {
+              "name": "EmbodimentBase.get_mimic_env",
+              "line": 263,
+              "end_line": 264
+            },
+            {
+              "name": "EmbodimentBase.get_xr_cfg",
+              "line": 266,
+              "end_line": 267
+            },
+            {
+              "name": "EmbodimentBase.get_teleop_target_frame_prim_path",
+              "line": 269,
+              "end_line": 270
+            },
+            {
+              "name": "EmbodimentBase.get_camera_cfg",
+              "line": 272,
+              "end_line": 279
+            },
+            {
+              "name": "EmbodimentBase.add_camera_variations",
+              "line": 281,
+              "end_line": 288
+            },
+            {
+              "name": "EmbodimentBase._update_scene_cfg_with_robot_initial_pose",
+              "line": 290,
+              "end_line": 296
+            },
+            {
+              "name": "EmbodimentBase.get_recorder_term_cfg",
+              "line": 298,
+              "end_line": 311
+            },
+            {
+              "name": "EmbodimentBase.get_scene_key",
+              "line": 313,
+              "end_line": 315
+            },
+            {
+              "name": "EmbodimentBase.get_scene_root_keys",
+              "line": 317,
+              "end_line": 323
+            },
+            {
+              "name": "EmbodimentBase.set_initial_scene_root_poses",
+              "line": 325,
+              "end_line": 337
+            },
+            {
+              "name": "EmbodimentBase.get_ee_frame_transformer_names",
+              "line": 339,
+              "end_line": 345
+            },
+            {
+              "name": "EmbodimentBase.get_ee_frame_name",
+              "line": 347,
+              "end_line": 349
+            },
+            {
+              "name": "EmbodimentBase.get_command_body_name",
+              "line": 351,
+              "end_line": 352
+            },
+            {
+              "name": "EmbodimentBase.get_gripper",
+              "line": 354,
+              "end_line": 357
+            },
+            {
+              "name": "EmbodimentBase.get_arm_mode",
+              "line": 359,
+              "end_line": 360
+            }
+          ]
+        },
+        "isaaclab_arena/embodiments/kuka_allegro/kuka_allegro.py": {
+          "path": "/root/gpufree-data/IsaacLab-Arena/isaaclab_arena/embodiments/kuka_allegro/kuka_allegro.py",
+          "sha256": "45737b13298c6a5e7b91e170958a81e25989edf23e6f0afc9cb4c18e9c61707d",
+          "declarations": [
+            {
+              "name": "KukaAllegroStateObservationCfg",
+              "line": 36,
+              "end_line": 46
+            },
+            {
+              "name": "KukaAllegroStateObservationCfg.__post_init__",
+              "line": 39,
+              "end_line": 46
+            },
+            {
+              "name": "KukaAllegroSceneCfg",
+              "line": 50,
+              "end_line": 69
+            },
+            {
+              "name": "KukaAllegroEventCfg",
+              "line": 73,
+              "end_line": 83
+            },
+            {
+              "name": "KukaAllegroEmbodiment",
+              "line": 87,
+              "end_line": 112
+            },
+            {
+              "name": "KukaAllegroEmbodiment.__init__",
+              "line": 93,
+              "end_line": 106
+            },
+            {
+              "name": "KukaAllegroEmbodiment.get_ee_frame_name",
+              "line": 108,
+              "end_line": 109
+            },
+            {
+              "name": "KukaAllegroEmbodiment.get_command_body_name",
+              "line": 111,
+              "end_line": 112
+            }
+          ]
+        }
+      }
+    },
+    "IsaacLab": {
+      "path": "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab",
+      "commit": "e3f7d9ff1f5d7f8280de3ece9000b7117f66bcf4",
+      "working_tree_status": "M source/isaaclab_tasks/test/golden_images/shadow_hand/ovphysx-newton_renderer-semantic_segmentation.png\n M source/isaaclab_tasks/test/golden_images/shadow_hand/ovphysx-ovrtx_renderer-motion_vectors.png\n M source/isaaclab_tasks/test/golden_images/shadow_hand/ovphysx-ovrtx_renderer-simple_shading_constant_diffuse.png\n M source/isaaclab_tasks/test/golden_images/shadow_hand/ovphysx-ovrtx_renderer-simple_shading_diffuse_mdl.png\n M source/isaaclab_tasks/test/golden_images/shadow_hand/physx-isaacsim_rtx_renderer-instance_id_segmentation_fast.png\n M source/isaaclab_tasks/test/golden_images/shadow_hand/physx-isaacsim_rtx_renderer-instance_segmentation.png\n M source/isaaclab_tasks/test/golden_images/shadow_hand/physx-isaacsim_rtx_renderer-simple_shading_constant_diffuse.png\n M source/isaaclab_tasks/test/golden_images/shadow_hand/physx-isaacsim_rtx_renderer-simple_shading_diffuse_mdl.png\n M source/isaaclab_tasks/test/golden_images/shadow_hand/physx-newton_renderer-distance_to_camera.png\n M source/isaaclab_tasks/test/golden_images/shadow_hand/physx-newton_renderer-semantic_segmentation.png",
+      "files": {
+        "source/isaaclab_assets/isaaclab_assets/robots/shadow_hand.py": {
+          "path": "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab_assets/isaaclab_assets/robots/shadow_hand.py",
+          "sha256": "5fd91a94ec6bdd91f6607946c80a529376de4eafef50bd2046aed055cae2438d",
+          "declarations": []
+        },
+        "source/isaaclab/isaaclab/utils/math.py": {
+          "path": "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab/isaaclab/utils/math.py",
+          "sha256": "be896b1734900f5ed5751de75a8ad517f131358934f5247968bd5f905ca9cd47",
+          "declarations": [
+            {
+              "name": "scale_transform",
+              "line": 29,
+              "end_line": 46
+            },
+            {
+              "name": "unscale_transform",
+              "line": 50,
+              "end_line": 67
+            },
+            {
+              "name": "saturate",
+              "line": 71,
+              "end_line": 84
+            },
+            {
+              "name": "normalize",
+              "line": 88,
+              "end_line": 98
+            },
+            {
+              "name": "wrap_to_pi",
+              "line": 102,
+              "end_line": 123
+            },
+            {
+              "name": "copysign",
+              "line": 127,
+              "end_line": 141
+            },
+            {
+              "name": "quat_unique",
+              "line": 150,
+              "end_line": 162
+            },
+            {
+              "name": "matrix_from_quat",
+              "line": 166,
+              "end_line": 197
+            },
+            {
+              "name": "convert_quat",
+              "line": 200,
+              "end_line": 230
+            },
+            {
+              "name": "quat_conjugate",
+              "line": 234,
+              "end_line": 245
+            },
+            {
+              "name": "quat_inv",
+              "line": 249,
+              "end_line": 259
+            },
+            {
+              "name": "quat_from_euler_xyz",
+              "line": 263,
+              "end_line": 289
+            },
+            {
+              "name": "_sqrt_positive_part",
+              "line": 293,
+              "end_line": 302
+            },
+            {
+              "name": "quat_from_matrix",
+              "line": 306,
+              "end_line": 367
+            },
+            {
+              "name": "_axis_angle_rotation",
+              "line": 370,
+              "end_line": 398
+            },
+            {
+              "name": "matrix_from_euler",
+              "line": 401,
+              "end_line": 427
+            },
+            {
+              "name": "euler_xyz_from_quat",
+              "line": 431,
+              "end_line": 468
+            },
+            {
+              "name": "axis_angle_from_quat",
+              "line": 472,
+              "end_line": 500
+            },
+            {
+              "name": "quat_from_angle_axis",
+              "line": 504,
+              "end_line": 517
+            },
+            {
+              "name": "quat_mul",
+              "line": 521,
+              "end_line": 556
+            },
+            {
+              "name": "yaw_quat",
+              "line": 560,
+              "end_line": 580
+            },
+            {
+              "name": "quat_box_minus",
+              "line": 584,
+              "end_line": 598
+            },
+            {
+              "name": "quat_box_plus",
+              "line": 602,
+              "end_line": 619
+            },
+            {
+              "name": "quat_apply",
+              "line": 623,
+              "end_line": 637
+            },
+            {
+              "name": "quat_apply_inverse",
+              "line": 641,
+              "end_line": 655
+            },
+            {
+              "name": "quat_apply_yaw",
+              "line": 659,
+              "end_line": 670
+            },
+            {
+              "name": "quat_rotate",
+              "line": 673,
+              "end_line": 691
+            },
+            {
+              "name": "quat_rotate_inverse",
+              "line": 694,
+              "end_line": 712
+            },
+            {
+              "name": "quat_error_magnitude",
+              "line": 716,
+              "end_line": 727
+            },
+            {
+              "name": "skew_symmetric_matrix",
+              "line": 731,
+              "end_line": 758
+            },
+            {
+              "name": "is_identity_pose",
+              "line": 766,
+              "end_line": 784
+            },
+            {
+              "name": "combine_frame_transforms",
+              "line": 788,
+              "end_line": 819
+            },
+            {
+              "name": "rigid_body_twist_transform",
+              "line": 822,
+              "end_line": 856
+            },
+            {
+              "name": "subtract_frame_transforms",
+              "line": 859,
+              "end_line": 890
+            },
+            {
+              "name": "compute_pose_error",
+              "line": 893,
+              "end_line": 942
+            },
+            {
+              "name": "apply_delta_pose",
+              "line": 946,
+              "end_line": 982
+            },
+            {
+              "name": "transform_points",
+              "line": 985,
+              "end_line": 1053
+            },
+            {
+              "name": "orthogonalize_perspective_depth",
+              "line": 1062,
+              "end_line": 1150
+            },
+            {
+              "name": "unproject_depth",
+              "line": 1154,
+              "end_line": 1237
+            },
+            {
+              "name": "project_points",
+              "line": 1241,
+              "end_line": 1296
+            },
+            {
+              "name": "default_orientation",
+              "line": 1305,
+              "end_line": 1318
+            },
+            {
+              "name": "random_orientation",
+              "line": 1322,
+              "end_line": 1338
+            },
+            {
+              "name": "random_yaw_orientation",
+              "line": 1342,
+              "end_line": 1356
+            },
+            {
+              "name": "sample_triangle",
+              "line": 1359,
+              "end_line": 1381
+            },
+            {
+              "name": "sample_uniform",
+              "line": 1384,
+              "end_line": 1402
+            },
+            {
+              "name": "sample_uniform_from_ranges",
+              "line": 1405,
+              "end_line": 1436
+            },
+            {
+              "name": "sample_log_uniform",
+              "line": 1439,
+              "end_line": 1467
+            },
+            {
+              "name": "sample_gaussian",
+              "line": 1470,
+              "end_line": 1491
+            },
+            {
+              "name": "sample_cylinder",
+              "line": 1494,
+              "end_line": 1528
+            },
+            {
+              "name": "convert_camera_frame_orientation_convention",
+              "line": 1536,
+              "end_line": 1622
+            },
+            {
+              "name": "create_rotation_matrix_from_view",
+              "line": 1625,
+              "end_line": 1693
+            },
+            {
+              "name": "make_pose",
+              "line": 1696,
+              "end_line": 1714
+            },
+            {
+              "name": "unmake_pose",
+              "line": 1717,
+              "end_line": 1729
+            },
+            {
+              "name": "pose_inv",
+              "line": 1732,
+              "end_line": 1756
+            },
+            {
+              "name": "pose_in_A_to_pose_in_B",
+              "line": 1759,
+              "end_line": 1778
+            },
+            {
+              "name": "quat_slerp",
+              "line": 1781,
+              "end_line": 1814
+            },
+            {
+              "name": "interpolate_rotations",
+              "line": 1817,
+              "end_line": 1866
+            },
+            {
+              "name": "interpolate_poses",
+              "line": 1869,
+              "end_line": 1926
+            },
+            {
+              "name": "transform_poses_from_frame_A_to_frame_B",
+              "line": 1929,
+              "end_line": 1953
+            },
+            {
+              "name": "generate_random_rotation",
+              "line": 1956,
+              "end_line": 1980
+            },
+            {
+              "name": "generate_random_translation",
+              "line": 1983,
+              "end_line": 1992
+            },
+            {
+              "name": "generate_random_transformation_matrix",
+              "line": 1995,
+              "end_line": 2013
+            },
+            {
+              "name": "_cached_uniform_bounds",
+              "line": 2017,
+              "end_line": 2021
+            }
+          ]
+        },
+        "source/isaaclab/isaaclab/envs/mdp/actions/tendon_actions.py": {
+          "path": "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab/isaaclab/envs/mdp/actions/tendon_actions.py",
+          "sha256": "421581d79a2b3f901ee9cd30cda4caf54c3e39a6a507583760d8c7a7699118ae",
+          "declarations": [
+            {
+              "name": "FixedTendonPositionAction",
+              "line": 29,
+              "end_line": 167
+            },
+            {
+              "name": "FixedTendonPositionAction.__init__",
+              "line": 53,
+              "end_line": 100
+            },
+            {
+              "name": "FixedTendonPositionAction.action_dim",
+              "line": 107,
+              "end_line": 108
+            },
+            {
+              "name": "FixedTendonPositionAction.raw_actions",
+              "line": 111,
+              "end_line": 112
+            },
+            {
+              "name": "FixedTendonPositionAction.processed_actions",
+              "line": 115,
+              "end_line": 116
+            },
+            {
+              "name": "FixedTendonPositionAction.IO_descriptor",
+              "line": 119,
+              "end_line": 140
+            },
+            {
+              "name": "FixedTendonPositionAction.process_actions",
+              "line": 146,
+              "end_line": 155
+            },
+            {
+              "name": "FixedTendonPositionAction.apply_actions",
+              "line": 157,
+              "end_line": 163
+            },
+            {
+              "name": "FixedTendonPositionAction.reset",
+              "line": 165,
+              "end_line": 167
+            }
+          ]
+        },
+        "source/isaaclab/isaaclab/assets/articulation/base_articulation.py": {
+          "path": "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab/isaaclab/assets/articulation/base_articulation.py",
+          "sha256": "83b8d6954b1ff17a82ea2f73cbc8db9cb2d142c8327524a2da421e7c1504f178",
+          "declarations": [
+            {
+              "name": "_as_bool_mask",
+              "line": 38,
+              "end_line": 47
+            },
+            {
+              "name": "BaseArticulation",
+              "line": 50,
+              "end_line": 3481
+            },
+            {
+              "name": "BaseArticulation.__init__",
+              "line": 129,
+              "end_line": 148
+            },
+            {
+              "name": "BaseArticulation.data",
+              "line": 156,
+              "end_line": 157
+            },
+            {
+              "name": "BaseArticulation.num_instances",
+              "line": 161,
+              "end_line": 162
+            },
+            {
+              "name": "BaseArticulation.is_fixed_base",
+              "line": 166,
+              "end_line": 168
+            },
+            {
+              "name": "BaseArticulation.num_joints",
+              "line": 172,
+              "end_line": 174
+            },
+            {
+              "name": "BaseArticulation.num_fixed_tendons",
+              "line": 178,
+              "end_line": 180
+            },
+            {
+              "name": "BaseArticulation.num_spatial_tendons",
+              "line": 184,
+              "end_line": 186
+            },
+            {
+              "name": "BaseArticulation.num_bodies",
+              "line": 190,
+              "end_line": 192
+            },
+            {
+              "name": "BaseArticulation.joint_names",
+              "line": 195,
+              "end_line": 206
+            },
+            {
+              "name": "BaseArticulation.fixed_tendon_names",
+              "line": 210,
+              "end_line": 212
+            },
+            {
+              "name": "BaseArticulation.spatial_tendon_names",
+              "line": 216,
+              "end_line": 218
+            },
+            {
+              "name": "BaseArticulation.body_names",
+              "line": 221,
+              "end_line": 232
+            },
+            {
+              "name": "BaseArticulation.backend_joint_names",
+              "line": 235,
+              "end_line": 258
+            },
+            {
+              "name": "BaseArticulation.backend_body_names",
+              "line": 261,
+              "end_line": 284
+            },
+            {
+              "name": "BaseArticulation.joint_ordering",
+              "line": 287,
+              "end_line": 295
+            },
+            {
+              "name": "BaseArticulation.body_ordering",
+              "line": 298,
+              "end_line": 306
+            },
+            {
+              "name": "BaseArticulation.map_joint_ids_to_backend",
+              "line": 308,
+              "end_line": 335
+            },
+            {
+              "name": "BaseArticulation.map_body_ids_to_backend",
+              "line": 337,
+              "end_line": 364
+            },
+            {
+              "name": "BaseArticulation.root_view",
+              "line": 368,
+              "end_line": 379
+            },
+            {
+              "name": "BaseArticulation._resolve_and_install_ordering_maps",
+              "line": 381,
+              "end_line": 410
+            },
+            {
+              "name": "BaseArticulation._resolve_axis_ordering",
+              "line": 412,
+              "end_line": 445
+            },
+            {
+              "name": "BaseArticulation.num_base_dofs",
+              "line": 448,
+              "end_line": 460
+            },
+            {
+              "name": "BaseArticulation.instantaneous_wrench_composer",
+              "line": 464,
+              "end_line": 472
+            },
+            {
+              "name": "BaseArticulation.permanent_wrench_composer",
+              "line": 476,
+              "end_line": 483
+            },
+            {
+              "name": "BaseArticulation.reset",
+              "line": 490,
+              "end_line": 502
+            },
+            {
+              "name": "BaseArticulation.write_data_to_sim",
+              "line": 505,
+              "end_line": 515
+            },
+            {
+              "name": "BaseArticulation.update",
+              "line": 518,
+              "end_line": 524
+            },
+            {
+              "name": "BaseArticulation.find_bodies",
+              "line": 531,
+              "end_line": 552
+            },
+            {
+              "name": "BaseArticulation.find_joints",
+              "line": 555,
+              "end_line": 579
+            },
+            {
+              "name": "BaseArticulation.find_fixed_tendons",
+              "line": 582,
+              "end_line": 607
+            },
+            {
+              "name": "BaseArticulation.find_spatial_tendons",
+              "line": 610,
+              "end_line": 634
+            },
+            {
+              "name": "BaseArticulation.write_root_pose_to_sim_index",
+              "line": 641,
+              "end_line": 666
+            },
+            {
+              "name": "BaseArticulation.write_root_pose_to_sim_mask",
+              "line": 669,
+              "end_line": 694
+            },
+            {
+              "name": "BaseArticulation.write_root_link_pose_to_sim_index",
+              "line": 697,
+              "end_line": 722
+            },
+            {
+              "name": "BaseArticulation.write_root_link_pose_to_sim_mask",
+              "line": 725,
+              "end_line": 750
+            },
+            {
+              "name": "BaseArticulation.write_root_com_pose_to_sim_index",
+              "line": 753,
+              "end_line": 779
+            },
+            {
+              "name": "BaseArticulation.write_root_com_pose_to_sim_mask",
+              "line": 782,
+              "end_line": 808
+            },
+            {
+              "name": "BaseArticulation.write_root_velocity_to_sim_index",
+              "line": 811,
+              "end_line": 839
+            },
+            {
+              "name": "BaseArticulation.write_root_velocity_to_sim_mask",
+              "line": 842,
+              "end_line": 870
+            },
+            {
+              "name": "BaseArticulation.write_root_com_velocity_to_sim_index",
+              "line": 873,
+              "end_line": 901
+            },
+            {
+              "name": "BaseArticulation.write_root_com_velocity_to_sim_mask",
+              "line": 904,
+              "end_line": 932
+            },
+            {
+              "name": "BaseArticulation.write_root_link_velocity_to_sim_index",
+              "line": 935,
+              "end_line": 963
+            },
+            {
+              "name": "BaseArticulation.write_root_link_velocity_to_sim_mask",
+              "line": 966,
+              "end_line": 994
+            },
+            {
+              "name": "BaseArticulation.write_joint_position_to_sim_index",
+              "line": 997,
+              "end_line": 1021
+            },
+            {
+              "name": "BaseArticulation.write_joint_position_to_sim_mask",
+              "line": 1024,
+              "end_line": 1048
+            },
+            {
+              "name": "BaseArticulation.write_joint_velocity_to_sim_index",
+              "line": 1051,
+              "end_line": 1075
+            },
+            {
+              "name": "BaseArticulation.write_joint_velocity_to_sim_mask",
+              "line": 1078,
+              "end_line": 1102
+            },
+            {
+              "name": "BaseArticulation.write_joint_stiffness_to_sim_index",
+              "line": 1109,
+              "end_line": 1130
+            },
+            {
+              "name": "BaseArticulation.write_joint_stiffness_to_sim_mask",
+              "line": 1133,
+              "end_line": 1154
+            },
+            {
+              "name": "BaseArticulation.write_joint_damping_to_sim_index",
+              "line": 1157,
+              "end_line": 1178
+            },
+            {
+              "name": "BaseArticulation.write_joint_damping_to_sim_mask",
+              "line": 1181,
+              "end_line": 1202
+            },
+            {
+              "name": "BaseArticulation.write_joint_position_limit_to_sim_index",
+              "line": 1205,
+              "end_line": 1230
+            },
+            {
+              "name": "BaseArticulation.write_joint_position_limit_to_sim_mask",
+              "line": 1233,
+              "end_line": 1258
+            },
+            {
+              "name": "BaseArticulation.write_joint_velocity_limit_to_sim_index",
+              "line": 1261,
+              "end_line": 1286
+            },
+            {
+              "name": "BaseArticulation.write_joint_velocity_limit_to_sim_mask",
+              "line": 1289,
+              "end_line": 1314
+            },
+            {
+              "name": "BaseArticulation.write_joint_effort_limit_to_sim_index",
+              "line": 1317,
+              "end_line": 1341
+            },
+            {
+              "name": "BaseArticulation.write_joint_effort_limit_to_sim_mask",
+              "line": 1344,
+              "end_line": 1368
+            },
+            {
+              "name": "BaseArticulation.write_joint_armature_to_sim_index",
+              "line": 1371,
+              "end_line": 1395
+            },
+            {
+              "name": "BaseArticulation.write_joint_armature_to_sim_mask",
+              "line": 1398,
+              "end_line": 1422
+            },
+            {
+              "name": "BaseArticulation.write_joint_friction_coefficient_to_sim_index",
+              "line": 1425,
+              "end_line": 1458
+            },
+            {
+              "name": "BaseArticulation.write_joint_friction_coefficient_to_sim_mask",
+              "line": 1461,
+              "end_line": 1487
+            },
+            {
+              "name": "BaseArticulation.set_masses_index",
+              "line": 1494,
+              "end_line": 1515
+            },
+            {
+              "name": "BaseArticulation.set_masses_mask",
+              "line": 1518,
+              "end_line": 1539
+            },
+            {
+              "name": "BaseArticulation.set_coms_index",
+              "line": 1542,
+              "end_line": 1565
+            },
+            {
+              "name": "BaseArticulation.set_coms_mask",
+              "line": 1568,
+              "end_line": 1590
+            },
+            {
+              "name": "BaseArticulation.set_inertias_index",
+              "line": 1593,
+              "end_line": 1614
+            },
+            {
+              "name": "BaseArticulation.set_inertias_mask",
+              "line": 1617,
+              "end_line": 1638
+            },
+            {
+              "name": "BaseArticulation.set_joint_position_target_index",
+              "line": 1641,
+              "end_line": 1677
+            },
+            {
+              "name": "BaseArticulation._write_deprecated_native_actuator_gain",
+              "line": 1679,
+              "end_line": 1721
+            },
+            {
+              "name": "BaseArticulation.set_joint_position_target_mask",
+              "line": 1724,
+              "end_line": 1759
+            },
+            {
+              "name": "BaseArticulation.set_joint_velocity_target_index",
+              "line": 1762,
+              "end_line": 1798
+            },
+            {
+              "name": "BaseArticulation.set_joint_velocity_target_mask",
+              "line": 1801,
+              "end_line": 1836
+            },
+            {
+              "name": "BaseArticulation.set_joint_effort_target_index",
+              "line": 1839,
+              "end_line": 1875
+            },
+            {
+              "name": "BaseArticulation.set_joint_effort_target_mask",
+              "line": 1878,
+              "end_line": 1913
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_stiffness_index",
+              "line": 1920,
+              "end_line": 1945
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_stiffness_mask",
+              "line": 1948,
+              "end_line": 1974
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_damping_index",
+              "line": 1977,
+              "end_line": 2002
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_damping_mask",
+              "line": 2005,
+              "end_line": 2031
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_limit_stiffness_index",
+              "line": 2034,
+              "end_line": 2059
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_limit_stiffness_mask",
+              "line": 2062,
+              "end_line": 2088
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_position_limit_index",
+              "line": 2091,
+              "end_line": 2116
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_position_limit_mask",
+              "line": 2119,
+              "end_line": 2145
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_rest_length_index",
+              "line": 2148,
+              "end_line": 2173
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_rest_length_mask",
+              "line": 2176,
+              "end_line": 2202
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_position_target_index",
+              "line": 2205,
+              "end_line": 2234
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_position_target_mask",
+              "line": 2237,
+              "end_line": 2264
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_offset_index",
+              "line": 2267,
+              "end_line": 2292
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_offset_mask",
+              "line": 2295,
+              "end_line": 2321
+            },
+            {
+              "name": "BaseArticulation.write_fixed_tendon_properties_to_sim_index",
+              "line": 2324,
+              "end_line": 2343
+            },
+            {
+              "name": "BaseArticulation.write_fixed_tendon_properties_to_sim_mask",
+              "line": 2346,
+              "end_line": 2366
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_stiffness_index",
+              "line": 2369,
+              "end_line": 2394
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_stiffness_mask",
+              "line": 2397,
+              "end_line": 2423
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_damping_index",
+              "line": 2426,
+              "end_line": 2451
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_damping_mask",
+              "line": 2454,
+              "end_line": 2480
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_limit_stiffness_index",
+              "line": 2483,
+              "end_line": 2509
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_limit_stiffness_mask",
+              "line": 2512,
+              "end_line": 2538
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_offset_index",
+              "line": 2541,
+              "end_line": 2566
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_offset_mask",
+              "line": 2569,
+              "end_line": 2595
+            },
+            {
+              "name": "BaseArticulation.write_spatial_tendon_properties_to_sim_index",
+              "line": 2598,
+              "end_line": 2618
+            },
+            {
+              "name": "BaseArticulation.write_spatial_tendon_properties_to_sim_mask",
+              "line": 2621,
+              "end_line": 2641
+            },
+            {
+              "name": "BaseArticulation._initialize_impl",
+              "line": 2648,
+              "end_line": 2649
+            },
+            {
+              "name": "BaseArticulation._create_buffers",
+              "line": 2652,
+              "end_line": 2653
+            },
+            {
+              "name": "BaseArticulation._process_cfg",
+              "line": 2656,
+              "end_line": 2658
+            },
+            {
+              "name": "BaseArticulation._invalidate_initialize_callback",
+              "line": 2665,
+              "end_line": 2667
+            },
+            {
+              "name": "BaseArticulation._joint_user_to_backend_map",
+              "line": 2682,
+              "end_line": 2694
+            },
+            {
+              "name": "BaseArticulation._joint_backend_to_user_map",
+              "line": 2696,
+              "end_line": 2702
+            },
+            {
+              "name": "BaseArticulation._body_user_to_backend_map",
+              "line": 2704,
+              "end_line": 2711
+            },
+            {
+              "name": "BaseArticulation._body_backend_to_user_map",
+              "line": 2713,
+              "end_line": 2719
+            },
+            {
+              "name": "BaseArticulation._ordering_configure_backend_staging",
+              "line": 2721,
+              "end_line": 2740
+            },
+            {
+              "name": "BaseArticulation._get_backend_ordered_joint_buffer",
+              "line": 2742,
+              "end_line": 2801
+            },
+            {
+              "name": "BaseArticulation._process_actuators_cfg",
+              "line": 2804,
+              "end_line": 2806
+            },
+            {
+              "name": "BaseArticulation._process_tendons",
+              "line": 2809,
+              "end_line": 2811
+            },
+            {
+              "name": "BaseArticulation._validate_cfg",
+              "line": 2818,
+              "end_line": 2826
+            },
+            {
+              "name": "BaseArticulation._log_articulation_info",
+              "line": 2829,
+              "end_line": 2835
+            },
+            {
+              "name": "BaseArticulation.write_joint_friction_to_sim",
+              "line": 2841,
+              "end_line": 2858
+            },
+            {
+              "name": "BaseArticulation.write_joint_limits_to_sim",
+              "line": 2860,
+              "end_line": 2883
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_limit",
+              "line": 2885,
+              "end_line": 2906
+            },
+            {
+              "name": "BaseArticulation.write_root_state_to_sim",
+              "line": 2909,
+              "end_line": 2915
+            },
+            {
+              "name": "BaseArticulation.write_root_com_state_to_sim",
+              "line": 2918,
+              "end_line": 2924
+            },
+            {
+              "name": "BaseArticulation.write_root_link_state_to_sim",
+              "line": 2927,
+              "end_line": 2934
+            },
+            {
+              "name": "BaseArticulation.write_root_pose_to_sim",
+              "line": 2936,
+              "end_line": 2948
+            },
+            {
+              "name": "BaseArticulation.write_root_link_pose_to_sim",
+              "line": 2950,
+              "end_line": 2962
+            },
+            {
+              "name": "BaseArticulation.write_root_com_pose_to_sim",
+              "line": 2964,
+              "end_line": 2976
+            },
+            {
+              "name": "BaseArticulation.write_root_velocity_to_sim",
+              "line": 2978,
+              "end_line": 2990
+            },
+            {
+              "name": "BaseArticulation.write_root_com_velocity_to_sim",
+              "line": 2992,
+              "end_line": 3004
+            },
+            {
+              "name": "BaseArticulation.write_root_link_velocity_to_sim",
+              "line": 3006,
+              "end_line": 3018
+            },
+            {
+              "name": "BaseArticulation.write_joint_state_to_sim",
+              "line": 3021,
+              "end_line": 3030
+            },
+            {
+              "name": "BaseArticulation.write_joint_position_to_sim",
+              "line": 3032,
+              "end_line": 3045
+            },
+            {
+              "name": "BaseArticulation.write_joint_velocity_to_sim",
+              "line": 3047,
+              "end_line": 3060
+            },
+            {
+              "name": "BaseArticulation.write_joint_stiffness_to_sim",
+              "line": 3062,
+              "end_line": 3075
+            },
+            {
+              "name": "BaseArticulation.write_joint_damping_to_sim",
+              "line": 3077,
+              "end_line": 3090
+            },
+            {
+              "name": "BaseArticulation.write_joint_position_limit_to_sim",
+              "line": 3092,
+              "end_line": 3108
+            },
+            {
+              "name": "BaseArticulation.write_joint_velocity_limit_to_sim",
+              "line": 3110,
+              "end_line": 3123
+            },
+            {
+              "name": "BaseArticulation.write_joint_effort_limit_to_sim",
+              "line": 3125,
+              "end_line": 3138
+            },
+            {
+              "name": "BaseArticulation.write_joint_armature_to_sim",
+              "line": 3140,
+              "end_line": 3153
+            },
+            {
+              "name": "BaseArticulation.write_joint_friction_coefficient_to_sim",
+              "line": 3155,
+              "end_line": 3170
+            },
+            {
+              "name": "BaseArticulation.set_masses",
+              "line": 3172,
+              "end_line": 3184
+            },
+            {
+              "name": "BaseArticulation.set_coms",
+              "line": 3186,
+              "end_line": 3198
+            },
+            {
+              "name": "BaseArticulation.set_inertias",
+              "line": 3200,
+              "end_line": 3213
+            },
+            {
+              "name": "BaseArticulation.set_external_force_and_torque",
+              "line": 3215,
+              "end_line": 3236
+            },
+            {
+              "name": "BaseArticulation.set_joint_position_target",
+              "line": 3238,
+              "end_line": 3255
+            },
+            {
+              "name": "BaseArticulation.set_joint_velocity_target",
+              "line": 3257,
+              "end_line": 3274
+            },
+            {
+              "name": "BaseArticulation.set_joint_effort_target",
+              "line": 3276,
+              "end_line": 3293
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_stiffness",
+              "line": 3295,
+              "end_line": 3308
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_damping",
+              "line": 3310,
+              "end_line": 3323
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_limit_stiffness",
+              "line": 3325,
+              "end_line": 3340
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_position_limit",
+              "line": 3342,
+              "end_line": 3355
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_rest_length",
+              "line": 3357,
+              "end_line": 3372
+            },
+            {
+              "name": "BaseArticulation.set_fixed_tendon_offset",
+              "line": 3374,
+              "end_line": 3387
+            },
+            {
+              "name": "BaseArticulation.write_fixed_tendon_properties_to_sim",
+              "line": 3389,
+              "end_line": 3402
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_stiffness",
+              "line": 3404,
+              "end_line": 3419
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_damping",
+              "line": 3421,
+              "end_line": 3434
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_limit_stiffness",
+              "line": 3436,
+              "end_line": 3451
+            },
+            {
+              "name": "BaseArticulation.set_spatial_tendon_offset",
+              "line": 3453,
+              "end_line": 3466
+            },
+            {
+              "name": "BaseArticulation.write_spatial_tendon_properties_to_sim",
+              "line": 3468,
+              "end_line": 3481
+            }
+          ]
+        }
+      }
+    }
+  },
+  "dexgraspnet_allegro_branch_commit": "6a48bc4cc612a471eb9c82183c6f888b08eee8e6"
+}

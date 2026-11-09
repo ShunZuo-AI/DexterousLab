@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=66.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dexterous-lab"
+version = "0.1.0"
+description = "Configuration-driven dexterous manipulation research with IsaacLab-Arena"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[project.scripts]
+dexlab = "dexterous_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

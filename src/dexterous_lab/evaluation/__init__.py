@@ -1,0 +1,1 @@
+"""Measured grasp outcome evaluation."""

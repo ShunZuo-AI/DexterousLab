@@ -1,0 +1,340 @@
+{
+  "generator": "scripts/build_reference_style_cover.py",
+  "cover": "docs/media/dexterouslab-reference-style.png",
+  "size": [
+    3000,
+    1800
+  ],
+  "style_reference": "901254c4-a89b-47dc-847e-b23e71e66e24.png",
+  "reference_sha256": "982ccd15c1e2f45e360594b5f88eaf53cfd36d13527d8a3fcdb5856a336c2d2c",
+  "source_manifest": "docs/media/official-products/sources.json",
+  "design": "Central large official Tesollo product, 17 supporting official product images, pale-blue glass ribbons, white-blue studio atmosphere and italic navy wordmark.",
+  "placements": [
+    {
+      "product_id": "shadow-02",
+      "center_px": [
+        385,
+        380
+      ],
+      "max_size": [
+        205,
+        340
+      ],
+      "angle_degrees": -22,
+      "render_bounds": [
+        268,
+        201,
+        502,
+        559
+      ]
+    },
+    {
+      "product_id": "allegro-01",
+      "center_px": [
+        190,
+        765
+      ],
+      "max_size": [
+        240,
+        280
+      ],
+      "angle_degrees": -16,
+      "render_bounds": [
+        50,
+        601,
+        330,
+        929
+      ]
+    },
+    {
+      "product_id": "unitree-03",
+      "center_px": [
+        695,
+        495
+      ],
+      "max_size": [
+        230,
+        280
+      ],
+      "angle_degrees": 18,
+      "render_bounds": [
+        561,
+        332,
+        829,
+        658
+      ]
+    },
+    {
+      "product_id": "barrett-18",
+      "center_px": [
+        840,
+        850
+      ],
+      "max_size": [
+        255,
+        230
+      ],
+      "angle_degrees": -22,
+      "render_bounds": [
+        690,
+        700,
+        989,
+        1000
+      ]
+    },
+    {
+      "product_id": "robotis-12",
+      "center_px": [
+        440,
+        1130
+      ],
+      "max_size": [
+        225,
+        275
+      ],
+      "angle_degrees": -20,
+      "render_bounds": [
+        305,
+        968,
+        574,
+        1291
+      ]
+    },
+    {
+      "product_id": "oymotion-15",
+      "center_px": [
+        160,
+        1430
+      ],
+      "max_size": [
+        205,
+        270
+      ],
+      "angle_degrees": -12,
+      "render_bounds": [
+        54,
+        1281,
+        266,
+        1579
+      ]
+    },
+    {
+      "product_id": "brainco-08",
+      "center_px": [
+        790,
+        1460
+      ],
+      "max_size": [
+        235,
+        300
+      ],
+      "angle_degrees": -22,
+      "render_bounds": [
+        625,
+        1277,
+        954,
+        1643
+      ]
+    },
+    {
+      "product_id": "unitree-04",
+      "center_px": [
+        1030,
+        565
+      ],
+      "max_size": [
+        175,
+        210
+      ],
+      "angle_degrees": 16,
+      "render_bounds": [
+        935,
+        445,
+        1125,
+        685
+      ]
+    },
+    {
+      "product_id": "orca-13",
+      "center_px": [
+        2690,
+        385
+      ],
+      "max_size": [
+        150,
+        260
+      ],
+      "angle_degrees": 20,
+      "render_bounds": [
+        2605,
+        248,
+        2775,
+        522
+      ]
+    },
+    {
+      "product_id": "sharpa-17",
+      "center_px": [
+        2860,
+        755
+      ],
+      "max_size": [
+        215,
+        275
+      ],
+      "angle_degrees": 22,
+      "render_bounds": [
+        2709,
+        587,
+        3010,
+        922
+      ]
+    },
+    {
+      "product_id": "wuji-06",
+      "center_px": [
+        2365,
+        435
+      ],
+      "max_size": [
+        230,
+        300
+      ],
+      "angle_degrees": 22,
+      "render_bounds": [
+        2220,
+        260,
+        2510,
+        610
+      ]
+    },
+    {
+      "product_id": "wuji-07",
+      "center_px": [
+        2115,
+        1020
+      ],
+      "max_size": [
+        255,
+        300
+      ],
+      "angle_degrees": 28,
+      "render_bounds": [
+        1954,
+        870,
+        2275,
+        1170
+      ]
+    },
+    {
+      "product_id": "robotera-09",
+      "center_px": [
+        2720,
+        1130
+      ],
+      "max_size": [
+        235,
+        295
+      ],
+      "angle_degrees": 18,
+      "render_bounds": [
+        2572,
+        983,
+        2867,
+        1276
+      ]
+    },
+    {
+      "product_id": "linkerbot-16",
+      "center_px": [
+        2450,
+        1460
+      ],
+      "max_size": [
+        225,
+        300
+      ],
+      "angle_degrees": 20,
+      "render_bounds": [
+        2317,
+        1289,
+        2582,
+        1631
+      ]
+    },
+    {
+      "product_id": "schunk-11",
+      "center_px": [
+        2060,
+        1520
+      ],
+      "max_size": [
+        170,
+        275
+      ],
+      "angle_degrees": 18,
+      "render_bounds": [
+        1944,
+        1364,
+        2176,
+        1675
+      ]
+    },
+    {
+      "product_id": "dexrobot-14",
+      "center_px": [
+        2860,
+        1490
+      ],
+      "max_size": [
+        200,
+        225
+      ],
+      "angle_degrees": 18,
+      "render_bounds": [
+        2740,
+        1382,
+        2980,
+        1597
+      ]
+    },
+    {
+      "product_id": "unitree-05",
+      "center_px": [
+        2045,
+        515
+      ],
+      "max_size": [
+        220,
+        245
+      ],
+      "angle_degrees": -18,
+      "render_bounds": [
+        1941,
+        376,
+        2148,
+        653
+      ]
+    },
+    {
+      "product_id": "tesollo-10",
+      "center_px": [
+        1500,
+        1150
+      ],
+      "max_size": [
+        890,
+        1170
+      ],
+      "angle_degrees": -24,
+      "render_bounds": [
+        964,
+        483,
+        2035,
+        1817
+      ]
+    }
+  ],
+  "hero_product": "tesollo-10",
+  "notice": "User reference informs composition only; no reference brand identities or unsupported capability claims are copied. Actual source RGB preserved. Decorative ribbons/cubes are artwork; translucent panels contain real failed-trial close-phase screenshots."
+}

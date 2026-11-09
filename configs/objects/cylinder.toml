@@ -1,0 +1,5 @@
+kind = "cylinder"
+registry_name = "dexlab_cylinder"
+size = [0.05, 0.05, 0.08]
+position_xyz = [-0.55, 0.0, 0.3]
+asset_version = "procedural-cylinder-v1"

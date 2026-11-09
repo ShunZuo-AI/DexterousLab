@@ -1,0 +1,13 @@
+{
+  "cover_dimensions": [
+    2800,
+    1600
+  ],
+  "model_count": 22,
+  "manufacturers": 17,
+  "source_hashes": "passed",
+  "image_decode": "passed",
+  "script_syntax": "passed",
+  "local_links_checked": 32,
+  "scope": "README image validation; no new simulation or grasp result."
+}

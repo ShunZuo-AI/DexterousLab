@@ -1,0 +1,14 @@
+{
+  "cover_dimensions": [
+    3000,
+    1800
+  ],
+  "official_product_images": 18,
+  "unique_product_ids": "passed",
+  "source_image_hashes": "passed",
+  "reference_image_hash": "passed",
+  "image_decode": "passed",
+  "generator_syntax": "passed",
+  "local_links_checked": 40,
+  "scope": "README visual validation only; no simulator or physics changes."
+}

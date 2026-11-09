@@ -1,0 +1,116 @@
+Run: /root/gpufree-data/DexterousLab/assets/objects/custom/sphere/runs/20261106T095348Z-scene-9bc1c816
+{
+  "passed": true,
+  "return_code": 0,
+  "error": null,
+  "command": [
+    "/root/gpufree-data/IsaacLab-Arena/.venv/bin/python",
+    "-m",
+    "dexterous_lab.integrations.arena.worker",
+    "/root/gpufree-data/DexterousLab/assets/objects/custom/sphere/runs/20261106T095348Z-scene-9bc1c816/request.json"
+  ],
+  "simulation": {
+    "environment": "dexlab_tabletop",
+    "steps_completed": 100,
+    "num_envs": 1,
+    "device": "cuda:0",
+    "physics_class": "PhysxCfg",
+    "simulated_seconds": 3.3333333333333335,
+    "action_dim": 23,
+    "physics_steps_completed": 400,
+    "research_state_checks": 101,
+    "scene_validation": {
+      "robot_loaded": true,
+      "object_loaded": true,
+      "dynamic_rigid_body": true,
+      "collision_paths": [
+        "/World/envs/env_0/Object/geometry/mesh"
+      ],
+      "backend_masses_kg": [
+        0.10000000149011612
+      ],
+      "backend_materials_static_dynamic_restitution": [
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ]
+      ],
+      "backend_inertias_kg_m2": [
+        [
+          2.499999936844688e-05,
+          0.0,
+          0.0,
+          0.0,
+          2.499999936844688e-05,
+          0.0,
+          0.0,
+          0.0,
+          2.499999936844688e-05
+        ]
+      ],
+      "spawned_local_extents_m": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "object_kind": "sphere",
+      "asset_version": "procedural-sphere-v1",
+      "contact_filter_paths": [
+        "/World/envs/env_[^/]+/Robot/ee_link/index_link_3",
+        "/World/envs/env_[^/]+/Robot/ee_link/middle_link_3",
+        "/World/envs/env_[^/]+/Robot/ee_link/ring_link_3",
+        "/World/envs/env_[^/]+/Robot/ee_link/thumb_link_3"
+      ],
+      "mesh": {
+        "path": "object_mesh.obj",
+        "frame": "O",
+        "length_unit": "m",
+        "vertices": 642,
+        "faces": 1280,
+        "extents_m": [
+          0.05,
+          0.05,
+          0.05
+        ],
+        "curved_surface_tessellated": true
+      }
+    },
+    "terminated_count": 0,
+    "truncated_count": 0,
+    "finite_observations": true,
+    "grasp_success": null,
+    "policy": "zero_action",
+    "python_prefix": "/root/gpufree-data/IsaacLab-Arena/.venv",
+    "versions": {
+      "isaacsim": "6.2.0.0",
+      "isaaclab": "28.0.0",
+      "isaaclab_arena": "0.3.0",
+      "torch": "2.11.0+cu130"
+    },
+    "object_spawn": {
+      "class": "SphereCfg",
+      "size": null,
+      "radius": 0.025,
+      "height": null,
+      "scale": null,
+      "initial_position_xyz": [
+        -0.55,
+        0.0,
+        0.285
+      ],
+      "initial_rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "grasp_success": null,
+  "scope": "zero-action environment smoke test; no grasp validation"
+}
+{
+  "status": "passed",
+  "run_directory": "/root/gpufree-data/DexterousLab/assets/objects/custom/sphere/runs/20261106T095348Z-scene-9bc1c816"
+}

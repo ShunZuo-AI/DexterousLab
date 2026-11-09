@@ -1,0 +1,20 @@
+[
+  {
+    "asset_id": "wonik/allegro/isaaclab_standalone",
+    "passed": true,
+    "files_checked": 2,
+    "failures": []
+  },
+  {
+    "asset_id": "shadow_robot/dexterous_hand/right_isaaclab",
+    "passed": true,
+    "files_checked": 2,
+    "failures": []
+  },
+  {
+    "asset_id": "custom/cube",
+    "passed": true,
+    "files_checked": 2,
+    "failures": []
+  }
+]

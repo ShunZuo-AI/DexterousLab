@@ -1,0 +1,28 @@
+{
+  "allegro": {
+    "grasp_success": false,
+    "max_lift_m": 0.0020741820335388184,
+    "max_tip_force_n": 28.509990692138672,
+    "peak_active_tip_count": 3,
+    "collision_penetration": {
+      "min_tip_object_separation_m": -0.00011601252481341362,
+      "contact_api_error": null,
+      "max_tip_object_penetration_m": 0.00011601252481341362,
+      "min_cube_bottom_to_table_top_m": -2.4187904807404514e-06,
+      "scope": "Detailed PhysX contacts for configured fingertips only plus analytic cube/table vertical gap; all-link self-collision is not audited"
+    }
+  },
+  "shadow": {
+    "grasp_success": false,
+    "max_lift_m": 0.0,
+    "max_tip_force_n": 0.5153658986091614,
+    "peak_active_tip_count": 3,
+    "collision_penetration": {
+      "min_tip_object_separation_m": -1.5370547771453857e-05,
+      "contact_api_error": null,
+      "max_tip_object_penetration_m": 1.5370547771453857e-05,
+      "min_cube_bottom_to_table_top_m": -5.7988602972791625e-06,
+      "scope": "Detailed PhysX contacts for configured fingertips only plus analytic cube/table vertical gap; all-link self-collision is not audited"
+    }
+  }
+}

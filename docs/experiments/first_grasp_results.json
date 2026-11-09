@@ -1,0 +1,545 @@
+{
+  "final_comparison": {
+    "allegro": {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T122416Z-first-grasp-allegro-b8586ceb",
+      "result": {
+        "simulation_completed": true,
+        "grasp_success": false,
+        "hand": "allegro",
+        "steps_completed": 480,
+        "failure_reason": "no_lift",
+        "max_lift_m": 0.0020741820335388184,
+        "max_tip_force_n": 28.509990692138672,
+        "peak_active_tip_count": 3,
+        "final_hold_steps": 0,
+        "max_hold_steps": 0,
+        "phases": [
+          {
+            "phase": "settle",
+            "first_step": 1,
+            "last_step": 15,
+            "end_metrics": {
+              "step": 15,
+              "phase": "settle",
+              "object_lift_m": -0.005000114440917969,
+              "object_speed_m_s": 0.00010844812641153112,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.4413905143737793,
+                -0.11264006048440933,
+                0.9743693470954895
+              ],
+              "palm_actual_xyz": [
+                -0.4413904547691345,
+                -0.11263987421989441,
+                0.9743692278862
+              ],
+              "cube_bottom_to_table_top_m": -3.73233921491245e-07
+            }
+          },
+          {
+            "phase": "approach",
+            "first_step": 16,
+            "last_step": 165,
+            "end_metrics": {
+              "step": 165,
+              "phase": "approach",
+              "object_lift_m": -0.005000114440917969,
+              "object_speed_m_s": 0.00010844655480468646,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5132304473782996,
+                -0.04808326112068523,
+                0.47
+              ],
+              "palm_actual_xyz": [
+                -0.5131694078445435,
+                -0.0525350384414196,
+                0.5002809762954712
+              ],
+              "cube_bottom_to_table_top_m": -3.73233921491245e-07
+            }
+          },
+          {
+            "phase": "descend",
+            "first_step": 166,
+            "last_step": 255,
+            "end_metrics": {
+              "step": 255,
+              "phase": "descend",
+              "object_lift_m": -0.005000114440917969,
+              "object_speed_m_s": 0.0001084469331544824,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5132304473782996,
+                -0.04808326112068523,
+                0.35
+              ],
+              "palm_actual_xyz": [
+                -0.531288743019104,
+                -0.056526731699705124,
+                0.4110216200351715
+              ],
+              "cube_bottom_to_table_top_m": -3.73233921491245e-07
+            }
+          },
+          {
+            "phase": "close",
+            "first_step": 256,
+            "last_step": 345,
+            "end_metrics": {
+              "step": 345,
+              "phase": "close",
+              "object_lift_m": -0.004656553268432617,
+              "object_speed_m_s": 0.0585121214389801,
+              "max_tip_normal_force_n": 1.5373218059539795,
+              "active_tip_count": 2,
+              "palm_target_xyz": [
+                -0.5132304473782996,
+                -0.04808326112068523,
+                0.35
+              ],
+              "palm_actual_xyz": [
+                -0.5167611837387085,
+                -0.046299323439598083,
+                0.35447052121162415
+              ],
+              "min_tip_object_separation_m": -6.472226232290268e-06,
+              "cube_bottom_to_table_top_m": -6.309562270434554e-07
+            }
+          },
+          {
+            "phase": "lift",
+            "first_step": 346,
+            "last_step": 435,
+            "end_metrics": {
+              "step": 435,
+              "phase": "lift",
+              "object_lift_m": -0.005000114440917969,
+              "object_speed_m_s": 0.00011743680079234764,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5132304473782996,
+                -0.04808326112068523,
+                0.44999999999999996
+              ],
+              "palm_actual_xyz": [
+                -0.5119307041168213,
+                -0.0475328154861927,
+                0.44033753871917725
+              ],
+              "cube_bottom_to_table_top_m": -3.490332059485901e-07
+            }
+          },
+          {
+            "phase": "hold",
+            "first_step": 436,
+            "last_step": 480,
+            "end_metrics": {
+              "step": 480,
+              "phase": "hold",
+              "object_lift_m": -0.005000114440917969,
+              "object_speed_m_s": 0.00011743761569960043,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5132304473782996,
+                -0.04808326112068523,
+                0.44999999999999996
+              ],
+              "palm_actual_xyz": [
+                -0.513556957244873,
+                -0.048355359584093094,
+                0.45096656680107117
+              ],
+              "cube_bottom_to_table_top_m": -3.490332059485901e-07
+            }
+          }
+        ],
+        "actual_joint_count": 23,
+        "action_dim": 23,
+        "robot_usd_path": "/root/gpufree-data/DexterousLab/assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/Robots/KukaAllegro/kuka.usd",
+        "object_asset": "dexterous_lab.assets.primitives:Cube",
+        "collision_penetration": {
+          "min_tip_object_separation_m": -0.00011601252481341362,
+          "contact_api_error": null,
+          "max_tip_object_penetration_m": 0.00011601252481341362,
+          "min_cube_bottom_to_table_top_m": -2.4187904807404514e-06,
+          "scope": "Detailed PhysX contacts for configured fingertips only plus analytic cube/table vertical gap; all-link self-collision is not audited"
+        },
+        "shadow_base_control": null
+      },
+      "physics_steps": 1920,
+      "trajectory_verified": true,
+      "frames_verified": 481,
+      "images": {
+        "settle": "/root/gpufree-data/DexterousLab/outputs/20261106T122416Z-first-grasp-allegro-b8586ceb/settle.png",
+        "approach": "/root/gpufree-data/DexterousLab/outputs/20261106T122416Z-first-grasp-allegro-b8586ceb/approach.png",
+        "descend": "/root/gpufree-data/DexterousLab/outputs/20261106T122416Z-first-grasp-allegro-b8586ceb/descend.png",
+        "close": "/root/gpufree-data/DexterousLab/outputs/20261106T122416Z-first-grasp-allegro-b8586ceb/close.png",
+        "lift": "/root/gpufree-data/DexterousLab/outputs/20261106T122416Z-first-grasp-allegro-b8586ceb/lift.png",
+        "hold": "/root/gpufree-data/DexterousLab/outputs/20261106T122416Z-first-grasp-allegro-b8586ceb/hold.png"
+      },
+      "phase_storyboard": "/root/gpufree-data/DexterousLab/outputs/20261106T122416Z-first-grasp-allegro-b8586ceb/phase_storyboard.gif",
+      "request": "/root/gpufree-data/DexterousLab/outputs/20261106T122416Z-first-grasp-allegro-b8586ceb/request.json",
+      "script_sha256": "11a88ed4d2d45cabed9f66e6966f324b46b08f00a69d601d87170487696a3755",
+      "loaded_root_usd": {
+        "path": "/root/gpufree-data/DexterousLab/assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/Robots/KukaAllegro/kuka.usd",
+        "exists": true,
+        "sha256": "909cdfdde25e3b69ba04d88dc3d10228455518adb02fba75f4a4c3a3869ab53b",
+        "scope": "root USD only, not the complete dependency tree"
+      },
+      "final_tracking": {
+        "direct_joint_error_rad": {
+          "index_joint_1": 0.006563687324523948,
+          "index_joint_2": 0.007339954376220703,
+          "index_joint_3": 0.0011533021926879439,
+          "middle_joint_1": 0.044909322261810325,
+          "middle_joint_2": 0.053664326667785645,
+          "middle_joint_3": 0.028684365749359175,
+          "ring_joint_1": 0.01279195547103884,
+          "ring_joint_2": 0.024835586547851562,
+          "ring_joint_3": 0.01287688016891475,
+          "thumb_joint_0": 0.00979139804840079,
+          "thumb_joint_1": 0.04800350666046138,
+          "thumb_joint_2": 0.006735754013061479,
+          "thumb_joint_3": 0.08080269098281856
+        },
+        "tendon_sum_error_rad": {},
+        "max_direct_joint_error_rad": 0.08080269098281856,
+        "max_tendon_sum_error_rad": null,
+        "note": "Shadow J1/J2 pairs are tendon-driven; do not claim their individual angles are independently controlled"
+      }
+    },
+    "shadow": {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T122645Z-first-grasp-shadow-863d5980",
+      "result": {
+        "simulation_completed": true,
+        "grasp_success": false,
+        "hand": "shadow",
+        "steps_completed": 480,
+        "failure_reason": "no_lift",
+        "max_lift_m": 0.0,
+        "max_tip_force_n": 0.5153658986091614,
+        "peak_active_tip_count": 3,
+        "final_hold_steps": 0,
+        "max_hold_steps": 0,
+        "phases": [
+          {
+            "phase": "settle",
+            "first_step": 1,
+            "last_step": 15,
+            "end_metrics": {
+              "step": 15,
+              "phase": "settle",
+              "object_lift_m": -0.005000263452529907,
+              "object_speed_m_s": 0.0002208696532761678,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.550000011920929,
+                -0.2600000202655792,
+                0.7470099925994873
+              ],
+              "palm_actual_xyz": [
+                -0.550000011920929,
+                -0.2600000202655792,
+                0.7470099925994873
+              ],
+              "cube_bottom_to_table_top_m": -1.0622398449178228e-06
+            }
+          },
+          {
+            "phase": "approach",
+            "first_step": 16,
+            "last_step": 165,
+            "end_metrics": {
+              "step": 165,
+              "phase": "approach",
+              "object_lift_m": -0.005000263452529907,
+              "object_speed_m_s": 0.00022134900791570544,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5700000000000001,
+                0.08999999999999997,
+                0.495
+              ],
+              "palm_actual_xyz": [
+                -0.5699999928474426,
+                0.08999999612569809,
+                0.4950000047683716
+              ],
+              "cube_bottom_to_table_top_m": -1.0498089006993894e-06
+            }
+          },
+          {
+            "phase": "descend",
+            "first_step": 166,
+            "last_step": 255,
+            "end_metrics": {
+              "step": 255,
+              "phase": "descend",
+              "object_lift_m": -0.005000263452529907,
+              "object_speed_m_s": 0.00022125648683868349,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5700000000000001,
+                0.09,
+                0.375
+              ],
+              "palm_actual_xyz": [
+                -0.5699999928474426,
+                0.08999999612569809,
+                0.3750000298023224
+              ],
+              "cube_bottom_to_table_top_m": -1.0487169805895036e-06
+            }
+          },
+          {
+            "phase": "close",
+            "first_step": 256,
+            "last_step": 345,
+            "end_metrics": {
+              "step": 345,
+              "phase": "close",
+              "object_lift_m": -0.001605987548828125,
+              "object_speed_m_s": 0.027126966044306755,
+              "max_tip_normal_force_n": 0.32971614599227905,
+              "active_tip_count": 3,
+              "palm_target_xyz": [
+                -0.5700000000000001,
+                0.09,
+                0.375
+              ],
+              "palm_actual_xyz": [
+                -0.5700619220733643,
+                0.09000009298324585,
+                0.3750000298023224
+              ],
+              "min_tip_object_separation_m": -1.2608245015144348e-05,
+              "cube_bottom_to_table_top_m": -4.926332319188376e-06
+            }
+          },
+          {
+            "phase": "lift",
+            "first_step": 346,
+            "last_step": 435,
+            "end_metrics": {
+              "step": 435,
+              "phase": "lift",
+              "object_lift_m": -0.005000263452529907,
+              "object_speed_m_s": 0.00022335592075251043,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5700000000000001,
+                0.09,
+                0.475
+              ],
+              "palm_actual_xyz": [
+                -0.5699864029884338,
+                0.09000002592802048,
+                0.4750000238418579
+              ],
+              "cube_bottom_to_table_top_m": -1.059529584679364e-06
+            }
+          },
+          {
+            "phase": "hold",
+            "first_step": 436,
+            "last_step": 480,
+            "end_metrics": {
+              "step": 480,
+              "phase": "hold",
+              "object_lift_m": -0.005000263452529907,
+              "object_speed_m_s": 0.00022375561820808798,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5700000000000001,
+                0.09,
+                0.475
+              ],
+              "palm_actual_xyz": [
+                -0.5699862241744995,
+                0.09000003337860107,
+                0.4750000238418579
+              ],
+              "cube_bottom_to_table_top_m": -1.0606548992431186e-06
+            }
+          }
+        ],
+        "actual_joint_count": 24,
+        "action_dim": 20,
+        "robot_usd_path": "/root/gpufree-data/DexterousLab/assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/Robots_Multiphysics/ShadowRobot/ShadowHandMultiPhysics_v0/right_hand/right_hand.usda",
+        "object_asset": "dexterous_lab.assets.primitives:Cube",
+        "collision_penetration": {
+          "min_tip_object_separation_m": -1.5370547771453857e-05,
+          "contact_api_error": null,
+          "max_tip_object_penetration_m": 1.5370547771453857e-05,
+          "min_cube_bottom_to_table_top_m": -5.7988602972791625e-06,
+          "scope": "Detailed PhysX contacts for configured fingertips only plus analytic cube/table vertical gap; all-link self-collision is not audited"
+        },
+        "shadow_base_control": "prescribed kinematic support trajectory"
+      },
+      "physics_steps": 1920,
+      "trajectory_verified": true,
+      "frames_verified": 481,
+      "images": {
+        "settle": "/root/gpufree-data/DexterousLab/outputs/20261106T122645Z-first-grasp-shadow-863d5980/settle.png",
+        "approach": "/root/gpufree-data/DexterousLab/outputs/20261106T122645Z-first-grasp-shadow-863d5980/approach.png",
+        "descend": "/root/gpufree-data/DexterousLab/outputs/20261106T122645Z-first-grasp-shadow-863d5980/descend.png",
+        "close": "/root/gpufree-data/DexterousLab/outputs/20261106T122645Z-first-grasp-shadow-863d5980/close.png",
+        "lift": "/root/gpufree-data/DexterousLab/outputs/20261106T122645Z-first-grasp-shadow-863d5980/lift.png",
+        "hold": "/root/gpufree-data/DexterousLab/outputs/20261106T122645Z-first-grasp-shadow-863d5980/hold.png"
+      },
+      "phase_storyboard": "/root/gpufree-data/DexterousLab/outputs/20261106T122645Z-first-grasp-shadow-863d5980/phase_storyboard.gif",
+      "request": "/root/gpufree-data/DexterousLab/outputs/20261106T122645Z-first-grasp-shadow-863d5980/request.json",
+      "script_sha256": "0420ad349c17bb0b0701016d0cdd3383bfc10debbe78022f127fa1c7e774a0d9",
+      "loaded_root_usd": {
+        "path": "/root/gpufree-data/DexterousLab/assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/Robots_Multiphysics/ShadowRobot/ShadowHandMultiPhysics_v0/right_hand/right_hand.usda",
+        "exists": true,
+        "sha256": "6fef9e84ce3dd5b8c2f0e7ed1d2a9d4a1e364a838379fd1c65afedc3a72a6680",
+        "scope": "root USD only, not the complete dependency tree"
+      },
+      "final_tracking": {
+        "direct_joint_error_rad": {
+          "rh_FFJ3": 0.015410745143890403,
+          "rh_MFJ3": 0.019451773166656472,
+          "rh_RFJ3": 0.01974544525146482,
+          "rh_LFJ3": 0.020307636260986306,
+          "rh_THJ5": 0.12658491730690002,
+          "rh_THJ4": 0.07124222517013545,
+          "rh_THJ2": 0.05537131428718567,
+          "rh_THJ1": 0.02651146650314329
+        },
+        "tendon_sum_error_rad": {
+          "rh_FFJ0": 0.0350028634071351,
+          "rh_MFJ0": 0.03684414029121408,
+          "rh_RFJ0": 0.03697291612625131,
+          "rh_LFJ0": 0.03693488836288461
+        },
+        "max_direct_joint_error_rad": 0.12658491730690002,
+        "max_tendon_sum_error_rad": 0.03697291612625131,
+        "note": "Shadow J1/J2 pairs are tendon-driven; do not claim their individual angles are independently controlled"
+      }
+    }
+  },
+  "all_runs_including_debug": [
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T121325Z-first-grasp-allegro-6b35533c",
+      "hand": "allegro",
+      "probe": true,
+      "simulation_completed": true,
+      "grasp_success": null,
+      "steps": 5,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T121411Z-first-grasp-shadow-4dada494",
+      "hand": "shadow",
+      "probe": true,
+      "simulation_completed": true,
+      "grasp_success": null,
+      "steps": 5,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T121412Z-first-grasp-allegro-b657f5eb",
+      "hand": "allegro",
+      "probe": false,
+      "simulation_completed": true,
+      "grasp_success": false,
+      "steps": 240,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T121541Z-first-grasp-allegro-fc4b6c7e",
+      "hand": "allegro",
+      "probe": false,
+      "simulation_completed": true,
+      "grasp_success": false,
+      "steps": 240,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T121744Z-first-grasp-allegro-25fe8564",
+      "hand": "allegro",
+      "probe": false,
+      "simulation_completed": true,
+      "grasp_success": false,
+      "steps": 240,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T121906Z-first-grasp-allegro-a1d626dd",
+      "hand": "allegro",
+      "probe": false,
+      "simulation_completed": true,
+      "grasp_success": false,
+      "steps": 240,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T121939Z-first-grasp-shadow-677707d2",
+      "hand": "shadow",
+      "probe": false,
+      "simulation_completed": true,
+      "grasp_success": false,
+      "steps": 240,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T122025Z-first-grasp-allegro-70eba510",
+      "hand": "allegro",
+      "probe": false,
+      "simulation_completed": true,
+      "grasp_success": false,
+      "steps": 480,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T122154Z-first-grasp-shadow-09be9c9e",
+      "hand": "shadow",
+      "probe": false,
+      "simulation_completed": true,
+      "grasp_success": false,
+      "steps": 480,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T122317Z-first-grasp-allegro-33991111",
+      "hand": "allegro",
+      "probe": false,
+      "simulation_completed": true,
+      "grasp_success": false,
+      "steps": 480,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T122416Z-first-grasp-allegro-b8586ceb",
+      "hand": "allegro",
+      "probe": false,
+      "simulation_completed": true,
+      "grasp_success": false,
+      "steps": 480,
+      "error": null
+    },
+    {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T122645Z-first-grasp-shadow-863d5980",
+      "hand": "shadow",
+      "probe": false,
+      "simulation_completed": true,
+      "grasp_success": false,
+      "steps": 480,
+      "error": null
+    }
+  ],
+  "scope": "One final trial per hand with prior debug attempts retained; do not infer population success rates"
+}

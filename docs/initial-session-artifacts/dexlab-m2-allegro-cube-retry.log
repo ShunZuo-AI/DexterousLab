@@ -1,0 +1,50 @@
+Run: /root/gpufree-data/DexterousLab/outputs/m2/20261106T061329Z-scene-c5bb292f
+{
+  "passed": false,
+  "return_code": 1,
+  "error": null,
+  "command": [
+    "/root/gpufree-data/IsaacLab-Arena/.venv/bin/python",
+    "-m",
+    "dexterous_lab.integrations.arena.worker",
+    "/root/gpufree-data/DexterousLab/outputs/m2/20261106T061329Z-scene-c5bb292f/request.json"
+  ],
+  "simulation": null,
+  "grasp_success": null,
+  "scope": "zero-action environment smoke test; no grasp validation"
+}
+    env = env_creator(**env_spec_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/IsaacLab-Arena/isaaclab_arena/environments/arena_env_builder.py", line 654, in create_env
+    return env_type(**(env_kwargs | kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/IsaacLab-Arena/isaaclab_arena/environments/isaaclab_arena_manager_based_env.py", line 69, in __init__
+    super().__init__(cfg=cfg, render_mode=render_mode, **kwargs)
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab/isaaclab/envs/manager_based_rl_env.py", line 79, in __init__
+    super().__init__(cfg=cfg)
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab/isaaclab/envs/manager_based_env.py", line 125, in __init__
+    self._init_sim()
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab/isaaclab/envs/manager_based_env.py", line 197, in _init_sim
+    self.sim.reset()
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab/isaaclab/sim/simulation_context.py", line 711, in reset
+    self.physics_manager.reset(soft)
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab_physx/isaaclab_physx/physics/physx_manager.py", line 512, in reset
+    cls.raise_callback_exception_if_any()
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab_physx/isaaclab_physx/physics/physx_manager.py", line 705, in raise_callback_exception_if_any
+    raise exc
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab/isaaclab/physics/physics_manager.py", line 630, in safe_callback_invoke
+    fn(*args)
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab/isaaclab/sensors/sensor_base.py", line 335, in _invoke
+    getattr(obj_ref, callback_name)(event)
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab/isaaclab/sensors/sensor_base.py", line 374, in _initialize_callback
+    self._initialize_impl()
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab_physx/isaaclab_physx/sensors/contact_sensor/contact_sensor.py", line 436, in _initialize_impl
+    self._create_buffers()
+  File "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab_physx/isaaclab_physx/sensors/contact_sensor/contact_sensor.py", line 443, in _create_buffers
+    self._num_filter_shapes = self.contact_view.filter_count if self.cfg.filter_prim_paths_expr else 0
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/IsaacLab-Arena/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.4.4+110.4.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py", line 4884, in filter_count
+    return self._backend.filter_count
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'filter_count'
+Killing the process without cleaning up

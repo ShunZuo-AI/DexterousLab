@@ -1,0 +1,9 @@
+kind = "cube"
+registry_name = "dexlab_cube"
+size = [0.05, 0.05, 0.05]
+position_xyz = [-0.55, 0.0, 0.285]
+rotation_xyzw = [0.0, 0.0, 0.0, 1.0]
+scale = [1.0, 1.0, 1.0]
+mass = 0.1
+friction = 0.7
+asset_version = "procedural-cube-v1"

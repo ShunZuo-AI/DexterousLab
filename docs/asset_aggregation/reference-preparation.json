@@ -1,0 +1,157 @@
+[
+  {
+    "repository": "BrainCoTech/revo2_description",
+    "checkout": "/root/gpufree-data/research-repos/revo2_description",
+    "status": "prepared",
+    "commit": "92cc697c7fa691db59404ce52344f3969a5ef7a6",
+    "evidence_files": [
+      "LICENSE",
+      "README.md",
+      "README_CN.md"
+    ]
+  },
+  {
+    "repository": "linker-bot/linkerhand-urdf",
+    "checkout": "/root/gpufree-data/research-repos/linkerhand-urdf",
+    "status": "prepared",
+    "commit": "49f26021b0a91ff5c33150df22970c07bb548672",
+    "evidence_files": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "sharpa-robotics/sharpa-urdf-usd-xml",
+    "checkout": "/root/gpufree-data/research-repos/sharpa-urdf-usd-xml",
+    "status": "prepared",
+    "commit": "d323b371d02f4fc04a0873c19c5234cae6d803dd",
+    "evidence_files": [
+      "LICENSE.txt",
+      "NOTICE.txt",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "facebookresearch/spider",
+    "checkout": "/root/gpufree-data/research-repos/spider",
+    "status": "prepared",
+    "commit": "44717007de41cbef7565dff7ff9f4453557a2d3d",
+    "evidence_files": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "tesollodelto/dg5f_ros2",
+    "checkout": "/root/gpufree-data/research-repos/dg5f_ros2",
+    "status": "prepared",
+    "commit": "0cb45ae9474caa92410dfa820346da8ffbae8405",
+    "evidence_files": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "psyonicinc/ability-hand-api",
+    "checkout": "/root/gpufree-data/research-repos/ability-hand-api",
+    "status": "prepared",
+    "commit": "34c9a9324d3739d976e6de441e56ccefafd0000b",
+    "evidence_files": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "dexsuite/dex-urdf",
+    "checkout": "/root/gpufree-data/research-repos/dex-urdf",
+    "status": "prepared",
+    "commit": "f5e7132f22108164577fea4c25ef99b5cc0e1900",
+    "evidence_files": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "whats-lab/dexterous-hand-urdf",
+    "checkout": "/root/gpufree-data/research-repos/dexterous-hand-urdf",
+    "status": "prepared",
+    "commit": "6c5d8bd137e4ea375be04fa77fac7256e4772ed2",
+    "evidence_files": [
+      "README.ko.md",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "orcahand/orcahand_description",
+    "checkout": "/root/gpufree-data/research-repos/orcahand_description",
+    "status": "prepared",
+    "commit": "d679c85c168c330a48d83d20e8dcf52c7b517ef1",
+    "evidence_files": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "DexRobot/dexrobot_urdf",
+    "checkout": "/root/gpufree-data/research-repos/dexrobot_urdf",
+    "status": "prepared",
+    "commit": "eb5ecde3c71d5e88964d4bc37685bdaafea8e949",
+    "evidence_files": [
+      "LICENSE",
+      "README.md",
+      "README_zh.md"
+    ]
+  },
+  {
+    "repository": "oymotion/rohand_urdf_ros1",
+    "checkout": "/root/gpufree-data/research-repos/rohand_urdf_ros1",
+    "status": "prepared",
+    "commit": "4d0157f8ba732a8332300619697a646ef7f6c36a",
+    "evidence_files": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "FFTAI/Wiki-GRx-Models",
+    "checkout": "/root/gpufree-data/research-repos/Wiki-GRx-Models",
+    "status": "prepared",
+    "commit": "7d96c758f048fe1bf92b3258864d94771ae0c093",
+    "evidence_files": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "shadow-robot/dx_common",
+    "checkout": "/root/gpufree-data/research-repos/dx_common",
+    "status": "prepared",
+    "commit": "bd4c293109250f9ed0969d11a89193e450b4cdaa",
+    "evidence_files": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "Roboparty/rp_dexhand",
+    "checkout": "/root/gpufree-data/research-repos/rp_dexhand",
+    "status": "prepared",
+    "commit": "338b53f0aeecff21e72ac2a6a76d45c74dfab9bb",
+    "evidence_files": [
+      "LICENSES.md",
+      "NOTICE.md",
+      "README.md",
+      "README.zh-CN.md"
+    ]
+  },
+  {
+    "repository": "ruka-hand/RUKA",
+    "checkout": "/root/gpufree-data/research-repos/RUKA",
+    "status": "prepared",
+    "commit": "fe4f60805e7415bbeda8e7d49ef6fc094d653c41",
+    "evidence_files": [
+      "LICENSE",
+      "README.md"
+    ]
+  }
+]

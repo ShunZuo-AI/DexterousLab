@@ -1,0 +1,30 @@
+Run: outputs/m2/20261106T061310Z-scene-e5b1079d
+{
+  "passed": false,
+  "return_code": 1,
+  "error": null,
+  "command": [
+    "/root/gpufree-data/IsaacLab-Arena/.venv/bin/python",
+    "-m",
+    "dexterous_lab.integrations.arena.worker",
+    "outputs/m2/20261106T061310Z-scene-e5b1079d/request.json"
+  ],
+  "simulation": null,
+  "grasp_success": null,
+  "scope": "zero-action environment smoke test; no grasp validation"
+}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/gpufree-data/DexterousLab/src/dexterous_lab/integrations/arena/worker.py", line 180, in <module>
+    main()
+  File "/root/gpufree-data/DexterousLab/src/dexterous_lab/integrations/arena/worker.py", line 77, in main
+    request = json.loads(Path(sys.argv[1]).read_text())
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/m2/20261106T061310Z-scene-e5b1079d/request.json'

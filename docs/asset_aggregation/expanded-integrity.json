@@ -1,0 +1,464 @@
+[
+  {
+    "asset_id": "unitree/dex1_1/unspecified",
+    "files_checked": 6,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/unitree/dex1_1/unspecified/checksums.json"
+  },
+  {
+    "asset_id": "unitree/dex2_5/left",
+    "files_checked": 29,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/unitree/dex2_5/left/checksums.json"
+  },
+  {
+    "asset_id": "unitree/dex2_5/right",
+    "files_checked": 29,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/unitree/dex2_5/right/checksums.json"
+  },
+  {
+    "asset_id": "unitree/dex2_5/left_g1_5010_wrist",
+    "files_checked": 29,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/unitree/dex2_5/left_g1_5010_wrist/checksums.json"
+  },
+  {
+    "asset_id": "unitree/dex2_5/right_g1_5010_wrist",
+    "files_checked": 29,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/unitree/dex2_5/right_g1_5010_wrist/checksums.json"
+  },
+  {
+    "asset_id": "unitree/dex3_1/left",
+    "files_checked": 19,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/unitree/dex3_1/left/checksums.json"
+  },
+  {
+    "asset_id": "unitree/dex3_1/right",
+    "files_checked": 19,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/unitree/dex3_1/right/checksums.json"
+  },
+  {
+    "asset_id": "unitree/dex5_1/left",
+    "files_checked": 45,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/unitree/dex5_1/left/checksums.json"
+  },
+  {
+    "asset_id": "unitree/dex5_1/right",
+    "files_checked": 45,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/unitree/dex5_1/right/checksums.json"
+  },
+  {
+    "asset_id": "wuji/hand_v1/left",
+    "files_checked": 79,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/wuji/hand_v1/left/checksums.json"
+  },
+  {
+    "asset_id": "wuji/hand_v1/right",
+    "files_checked": 37,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/wuji/hand_v1/right/checksums.json"
+  },
+  {
+    "asset_id": "wuji/hand_v2/2_1_left",
+    "files_checked": 189,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/wuji/hand_v2/2_1_left/checksums.json"
+  },
+  {
+    "asset_id": "wuji/hand_v2/2_1_right",
+    "files_checked": 189,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/wuji/hand_v2/2_1_right/checksums.json"
+  },
+  {
+    "asset_id": "wuji/hand_v2/2_2_left",
+    "files_checked": 199,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/wuji/hand_v2/2_2_left/checksums.json"
+  },
+  {
+    "asset_id": "wuji/hand_v2/2_2_right",
+    "files_checked": 199,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/wuji/hand_v2/2_2_right/checksums.json"
+  },
+  {
+    "asset_id": "leap/leap_hand_v1/right",
+    "files_checked": 18,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/leap/leap_hand_v1/right/checksums.json"
+  },
+  {
+    "asset_id": "brainco/revo2/revo2_left_hand",
+    "files_checked": 56,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/brainco/revo2/revo2_left_hand/checksums.json"
+  },
+  {
+    "asset_id": "brainco/revo2/revo2_right_hand",
+    "files_checked": 56,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/brainco/revo2/revo2_right_hand/checksums.json"
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_left",
+    "files_checked": 50,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/robotera/xhand/xhand_left/checksums.json"
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_left_6dof",
+    "files_checked": 50,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/robotera/xhand/xhand_left_6dof/checksums.json"
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_left_copy",
+    "files_checked": 50,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/robotera/xhand/xhand_left_copy/checksums.json"
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_right",
+    "files_checked": 50,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/robotera/xhand/xhand_right/checksums.json"
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_right_6dof",
+    "files_checked": 50,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/robotera/xhand/xhand_right_6dof/checksums.json"
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_right_copy",
+    "files_checked": 50,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/robotera/xhand/xhand_right_copy/checksums.json"
+  },
+  {
+    "asset_id": "tesollo/dg5f/dg5f_left",
+    "files_checked": 373,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/tesollo/dg5f/dg5f_left/checksums.json"
+  },
+  {
+    "asset_id": "tesollo/dg5f/dg5f_left_short",
+    "files_checked": 373,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/tesollo/dg5f/dg5f_left_short/checksums.json"
+  },
+  {
+    "asset_id": "tesollo/dg5f/dg5f_right",
+    "files_checked": 373,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/tesollo/dg5f/dg5f_right/checksums.json"
+  },
+  {
+    "asset_id": "tesollo/dg5f/dg5f_right_short",
+    "files_checked": 373,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/tesollo/dg5f/dg5f_right_short/checksums.json"
+  },
+  {
+    "asset_id": "psyonic/ability_hand/ability_hand_left_large",
+    "files_checked": 29,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/psyonic/ability_hand/ability_hand_left_large/checksums.json"
+  },
+  {
+    "asset_id": "psyonic/ability_hand/ability_hand_left_small",
+    "files_checked": 29,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/psyonic/ability_hand/ability_hand_left_small/checksums.json"
+  },
+  {
+    "asset_id": "psyonic/ability_hand/ability_hand_right_large",
+    "files_checked": 29,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/psyonic/ability_hand/ability_hand_right_large/checksums.json"
+  },
+  {
+    "asset_id": "psyonic/ability_hand/ability_hand_right_large_no_fsr",
+    "files_checked": 29,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/psyonic/ability_hand/ability_hand_right_large_no_fsr/checksums.json"
+  },
+  {
+    "asset_id": "psyonic/ability_hand/ability_hand_right_small",
+    "files_checked": 29,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/psyonic/ability_hand/ability_hand_right_small/checksums.json"
+  },
+  {
+    "asset_id": "schunk/svh/schunk_svh_hand_left",
+    "files_checked": 69,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/schunk/svh/schunk_svh_hand_left/checksums.json"
+  },
+  {
+    "asset_id": "schunk/svh/schunk_svh_hand_left_glb",
+    "files_checked": 69,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/schunk/svh/schunk_svh_hand_left_glb/checksums.json"
+  },
+  {
+    "asset_id": "schunk/svh/schunk_svh_hand_right",
+    "files_checked": 69,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/schunk/svh/schunk_svh_hand_right/checksums.json"
+  },
+  {
+    "asset_id": "schunk/svh/schunk_svh_hand_right_glb",
+    "files_checked": 69,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/schunk/svh/schunk_svh_hand_right_glb/checksums.json"
+  },
+  {
+    "asset_id": "barrett/barrett_hand/bhand_model",
+    "files_checked": 19,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/barrett/barrett_hand/bhand_model/checksums.json"
+  },
+  {
+    "asset_id": "barrett/barrett_hand/bhand_model_glb",
+    "files_checked": 19,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/barrett/barrett_hand/bhand_model_glb/checksums.json"
+  },
+  {
+    "asset_id": "robotis/hx5/urdf_hx5_d20_left",
+    "files_checked": 43,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/robotis/hx5/urdf_hx5_d20_left/checksums.json"
+  },
+  {
+    "asset_id": "robotis/hx5/urdf_hx5_d20_right",
+    "files_checked": 43,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/robotis/hx5/urdf_hx5_d20_right/checksums.json"
+  },
+  {
+    "asset_id": "orca/orca_hand/v1_models_urdf_orcahand_left",
+    "files_checked": 893,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/orca/orca_hand/v1_models_urdf_orcahand_left/checksums.json"
+  },
+  {
+    "asset_id": "orca/orca_hand/v1_models_urdf_orcahand_left_extended",
+    "files_checked": 893,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/orca/orca_hand/v1_models_urdf_orcahand_left_extended/checksums.json"
+  },
+  {
+    "asset_id": "orca/orca_hand/v1_models_urdf_orcahand_right",
+    "files_checked": 893,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/orca/orca_hand/v1_models_urdf_orcahand_right/checksums.json"
+  },
+  {
+    "asset_id": "orca/orca_hand/v1_models_urdf_orcahand_right_extended",
+    "files_checked": 893,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/orca/orca_hand/v1_models_urdf_orcahand_right_extended/checksums.json"
+  },
+  {
+    "asset_id": "dexrobot/dexhand021/dexhand021_left",
+    "files_checked": 168,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/dexrobot/dexhand021/dexhand021_left/checksums.json"
+  },
+  {
+    "asset_id": "dexrobot/dexhand021/dexhand021_left_simplified",
+    "files_checked": 168,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/dexrobot/dexhand021/dexhand021_left_simplified/checksums.json"
+  },
+  {
+    "asset_id": "dexrobot/dexhand021/dexhand021_right",
+    "files_checked": 168,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/dexrobot/dexhand021/dexhand021_right/checksums.json"
+  },
+  {
+    "asset_id": "dexrobot/dexhand021/dexhand021_right_simplified",
+    "files_checked": 168,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/dexrobot/dexhand021/dexhand021_right_simplified/checksums.json"
+  },
+  {
+    "asset_id": "oymotion/rohand/urdf_rohand_left",
+    "files_checked": 59,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/oymotion/rohand/urdf_rohand_left/checksums.json"
+  },
+  {
+    "asset_id": "oymotion/rohand/urdf_rohand_right",
+    "files_checked": 59,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/oymotion/rohand/urdf_rohand_right/checksums.json"
+  },
+  {
+    "asset_id": "fourier/fourier_hand/dexterous_hand_fourier_hand_6dof_urdf_fourier_left_hand_6dof",
+    "files_checked": 27,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/fourier/fourier_hand/dexterous_hand_fourier_hand_6dof_urdf_fourier_left_hand_6dof/checksums.json"
+  },
+  {
+    "asset_id": "fourier/fourier_hand/dexterous_hand_fourier_hand_6dof_urdf_fourier_right_hand_6dof",
+    "files_checked": 27,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/fourier/fourier_hand/dexterous_hand_fourier_hand_6dof_urdf_fourier_right_hand_6dof/checksums.json"
+  },
+  {
+    "asset_id": "linkerbot/linkerhand_l20/right_linkerhand_l20_right",
+    "files_checked": 24,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/linkerbot/linkerhand_l20/right_linkerhand_l20_right/checksums.json"
+  },
+  {
+    "asset_id": "sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave",
+    "files_checked": 79,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave/checksums.json"
+  },
+  {
+    "asset_id": "sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave_with_flange",
+    "files_checked": 79,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave_with_flange/checksums.json"
+  },
+  {
+    "asset_id": "sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave_with_wrist",
+    "files_checked": 79,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave_with_wrist/checksums.json"
+  },
+  {
+    "asset_id": "shadow_robot/dex_ee/0x02000105",
+    "files_checked": 40,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/shadow_robot/dex_ee/0x02000105/checksums.json"
+  },
+  {
+    "asset_id": "shadow_robot/dex_ee/0x02000106",
+    "files_checked": 40,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/shadow_robot/dex_ee/0x02000106/checksums.json"
+  },
+  {
+    "asset_id": "shadow_robot/dex_ee/0x02000107",
+    "files_checked": 40,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/shadow_robot/dex_ee/0x02000107/checksums.json"
+  },
+  {
+    "asset_id": "shadow_robot/dex_ee/0x02000109",
+    "files_checked": 40,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/shadow_robot/dex_ee/0x02000109/checksums.json"
+  },
+  {
+    "asset_id": "wonik/allegro/isaaclab_standalone",
+    "files_checked": 2,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/wonik/allegro/isaaclab_standalone/checksums.json"
+  },
+  {
+    "asset_id": "shadow_robot/dexterous_hand/right_isaaclab",
+    "files_checked": 2,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/shadow_robot/dexterous_hand/right_isaaclab/checksums.json"
+  },
+  {
+    "asset_id": "ruka/ruka/hand_assembly",
+    "files_checked": 37,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/ruka/ruka/hand_assembly/checksums.json"
+  },
+  {
+    "asset_id": "qb_robotics/qbhand/default",
+    "files_checked": 35,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/qb_robotics/qbhand/default/checksums.json"
+  },
+  {
+    "asset_id": "qb_robotics/qbhand2m/default",
+    "files_checked": 35,
+    "passed": true,
+    "failures": [],
+    "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/hands/qb_robotics/qbhand2m/default/checksums.json"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "allegro_cube": {
+    "passed": true,
+    "run_directory": "/root/gpufree-data/DexterousLab/outputs/m2/20261106T061834Z-scene-6ee14037",
+    "state_records": 101,
+    "action_dim": 23,
+    "physical_joints": 23,
+    "mass_kg": [
+      0.10000000149011612
+    ],
+    "materials": [
+      [
+        0.699999988079071,
+        0.699999988079071,
+        0.0
+      ]
+    ],
+    "mesh_faces": 12,
+    "contact_filter_count": 4,
+    "nonempty_contact_records": 0,
+    "grasp_success": null
+  },
+  "allegro_cylinder": {
+    "passed": true,
+    "run_directory": "/root/gpufree-data/DexterousLab/outputs/m2/20261106T061717Z-scene-8171b7f7",
+    "state_records": 101,
+    "action_dim": 23,
+    "physical_joints": 23,
+    "mass_kg": [
+      0.10000000149011612
+    ],
+    "materials": [
+      [
+        0.699999988079071,
+        0.699999988079071,
+        0.0
+      ]
+    ],
+    "mesh_faces": 256,
+    "contact_filter_count": 4,
+    "nonempty_contact_records": 0,
+    "grasp_success": null
+  },
+  "shadow_cube": {
+    "passed": true,
+    "run_directory": "/root/gpufree-data/DexterousLab/outputs/m2/20261106T061736Z-scene-aa2574d9",
+    "state_records": 101,
+    "action_dim": 20,
+    "physical_joints": 24,
+    "mass_kg": [
+      0.10000000149011612
+    ],
+    "materials": [
+      [
+        0.699999988079071,
+        0.699999988079071,
+        0.0
+      ]
+    ],
+    "mesh_faces": 12,
+    "contact_filter_count": 5,
+    "nonempty_contact_records": 0,
+    "grasp_success": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "cover_dimensions": [
+    2800,
+    1600
+  ],
+  "hand_configurations": 22,
+  "manufacturers": 17,
+  "exact_match_to_validated_asset_ids": true,
+  "root_usd_hashes": "passed",
+  "image_decode": "passed",
+  "local_links_checked": 32,
+  "generator_syntax": "passed",
+  "scope": "Artwork validation only; no physics or grasp result added."
+}

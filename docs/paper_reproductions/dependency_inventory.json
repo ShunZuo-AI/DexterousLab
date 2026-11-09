@@ -1,0 +1,208 @@
+{
+  "torch": {
+    "version": "2.11.0+cu130",
+    "module_discoverable": true
+  },
+  "numpy": {
+    "version": "2.3.1",
+    "module_discoverable": true
+  },
+  "scipy": {
+    "version": "1.17.0",
+    "module_discoverable": true
+  },
+  "trimesh": {
+    "version": "4.11.1",
+    "module_discoverable": true
+  },
+  "transforms3d": {
+    "version": null,
+    "module_discoverable": false
+  },
+  "pytorch3d": {
+    "version": null,
+    "module_discoverable": false
+  },
+  "pytorch_kinematics": {
+    "version": null,
+    "module_discoverable": false
+  },
+  "torchsdf": {
+    "version": null,
+    "module_discoverable": false
+  },
+  "isaacgym": {
+    "version": null,
+    "module_discoverable": false
+  },
+  "diffusers": {
+    "version": null,
+    "module_discoverable": false
+  },
+  "MinkowskiEngine": {
+    "version": null,
+    "module_discoverable": false
+  },
+  "urdf_parser_py": {
+    "version": null,
+    "module_discoverable": false
+  },
+  "shadow_source_joints": [
+    {
+      "name": "robot0:FFJ3",
+      "pos": "0 0 0",
+      "axis": "0 1 0",
+      "range": "-0.349 0.349",
+      "user": "1103"
+    },
+    {
+      "name": "robot0:FFJ2",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1102"
+    },
+    {
+      "name": "robot0:FFJ1",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1101"
+    },
+    {
+      "name": "robot0:FFJ0",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1100"
+    },
+    {
+      "name": "robot0:MFJ3",
+      "pos": "0 0 0",
+      "axis": "0 1 0",
+      "range": "-0.349 0.349",
+      "user": "1107"
+    },
+    {
+      "name": "robot0:MFJ2",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1106"
+    },
+    {
+      "name": "robot0:MFJ1",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1105"
+    },
+    {
+      "name": "robot0:MFJ0",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1104"
+    },
+    {
+      "name": "robot0:RFJ3",
+      "pos": "0 0 0",
+      "axis": "0 1 0",
+      "range": "-0.349 0.349",
+      "user": "1111"
+    },
+    {
+      "name": "robot0:RFJ2",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1110"
+    },
+    {
+      "name": "robot0:RFJ1",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1109"
+    },
+    {
+      "name": "robot0:RFJ0",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1108"
+    },
+    {
+      "name": "robot0:LFJ4",
+      "pos": "0 0 0",
+      "axis": "0.570977 0 0.820966",
+      "range": "0 0.785",
+      "user": "1116"
+    },
+    {
+      "name": "robot0:LFJ3",
+      "pos": "0 0 0",
+      "axis": "0 1 0",
+      "range": "-0.349 0.349",
+      "user": "1115"
+    },
+    {
+      "name": "robot0:LFJ2",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1114"
+    },
+    {
+      "name": "robot0:LFJ1",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1113"
+    },
+    {
+      "name": "robot0:LFJ0",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.571",
+      "user": "1112"
+    },
+    {
+      "name": "robot0:THJ4",
+      "pos": "0 0 0",
+      "axis": "0 0 -1",
+      "range": "-1.047 1.047",
+      "user": "1121"
+    },
+    {
+      "name": "robot0:THJ3",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "0 1.222",
+      "user": "1120"
+    },
+    {
+      "name": "robot0:THJ2",
+      "pos": "0 0 0",
+      "axis": "1 0 0",
+      "range": "-0.209 0.209",
+      "user": "1119"
+    },
+    {
+      "name": "robot0:THJ1",
+      "pos": "0 0 0",
+      "axis": "0 1 0",
+      "range": "-0.524 0.524",
+      "user": "1118"
+    },
+    {
+      "name": "robot0:THJ0",
+      "pos": "0 0 0",
+      "axis": "0 1 0",
+      "range": "-1.571 0",
+      "user": "1117"
+    }
+  ],
+  "shadow_contact_candidates": 140,
+  "shadow_self_penetration_keypoints": 41
+}

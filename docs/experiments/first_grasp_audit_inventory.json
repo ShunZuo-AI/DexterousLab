@@ -1,0 +1,1128 @@
+{
+  "scope": "All first-party Python/config/documentation files read; generated trajectories and third-party model trees inventoried separately",
+  "files": [
+    {
+      "path": "src/dexterous_lab/__init__.py",
+      "bytes": 63,
+      "sha256": "836fcfad7fa47d3419b9f6ae673081258bbdca4c54eccb08a7b032a4fa479f95",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/__main__.py",
+      "bytes": 62,
+      "sha256": "5a9bc0e75ce8bbad5a1a1f1d6d8d70f16a868efd9cd459b8cb316505b762f7a2",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/assets/__init__.py",
+      "bytes": 42,
+      "sha256": "bec7919398acc2376739c6eef4426d2d28ebee1526432362305812e7960120fc",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/assets/catalog.py",
+      "bytes": 5044,
+      "sha256": "7894b7de0aaa74e5e060f3294f1dd339589da3c2698782435525770a574aa4fe",
+      "classes": [
+        "AssetCatalog"
+      ],
+      "functions": [
+        "sha256_file",
+        "save_json",
+        "__init__",
+        "records",
+        "get",
+        "manufacturers",
+        "directory",
+        "lock",
+        "register",
+        "update"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/assets/checks.py",
+      "bytes": 7546,
+      "sha256": "070047fa9475637406bec826ba44a5128e5186a4d17a298bfea981de749c9730",
+      "classes": [],
+      "functions": [
+        "prepare_import_urdf",
+        "mesh_path",
+        "inspect_urdf"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/assets/manager.py",
+      "bytes": 16271,
+      "sha256": "996f86bfad532d0bb66bff2c730644ade4a4b9b8d122316074ba3dadddc69a8d",
+      "classes": [
+        "AssetManager"
+      ],
+      "functions": [
+        "check_space",
+        "package_fingerprints",
+        "__init__",
+        "preview",
+        "fetch",
+        "run_job",
+        "convert",
+        "validate"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/assets/primitives.py",
+      "bytes": 2946,
+      "sha256": "c65fa9813cb5cb8276c8af61c323bbada894405ec467a6f4d19eb217af28d6b3",
+      "classes": [
+        "PrimitiveObject",
+        "Cube",
+        "Sphere",
+        "Cylinder",
+        "Table"
+      ],
+      "functions": [
+        "__init__",
+        "__init__"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/assets/registry.py",
+      "bytes": 1228,
+      "sha256": "1ee586f40ac5a2022fe5583533cc8a6820903bb5c39c0e29ddf5c93794375e3f",
+      "classes": [
+        "AssetRegistry"
+      ],
+      "functions": [
+        "model_path",
+        "verify_integrity"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/assets/worker.py",
+      "bytes": 9538,
+      "sha256": "c2476950291532327849cd4a11f0290e438365c4f441845202f7b85221407944",
+      "classes": [],
+      "functions": [
+        "convert",
+        "validate",
+        "main"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/cli.py",
+      "bytes": 8403,
+      "sha256": "4d3a2f3ed2eb60c37c284240f618ecfa087b9e2026627a827752ada2b39ac509",
+      "classes": [],
+      "functions": [
+        "positive_int",
+        "doctor",
+        "build_parser",
+        "main"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/config.py",
+      "bytes": 7060,
+      "sha256": "485522d58389771d9504793d821e2886a8a42b36249a8aaa147899706dc375a0",
+      "classes": [
+        "ObjectConfig",
+        "RobotConfig",
+        "SceneConfig",
+        "TaskConfig"
+      ],
+      "functions": [
+        "finite_vector",
+        "unit_quaternion",
+        "read_toml",
+        "named_config",
+        "checked_dataclass",
+        "load_scene",
+        "__post_init__",
+        "__post_init__",
+        "__post_init__",
+        "__post_init__"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/data_collection/__init__.py",
+      "bytes": 80,
+      "sha256": "e662e8bae2c0855b0a8e32726612916a7d6d152cc33f390c233d55f6c70d66dd",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/data_collection/collector.py",
+      "bytes": 3348,
+      "sha256": "f063ba030c8a6a718784a6185b4848f729149280726106f7d24c8135337c6d83",
+      "classes": [
+        "DatasetCollector"
+      ],
+      "functions": [
+        "__init__",
+        "record",
+        "save_candidate",
+        "finish"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/datasets/__init__.py",
+      "bytes": 43,
+      "sha256": "1a963ce019ea08f55ba8665513f8d22efc33d5bb5d7aaf202d57c48c0f0999ba",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/datasets/writer.py",
+      "bytes": 731,
+      "sha256": "5c276f817b9550c7315ca6d1b500cfc5fc2a740a544f535600579a6db788171f",
+      "classes": [
+        "GraspDatasetWriter"
+      ],
+      "functions": [
+        "__init__",
+        "write",
+        "close",
+        "__enter__",
+        "__exit__"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/evaluation/__init__.py",
+      "bytes": 41,
+      "sha256": "d9cad1b7f71597b4d79dd000b615bd6c96bc18aa4f97432f091621f24312075b",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/evaluation/criteria.py",
+      "bytes": 558,
+      "sha256": "8d69159ee838c1f59081525c5a4e3da8bbd15d7b2681a91f59edf76a071a5ccf",
+      "classes": [],
+      "functions": [
+        "next_hold_count"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/evaluation/grasp.py",
+      "bytes": 770,
+      "sha256": "e1fab2cbaa7d5cb0f2ca1585deec95d2d1f47fc930c04a24ef3cd39db6ebe9ce",
+      "classes": [
+        "GraspEvaluator"
+      ],
+      "functions": [
+        "evaluate"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/evaluation/runner.py",
+      "bytes": 4633,
+      "sha256": "5acd9fca934ecdfe84ab1743ee39c1d4b4b3043c31a4565cc1dcec9a7e81df5c",
+      "classes": [
+        "EvaluationRunner"
+      ],
+      "functions": [
+        "read_candidates",
+        "summarize_trials",
+        "run"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/evaluation/smoke.py",
+      "bytes": 1040,
+      "sha256": "53a1d7932fd4b734b914b6bceda46d0f6520ed5175762706460478f132e321b5",
+      "classes": [],
+      "functions": [
+        "check_physics_values"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/evaluation/worker.py",
+      "bytes": 15442,
+      "sha256": "9d976c42dce47e003939fc4b2a691ad91e8ad17a0081a8be4632ad6eb1449ccb",
+      "classes": [],
+      "functions": [
+        "tendon_coordinates",
+        "action_for_candidate",
+        "restore_state",
+        "run",
+        "main",
+        "matrix"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/grasp_execution/__init__.py",
+      "bytes": 64,
+      "sha256": "689952e5307a49eaa81091fd966ce3328ff5fc4bb56458bd09e601651cc58b30",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/grasp_execution/base.py",
+      "bytes": 415,
+      "sha256": "206d4bcba3a7969aa6ac29c00c855d7b9f6f2b896c49cb30ba25448df381a275",
+      "classes": [
+        "GraspValidator"
+      ],
+      "functions": [
+        "validate"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/grasp_execution/dexgraspnet_adapter.py",
+      "bytes": 4344,
+      "sha256": "5eec21549fe924ec506c2b87ec20608534c6dbc6befe092918ce0dc213263396",
+      "classes": [],
+      "functions": [
+        "checked_transform",
+        "source_qpos_to_candidate"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/grasp_generation/__init__.py",
+      "bytes": 45,
+      "sha256": "fa0791eb715e03f3d4db91e2fa2f8e4eff5265cc2319a9e849a1d08b3122bbab",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/grasp_generation/base.py",
+      "bytes": 477,
+      "sha256": "02f4c565618261a44e6c90a3f278c9142ae9e4df887ef1618d48d7b018c75dfd",
+      "classes": [
+        "GraspGenerator"
+      ],
+      "functions": [
+        "generate"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/grasp_generation/dexgraspnet/__init__.py",
+      "bytes": 78,
+      "sha256": "a238b4ed2315ca16d2b5825ffb8752551cc468fad1c324be6f26ccc3b85d6d99",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/grasp_generation/dexgraspnet/energy.py",
+      "bytes": 6525,
+      "sha256": "de27060ff0f75d9fd7f3d39f9647bbdc05537a6ab15db9db3eecc584a526ecd4",
+      "classes": [
+        "EnergyWeights",
+        "EnergyTerms"
+      ],
+      "functions": [
+        "self_penetration_penalty",
+        "evaluate_energy",
+        "evaluate_models",
+        "__post_init__"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/grasp_generation/dexgraspnet/optimization.py",
+      "bytes": 2960,
+      "sha256": "7578d5e70ac951ca1e6944eca401ce48a2c9b54dae07891e742acf02778259dd",
+      "classes": [
+        "OptimizationResult"
+      ],
+      "functions": [
+        "optimize_models",
+        "objective"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/grasp_generation/dexgraspnet/optimizer.py",
+      "bytes": 6969,
+      "sha256": "a12048e60df914c1d8f97f487f7758634a285c92b7f24288f4e11efd29749d1a",
+      "classes": [
+        "AnnealingConfig",
+        "AnnealingOptimizer"
+      ],
+      "functions": [
+        "__post_init__",
+        "__init__",
+        "_evaluate",
+        "step"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/grasp_synthesis/__init__.py",
+      "bytes": 63,
+      "sha256": "d43e76159152398a9f5251ef328d2685b121bc1d43783d04eaf1c2de189b968d",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/grasp_synthesis/candidate.py",
+      "bytes": 3190,
+      "sha256": "03caf53252395fdac3adf8fd651358a38c16c116e0e28f2feb6998f56329e300",
+      "classes": [
+        "GraspCandidate"
+      ],
+      "functions": [
+        "pose_xyzw",
+        "__post_init__",
+        "to_dict"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/integrations/__init__.py",
+      "bytes": 45,
+      "sha256": "238c24fa5b9b8c496b2d95047045cc85ff280c8ee599496ef9051c06daef12f2",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/integrations/arena/__init__.py",
+      "bytes": 77,
+      "sha256": "a8c3bc68d9f4e2a1dc9c422e0890323bf1c4e38b270ddcf8677a228f2b85504d",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/integrations/arena/worker.py",
+      "bytes": 10200,
+      "sha256": "1e08982a494a36fb5263617dc63404750b325de2edcd4ef875cdd92061a5478d",
+      "classes": [],
+      "functions": [
+        "official_environment",
+        "assert_finite",
+        "robot_mapping",
+        "validate_research_state",
+        "main"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/integrations/isaaclab/__init__.py",
+      "bytes": 57,
+      "sha256": "33d77680deb97996d6aa19d8838982d2f36d4d928d5e9e8f032413435ac69b00",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/integrations/isaaclab/contact_paths.py",
+      "bytes": 1027,
+      "sha256": "f27b96c016f6c6581c03e072f3fc9486a6ae36e1c77d9334d016a466933a4eac",
+      "classes": [],
+      "functions": [
+        "fingertip_filter_paths"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/integrations/isaaclab/observations.py",
+      "bytes": 816,
+      "sha256": "b6609d8c94ffdaa5e419c36f23af3171678d7ec893a67ae26dd21a55552c9129",
+      "classes": [
+        "StateGroupCfg",
+        "StateObservationsCfg"
+      ],
+      "functions": [
+        "__post_init__"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/integrations/isaaclab/state.py",
+      "bytes": 3858,
+      "sha256": "99117dd5bf9235ec6a0c0f93b50df1740a928062cb982d21208350f7e4621549",
+      "classes": [
+        "ResearchState"
+      ],
+      "functions": [
+        "as_torch",
+        "__init__",
+        "joint_state",
+        "palm_pose",
+        "object_pose",
+        "contacts",
+        "snapshot"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/integrations/isaaclab/validation.py",
+      "bytes": 3225,
+      "sha256": "92f75aeeb613810a02f739df2b8d6b0781a4928d86b441df7ef6321136ef6b13",
+      "classes": [],
+      "functions": [
+        "validate_loaded_scene"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/objects/__init__.py",
+      "bytes": 49,
+      "sha256": "a34a7efe5d0501060c5ea2c89945a5dd8900df7eabbc43cdaaa16bcaff70886e",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/objects/factories.py",
+      "bytes": 1167,
+      "sha256": "9d934cbdf61ddbd0373715ed565b61da9cc7659f4b59866681530b45964ce98b",
+      "classes": [],
+      "functions": [
+        "create_object"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/objects/geometry.py",
+      "bytes": 191,
+      "sha256": "439e4da0c85f32e47cbc9bb41890d14ad57190b9afc696ce100f4d60083f0193",
+      "classes": [],
+      "functions": [
+        "scaled_size"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/objects/mesh.py",
+      "bytes": 1149,
+      "sha256": "b90f1bdf359411b8a4a47e0656d3df8da096e50f929431752989e46f090a7910",
+      "classes": [],
+      "functions": [
+        "get_object_mesh"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/objects/registry.py",
+      "bytes": 276,
+      "sha256": "3e830a54e2e3c8326e4acb89fed60224356e61892614658f3cb339368d157851",
+      "classes": [
+        "ObjectRegistry"
+      ],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/policies/__init__.py",
+      "bytes": 92,
+      "sha256": "8cce84efd41b0cba33741ee9a10955d7108ca08a59df64b5e808add5f288dd04",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/policies/registry.py",
+      "bytes": 1191,
+      "sha256": "ed4c0112a603618352f9456976881f4786060664d3b87c432e4fec98e062aa37",
+      "classes": [
+        "HoldPolicy",
+        "PolicyRegistry"
+      ],
+      "functions": [
+        "__init__",
+        "reset",
+        "predict",
+        "__init__",
+        "register",
+        "load"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/registry.py",
+      "bytes": 1595,
+      "sha256": "f0d0db7d1388bc55a227b1bf22fcc3a315db7f1d8e140dd6bd6f66f1e6f059a4",
+      "classes": [
+        "ConfigurationRegistry"
+      ],
+      "functions": [
+        "import_factory",
+        "__init__",
+        "names",
+        "get",
+        "create"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/robots/__init__.py",
+      "bytes": 52,
+      "sha256": "80aba42aee0303d2a1ddb0191790da3d750a916fd2b8ca049db7829113db12d3",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/robots/allegro.py",
+      "bytes": 344,
+      "sha256": "ae44e02a456482a51137b49b401ff29a006ebfc6e9f55de23a98af13bc1832b6",
+      "classes": [],
+      "functions": [
+        "create_hand"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/robots/registry.py",
+      "bytes": 562,
+      "sha256": "a315c67f1fdc30144083048ebe51c79823a6fcafad1410ca7db74499c7496fed",
+      "classes": [
+        "HandRegistry"
+      ],
+      "functions": [
+        "get"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/robots/shadow.py",
+      "bytes": 2452,
+      "sha256": "4c8810b33b5a9eb1214acbeb722fc4799f41774c9a2bc69a86a881907b59e345",
+      "classes": [
+        "ShadowSceneCfg",
+        "ShadowActionsCfg",
+        "ShadowProprioCfg",
+        "ShadowObservationsCfg",
+        "ShadowEmbodiment"
+      ],
+      "functions": [
+        "validate_shadow_coordinates",
+        "create_hand",
+        "__post_init__",
+        "__init__",
+        "get_ee_frame_name",
+        "get_command_body_name"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/runtime.py",
+      "bytes": 3801,
+      "sha256": "a5b3d0d04afaba82594b554b07cbc4e4e709241ccc32c83923de94f399612c09",
+      "classes": [],
+      "functions": [
+        "arena_root",
+        "runtime_environment",
+        "shared_python",
+        "write_json",
+        "run_worker"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/scenes/__init__.py",
+      "bytes": 30,
+      "sha256": "81222cd10ae8cbdcd44c070ce182f272df035923beb391520c3a18a730a19484",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/scenes/builder.py",
+      "bytes": 1192,
+      "sha256": "42505db95675cbf56a5ad62c50af85b0155b99dff4dbeafd89c7efe5f5419b79",
+      "classes": [
+        "SceneBuilder"
+      ],
+      "functions": [
+        "specification",
+        "build"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/scenes/tabletop.py",
+      "bytes": 3859,
+      "sha256": "296b85aa4a4462400f5520af7866d7436ae30ba1801f52d845fd2584fbec1755",
+      "classes": [
+        "TabletopEnvironmentCfg",
+        "DexterousLabTabletopEnvironment"
+      ],
+      "functions": [
+        "build",
+        "set_timing"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/storage.py",
+      "bytes": 1026,
+      "sha256": "889d138ca01ee407a062d4bf95e8a578d7f70b7fc89c267ee22540f81d82bec0",
+      "classes": [],
+      "functions": [
+        "storage_environment",
+        "ensure_storage"
+      ]
+    },
+    {
+      "path": "src/dexterous_lab/tasks/__init__.py",
+      "bytes": 31,
+      "sha256": "e88b337c4a9eca7d03503184f41664cbae2969d2135a2575efe06033b096f0af",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "src/dexterous_lab/tasks/lift.py",
+      "bytes": 454,
+      "sha256": "f6f5a88325d9199c75a7e366cd037a6f0d98188e859df6477b03e131fecd51eb",
+      "classes": [],
+      "functions": [
+        "make_lift_task"
+      ]
+    },
+    {
+      "path": "scripts/build_asset_catalog.py",
+      "bytes": 16057,
+      "sha256": "cc381875fe6dc75f64bfc0145cadaffc00fcdd6ba04d7bca22d6b47bd4fe97be",
+      "classes": [],
+      "functions": [
+        "slug",
+        "main",
+        "add"
+      ]
+    },
+    {
+      "path": "scripts/expand_asset_batch.py",
+      "bytes": 3417,
+      "sha256": "e9f8ea98afda7a3b5c63f1bd5ea872275047bed2111b3db6438eb6db0ac78f46",
+      "classes": [],
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/index_asset_sources.py",
+      "bytes": 3331,
+      "sha256": "ae3febca12cc3fbaf6bae733f0b442ca080f5ca5852baddaa73f71a7cf684778",
+      "classes": [],
+      "functions": [
+        "request_json",
+        "inspect",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/make_replay_candidates.py",
+      "bytes": 1348,
+      "sha256": "24fab5502b09840f102ceec45af42f3fe70101a682b3d1517dc8b1fb40380508",
+      "classes": [],
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/prepare_asset_references.py",
+      "bytes": 2825,
+      "sha256": "9719f2f982b3424226bea97346b080e40e84b205c177e2a0a4ca9cdb0034bcb6",
+      "classes": [],
+      "functions": [
+        "run"
+      ]
+    },
+    {
+      "path": "scripts/record_asset_blockers.py",
+      "bytes": 4353,
+      "sha256": "9094980dd4dca635e53b61d801965ea3226516cb3072572d2942c827a6fe76c7",
+      "classes": [],
+      "functions": [
+        "register"
+      ]
+    },
+    {
+      "path": "scripts/repair_asset_paths.py",
+      "bytes": 1421,
+      "sha256": "a4a0caf0fb60456a16582f7342688823f090994117886223918e39f1a201e05e",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "scripts/report_asset_coverage.py",
+      "bytes": 4288,
+      "sha256": "f93b11bc7c7e5ec8fcac8d45bbfdb72d0ebf14c981c9383032ae75fab7cd8748",
+      "classes": [],
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/validate_asset_batch.py",
+      "bytes": 1601,
+      "sha256": "8bf2a3d620498aabd2caca6dfd4567ccb7b04b431117add960414600a0d973f8",
+      "classes": [],
+      "functions": [
+        "main"
+      ]
+    },
+    {
+      "path": "tests/test_asset_catalog.py",
+      "bytes": 9054,
+      "sha256": "be5cb4d18a547df0a594dfc0265a1876c4e779f9e0ef9fa01bddb2b2684300ba",
+      "classes": [],
+      "functions": [
+        "isolated_catalog",
+        "test_catalog_update_and_escape",
+        "test_idempotent_fetch_checks_content",
+        "test_static_checks_reject_missing_mesh_and_inertia",
+        "test_manifest_provenance_and_variant_separation",
+        "test_cli_lists_manufacturers_and_rejects_unvalidated_preview",
+        "test_preview_records_launch_without_marking_validation_passed",
+        "test_register_preserves_existing_asset",
+        "test_import_derivative_preserves_source_and_mimic",
+        "test_root_package_fetch_excludes_git_and_preserves_license",
+        "test_fixed_markers_allowed_but_dynamic_massless_links_rejected"
+      ]
+    },
+    {
+      "path": "tests/test_config.py",
+      "bytes": 2856,
+      "sha256": "80de80d0640f693f90379746ea15a7ffba91a6c34feb98bb1e7934941dc49a49",
+      "classes": [],
+      "functions": [
+        "test_default_scene",
+        "test_shadow_has_independent_coordinates",
+        "test_procedural_objects",
+        "test_unsupported_selections_fail",
+        "test_invalid_objects",
+        "test_unknown_fields_fail",
+        "test_physical_dimensions",
+        "test_robot_dimensions_checked",
+        "test_cli_dry_run_and_inventory",
+        "test_cli_rejects_unimplemented_or_large_requests"
+      ]
+    },
+    {
+      "path": "tests/test_datasets.py",
+      "bytes": 2210,
+      "sha256": "70deb6e6a21efe2eca58792bf6c92775621ec28f4827c50fd649afaeeb918bf7",
+      "classes": [],
+      "functions": [
+        "candidate",
+        "test_dataset_roundtrip_without_overwrite",
+        "test_unknown_outcomes_excluded_from_denominator",
+        "test_invalid_record_rejected",
+        "test_interfaces_cannot_fake_implementation"
+      ]
+    },
+    {
+      "path": "tests/test_dexgraspnet_components.py",
+      "bytes": 4361,
+      "sha256": "144148e2991f8781dfa913732e57ab47dfb0bfe604189c99de4abb6547c6aeff",
+      "classes": [],
+      "functions": [
+        "energy_fixture",
+        "test_energy_components_and_original_normal_gradient_contract",
+        "test_energy_gradient_finite_difference",
+        "test_self_collision_is_ordered_and_coincident_pairs_are_masked",
+        "test_bad_shapes_and_nonfinite_energy_are_rejected",
+        "test_optimizer_config_errors",
+        "test_optimizer_improves_differentiable_objective_and_remains_leaf",
+        "test_optimizer_rolls_back_nonfinite_proposal",
+        "objective"
+      ]
+    },
+    {
+      "path": "tests/test_dexgraspnet_pose_adapter.py",
+      "bytes": 1676,
+      "sha256": "3bcf7be890a6196859d1b60b39517e5f5247bef27323d79cb5ad6e890bf9dd96",
+      "classes": [],
+      "functions": [
+        "arguments",
+        "test_source_object_and_calibrated_palm_frames",
+        "test_missing_calibration_or_joint_mapping_never_silently_falls_back"
+      ]
+    },
+    {
+      "path": "tests/test_dexgraspnet_source_parity.py",
+      "bytes": 7191,
+      "sha256": "de105616c0a4f49a9bc2b427364421036bc822c86bc4b676d17a4732bcc0c6b3",
+      "classes": [
+        "AnalyticFixtureHand",
+        "AnalyticFixtureObject"
+      ],
+      "functions": [
+        "reference_function",
+        "test_five_terms_and_parameter_gradients_match_original_source",
+        "test_annealing_updates_indices_acceptance_and_rollback_match_source",
+        "test_supplied_model_optimization_loop_returns_consistent_final_state",
+        "__init__",
+        "set_parameters",
+        "cal_distance",
+        "self_penetration",
+        "__init__",
+        "cal_distance",
+        "objective"
+      ]
+    },
+    {
+      "path": "tests/test_experiment_interfaces.py",
+      "bytes": 5166,
+      "sha256": "a26184aca19b0276415a636ce1a9c1989752d4dea5f767a659572db76a1b0b5c",
+      "classes": [],
+      "functions": [
+        "snapshot",
+        "test_collector_writes_numeric_npz_and_roundtrip_candidate",
+        "test_failures_and_unknowns_are_separate",
+        "test_policy_registry_is_explicit_and_no_algorithm_fallback",
+        "test_scene_builder_adds_distinct_sphere_without_changing_primary",
+        "test_invalid_dataset_cannot_silently_proceed",
+        "test_lift_contact_speed_and_continuous_hold_are_all_required",
+        "test_asset_registry_uses_catalog_integrity_not_file_presence"
+      ]
+    },
+    {
+      "path": "tests/test_m2_physics.py",
+      "bytes": 1051,
+      "sha256": "14b751bcf1e79b17bbc4b84423db8ddf08d4d4ca0ee7a2d3537770a35ebccfb3",
+      "classes": [],
+      "functions": [
+        "test_measured_physics_match",
+        "test_wrong_backend_physics_fails",
+        "test_algorithm_mesh_has_metric_scaled_geometry"
+      ]
+    },
+    {
+      "path": "tests/test_registries.py",
+      "bytes": 2916,
+      "sha256": "3eb3fa8ef75ba5956db5fb60362c81ff5cf43acd490c437e4edb9babeb53874d",
+      "classes": [],
+      "functions": [
+        "test_hand_and_object_discovery",
+        "test_new_hand_can_be_added_without_changing_python",
+        "test_configured_factory_is_used",
+        "test_registry_never_falls_back",
+        "test_registry_checks_hand_identity",
+        "test_object_overrides_do_not_mutate_registry",
+        "test_invalid_factory_contract",
+        "test_physics_cli_alias_and_hundred_steps_default"
+      ]
+    },
+    {
+      "path": "tests/test_research_state.py",
+      "bytes": 2341,
+      "sha256": "a02002a19be68463c01bd0d9958c37d8dbb5b9ba17a0e8b8452e5ae558f9b0c7",
+      "classes": [
+        "Scene"
+      ],
+      "functions": [
+        "state",
+        "test_contact_nan_sentinels_are_not_serialized",
+        "test_empty_contacts_are_measured_empty_not_unknown",
+        "test_contact_invalid_force_is_failure",
+        "test_active_contact_missing_position_is_failure",
+        "test_missing_palm_never_falls_back"
+      ]
+    },
+    {
+      "path": "tests/test_runtime.py",
+      "bytes": 1513,
+      "sha256": "23df49ddaf9f55e061747cc4fdf8d8becadabf4b9177fb5439503b6621cb36ee",
+      "classes": [],
+      "functions": [
+        "test_library_path_is_prepend_only",
+        "test_exit_zero_without_step_evidence_is_failure",
+        "test_relative_output_directory_passes_absolute_request_to_child"
+      ]
+    },
+    {
+      "path": "tests/test_scene_contract.py",
+      "bytes": 1099,
+      "sha256": "3b2eb52608c758478ff0e9933d26705b7d0c5a6d96f955929ac6c37b49dca6de",
+      "classes": [],
+      "functions": [
+        "test_pose_override_is_consumed",
+        "test_cli_does_not_import_simulator_in_help_child"
+      ]
+    },
+    {
+      "path": "tests/test_storage.py",
+      "bytes": 806,
+      "sha256": "3844984c3b7cdc808695b509f199644b3260c84ee56b5e4c0d86122f09e72b27",
+      "classes": [],
+      "functions": [
+        "test_project_storage_is_on_data_volume",
+        "test_simulator_inherits_data_volume_paths"
+      ]
+    },
+    {
+      "path": "examples/batch_validate.py",
+      "bytes": 472,
+      "sha256": "3e7160f7382319d3d8bc2f1d2155ac3550689475c97c9f7f8b17070206555165",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "examples/capture_replay.py",
+      "bytes": 539,
+      "sha256": "8156db92a1a6842f6085b1c860e5fdb76798792480a8682b38835aa9fcfa3a6b",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "examples/load_shadow.py",
+      "bytes": 292,
+      "sha256": "130e76167603d2a9e6dc6404cedba86a2410b0f188115dcc922f99f4ccbcaee2",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "configs/experiments/posed_cube.toml",
+      "bytes": 229,
+      "sha256": "ea044289d33165e287a5f8f79fdcc80ff84d8536191866374bb4cd72081c794b"
+    },
+    {
+      "path": "configs/experiments/tabletop.toml",
+      "bytes": 85,
+      "sha256": "a69da8b31990220418d428238f3453b91ea5ae25bdb42a53139dab7975bc8a8c"
+    },
+    {
+      "path": "configs/objects/cube.toml",
+      "bytes": 230,
+      "sha256": "bdbce168be8ed9c42d3822972702e610ed98384399e709d6f4cfec224058ab75"
+    },
+    {
+      "path": "configs/objects/cylinder.toml",
+      "bytes": 153,
+      "sha256": "6970765cb7ac1a0e2e509a3b5da67c26766bc2bd2bce3cc32c7bfb02ba7752c4"
+    },
+    {
+      "path": "configs/objects/sphere.toml",
+      "bytes": 149,
+      "sha256": "ab0d4d29df30ec8ebb8e3c73989a5b3bcbac1e4a49890c7840d677d0d88745b5"
+    },
+    {
+      "path": "configs/robots/allegro.toml",
+      "bytes": 741,
+      "sha256": "1aa5a8961b0d33b4c6f18324730df676400f734be5e46814a419526f8f73678f"
+    },
+    {
+      "path": "configs/robots/shadow.toml",
+      "bytes": 612,
+      "sha256": "0aa5bc7b1db71cf4ac2cda458531b333e60273b3827aeee3712172f46d4d8049"
+    },
+    {
+      "path": "configs/scenes/tabletop.toml",
+      "bytes": 156,
+      "sha256": "503dda90e424ab76f599d65b71017d1f356e0d269f6b25f04c8552b929384e28"
+    },
+    {
+      "path": "configs/tasks/lift.toml",
+      "bytes": 97,
+      "sha256": "f323871a68945177154a479e5a8bb3b0cbf4bc07afd1ffff16189a7052f6de6e"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 3375,
+      "sha256": "9a2234c223df35cba868b483a3fc64733d425da547ffb2fea056df6de72a6360"
+    },
+    {
+      "path": "docs/asset-preview.md",
+      "bytes": 2101,
+      "sha256": "ca64cd13a3f6932396b7aa8688a338f358968279dd224083d440c2b9a326ceb3"
+    },
+    {
+      "path": "docs/asset_aggregation/coverage.md",
+      "bytes": 8716,
+      "sha256": "da8101675eb3121dad64f0b8093a09a770a99e05dfe4ec9f9aa33a4474ebb37e"
+    },
+    {
+      "path": "docs/asset_aggregation/expanded-report.md",
+      "bytes": 8370,
+      "sha256": "554d96fb8b61d22b2552349d9295964a4ada288fc53cdb54e5aaa928881f702d"
+    },
+    {
+      "path": "docs/asset_aggregation/report.md",
+      "bytes": 8525,
+      "sha256": "5291aa83dd126fa01b8f9c5530302289a0f0fc6927489e82c9add8772a5547d6"
+    },
+    {
+      "path": "docs/asset_aggregation/run-batch.py",
+      "bytes": 1017,
+      "sha256": "759115b550d5e6908a969d76dc781d1f426c40b05cbccab4afbcc9d5ffd1a1d0",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "path": "docs/data-contract.md",
+      "bytes": 3622,
+      "sha256": "c0bf8d5b51f4c5641dfa5e091df676e1a0e204401651d0d033a52c274ede5b5a"
+    },
+    {
+      "path": "docs/m2-validation.md",
+      "bytes": 9309,
+      "sha256": "e669a484a5b8a72db541b57cf6ecf497bdd6be449f1f832e834b3254bbd215c5"
+    },
+    {
+      "path": "docs/paper_reproductions/ATTRIBUTION.md",
+      "bytes": 2545,
+      "sha256": "29033b03b8d2185f0cdaef87d196272f824c2e7e369ebde0548a3333254f5457"
+    },
+    {
+      "path": "docs/paper_reproductions/README.md",
+      "bytes": 2287,
+      "sha256": "d1247f3958da466f7c067578e9687c368aa818746a88e965918c19e593bcccdb"
+    },
+    {
+      "path": "docs/paper_reproductions/audit_sources.py",
+      "bytes": 4485,
+      "sha256": "8cb3e0deb0c703714511bdf6c75110bde87b6c51b8f0c77160972a8f21c9d09b",
+      "classes": [],
+      "functions": [
+        "git",
+        "declarations",
+        "main"
+      ]
+    },
+    {
+      "path": "docs/paper_reproductions/dexgraspnet/dependency_analysis.md",
+      "bytes": 4076,
+      "sha256": "10004c1707c5c1a036d8543a997b6be96ec090566210dcbb5ad72bc020c01dbc"
+    },
+    {
+      "path": "docs/paper_reproductions/dexgraspnet/implementation_mapping.md",
+      "bytes": 4447,
+      "sha256": "f1849731ae75a67c1478a3d94d1047d60fa7300ca3d9677e74f32fdd0879512e"
+    },
+    {
+      "path": "docs/paper_reproductions/dexgraspnet/mathematical_formulation.md",
+      "bytes": 5078,
+      "sha256": "2db0eaab038225905ee0b707f841c55c51ec3b3229cf5138f3b0044678660138"
+    },
+    {
+      "path": "docs/paper_reproductions/dexgraspnet/migration_results.md",
+      "bytes": 5761,
+      "sha256": "9b07dd791af4590e17d2d6aee46717e920a86450b4cd8e1a1a04d58bdcf89ba9"
+    },
+    {
+      "path": "docs/paper_reproductions/dexgraspnet/reproduction_status.md",
+      "bytes": 1350,
+      "sha256": "f3e7b1a4bd667e23b73905aefba061a4db7a47aa5b907951f800382e289744ce"
+    },
+    {
+      "path": "docs/paper_reproductions/dexgraspnet/source_analysis.md",
+      "bytes": 10037,
+      "sha256": "1e9cfb34abe293b7d20a540f782d12d2b8afa438e2e8f74830deb5f313e637f7"
+    },
+    {
+      "path": "docs/paper_reproductions/dexgraspnet2/source_analysis.md",
+      "bytes": 3788,
+      "sha256": "8ca6d748790064210a7d81d310cb1fcb63d0b36b6a0093b253f710cd14e67058"
+    },
+    {
+      "path": "docs/paper_reproductions/gendexgrasp/implementation_mapping.md",
+      "bytes": 1635,
+      "sha256": "bb749148d0025374e7968e4da6c5058c1020f27c2eee6134b8de06977d4a6b59"
+    },
+    {
+      "path": "docs/paper_reproductions/gendexgrasp/source_analysis.md",
+      "bytes": 4302,
+      "sha256": "588e470ee42398e87a22cd7fefa36ce89b069c5c6c0ac624bb69520e36269a83"
+    },
+    {
+      "path": "docs/research/dexgarmentlab_analysis.md",
+      "bytes": 12168,
+      "sha256": "2d0525bed6ca13868d63ba46a06d995b405dabb0d776f40897ef47002f204e92"
+    },
+    {
+      "path": "docs/research/dexgarmentlab_results.md",
+      "bytes": 8032,
+      "sha256": "0978282317c66fa22773732c1c69ae027129f1a64af63de47a9c46afd97e4e83"
+    },
+    {
+      "path": "docs/research/dexgarmentlab_usage.md",
+      "bytes": 6362,
+      "sha256": "1b2e992b7bc43f93ec923e8cd9919f8a1f8f7f1cb9bbbec4d92a5744a379426d"
+    },
+    {
+      "path": "docs/storage-layout.md",
+      "bytes": 2340,
+      "sha256": "1f6d6a4843853723a518f4c97446884649cbb2fa57e09d615d3db79c63080710"
+    },
+    {
+      "path": "docs/storage.md",
+      "bytes": 2830,
+      "sha256": "84f03f01ba3ae522e486c0eeea3b0d33410005f5fd580483a33f7d1d02692e25"
+    },
+    {
+      "path": "docs/validation.md",
+      "bytes": 7625,
+      "sha256": "0af089891d1141cb6c2cde461498a953fa6ffb7347383d97f232ca1736c27d63"
+    }
+  ]
+}

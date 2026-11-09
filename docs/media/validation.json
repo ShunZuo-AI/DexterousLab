@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "local_document_links": 38,
+    "missing_local_links": 0,
+    "gallery_hand_configurations": 18,
+    "gallery_manufacturers": 17,
+    "cover_dimensions": [
+      1800,
+      1420
+    ],
+    "image_decode": "passed",
+    "generator_syntax": "passed"
+  },
+  "scope": "Documentation and rendering validation only; no new physics or grasp validation was performed."
+}

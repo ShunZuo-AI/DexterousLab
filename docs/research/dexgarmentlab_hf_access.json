@@ -1,0 +1,11 @@
+{
+  "server_api_access": "URLError: Network is unreachable",
+  "browser_verified_dataset_card": "https://huggingface.co/datasets/wayrise/DexGarmentLab/raw/main/README.md",
+  "card_license": "apache-2.0",
+  "browser_listed_Robots_zip_size": "79 MB",
+  "full_dataset_listed_size": "46.5 GB",
+  "dataset_head_short_commit": "2ba4092",
+  "exact_full_hf_commit": "UNVERIFIED",
+  "model_archive_inspection": "NOT_DOWNLOADED",
+  "asset_directory": "/root/gpufree-data/DexterousLab/assets/hands/shadow_robot/shadow_hand/dexgarmentlab_reference"
+}

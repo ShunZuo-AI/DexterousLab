@@ -1,0 +1,11 @@
+hand_id = "allegro"
+factory = "dexterous_lab.robots.allegro:create_hand"
+palm_frame = "palm_link"
+registry_name = "kuka_allegro"
+requires_arm = true
+action_dim = 23
+joint_names = ["iiwa7_joint_1", "iiwa7_joint_2", "iiwa7_joint_3", "iiwa7_joint_4", "iiwa7_joint_5", "iiwa7_joint_6", "iiwa7_joint_7", "index_joint_0", "index_joint_1", "index_joint_2", "index_joint_3", "middle_joint_0", "middle_joint_1", "middle_joint_2", "middle_joint_3", "ring_joint_0", "ring_joint_1", "ring_joint_2", "ring_joint_3", "thumb_joint_0", "thumb_joint_1", "thumb_joint_2", "thumb_joint_3"]
+tendon_names = []
+fingertip_names = ["index_link_3", "middle_link_3", "ring_link_3", "thumb_link_3"]
+position_xyz = [0.0, 0.0, 0.0]
+rotation_xyzw = [0.0, 0.0, 0.0, 1.0]

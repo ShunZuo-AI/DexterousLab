@@ -1,0 +1,50 @@
+Run: /root/gpufree-data/DexterousLab/outputs/m2/20261106T061540Z-scene-36c3731b
+{
+  "passed": false,
+  "return_code": 1,
+  "error": null,
+  "command": [
+    "/root/gpufree-data/IsaacLab-Arena/.venv/bin/python",
+    "-m",
+    "dexterous_lab.integrations.arena.worker",
+    "/root/gpufree-data/DexterousLab/outputs/m2/20261106T061540Z-scene-36c3731b/request.json"
+  ],
+  "simulation": null,
+  "grasp_success": null,
+  "scope": "zero-action environment smoke test; no grasp validation"
+}
+   CUDA Toolkit 12.9, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA L40S" (44 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.17.0
+[ISAACLAB] KitLauncher initialization complete
+[isaaclab-arena] AppLauncher initialization complete (1.3s)
+Closing simulation app
+Exception caught in SimulationAppContext: AttributeError: '_GeneratorContextManager' object has no attribute 'GetDefaultPrim'
+Traceback:
+Traceback (most recent call last):
+  File "/root/gpufree-data/DexterousLab/src/dexterous_lab/integrations/arena/worker.py", line 111, in main
+    env = builder.make_registered()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/IsaacLab-Arena/isaaclab_arena/environments/arena_env_builder.py", line 696, in make_registered
+    env, _ = self.make_registered_and_return_cfg(env_cfg, env_kwargs, render_mode=render_mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/IsaacLab-Arena/isaaclab_arena/environments/arena_env_builder.py", line 718, in make_registered_and_return_cfg
+    name, cfg, _ = self.build_registered(env_cfg, env_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/IsaacLab-Arena/isaaclab_arena/environments/arena_env_builder.py", line 640, in build_registered
+    env_cfg, env_kwargs = self.build_env_cfg()
+                          ^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/IsaacLab-Arena/isaaclab_arena/environments/arena_env_builder.py", line 585, in build_env_cfg
+    env_cfg = self.arena_env.env_cfg_callback(env_cfg)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/DexterousLab/src/dexterous_lab/scenes/tabletop.py", line 54, in set_timing
+    filter_prim_paths_expr=fingertip_filter_paths(env_cfg.scene.robot, robot_cfg.fingertip_names),
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/DexterousLab/src/dexterous_lab/integrations/isaaclab/contact_paths.py", line 9, in fingertip_filter_paths
+    root = stage.GetDefaultPrim()
+           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_GeneratorContextManager' object has no attribute 'GetDefaultPrim'
+Killing the process without cleaning up

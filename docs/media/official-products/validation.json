@@ -1,0 +1,14 @@
+{
+  "images": 18,
+  "manufacturers": 15,
+  "original_hashes": "passed",
+  "image_decode": "passed",
+  "layout_unique_ids": "passed",
+  "local_links_checked": 58,
+  "generator_syntax": "passed",
+  "cover_dimensions": [
+    2800,
+    1600
+  ],
+  "scope": "README and image provenance validation only; no simulator or dependency change."
+}

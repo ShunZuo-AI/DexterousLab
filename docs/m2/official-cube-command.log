@@ -1,0 +1,38 @@
+Run: /root/gpufree-data/DexterousLab/outputs/m2/20261106T061853Z-arena-e72fbbb3
+{
+  "passed": true,
+  "return_code": 0,
+  "error": null,
+  "command": [
+    "/root/gpufree-data/IsaacLab-Arena/.venv/bin/python",
+    "-m",
+    "dexterous_lab.integrations.arena.worker",
+    "/root/gpufree-data/DexterousLab/outputs/m2/20261106T061853Z-arena-e72fbbb3/request.json"
+  ],
+  "simulation": {
+    "environment": "cube_goal_pose",
+    "steps_completed": 20,
+    "num_envs": 1,
+    "device": "cuda:0",
+    "physics_class": "PhysxCfg",
+    "simulated_seconds": 1.3333333333333333,
+    "action_dim": 7,
+    "physics_steps_completed": 160,
+    "research_state_checks": 0,
+    "scene_validation": null,
+    "terminated_count": 0,
+    "truncated_count": 0,
+    "finite_observations": true,
+    "grasp_success": null,
+    "policy": "zero_action",
+    "python_prefix": "/root/gpufree-data/IsaacLab-Arena/.venv",
+    "versions": {
+      "isaacsim": "6.2.0.0",
+      "isaaclab": "28.0.0",
+      "isaaclab_arena": "0.3.0",
+      "torch": "2.11.0+cu130"
+    }
+  },
+  "grasp_success": null,
+  "scope": "zero-action environment smoke test; no grasp validation"
+}

@@ -1,0 +1,31 @@
+# Explicit untrained grasp baseline. Every change is retained in each run request.
+settle_steps = 15
+approach_steps = 150
+descend_steps = 90
+close_steps = 90
+lift_steps = 90
+hold_steps = 45
+pregrasp_height_m = 0.12
+lift_height_m = 0.10
+ik_damping = 0.05
+max_joint_step_rad = 0.15
+robot_gravity_compensation = true
+
+[criteria]
+lift_height_m = 0.03
+hold_steps = 20
+max_linear_speed_m_s = 0.1
+contact_force_threshold_n = 0.01
+
+[allegro]
+robot_base_position_xyz = [0.0, 0.0, 0.255]
+palm_euler_xyz_rad = [3.141592653589793, 0.0, 2.356194490192345]
+palm_offset_from_object_m = [0.03676955262170048, -0.04808326112068523, 0.065]
+open_joints = {index_joint_0 = 0.0, index_joint_1 = 0.0, index_joint_2 = 0.0, index_joint_3 = 0.0, middle_joint_0 = 0.0, middle_joint_1 = 0.0, middle_joint_2 = 0.0, middle_joint_3 = 0.0, ring_joint_0 = 0.0, ring_joint_1 = 0.0, ring_joint_2 = 0.0, ring_joint_3 = 0.0, thumb_joint_0 = 1.4, thumb_joint_1 = 0.1, thumb_joint_2 = 0.1, thumb_joint_3 = 0.1}
+close_joints = {index_joint_1 = 0.9, index_joint_2 = 1.0, index_joint_3 = 0.8, middle_joint_1 = 0.9, middle_joint_2 = 1.0, middle_joint_3 = 0.8, ring_joint_1 = 0.9, ring_joint_2 = 1.0, ring_joint_3 = 0.8, thumb_joint_0 = 1.4, thumb_joint_1 = 0.7, thumb_joint_2 = 0.7, thumb_joint_3 = 0.7}
+
+[shadow]
+palm_euler_xyz_rad = [1.5707963267948966, 0.0, 0.0]
+palm_offset_from_object_m = [-0.02, 0.09, 0.09]
+open_joints = {rh_WRJ2 = 0.0, rh_WRJ1 = 0.0, rh_THJ5 = 0.4, rh_THJ4 = 0.0, rh_THJ3 = 0.0, rh_THJ2 = 0.0, rh_THJ1 = 0.0}
+close_joints = {rh_FFJ3 = 0.9, rh_FFJ2 = 0.8, rh_FFJ1 = 0.8, rh_MFJ3 = 0.9, rh_MFJ2 = 0.8, rh_MFJ1 = 0.8, rh_RFJ3 = 0.9, rh_RFJ2 = 0.8, rh_RFJ1 = 0.8, rh_LFJ3 = 0.9, rh_LFJ2 = 0.8, rh_LFJ1 = 0.8, rh_THJ5 = 0.5, rh_THJ4 = 0.7, rh_THJ2 = 0.5, rh_THJ1 = 0.6}

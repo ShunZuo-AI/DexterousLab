@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+DEXLAB_SCRIPT=$(readlink -f -- "${BASH_SOURCE[0]}")
+DEXLAB_ROOT=$(cd -- "$(dirname -- "$DEXLAB_SCRIPT")/.." && pwd)
+DEXLAB_ARENA_ROOT=${DEXLAB_ARENA_ROOT:-/root/gpufree-data/IsaacLab-Arena}
+export DEXLAB_ARENA_ROOT
+export PYTHONPATH="$DEXLAB_ROOT/src${PYTHONPATH:+:$PYTHONPATH}"
+export LD_LIBRARY_PATH="$DEXLAB_ARENA_ROOT/.venv/lib/python3.12/site-packages/torch/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export PYTHONDONTWRITEBYTECODE=1
+exec "$DEXLAB_ARENA_ROOT/.venv/bin/python" -m dexterous_lab "$@"

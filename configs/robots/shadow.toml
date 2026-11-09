@@ -1,0 +1,11 @@
+hand_id = "shadow"
+factory = "dexterous_lab.robots.shadow:create_hand"
+palm_frame = "rh_palm"
+registry_name = "dexlab_shadow"
+requires_arm = false
+action_dim = 20
+joint_names = ["rh_WRJ2", "rh_WRJ1", "rh_FFJ4", "rh_FFJ3", "rh_MFJ4", "rh_MFJ3", "rh_RFJ4", "rh_RFJ3", "rh_LFJ5", "rh_LFJ4", "rh_LFJ3", "rh_THJ5", "rh_THJ4", "rh_THJ3", "rh_THJ2", "rh_THJ1"]
+tendon_names = ["rh_FFJ0", "rh_MFJ0", "rh_RFJ0", "rh_LFJ0"]
+fingertip_names = ["rh_ffdistal", "rh_mfdistal", "rh_rfdistal", "rh_lfdistal", "rh_thdistal"]
+position_xyz = [-0.55, -0.25, 0.5]
+rotation_xyzw = [0.0, 0.0, -0.7071067811865476, 0.7071067811865476]

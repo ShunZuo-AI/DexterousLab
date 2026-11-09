@@ -1,0 +1,72 @@
+[
+  {
+    "asset_id": "unitree/dex3_1/right",
+    "command": [
+      "/root/gpufree-data/DexterousLab/scripts/dexlab",
+      "assets",
+      "validate",
+      "--id",
+      "unitree/dex3_1/right",
+      "--steps",
+      "100"
+    ],
+    "return_code": 0,
+    "command_log": "/root/gpufree-data/DexterousLab/docs/asset_aggregation/unitree-dex3_1-right-command.log"
+  },
+  {
+    "asset_id": "leap/leap_hand_v1/right",
+    "command": [
+      "/root/gpufree-data/DexterousLab/scripts/dexlab",
+      "assets",
+      "validate",
+      "--id",
+      "leap/leap_hand_v1/right",
+      "--steps",
+      "100"
+    ],
+    "return_code": 0,
+    "command_log": "/root/gpufree-data/DexterousLab/docs/asset_aggregation/leap-leap_hand_v1-right-command.log"
+  },
+  {
+    "asset_id": "wuji/hand_v1/right",
+    "command": [
+      "/root/gpufree-data/DexterousLab/scripts/dexlab",
+      "assets",
+      "validate",
+      "--id",
+      "wuji/hand_v1/right",
+      "--steps",
+      "100"
+    ],
+    "return_code": 0,
+    "command_log": "/root/gpufree-data/DexterousLab/docs/asset_aggregation/wuji-hand_v1-right-command.log"
+  },
+  {
+    "asset_id": "custom/cube",
+    "command": [
+      "/root/gpufree-data/DexterousLab/scripts/dexlab",
+      "assets",
+      "validate",
+      "--id",
+      "custom/cube",
+      "--steps",
+      "100"
+    ],
+    "return_code": 0,
+    "command_log": "/root/gpufree-data/DexterousLab/docs/asset_aggregation/custom-cube-command.log"
+  },
+  {
+    "asset_id": "custom/cylinder",
+    "command": [
+      "/root/gpufree-data/DexterousLab/scripts/dexlab",
+      "assets",
+      "validate",
+      "--id",
+      "custom/cylinder",
+      "--steps",
+      "100"
+    ],
+    "return_code": 0,
+    "command_log": "/root/gpufree-data/DexterousLab/docs/asset_aggregation/custom-cylinder-command.log"
+  }
+]

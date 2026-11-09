@@ -1,0 +1,30 @@
+{
+  "executable": "/root/gpufree-data/IsaacLab-Arena/.venv/bin/python",
+  "prefix": "/root/gpufree-data/IsaacLab-Arena/.venv",
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "isaacsim": "6.2.0.0",
+    "isaaclab": "28.0.0",
+    "isaaclab_arena": "0.3.0",
+    "pytest": "9.1.1"
+  },
+  "cuda": true,
+  "gpu": "NVIDIA L40S",
+  "cuda_matrix_inverse": true,
+  "arena_root": "/root/gpufree-data/IsaacLab-Arena",
+  "ld_library_path": "/root/gpufree-data/IsaacLab-Arena/.venv/lib/python3.12/site-packages/torch/lib:/opt/vulkan/x86_64/lib:/usr/lib/x86_64-linux-gnu:/usr/local/cuda/lib64",
+  "storage": {
+    "TMPDIR": "/root/gpufree-data/assets/cache",
+    "XDG_CACHE_HOME": "/root/gpufree-data/.cache",
+    "XDG_DATA_HOME": "/root/gpufree-data/.local/share",
+    "XDG_CONFIG_HOME": "/root/gpufree-data/.config",
+    "XDG_STATE_HOME": "/root/gpufree-data/.local/state",
+    "CUDA_CACHE_PATH": "/root/gpufree-data/.cache/cuda",
+    "TORCH_HOME": "/root/gpufree-data/.cache/torch",
+    "HF_HOME": "/root/gpufree-data/models/huggingface",
+    "UV_CACHE_DIR": "/root/gpufree-data/.uv-cache",
+    "OMNICLIENT_HUB_CACHE_DIR": "/root/gpufree-data/.cache/ov/hub"
+  },
+  "same_environment": true,
+  "ready": true
+}

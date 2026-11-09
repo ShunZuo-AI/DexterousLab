@@ -1,0 +1,12 @@
+RUN_DIRECTORY=/root/gpufree-data/DexterousLab/outputs/20261106T121411Z-first-grasp-shadow-4dada494
+{
+  "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T121411Z-first-grasp-shadow-4dada494",
+  "exit_code": 0,
+  "result": {
+    "simulation_completed": true,
+    "grasp_success": null,
+    "hand": "shadow",
+    "steps_completed": 5,
+    "scope": "geometry inspection only"
+  }
+}

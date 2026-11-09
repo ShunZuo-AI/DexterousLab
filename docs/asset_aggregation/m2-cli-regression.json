@@ -1,0 +1,120 @@
+{
+  "kind": "scene",
+  "steps": 100,
+  "num_envs": 1,
+  "seed": 42,
+  "backend": "physx",
+  "policy": "zero_action",
+  "config": {
+    "hand_id": "allegro",
+    "object_id": "cylinder",
+    "backend": "physx",
+    "robot": {
+      "hand_id": "allegro",
+      "registry_name": "kuka_allegro",
+      "requires_arm": true,
+      "joint_names": [
+        "iiwa7_joint_1",
+        "iiwa7_joint_2",
+        "iiwa7_joint_3",
+        "iiwa7_joint_4",
+        "iiwa7_joint_5",
+        "iiwa7_joint_6",
+        "iiwa7_joint_7",
+        "index_joint_0",
+        "index_joint_1",
+        "index_joint_2",
+        "index_joint_3",
+        "middle_joint_0",
+        "middle_joint_1",
+        "middle_joint_2",
+        "middle_joint_3",
+        "ring_joint_0",
+        "ring_joint_1",
+        "ring_joint_2",
+        "ring_joint_3",
+        "thumb_joint_0",
+        "thumb_joint_1",
+        "thumb_joint_2",
+        "thumb_joint_3"
+      ],
+      "fingertip_names": [
+        "index_link_3",
+        "middle_link_3",
+        "ring_link_3",
+        "thumb_link_3"
+      ],
+      "action_dim": 23,
+      "tendon_names": [],
+      "factory": "dexterous_lab.robots.allegro:create_hand",
+      "palm_frame": "palm_link",
+      "position_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "object": {
+      "registry_name": "dexlab_cylinder",
+      "factory": "dexterous_lab.objects.factories:create_object",
+      "kind": "cylinder",
+      "position_xyz": [
+        -0.55,
+        0.0,
+        0.3
+      ],
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": [
+        0.05,
+        0.05,
+        0.08
+      ],
+      "mass": 0.1,
+      "friction": 0.7,
+      "usd_path": null,
+      "asset_version": "procedural-cylinder-v1"
+    },
+    "scene": {
+      "name": "tabletop",
+      "table_position_xyz": [
+        -0.55,
+        0.0,
+        0.235
+      ],
+      "table_size": [
+        0.8,
+        1.0,
+        0.04
+      ],
+      "light_intensity": 2000.0,
+      "dt": 0.008333333333333333,
+      "decimation": 4
+    },
+    "task": {
+      "name": "lift",
+      "episode_length_s": 5.0,
+      "goal_delta_xyz": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "position_tolerance": 0.02
+    }
+  }
+}

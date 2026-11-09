@@ -1,0 +1,709 @@
+{
+  "repository": "https://github.com/wayrise/DexGarmentLab",
+  "commit": "e4e298e696bae5d866ded3b31e0ae27becea5376",
+  "branch": "main",
+  "status": "",
+  "root_license": "No root LICENSE/COPYING detected; file-specific third-party licenses do not grant whole repository reuse",
+  "source_files": [
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Assets/assets_download.py",
+      "relative_path": "Assets/assets_download.py",
+      "sha256": "bfe1589b17faf1176b5d0df09b952e48091b9fa7013adf42f0b16887500139f8",
+      "symbols": []
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Env_Config/Robot/BimanualDex_Ur10e.py",
+      "relative_path": "Env_Config/Robot/BimanualDex_Ur10e.py",
+      "sha256": "dbfc20cb34fa2a9113aae239a93c99a082a0b4131e55e7e27ef2ee5adb407524",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "Bimanual_Ur10e",
+          "line": 20
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 21
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "set_both_hand_state",
+          "line": 56
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "dense_move_both_ik",
+          "line": 192
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "move_both_with_blocks",
+          "line": 278
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "move_both_rmpflow",
+          "line": 379
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Env_Config/Robot/DexRight_Ur10e.py",
+      "relative_path": "Env_Config/Robot/DexRight_Ur10e.py",
+      "sha256": "fc6ff335b90905da8d5cb41a69de2e260fe154090db3b857bd30da560841e2ed",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "DexRight_Ur10e",
+          "line": 22
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 23
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "initialize",
+          "line": 67
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "close",
+          "line": 118
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "open",
+          "line": 136
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "pinch",
+          "line": 155
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "cradle",
+          "line": 174
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "smooth",
+          "line": 191
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_cur_ee_pos",
+          "line": 210
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "step_action",
+          "line": 223
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "dense_step_action",
+          "line": 256
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "add_obstacle",
+          "line": 310
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "check_end_effector_arrive",
+          "line": 320
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "RMPflow_Move",
+          "line": 344
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Env_Config/Robot/DexLeft_Ur10e.py",
+      "relative_path": "Env_Config/Robot/DexLeft_Ur10e.py",
+      "sha256": "5dbb3132c11bb89bcfcdabbdb0325d15171398f8a5822bfa7196426fc25b379b",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "DexLeft_Ur10e",
+          "line": 22
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 23
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "initialize",
+          "line": 67
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "close",
+          "line": 119
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "open",
+          "line": 137
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "pinch",
+          "line": 156
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "cradle",
+          "line": 175
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "smooth",
+          "line": 192
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_cur_ee_pos",
+          "line": 211
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "step_action",
+          "line": 224
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "dense_step_action",
+          "line": 257
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "add_obstacle",
+          "line": 313
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "check_end_effector_arrive",
+          "line": 323
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "RMPflow_Move",
+          "line": 346
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Env_StandAlone/BaseEnv.py",
+      "relative_path": "Env_StandAlone/BaseEnv.py",
+      "sha256": "04fc374d5a179d85f8c5e5559927f514d8fd503d484218e3ac460e2a9112e9d2",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "BaseEnv",
+          "line": 30
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 31
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "reset",
+          "line": 69
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "step",
+          "line": 72
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "stop",
+          "line": 75
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "record",
+          "line": 78
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "stop_record",
+          "line": 91
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "record_to_npz",
+          "line": 103
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "replay",
+          "line": 122
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_replay_callback",
+          "line": 132
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "record_callback",
+          "line": 141
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "replay_callback",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Env_StandAlone/Hang_Coat_Env.py",
+      "relative_path": "Env_StandAlone/Hang_Coat_Env.py",
+      "sha256": "7b37ef1af9254fc26a08e02246e3e4a5a0adb6d2c1dc1b47734c3e7e9d8ac2a7",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "HangCoat_Env",
+          "line": 43
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "HangCoat",
+          "line": 209
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 44
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "record_callback",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Env_Validation/Hang_Coat_HALO.py",
+      "relative_path": "Env_Validation/Hang_Coat_HALO.py",
+      "sha256": "e86a0f2cfdbc6af70c2cd1051d920cbf51bef81f97bd0c9d2d6d4422e4a425ee",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "Hang_Coat_Env",
+          "line": 45
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "Hang_Coat_Validation_HALO",
+          "line": 186
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/TeleOp_Env.py",
+      "relative_path": "TeleOp_Env.py",
+      "sha256": "dd5d3656e1afe38e531cbc897f3ebd8248dee67002fda4f02e6b4b4e782c677d",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "TeleOp_Env",
+          "line": 47
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Data_Collection.sh",
+      "relative_path": "Data_Collection.sh",
+      "sha256": "65168af73383275ae7bfd7207c89188d499639fe515be8ecd3604202223f8538"
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Validation.sh",
+      "relative_path": "Validation.sh",
+      "sha256": "bcaeab666aeda0e7163f9e8b4af4871e89e335719c503ecdf3727c739e80bb6f"
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Model_HALO/GAM/GAM_Encapsulation.py",
+      "relative_path": "Model_HALO/GAM/GAM_Encapsulation.py",
+      "sha256": "d746d36ff1bedd2c6fdd8a26b1c3b419b7eb4422db545f2be23d7e542f1aba85",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "GAM_Encapsulation",
+          "line": 15
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 17
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_feature",
+          "line": 39
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_manipulation_points",
+          "line": 61
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_colormap_points",
+          "line": 91
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_demo_garment_with_color",
+          "line": 117
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "visualize_pcd_corresponce",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Model_HALO/GAM/model/pointnet2_GAM.py",
+      "relative_path": "Model_HALO/GAM/model/pointnet2_GAM.py",
+      "sha256": "9c50f04a48533fa3b6fccc1b5f2ef166ae1d0ed863e568d7094f489c218ff17b",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "GAM_Model",
+          "line": 11
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 13
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "forward",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Model_HALO/SADP/SADP.py",
+      "relative_path": "Model_HALO/SADP/SADP.py",
+      "sha256": "873162e3ae055e98c07a63ecf464545cb5dab4a8ecf9cd45519e1a797fa7086a",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "SADP",
+          "line": 13
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 14
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "update_obs",
+          "line": 23
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_action",
+          "line": 26
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_policy_and_runner",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Model_HALO/SADP/train.py",
+      "relative_path": "Model_HALO/SADP/train.py",
+      "sha256": "9ab53ceba3403a46d4c70b32068cce4887f8a1b9c9201db471774413eca3270c",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "TrainSADPWorkspace",
+          "line": 36
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_copy_to_cpu",
+          "line": 469
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "main",
+          "line": 489
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 40
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "run",
+          "line": 71
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_policy_and_runner",
+          "line": 314
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "output_dir",
+          "line": 345
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "save_checkpoint",
+          "line": 351
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_checkpoint_path",
+          "line": 394
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "load_payload",
+          "line": 415
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "load_checkpoint",
+          "line": 428
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "create_from_checkpoint",
+          "line": 440
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "save_snapshot",
+          "line": 453
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "create_from_snapshot",
+          "line": 466
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Model_HALO/SADP/structure_aware_diffusion_policy/policy/sadp.py",
+      "relative_path": "Model_HALO/SADP/structure_aware_diffusion_policy/policy/sadp.py",
+      "sha256": "c20b4b525b3bba639f4013ef6de4b640eb3702d11cd124a38fb144734824edf4",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "SADP",
+          "line": 25
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 26
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "conditional_sample",
+          "line": 136
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "predict_action",
+          "line": 183
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "set_normalizer",
+          "line": 276
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "compute_loss",
+          "line": 279
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Model_HALO/SADP/structure_aware_diffusion_policy/env_runner/robot_runner.py",
+      "relative_path": "Model_HALO/SADP/structure_aware_diffusion_policy/env_runner/robot_runner.py",
+      "sha256": "51a628cd952ea270841815b7c2077878c4cd8b4ca872326476d237c63315b611",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "RobotRunner",
+          "line": 15
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 16
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "stack_last_n_obs",
+          "line": 40
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "reset_obs",
+          "line": 63
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "update_obs",
+          "line": 66
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_n_steps_obs",
+          "line": 69
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_action",
+          "line": 80
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "run",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/Model_HALO/SADP/data2zarr_sadp.py",
+      "relative_path": "Model_HALO/SADP/data2zarr_sadp.py",
+      "sha256": "310b94635164614bd5b69bb91144d918913c26c1c440ea659f3c2c284fbf2772",
+      "symbols": [
+        {
+          "kind": "FunctionDef",
+          "name": "main",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/IL_Baselines/Diffusion_Policy/DP.py",
+      "relative_path": "IL_Baselines/Diffusion_Policy/DP.py",
+      "sha256": "b5131332bc2f43a152323624b4bd349a52b4d0639a3925c1dce0e9cce9ded073",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "DP",
+          "line": 12
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_policy",
+          "line": 30
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 13
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "update_obs",
+          "line": 17
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_action",
+          "line": 20
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_last_obs",
+          "line": 24
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "reset_obs",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/IL_Baselines/Diffusion_Policy/data2zarr_dp.py",
+      "relative_path": "IL_Baselines/Diffusion_Policy/data2zarr_dp.py",
+      "sha256": "d12a73c54bc96d89869ffce26870f132c1145f548ea514e38b101b8da1370d12",
+      "symbols": [
+        {
+          "kind": "FunctionDef",
+          "name": "main",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/IL_Baselines/Diffusion_Policy_3D/DP3.py",
+      "relative_path": "IL_Baselines/Diffusion_Policy_3D/DP3.py",
+      "sha256": "20abaff27f378b06ca7dbf91d2faccc097690fe2ef0a17efd0762908ec421e6f",
+      "symbols": [
+        {
+          "kind": "ClassDef",
+          "name": "DP3",
+          "line": 13
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 14
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "update_obs",
+          "line": 23
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_action",
+          "line": 26
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_policy_and_runner",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "/root/gpufree-data/DexterousLab/research-repos/DexGarmentLab/requirements.txt",
+      "relative_path": "requirements.txt",
+      "sha256": "cb700ca134facbfd754d00b4dc88f64ae8ff903dae96a79e0580bdbb447e6197"
+    }
+  ]
+}

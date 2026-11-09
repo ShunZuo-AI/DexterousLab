@@ -1,0 +1,4 @@
+name = "lift"
+episode_length_s = 5.0
+goal_delta_xyz = [0.0, 0.0, 0.1]
+position_tolerance = 0.02

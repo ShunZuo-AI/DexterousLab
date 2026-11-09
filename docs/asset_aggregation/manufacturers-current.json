@@ -1,0 +1,302 @@
+[
+  {
+    "manufacturer": "wonik",
+    "name": "Wonik Robotics",
+    "asset_count": 10,
+    "source_status": "indexed",
+    "fetched_variants": 1,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "shadow_robot",
+    "name": "Shadow Robot",
+    "asset_count": 10,
+    "source_status": "indexed",
+    "fetched_variants": 5,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 4
+  },
+  {
+    "manufacturer": "leap",
+    "name": "LEAP Hand",
+    "asset_count": 1,
+    "source_status": "indexed",
+    "fetched_variants": 1,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "unitree",
+    "name": "Unitree Robotics",
+    "asset_count": 9,
+    "source_status": "indexed",
+    "fetched_variants": 9,
+    "validated_variants": 4,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "wuji",
+    "name": "Wuji Technology",
+    "asset_count": 6,
+    "source_status": "indexed",
+    "fetched_variants": 6,
+    "validated_variants": 3,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "brainco",
+    "name": "BrainCo",
+    "asset_count": 2,
+    "source_status": "indexed",
+    "fetched_variants": 2,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "linkerbot",
+    "name": "LinkerBot",
+    "asset_count": 29,
+    "source_status": "indexed",
+    "fetched_variants": 1,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "sharpa",
+    "name": "Sharpa",
+    "asset_count": 19,
+    "source_status": "indexed",
+    "fetched_variants": 3,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "inspire",
+    "name": "Inspire Robotics",
+    "asset_count": 4,
+    "source_status": "indexed",
+    "fetched_variants": 0,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 4
+  },
+  {
+    "manufacturer": "robotera",
+    "name": "RobotEra",
+    "asset_count": 6,
+    "source_status": "indexed",
+    "fetched_variants": 6,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "tesollo",
+    "name": "Tesollo",
+    "asset_count": 4,
+    "source_status": "indexed",
+    "fetched_variants": 4,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "psyonic",
+    "name": "PSYONIC",
+    "asset_count": 5,
+    "source_status": "indexed",
+    "fetched_variants": 5,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "schunk",
+    "name": "SCHUNK",
+    "asset_count": 4,
+    "source_status": "indexed",
+    "fetched_variants": 4,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "barrett",
+    "name": "Barrett Technology",
+    "asset_count": 2,
+    "source_status": "indexed",
+    "fetched_variants": 2,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "robotis",
+    "name": "ROBOTIS",
+    "asset_count": 2,
+    "source_status": "indexed",
+    "fetched_variants": 2,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "orca",
+    "name": "ORCA Dexterity",
+    "asset_count": 6,
+    "source_status": "indexed",
+    "fetched_variants": 4,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "roboparty",
+    "name": "RoboParty",
+    "asset_count": 1,
+    "source_status": "unresolved",
+    "fetched_variants": 0,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 1
+  },
+  {
+    "manufacturer": "paxini",
+    "name": "PaXini",
+    "asset_count": 1,
+    "source_status": "unresolved",
+    "fetched_variants": 0,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 1
+  },
+  {
+    "manufacturer": "xynova",
+    "name": "Xynova",
+    "asset_count": 1,
+    "source_status": "unresolved",
+    "fetched_variants": 0,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 1
+  },
+  {
+    "manufacturer": "agilink",
+    "name": "AGILINK",
+    "asset_count": 1,
+    "source_status": "unresolved",
+    "fetched_variants": 0,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 1
+  },
+  {
+    "manufacturer": "fourier",
+    "name": "Fourier",
+    "asset_count": 8,
+    "source_status": "indexed",
+    "fetched_variants": 2,
+    "validated_variants": 0,
+    "failed_variants": 1,
+    "blocked_variants": 1
+  },
+  {
+    "manufacturer": "ubtech",
+    "name": "UBTECH",
+    "asset_count": 1,
+    "source_status": "unresolved",
+    "fetched_variants": 0,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 1
+  },
+  {
+    "manufacturer": "agibot",
+    "name": "AgiBot",
+    "asset_count": 1,
+    "source_status": "unresolved",
+    "fetched_variants": 0,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 1
+  },
+  {
+    "manufacturer": "oymotion",
+    "name": "OYMotion",
+    "asset_count": 2,
+    "source_status": "indexed",
+    "fetched_variants": 2,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "casiahand",
+    "name": "CasiaHand",
+    "asset_count": 1,
+    "source_status": "unresolved",
+    "fetched_variants": 0,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 1
+  },
+  {
+    "manufacturer": "dexrobot",
+    "name": "DexRobot",
+    "asset_count": 4,
+    "source_status": "indexed",
+    "fetched_variants": 4,
+    "validated_variants": 1,
+    "failed_variants": 0,
+    "blocked_variants": 0
+  },
+  {
+    "manufacturer": "ruka",
+    "name": "Ruka",
+    "asset_count": 1,
+    "source_status": "indexed",
+    "fetched_variants": 1,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 1
+  },
+  {
+    "manufacturer": "seed_robotics",
+    "name": "Seed Robotics",
+    "asset_count": 1,
+    "source_status": "unresolved",
+    "fetched_variants": 0,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 1
+  },
+  {
+    "manufacturer": "qb_robotics",
+    "name": "qb robotics",
+    "asset_count": 3,
+    "source_status": "indexed",
+    "fetched_variants": 2,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 3
+  },
+  {
+    "manufacturer": "clone_robotics",
+    "name": "Clone Robotics",
+    "asset_count": 1,
+    "source_status": "unresolved",
+    "fetched_variants": 0,
+    "validated_variants": 0,
+    "failed_variants": 0,
+    "blocked_variants": 1
+  }
+]

@@ -1,0 +1,458 @@
+{
+  "capture": {
+    "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T095524Z-capture-225febf4",
+    "report": {
+      "completed": true,
+      "mode": "capture",
+      "summary": {
+        "attempted": 1,
+        "loaded": 1,
+        "simulation_completed": 1,
+        "evaluated": 0,
+        "successful": 0,
+        "success_rate_evaluated": null,
+        "success_rate_attempted": null,
+        "failure_reasons": {}
+      },
+      "trials": [
+        {
+          "index": 0,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": null,
+          "failure_reason": null,
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "control_check": {
+            "joint": "rh_THJ1",
+            "commanded_position_rad": 0.15,
+            "initial_position_rad": 0.0,
+            "final_position_rad": 0.13830715417861938
+          },
+          "capture_verified": true
+        }
+      ],
+      "scope": "Measured lift/contact/hold baseline; not force-closure or full grasp robustness validation",
+      "criteria": {
+        "lift_height_m": 0.03,
+        "hold_steps": 20,
+        "max_linear_speed_m_s": 0.1,
+        "contact_force_threshold_n": 0.01
+      },
+      "scene_validation": {
+        "robot_loaded": true,
+        "object_loaded": true,
+        "dynamic_rigid_body": true,
+        "collision_paths": [
+          "/World/envs/env_0/Object/geometry/mesh"
+        ],
+        "backend_masses_kg": [
+          0.10000000149011612
+        ],
+        "backend_materials_static_dynamic_restitution": [
+          [
+            0.699999988079071,
+            0.699999988079071,
+            0.0
+          ]
+        ],
+        "backend_inertias_kg_m2": [
+          [
+            4.166667349636555e-05,
+            0.0,
+            0.0,
+            0.0,
+            4.166667349636555e-05,
+            0.0,
+            0.0,
+            0.0,
+            4.166667349636555e-05
+          ]
+        ],
+        "spawned_local_extents_m": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "object_kind": "cube",
+        "asset_version": "procedural-cube-v1",
+        "contact_filter_paths": [
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_ffknuckle/rh_ffproximal/rh_ffmiddle/rh_ffdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_mfknuckle/rh_mfproximal/rh_mfmiddle/rh_mfdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_rfknuckle/rh_rfproximal/rh_rfmiddle/rh_rfdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_lfmetacarpal/rh_lfknuckle/rh_lfproximal/rh_lfmiddle/rh_lfdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_thbase/rh_thproximal/rh_thhub/rh_thmiddle/rh_thdistal"
+        ],
+        "additional_objects_loaded": [
+          "secondary_sphere"
+        ]
+      }
+    }
+  },
+  "replay": {
+    "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T095617Z-replay-23d7d4db",
+    "report": {
+      "completed": true,
+      "mode": "replay",
+      "summary": {
+        "attempted": 1,
+        "loaded": 1,
+        "simulation_completed": 1,
+        "evaluated": 1,
+        "successful": 0,
+        "success_rate_evaluated": 0.0,
+        "success_rate_attempted": 0.0,
+        "failure_reasons": {
+          "no_lift": 1
+        }
+      },
+      "trials": [
+        {
+          "index": 0,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 0.0,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        }
+      ],
+      "scope": "Measured lift/contact/hold baseline; not force-closure or full grasp robustness validation",
+      "criteria": {
+        "lift_height_m": 0.03,
+        "hold_steps": 20,
+        "max_linear_speed_m_s": 0.1,
+        "contact_force_threshold_n": 0.01
+      },
+      "scene_validation": {
+        "robot_loaded": true,
+        "object_loaded": true,
+        "dynamic_rigid_body": true,
+        "collision_paths": [
+          "/World/envs/env_0/Object/geometry/mesh"
+        ],
+        "backend_masses_kg": [
+          0.10000000149011612
+        ],
+        "backend_materials_static_dynamic_restitution": [
+          [
+            0.699999988079071,
+            0.699999988079071,
+            0.0
+          ]
+        ],
+        "backend_inertias_kg_m2": [
+          [
+            4.166667349636555e-05,
+            0.0,
+            0.0,
+            0.0,
+            4.166667349636555e-05,
+            0.0,
+            0.0,
+            0.0,
+            4.166667349636555e-05
+          ]
+        ],
+        "spawned_local_extents_m": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "object_kind": "cube",
+        "asset_version": "procedural-cube-v1",
+        "contact_filter_paths": [
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_ffknuckle/rh_ffproximal/rh_ffmiddle/rh_ffdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_mfknuckle/rh_mfproximal/rh_mfmiddle/rh_mfdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_rfknuckle/rh_rfproximal/rh_rfmiddle/rh_rfdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_lfmetacarpal/rh_lfknuckle/rh_lfproximal/rh_lfmiddle/rh_lfdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_thbase/rh_thproximal/rh_thhub/rh_thmiddle/rh_thdistal"
+        ],
+        "additional_objects_loaded": [
+          "secondary_sphere"
+        ]
+      }
+    }
+  },
+  "batch": {
+    "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261106T095635Z-batch-e55f347a",
+    "report": {
+      "completed": true,
+      "mode": "batch",
+      "summary": {
+        "attempted": 10,
+        "loaded": 10,
+        "simulation_completed": 10,
+        "evaluated": 10,
+        "successful": 0,
+        "success_rate_evaluated": 0.0,
+        "success_rate_attempted": 0.0,
+        "failure_reasons": {
+          "no_lift": 10
+        }
+      },
+      "trials": [
+        {
+          "index": 0,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 0.0,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        },
+        {
+          "index": 1,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 2.3609166044511436e-08,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        },
+        {
+          "index": 2,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 3.2324112093088644e-08,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        },
+        {
+          "index": 3,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 2.98495217031964e-08,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        },
+        {
+          "index": 4,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 1.54362665239495e-08,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        },
+        {
+          "index": 5,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 2.4956427588344055e-08,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        },
+        {
+          "index": 6,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 4.103842092606456e-09,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        },
+        {
+          "index": 7,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 2.0789568476289436e-08,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        },
+        {
+          "index": 8,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 2.636918254828219e-09,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        },
+        {
+          "index": 9,
+          "loaded": true,
+          "simulation_completed": true,
+          "success": false,
+          "failure_reason": "no_lift",
+          "restoration": {
+            "joint_restore_max_error_rad": 0.0,
+            "palm_restore_position_error_m": 2.4449446300118622e-08,
+            "palm_restore_rotation_error_rad": 0.0,
+            "object_restore_position_error_m": 0.0
+          },
+          "steps_completed": 100,
+          "max_lift_m": 0.0,
+          "max_consecutive_hold_steps": 0,
+          "final_hold_steps": 0,
+          "direct_joint_tracking_max_error_rad": 2.1319251211274334e-12,
+          "pose_replay_passed": true
+        }
+      ],
+      "scope": "Measured lift/contact/hold baseline; not force-closure or full grasp robustness validation",
+      "criteria": {
+        "lift_height_m": 0.03,
+        "hold_steps": 20,
+        "max_linear_speed_m_s": 0.1,
+        "contact_force_threshold_n": 0.01
+      },
+      "scene_validation": {
+        "robot_loaded": true,
+        "object_loaded": true,
+        "dynamic_rigid_body": true,
+        "collision_paths": [
+          "/World/envs/env_0/Object/geometry/mesh"
+        ],
+        "backend_masses_kg": [
+          0.10000000149011612
+        ],
+        "backend_materials_static_dynamic_restitution": [
+          [
+            0.699999988079071,
+            0.699999988079071,
+            0.0
+          ]
+        ],
+        "backend_inertias_kg_m2": [
+          [
+            4.166667349636555e-05,
+            0.0,
+            0.0,
+            0.0,
+            4.166667349636555e-05,
+            0.0,
+            0.0,
+            0.0,
+            4.166667349636555e-05
+          ]
+        ],
+        "spawned_local_extents_m": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "object_kind": "cube",
+        "asset_version": "procedural-cube-v1",
+        "contact_filter_paths": [
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_ffknuckle/rh_ffproximal/rh_ffmiddle/rh_ffdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_mfknuckle/rh_mfproximal/rh_mfmiddle/rh_mfdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_rfknuckle/rh_rfproximal/rh_rfmiddle/rh_rfdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_lfmetacarpal/rh_lfknuckle/rh_lfproximal/rh_lfmiddle/rh_lfdistal",
+          "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_thbase/rh_thproximal/rh_thhub/rh_thmiddle/rh_thdistal"
+        ],
+        "additional_objects_loaded": [
+          "secondary_sphere"
+        ]
+      }
+    }
+  },
+  "candidates": "/root/gpufree-data/DexterousLab/outputs/20261106T095524Z-capture-225febf4/candidates10.jsonl",
+  "candidate_generation": "measured pose plus local xy perturbation; not DexGraspNet/HALO",
+  "video_generated": false
+}

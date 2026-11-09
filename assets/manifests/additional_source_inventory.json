@@ -1,0 +1,304 @@
+{
+  "sources": [
+    {
+      "repository": "DexRobot/dexrobot_urdf",
+      "url": "https://github.com/DexRobot/dexrobot_urdf",
+      "commit": "eb5ecde3c71d5e88964d4bc37685bdaafea8e949",
+      "tree_truncated": false,
+      "models": [
+        {
+          "path": "urdf/dexhand021_left.urdf",
+          "git_blob_sha": "f7c268f8322eb56c9131b2c3cd05d2946c7a2e1a",
+          "size": 69607
+        },
+        {
+          "path": "urdf/dexhand021_left_simplified.urdf",
+          "git_blob_sha": "9129842740e77f7c08c649fad534c3e7cafcb9b0",
+          "size": 32458
+        },
+        {
+          "path": "urdf/dexhand021_right.urdf",
+          "git_blob_sha": "b1a4bf1fdf0b5e8ef225682c53fda2fdbabc5914",
+          "size": 69511
+        },
+        {
+          "path": "urdf/dexhand021_right_simplified.urdf",
+          "git_blob_sha": "60be91fc42b4a7e07fe2e7d98598eeb85245cfd7",
+          "size": 32381
+        }
+      ],
+      "licenses": [
+        "LICENSE"
+      ],
+      "readmes": [
+        "README.md",
+        "README_zh.md"
+      ],
+      "status": "tree_inspected"
+    },
+    {
+      "repository": "oymotion/rohand_urdf_ros1",
+      "url": "https://github.com/oymotion/rohand_urdf_ros1",
+      "commit": "4d0157f8ba732a8332300619697a646ef7f6c36a",
+      "tree_truncated": false,
+      "models": [
+        {
+          "path": "package.xml",
+          "git_blob_sha": "0876dea052c1ec4b2adede68fb505ff3ad66ac25",
+          "size": 885
+        },
+        {
+          "path": "urdf/rohand_left.urdf",
+          "git_blob_sha": "c56dd44cc721408af86530a6ff7074cd12b50dff",
+          "size": 35258
+        },
+        {
+          "path": "urdf/rohand_right.urdf",
+          "git_blob_sha": "cf261a3187f84a550606d608ff2df4cc328808dc",
+          "size": 35076
+        }
+      ],
+      "licenses": [
+        "LICENSE"
+      ],
+      "readmes": [
+        "README.md"
+      ],
+      "status": "tree_inspected"
+    },
+    {
+      "repository": "ruka-hand/RUKA",
+      "url": "https://github.com/ruka-hand/RUKA",
+      "commit": "fe4f60805e7415bbeda8e7d49ef6fc094d653c41",
+      "tree_truncated": false,
+      "models": [
+        {
+          "path": "assets/xml/hand_assembly.xml",
+          "git_blob_sha": "3fc827fb2941acc705e150bf5b23cc7c0c5e602a",
+          "size": 16091
+        },
+        {
+          "path": "assets/xml/hand_basic_scene.xml",
+          "git_blob_sha": "31ebb2a0300a1d0342c1657011446e166cb1fff0",
+          "size": 2472
+        },
+        {
+          "path": "assets/xml/hand_box_scene.xml",
+          "git_blob_sha": "48c2e08006ac11806b97c1094a46783bd548a3ef",
+          "size": 3267
+        },
+        {
+          "path": "assets/xml/reorientation_cube.xml",
+          "git_blob_sha": "0b308296225165e223699a135f320844517aa3bd",
+          "size": 2104
+        }
+      ],
+      "licenses": [
+        "LICENSE"
+      ],
+      "readmes": [
+        "README.md"
+      ],
+      "status": "tree_inspected"
+    },
+    {
+      "repository": "FFTAI/Wiki-GRx-Models",
+      "url": "https://github.com/FFTAI/Wiki-GRx-Models",
+      "commit": "7d96c758f048fe1bf92b3258864d94771ae0c093",
+      "tree_truncated": false,
+      "models": [
+        {
+          "path": "Dexterous_hand/fourier_hand_6dof/urdf/fourier_left_hand_6dof.urdf",
+          "git_blob_sha": "3702a6928a2006dd3602ae9c53385301019ea74b",
+          "size": 14907
+        },
+        {
+          "path": "Dexterous_hand/fourier_hand_6dof/urdf/fourier_right_hand_6dof.urdf",
+          "git_blob_sha": "ac2f09f6586ec713a183caea54dfbf3c39ee7919",
+          "size": 14894
+        },
+        {
+          "path": "GR1_legacy/GR1/GR1T1/urdf/GR1T1.urdf",
+          "git_blob_sha": "1173257adc3afbb390d160b91fa3fdaff85e3d75",
+          "size": 62702
+        },
+        {
+          "path": "GR1_legacy/GR1/GR1T1/urdf/GR1T1_simple.urdf",
+          "git_blob_sha": "48ac4e47f24c97cd780fff6d114484cd08cc5834",
+          "size": 63829
+        },
+        {
+          "path": "GR1_legacy/GR1/GR1T2/urdf/GR1T2.urdf",
+          "git_blob_sha": "07d795d8bb42898f78e48929ea50cf16d0ed9d24",
+          "size": 35029
+        },
+        {
+          "path": "GR1_legacy/GR1/GR1T2/urdf/GR1T2_simple.urdf",
+          "git_blob_sha": "4f00c412849ca5805e9e02b4b351308ba8216d22",
+          "size": 34604
+        },
+        {
+          "path": "GRX/GR1/gr1t1/basic_urdf/gr1t1.urdf",
+          "git_blob_sha": "ee62fd68b794388c5e9620c9ec3c66aa35b232a7",
+          "size": 38720
+        },
+        {
+          "path": "GRX/GR1/gr1t1/basic_urdf/gr1t1_dummy_hand.urdf",
+          "git_blob_sha": "236e22453bec7abfb0f1f79606be3c95de0b1e3e",
+          "size": 35911
+        },
+        {
+          "path": "GRX/GR1/gr1t1/urdf/gr1t1_fourier_hand_6dof.urdf",
+          "git_blob_sha": "4cc3559f2e3bd8bcd0740e28d9904da43f760eb7",
+          "size": 63955
+        },
+        {
+          "path": "GRX/GR1/gr1t2/basic_urdf/gr1t2.urdf",
+          "git_blob_sha": "760fed8caff7c33bb38e6e02300671904739fe7d",
+          "size": 39014
+        },
+        {
+          "path": "GRX/GR1/gr1t2/basic_urdf/gr1t2_dummy_hand.urdf",
+          "git_blob_sha": "08b568d9baec0e9c2359c6d7aa206ce4271633c9",
+          "size": 35843
+        },
+        {
+          "path": "GRX/GR1/gr1t2/urdf/gr1t2_fourier_hand_6dof.urdf",
+          "git_blob_sha": "d9b7377963decec49395d8934f795815a0bd761b",
+          "size": 63887
+        },
+        {
+          "path": "GRX/GR2/GR2v3.0.1/urdf/GR2v3.0.1.urdf",
+          "git_blob_sha": "3d99f29c97ac49847fe5a0d05b16e25eff02bc79",
+          "size": 42082
+        },
+        {
+          "path": "GRX/GR2/gr2v3_8_7/basic_urdf/gr2v3_8_7.urdf",
+          "git_blob_sha": "8b6af4bdc951fb62ab4587662c03f7a4f587928b",
+          "size": 32037
+        },
+        {
+          "path": "GRX/GR2/gr2v3_8_7/basic_urdf/gr2v3_8_7_dummy_hand.urdf",
+          "git_blob_sha": "42f86d246fd70f384dd5a79db5ed656e32a3fa00",
+          "size": 33859
+        },
+        {
+          "path": "GRX/GR2/gr2v3_8_7/mjcf/gr2v3_8_7.xml",
+          "git_blob_sha": "5908c29f117ddd3ae5f52f8b3d507293881adef2",
+          "size": 22054
+        },
+        {
+          "path": "GRX/GR2/gr2v3_8_7/mjcf/gr2v3_8_7_dummy_hand.xml",
+          "git_blob_sha": "75b9e0741298765f32e9445f9c48c68afa597513",
+          "size": 23310
+        },
+        {
+          "path": "GRX/GR3/gr3v2_1_1/basic_urdf/gr3v2_1_1.urdf",
+          "git_blob_sha": "def1ae2f0843a7d9609d2ebb5e98bf0f1da9fb3b",
+          "size": 35005
+        },
+        {
+          "path": "GRX/GR3/gr3v2_1_1/basic_urdf/gr3v2_1_1_dummy_hand.urdf",
+          "git_blob_sha": "5e85db94abdafeb2101063a92f237a8aa1ed7c21",
+          "size": 36900
+        },
+        {
+          "path": "GRX/GR3/gr3v2_1_1/mjcf/gr3v2_1_1.xml",
+          "git_blob_sha": "5b2855a716639796b436a5c99bc281a077966e24",
+          "size": 24411
+        },
+        {
+          "path": "GRX/GR3/gr3v2_1_1/mjcf/gr3v2_1_1_dummy_hand.xml",
+          "git_blob_sha": "86592d9446fbbc03f6453918fde9e0086416b125",
+          "size": 25715
+        }
+      ],
+      "licenses": [
+        "LICENSE"
+      ],
+      "readmes": [
+        "GRX/GR1/README.md",
+        "README.md"
+      ],
+      "status": "tree_inspected"
+    },
+    {
+      "repository": "AgibotTech/agillink_omnihand_sdk",
+      "url": "https://github.com/AgibotTech/agillink_omnihand_sdk",
+      "commit": "c3a306e4c66c09830de861997bfcb9779ef2566c",
+      "status": "unavailable",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "repository": "UBTECH-Robot/Walker_TienKung_URDF",
+      "url": "https://github.com/UBTECH-Robot/Walker_TienKung_URDF",
+      "commit": "6901312d8516fc0e7f0410ed6a55a6bd8bfbfa5e",
+      "tree_truncated": false,
+      "models": [
+        {
+          "path": "package.xml",
+          "git_blob_sha": "b2e4efc851fff8df1a219b619e5ff788cc081732",
+          "size": 610
+        },
+        {
+          "path": "tiangong2pro_torq.xml",
+          "git_blob_sha": "6d1c2395b51c3c424fb49b9b4a61f6f5548f9b4b",
+          "size": 36850
+        },
+        {
+          "path": "urdf/tiangong2.0_complete_with_hands.xacro",
+          "git_blob_sha": "5498a517f7960ee8a22f7703f51e48c9b8c48bfc",
+          "size": 30437
+        },
+        {
+          "path": "urdf/tiangong2.0_pro_urdf.urdf",
+          "git_blob_sha": "62f074f3b3977cc4303983c9324bb89b2ab11e67",
+          "size": 39770
+        },
+        {
+          "path": "urdf/tiangong2.0_pro_urdf.urdf.xacro",
+          "git_blob_sha": "e2a8487b6de03804a3d64ed1b08eb26a1939a31d",
+          "size": 39755
+        },
+        {
+          "path": "urdf/tiangong2.0_pro_with_hands.urdf",
+          "git_blob_sha": "875197116fecc4212083935286e4fdbf6f65b0f8",
+          "size": 68394
+        }
+      ],
+      "licenses": [
+        "LICENSE"
+      ],
+      "readmes": [
+        "README.md",
+        "README_en.md"
+      ],
+      "status": "tree_inspected"
+    },
+    {
+      "repository": "seedrobotics/ros_robothands",
+      "url": "https://github.com/seedrobotics/ros_robothands",
+      "commit": "8a7f8de4d725df1228c1c0c93ad28ed2e646f78b",
+      "status": "unavailable",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "repository": "qbrobotics/qbhand-ros",
+      "url": "https://github.com/qbrobotics/qbhand-ros",
+      "status": "unavailable",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "repository": "CloneRobotics/Clone",
+      "url": "https://github.com/CloneRobotics/Clone",
+      "status": "unavailable",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "repository": "ROBOTIS-GIT/robotis_hand",
+      "url": "https://github.com/ROBOTIS-GIT/robotis_hand",
+      "status": "unavailable",
+      "error": "HTTP Error 403: rate limit exceeded"
+    }
+  ]
+}

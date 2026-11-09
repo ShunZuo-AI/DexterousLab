@@ -1,0 +1,40 @@
+.............Warp 1.17.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA L40S" (44 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.17.0
+.                                                           [100%]
+=============================== warnings summary ===============================
+isaaclab_arena/tests/test_arena_env_builder_cfg.py: 35 warnings
+  /root/gpufree-data/IsaacLab-Arena/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+14 passed, 35 warnings in 9.76s
+2026-11-06T05:52:00Z [7,509ms] [Warning] [py.warnings] /root/gpufree-data/IsaacLab-Arena/isaaclab_arena/assets/object_library.py:2047: DeprecationWarning: CollisionPropertiesCfg is deprecated. Use [UsdPhysicsCollisionCfg(...), PhysxCollisionCfg(...)] (and move mesh_collision_property to the spawner's mesh_collision_props slot) instead; CollisionPropertiesCfg will be removed in 3.2.
+  collision_props=sim_utils.CollisionPropertiesCfg(contact_offset=0.005),
+
+2026-11-06T05:52:00Z [7,509ms] [Warning] [py.warnings] /root/gpufree-data/IsaacLab-Arena/isaaclab_arena/assets/object_library.py:2048: DeprecationWarning: MassPropertiesCfg is deprecated. Use [MassCfg(...)] instead; MassPropertiesCfg will be removed in 3.2.
+  mass_props=sim_utils.MassPropertiesCfg(mass=0.2),
+
+2026-11-06T05:52:00Z [7,511ms] [Warning] [py.warnings] /root/gpufree-data/IsaacLab-Arena/isaaclab_arena/assets/object_library.py:2101: DeprecationWarning: NewtonRigidBodyPropertiesCfg is deprecated. Use [UsdPhysicsRigidBodyCfg(...), PhysxRigidBodyCfg(...)] instead; NewtonRigidBodyPropertiesCfg will be removed in 3.2.
+  "rigid_props": NewtonRigidBodyPropertiesCfg(
+
+2026-11-06T05:52:00Z [7,511ms] [Warning] [py.warnings] /root/gpufree-data/IsaacLab-Arena/isaaclab_arena/assets/object_library.py:2105: DeprecationWarning: MassPropertiesCfg is deprecated. Use [MassCfg(...)] instead; MassPropertiesCfg will be removed in 3.2.
+  "mass_props": sim_utils.MassPropertiesCfg(mass=mass),
+
+2026-11-06T05:52:00Z [7,511ms] [Warning] [py.warnings] /root/gpufree-data/IsaacLab-Arena/isaaclab_arena/assets/object_library.py:2106: DeprecationWarning: NewtonCollisionPropertiesCfg is deprecated. Use [UsdPhysicsCollisionCfg(...), PhysxCollisionCfg(...), NewtonCollisionCfg(...)] (and move mesh_collision_property to the spawner's mesh_collision_props slot) instead; NewtonCollisionPropertiesCfg will be removed in 3.2.
+  "collision_props": NewtonCollisionPropertiesCfg(
+
+2026-11-06T05:52:00Z [7,512ms] [Warning] [py.warnings] /root/gpufree-data/IsaacLab-Arena/isaaclab_arena/assets/object_library.py:2101: DeprecationWarning: NewtonRigidBodyPropertiesCfg is deprecated. Use [UsdPhysicsRigidBodyCfg(...), PhysxRigidBodyCfg(...)] instead; NewtonRigidBodyPropertiesCfg will be removed in 3.2.
+  "rigid_props": NewtonRigidBodyPropertiesCfg(
+
+2026-11-06T05:52:00Z [7,512ms] [Warning] [py.warnings] /root/gpufree-data/IsaacLab-Arena/isaaclab_arena/assets/object_library.py:2105: DeprecationWarning: MassPropertiesCfg is deprecated. Use [MassCfg(...)] instead; MassPropertiesCfg will be removed in 3.2.
+  "mass_props": sim_utils.MassPropertiesCfg(mass=mass),
+
+2026-11-06T05:52:00Z [7,512ms] [Warning] [py.warnings] /root/gpufree-data/IsaacLab-Arena/isaaclab_arena/assets/object_library.py:2106: DeprecationWarning: NewtonCollisionPropertiesCfg is deprecated. Use [UsdPhysicsCollisionCfg(...), PhysxCollisionCfg(...), NewtonCollisionCfg(...)] (and move mesh_collision_property to the spawner's mesh_collision_props slot) instead; NewtonCollisionPropertiesCfg will be removed in 3.2.
+  "collision_props": NewtonCollisionPropertiesCfg(
+
+Closing persistent simulation app. Tests failed: False

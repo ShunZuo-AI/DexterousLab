@@ -1,0 +1,52 @@
+{
+  "performed_utc": "2026-11-06T07:56:46.291809+00:00",
+  "moves": [
+    {
+      "old_path": "/root/gpufree-data/dexlab-assets/objects",
+      "new_path": "/root/gpufree-data/DexterousLab/assets/objects"
+    },
+    {
+      "old_path": "/root/gpufree-data/dexlab-assets/cache",
+      "new_path": "/root/gpufree-data/DexterousLab/assets/cache"
+    },
+    {
+      "old_path": "/root/gpufree-data/dexlab-assets/hands",
+      "new_path": "/root/gpufree-data/DexterousLab/assets/hands"
+    },
+    {
+      "old_path": "/root/gpufree-data/research-repos",
+      "new_path": "/root/gpufree-data/DexterousLab/research-repos"
+    },
+    {
+      "old_path": "/root/gpufree-data/models",
+      "new_path": "/root/gpufree-data/DexterousLab/models"
+    },
+    {
+      "old_path": "/root/gpufree-data/datasets",
+      "new_path": "/root/gpufree-data/DexterousLab/datasets"
+    },
+    {
+      "old_path": "/root/gpufree-data/.cache",
+      "new_path": "/root/gpufree-data/DexterousLab/.cache"
+    },
+    {
+      "old_path": "/root/gpufree-data/.config",
+      "new_path": "/root/gpufree-data/DexterousLab/.config"
+    },
+    {
+      "old_path": "/root/gpufree-data/.local",
+      "new_path": "/root/gpufree-data/DexterousLab/.local"
+    }
+  ],
+  "asset_root_alias": {
+    "old": "/root/gpufree-data/dexlab-assets",
+    "new": "/root/gpufree-data/DexterousLab/assets"
+  },
+  "policy": "Moved on the same data volume, no payload copies or deletion; historical absolute references retained via compatibility symlinks",
+  "verification": {
+    "project_tests": "101 passed in 3.53s",
+    "original_packages_sha256_checked": 66,
+    "unitree_dex3_1_right_physx_steps": 100,
+    "all_current_asset_local_paths_inside_project": true
+  }
+}

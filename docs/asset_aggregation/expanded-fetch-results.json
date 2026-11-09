@@ -1,0 +1,519 @@
+[
+  {
+    "asset_id": "unitree/dex1_1/unspecified",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "unitree/dex2_5/left",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "unitree/dex2_5/right",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "unitree/dex2_5/left_g1_5010_wrist",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "unitree/dex2_5/right_g1_5010_wrist",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "unitree/dex3_1/left",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "unitree/dex5_1/left",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "unitree/dex5_1/right",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "wuji/hand_v1/left",
+    "fetch_status": "fetched",
+    "static_passed": null
+  },
+  {
+    "asset_id": "wuji/hand_v2/2_1_left",
+    "fetch_status": "fetched",
+    "static_passed": null
+  },
+  {
+    "asset_id": "wuji/hand_v2/2_1_right",
+    "fetch_status": "fetched",
+    "static_passed": null
+  },
+  {
+    "asset_id": "wuji/hand_v2/2_2_left",
+    "fetch_status": "fetched",
+    "static_passed": null
+  },
+  {
+    "asset_id": "wuji/hand_v2/2_2_right",
+    "fetch_status": "fetched",
+    "static_passed": null
+  },
+  {
+    "asset_id": "brainco/revo2/revo2_left_hand",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "brainco/revo2/revo2_right_hand",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_left",
+    "fetch_status": "fetched",
+    "static_passed": false,
+    "failures": [
+      "Mesh meshes/left_hand_link.STL: Missing mesh or path outside raw package: meshes/left_hand_link.STL",
+      "Mesh meshes/left_hand_link.STL: Missing mesh or path outside raw package: meshes/left_hand_link.STL",
+      "Mesh meshes/left_hand_ee_link.STL: Missing mesh or path outside raw package: meshes/left_hand_ee_link.STL",
+      "Mesh meshes/left_hand_ee_link.STL: Missing mesh or path outside raw package: meshes/left_hand_ee_link.STL",
+      "Mesh meshes/left_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_bend_link.STL",
+      "Mesh meshes/left_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_bend_link.STL",
+      "Mesh meshes/left_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link1.STL",
+      "Mesh meshes/left_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link1.STL",
+      "Mesh meshes/left_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link2.STL",
+      "Mesh meshes/left_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link2.STL",
+      "Mesh meshes/left_hand_thumb_rota_tip.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_tip.STL",
+      "Mesh meshes/left_hand_thumb_rota_tip.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_tip.STL",
+      "Mesh meshes/left_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_index_bend_link.STL",
+      "Mesh meshes/left_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_index_bend_link.STL",
+      "Mesh meshes/left_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link1.STL",
+      "Mesh meshes/left_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link1.STL",
+      "Mesh meshes/left_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link2.STL",
+      "Mesh meshes/left_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link2.STL",
+      "Mesh meshes/left_hand_index_rota_tip.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_tip.STL",
+      "Mesh meshes/left_hand_index_rota_tip.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_tip.STL",
+      "Mesh meshes/left_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link1.STL",
+      "Mesh meshes/left_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link1.STL",
+      "Mesh meshes/left_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link2.STL",
+      "Mesh meshes/left_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link2.STL",
+      "Mesh meshes/left_hand_mid_tip.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_tip.STL",
+      "Mesh meshes/left_hand_mid_tip.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_tip.STL",
+      "Mesh meshes/left_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link1.STL",
+      "Mesh meshes/left_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link1.STL",
+      "Mesh meshes/left_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link2.STL",
+      "Mesh meshes/left_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link2.STL",
+      "Mesh meshes/left_hand_ring_tip.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_tip.STL",
+      "Mesh meshes/left_hand_ring_tip.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_tip.STL",
+      "Mesh meshes/left_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link1.STL",
+      "Mesh meshes/left_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link1.STL",
+      "Mesh meshes/left_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link2.STL",
+      "Mesh meshes/left_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link2.STL",
+      "Mesh meshes/left_hand_pinky_tip.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_tip.STL",
+      "Mesh meshes/left_hand_pinky_tip.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_tip.STL"
+    ]
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_left_6dof",
+    "fetch_status": "fetched",
+    "static_passed": false,
+    "failures": [
+      "Mesh meshes/left_hand_link.STL: Missing mesh or path outside raw package: meshes/left_hand_link.STL",
+      "Mesh meshes/left_hand_link.STL: Missing mesh or path outside raw package: meshes/left_hand_link.STL",
+      "Mesh meshes/left_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_bend_link.STL",
+      "Mesh meshes/left_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_bend_link.STL",
+      "Mesh meshes/left_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link1.STL",
+      "Mesh meshes/left_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link1.STL",
+      "Mesh meshes/left_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link2.STL",
+      "Mesh meshes/left_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link2.STL",
+      "Mesh meshes/left_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_index_bend_link.STL",
+      "Mesh meshes/left_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_index_bend_link.STL",
+      "Mesh meshes/left_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link1.STL",
+      "Mesh meshes/left_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link1.STL",
+      "Mesh meshes/left_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link2.STL",
+      "Mesh meshes/left_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link2.STL",
+      "Mesh meshes/left_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link1.STL",
+      "Mesh meshes/left_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link1.STL",
+      "Mesh meshes/left_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link2.STL",
+      "Mesh meshes/left_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link2.STL",
+      "Mesh meshes/left_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link1.STL",
+      "Mesh meshes/left_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link1.STL",
+      "Mesh meshes/left_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link2.STL",
+      "Mesh meshes/left_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link2.STL",
+      "Mesh meshes/left_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link1.STL",
+      "Mesh meshes/left_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link1.STL",
+      "Mesh meshes/left_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link2.STL",
+      "Mesh meshes/left_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link2.STL"
+    ]
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_left_copy",
+    "fetch_status": "fetched",
+    "static_passed": false,
+    "failures": [
+      "Mesh meshes/left_hand_link.STL: Missing mesh or path outside raw package: meshes/left_hand_link.STL",
+      "Mesh meshes/left_hand_link.STL: Missing mesh or path outside raw package: meshes/left_hand_link.STL",
+      "Mesh meshes/left_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_bend_link.STL",
+      "Mesh meshes/left_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_bend_link.STL",
+      "Mesh meshes/left_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link1.STL",
+      "Mesh meshes/left_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link1.STL",
+      "Mesh meshes/left_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link2.STL",
+      "Mesh meshes/left_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_thumb_rota_link2.STL",
+      "Mesh meshes/left_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_index_bend_link.STL",
+      "Mesh meshes/left_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/left_hand_index_bend_link.STL",
+      "Mesh meshes/left_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link1.STL",
+      "Mesh meshes/left_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link1.STL",
+      "Mesh meshes/left_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link2.STL",
+      "Mesh meshes/left_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_index_rota_link2.STL",
+      "Mesh meshes/left_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link1.STL",
+      "Mesh meshes/left_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link1.STL",
+      "Mesh meshes/left_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link2.STL",
+      "Mesh meshes/left_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_mid_link2.STL",
+      "Mesh meshes/left_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link1.STL",
+      "Mesh meshes/left_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link1.STL",
+      "Mesh meshes/left_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link2.STL",
+      "Mesh meshes/left_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_ring_link2.STL",
+      "Mesh meshes/left_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link1.STL",
+      "Mesh meshes/left_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link1.STL",
+      "Mesh meshes/left_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link2.STL",
+      "Mesh meshes/left_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/left_hand_pinky_link2.STL"
+    ]
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_right",
+    "fetch_status": "fetched",
+    "static_passed": false,
+    "failures": [
+      "Mesh meshes/right_hand_link.STL: Missing mesh or path outside raw package: meshes/right_hand_link.STL",
+      "Mesh meshes/right_hand_link.STL: Missing mesh or path outside raw package: meshes/right_hand_link.STL",
+      "Mesh meshes/right_hand_ee_link.STL: Missing mesh or path outside raw package: meshes/right_hand_ee_link.STL",
+      "Mesh meshes/right_hand_ee_link.STL: Missing mesh or path outside raw package: meshes/right_hand_ee_link.STL",
+      "Mesh meshes/right_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_bend_link.STL",
+      "Mesh meshes/right_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_bend_link.STL",
+      "Mesh meshes/right_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link1.STL",
+      "Mesh meshes/right_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link1.STL",
+      "Mesh meshes/right_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link2.STL",
+      "Mesh meshes/right_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link2.STL",
+      "Mesh meshes/right_hand_thumb_rota_tip.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_tip.STL",
+      "Mesh meshes/right_hand_thumb_rota_tip.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_tip.STL",
+      "Mesh meshes/right_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_index_bend_link.STL",
+      "Mesh meshes/right_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_index_bend_link.STL",
+      "Mesh meshes/right_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link1.STL",
+      "Mesh meshes/right_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link1.STL",
+      "Mesh meshes/right_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link2.STL",
+      "Mesh meshes/right_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link2.STL",
+      "Mesh meshes/right_hand_index_rota_tip.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_tip.STL",
+      "Mesh meshes/right_hand_index_rota_tip.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_tip.STL",
+      "Mesh meshes/right_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link1.STL",
+      "Mesh meshes/right_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link1.STL",
+      "Mesh meshes/right_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link2.STL",
+      "Mesh meshes/right_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link2.STL",
+      "Mesh meshes/right_hand_mid_tip.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_tip.STL",
+      "Mesh meshes/right_hand_mid_tip.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_tip.STL",
+      "Mesh meshes/right_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link1.STL",
+      "Mesh meshes/right_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link1.STL",
+      "Mesh meshes/right_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link2.STL",
+      "Mesh meshes/right_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link2.STL",
+      "Mesh meshes/right_hand_ring_tip.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_tip.STL",
+      "Mesh meshes/right_hand_ring_tip.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_tip.STL",
+      "Mesh meshes/right_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link1.STL",
+      "Mesh meshes/right_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link1.STL",
+      "Mesh meshes/right_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link2.STL",
+      "Mesh meshes/right_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link2.STL",
+      "Mesh meshes/right_hand_pinky_tip.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_tip.STL",
+      "Mesh meshes/right_hand_pinky_tip.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_tip.STL"
+    ]
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_right_6dof",
+    "fetch_status": "fetched",
+    "static_passed": false,
+    "failures": [
+      "Mesh meshes/right_hand_link.STL: Missing mesh or path outside raw package: meshes/right_hand_link.STL",
+      "Mesh meshes/right_hand_link.STL: Missing mesh or path outside raw package: meshes/right_hand_link.STL",
+      "Mesh meshes/right_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_bend_link.STL",
+      "Mesh meshes/right_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_bend_link.STL",
+      "Mesh meshes/right_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link1.STL",
+      "Mesh meshes/right_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link1.STL",
+      "Mesh meshes/right_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link2.STL",
+      "Mesh meshes/right_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link2.STL",
+      "Mesh meshes/right_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_index_bend_link.STL",
+      "Mesh meshes/right_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_index_bend_link.STL",
+      "Mesh meshes/right_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link1.STL",
+      "Mesh meshes/right_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link1.STL",
+      "Mesh meshes/right_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link2.STL",
+      "Mesh meshes/right_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link2.STL",
+      "Mesh meshes/right_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link1.STL",
+      "Mesh meshes/right_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link1.STL",
+      "Mesh meshes/right_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link2.STL",
+      "Mesh meshes/right_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link2.STL",
+      "Mesh meshes/right_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link1.STL",
+      "Mesh meshes/right_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link1.STL",
+      "Mesh meshes/right_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link2.STL",
+      "Mesh meshes/right_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link2.STL",
+      "Mesh meshes/right_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link1.STL",
+      "Mesh meshes/right_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link1.STL",
+      "Mesh meshes/right_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link2.STL",
+      "Mesh meshes/right_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link2.STL"
+    ]
+  },
+  {
+    "asset_id": "robotera/xhand/xhand_right_copy",
+    "fetch_status": "fetched",
+    "static_passed": false,
+    "failures": [
+      "Mesh meshes/right_hand_link.STL: Missing mesh or path outside raw package: meshes/right_hand_link.STL",
+      "Mesh meshes/right_hand_link.STL: Missing mesh or path outside raw package: meshes/right_hand_link.STL",
+      "Mesh meshes/right_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_bend_link.STL",
+      "Mesh meshes/right_hand_thumb_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_bend_link.STL",
+      "Mesh meshes/right_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link1.STL",
+      "Mesh meshes/right_hand_thumb_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link1.STL",
+      "Mesh meshes/right_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link2.STL",
+      "Mesh meshes/right_hand_thumb_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_thumb_rota_link2.STL",
+      "Mesh meshes/right_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_index_bend_link.STL",
+      "Mesh meshes/right_hand_index_bend_link.STL: Missing mesh or path outside raw package: meshes/right_hand_index_bend_link.STL",
+      "Mesh meshes/right_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link1.STL",
+      "Mesh meshes/right_hand_index_rota_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link1.STL",
+      "Mesh meshes/right_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link2.STL",
+      "Mesh meshes/right_hand_index_rota_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_index_rota_link2.STL",
+      "Mesh meshes/right_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link1.STL",
+      "Mesh meshes/right_hand_mid_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link1.STL",
+      "Mesh meshes/right_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link2.STL",
+      "Mesh meshes/right_hand_mid_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_mid_link2.STL",
+      "Mesh meshes/right_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link1.STL",
+      "Mesh meshes/right_hand_ring_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link1.STL",
+      "Mesh meshes/right_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link2.STL",
+      "Mesh meshes/right_hand_ring_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_ring_link2.STL",
+      "Mesh meshes/right_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link1.STL",
+      "Mesh meshes/right_hand_pinky_link1.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link1.STL",
+      "Mesh meshes/right_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link2.STL",
+      "Mesh meshes/right_hand_pinky_link2.STL: Missing mesh or path outside raw package: meshes/right_hand_pinky_link2.STL"
+    ]
+  },
+  {
+    "asset_id": "tesollo/dg5f/dg5f_left",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "tesollo/dg5f/dg5f_left_short",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "tesollo/dg5f/dg5f_right",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "tesollo/dg5f/dg5f_right_short",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "psyonic/ability_hand/ability_hand_left_large",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "psyonic/ability_hand/ability_hand_left_small",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "psyonic/ability_hand/ability_hand_right_large",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "psyonic/ability_hand/ability_hand_right_large_no_fsr",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "psyonic/ability_hand/ability_hand_right_small",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "schunk/svh/schunk_svh_hand_left",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "schunk/svh/schunk_svh_hand_left_glb",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "schunk/svh/schunk_svh_hand_right",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "schunk/svh/schunk_svh_hand_right_glb",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "barrett/barrett_hand/bhand_model",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "barrett/barrett_hand/bhand_model_glb",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "robotis/hx5/urdf_hx5_d20_left",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "robotis/hx5/urdf_hx5_d20_right",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "orca/orca_hand/v1_models_urdf_orcahand_left",
+    "error": "[('/root/gpufree-data/research-repos/orcahand_description/v1/models/assets', '/root/gpufree-data/dexlab-assets/hands/orca/orca_hand/v1_models_urdf_orcahand_left/raw/v1/models/assets', \"[Errno 2] No such file or directory: '/root/gpufree-data/research-repos/orcahand_description/v1/models/assets'\")]"
+  },
+  {
+    "asset_id": "orca/orca_hand/v1_models_urdf_orcahand_left_extended",
+    "error": "[('/root/gpufree-data/research-repos/orcahand_description/v1/models/assets', '/root/gpufree-data/dexlab-assets/hands/orca/orca_hand/v1_models_urdf_orcahand_left_extended/raw/v1/models/assets', \"[Errno 2] No such file or directory: '/root/gpufree-data/research-repos/orcahand_description/v1/models/assets'\")]"
+  },
+  {
+    "asset_id": "orca/orca_hand/v1_models_urdf_orcahand_right",
+    "error": "[('/root/gpufree-data/research-repos/orcahand_description/v1/models/assets', '/root/gpufree-data/dexlab-assets/hands/orca/orca_hand/v1_models_urdf_orcahand_right/raw/v1/models/assets', \"[Errno 2] No such file or directory: '/root/gpufree-data/research-repos/orcahand_description/v1/models/assets'\")]"
+  },
+  {
+    "asset_id": "orca/orca_hand/v1_models_urdf_orcahand_right_extended",
+    "error": "[('/root/gpufree-data/research-repos/orcahand_description/v1/models/assets', '/root/gpufree-data/dexlab-assets/hands/orca/orca_hand/v1_models_urdf_orcahand_right_extended/raw/v1/models/assets', \"[Errno 2] No such file or directory: '/root/gpufree-data/research-repos/orcahand_description/v1/models/assets'\")]"
+  },
+  {
+    "asset_id": "dexrobot/dexhand021/dexhand021_left",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "dexrobot/dexhand021/dexhand021_left_simplified",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "dexrobot/dexhand021/dexhand021_right",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "dexrobot/dexhand021/dexhand021_right_simplified",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "oymotion/rohand/urdf_rohand_left",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "oymotion/rohand/urdf_rohand_right",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "fourier/fourier_hand/dexterous_hand_fourier_hand_6dof_urdf_fourier_left_hand_6dof",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "fourier/fourier_hand/dexterous_hand_fourier_hand_6dof_urdf_fourier_right_hand_6dof",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "linkerbot/linkerhand_l20/right_linkerhand_l20_right",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave_with_flange",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave_with_wrist",
+    "fetch_status": "fetched",
+    "static_passed": true,
+    "failures": []
+  },
+  {
+    "asset_id": "shadow_robot/dex_ee/0x02000105",
+    "fetch_status": "fetched",
+    "static_passed": null
+  },
+  {
+    "asset_id": "shadow_robot/dex_ee/0x02000106",
+    "fetch_status": "fetched",
+    "static_passed": null
+  },
+  {
+    "asset_id": "shadow_robot/dex_ee/0x02000107",
+    "fetch_status": "fetched",
+    "static_passed": null
+  },
+  {
+    "asset_id": "shadow_robot/dex_ee/0x02000109",
+    "fetch_status": "fetched",
+    "static_passed": null
+  }
+]

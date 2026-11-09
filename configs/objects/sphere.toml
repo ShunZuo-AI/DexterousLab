@@ -1,0 +1,5 @@
+kind = "sphere"
+registry_name = "dexlab_sphere"
+size = [0.05, 0.05, 0.05]
+position_xyz = [-0.55, 0.0, 0.285]
+asset_version = "procedural-sphere-v1"

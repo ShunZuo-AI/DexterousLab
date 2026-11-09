@@ -1,0 +1,487 @@
+{
+  "generator": "scripts/build_hand_gallery.py",
+  "method": "Local USD visual geometry + authored transforms; VTK studio render, no physics simulation.",
+  "appearance": "Unified silver/teal materials; vendor materials are not reproduced.",
+  "scope": "18 selected configurations from 17 manufacturers; not all 22 validated configurations.",
+  "assets": [
+    {
+      "asset_id": "wonik/allegro/isaaclab_standalone",
+      "title": "Allegro Hand",
+      "manufacturer": "WONIK ROBOTICS",
+      "source_usd": "assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/Robots/WonikRobotics/AllegroHand/allegro_hand_instanceable.usd",
+      "source_sha256": "edc12a991d080730f78da83ea6ef0363e6dc997bff5861449e582e3e336a5bc8",
+      "render": "docs/media/hands/wonik--allegro--isaaclab_standalone.png",
+      "source_repository": "https://github.com/isaac-sim/IsaacLab",
+      "source_commit": "e3f7d9ff1f5d7f8280de3ece9000b7117f66bcf4",
+      "license": {
+        "status": "official_reference_only",
+        "expression": "NVIDIA asset terms; config code BSD-3-Clause",
+        "evidence_paths": [
+          "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab_assets/isaaclab_assets/robots/allegro.py"
+        ]
+      },
+      "mesh_count": 18,
+      "display_axes": [
+        1,
+        0,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "shadow_robot/dexterous_hand/right_isaaclab",
+      "title": "Shadow Hand",
+      "manufacturer": "SHADOW ROBOT",
+      "source_usd": "assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/Robots_Multiphysics/ShadowRobot/ShadowHandMultiPhysics_v0/right_hand/right_hand.usda",
+      "source_sha256": "6fef9e84ce3dd5b8c2f0e7ed1d2a9d4a1e364a838379fd1c65afedc3a72a6680",
+      "render": "docs/media/hands/shadow_robot--dexterous_hand--right_isaaclab.png",
+      "source_repository": "https://github.com/isaac-sim/IsaacLab",
+      "source_commit": "e3f7d9ff1f5d7f8280de3ece9000b7117f66bcf4",
+      "license": {
+        "status": "official_reference_only",
+        "expression": "NVIDIA asset terms; config code BSD-3-Clause",
+        "evidence_paths": [
+          "/root/gpufree-data/IsaacLab-Arena/submodules/IsaacLab/source/isaaclab_assets/isaaclab_assets/robots/shadow_hand.py"
+        ]
+      },
+      "mesh_count": 29,
+      "display_axes": [
+        1,
+        2,
+        0
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "leap/leap_hand_v1/right",
+      "title": "LEAP Hand",
+      "manufacturer": "LEAP",
+      "source_usd": "assets/hands/leap/leap_hand_v1/right/processed/20261106T071937Z-convert-682ab2b2/robot/robot.usda",
+      "source_sha256": "69fb7ebc867ef8236c1cb3e613d21241bd7a4bd1fdbe8d3c0c6161bfc2962c93",
+      "render": "docs/media/hands/leap--leap_hand_v1--right.png",
+      "source_repository": "https://github.com/leap-hand/LEAP_Hand_Sim",
+      "source_commit": "150bc3d4b61fd6619193ba5a8ef209f3609ced89",
+      "license": {
+        "status": "reviewed",
+        "expression": "MIT",
+        "evidence_paths": [
+          "LICENSE.txt"
+        ]
+      },
+      "mesh_count": 34,
+      "display_axes": [
+        0,
+        2,
+        1
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 90
+    },
+    {
+      "asset_id": "unitree/dex5_1/right",
+      "title": "Dex5-1",
+      "manufacturer": "UNITREE",
+      "source_usd": "assets/hands/unitree/dex5_1/right/processed/20261106T074241Z-convert-c75e7db1/import/import.usda",
+      "source_sha256": "217260b5e48532cec64bffb90c9076d5c23419d9052e1a0f3289f8151fbe0a70",
+      "render": "docs/media/hands/unitree--dex5_1--right.png",
+      "source_repository": "https://github.com/unitreerobotics/unitree_ros",
+      "source_commit": "41dec58c7a3ccb3050243ef16ac2ca74b2b0f9ca",
+      "license": {
+        "status": "reviewed",
+        "expression": "BSD-3-Clause",
+        "evidence_paths": [
+          "LICENSE"
+        ]
+      },
+      "mesh_count": 42,
+      "display_axes": [
+        0,
+        2,
+        1
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "wuji/hand_v1/right",
+      "title": "Wuji Hand V1",
+      "manufacturer": "WUJI",
+      "source_usd": "assets/hands/wuji/hand_v1/right/raw/hand/body/usd/right/wujihand.usd",
+      "source_sha256": "3cb3dcb18b07621a52a47a8daa98ab82794e3c77d36275d068b3b5b0516e5f00",
+      "render": "docs/media/hands/wuji--hand_v1--right.png",
+      "source_repository": "https://github.com/wuji-technology/wuji-description",
+      "source_commit": "5c4dfa16917355d073e2e1d7e3d03897b6cf9508",
+      "license": {
+        "status": "reviewed",
+        "expression": "MIT",
+        "evidence_paths": [
+          "LICENSE"
+        ]
+      },
+      "mesh_count": 26,
+      "display_axes": [
+        1,
+        0,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "wuji/hand_v2/2_2_right",
+      "title": "Wuji Hand V2.2",
+      "manufacturer": "WUJI",
+      "source_usd": "assets/hands/wuji/hand_v2/2_2_right/raw/hand2/hand2_2/body/usd/right/wujihand2_2.usd",
+      "source_sha256": "ea9e12d7f0d96f33b91c95e193c87ecea91cbe71f2deabe5c135c1d77f52aa3f",
+      "render": "docs/media/hands/wuji--hand_v2--2_2_right.png",
+      "source_repository": "https://github.com/wuji-technology/wuji-description",
+      "source_commit": "5c4dfa16917355d073e2e1d7e3d03897b6cf9508",
+      "license": {
+        "status": "reviewed",
+        "expression": "MIT",
+        "evidence_paths": [
+          "LICENSE"
+        ]
+      },
+      "mesh_count": 27,
+      "display_axes": [
+        0,
+        1,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 180
+    },
+    {
+      "asset_id": "brainco/revo2/revo2_right_hand",
+      "title": "Revo2",
+      "manufacturer": "BRAINCO",
+      "source_usd": "assets/hands/brainco/revo2/revo2_right_hand/processed/20261106T073946Z-convert-21e011cb/import/import.usda",
+      "source_sha256": "6734875c14cde22ce6ec9290690e6f9f12ee3018c200603d8b3cbf7c1adeb28f",
+      "render": "docs/media/hands/brainco--revo2--revo2_right_hand.png",
+      "source_repository": "https://github.com/BrainCoTech/revo2_description",
+      "source_commit": "92cc697c7fa691db59404ce52344f3969a5ef7a6",
+      "license": {
+        "status": "reviewed",
+        "expression": "Apache-2.0",
+        "evidence_paths": [
+          "LICENSE"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": []
+      },
+      "mesh_count": 35,
+      "display_axes": [
+        1,
+        0,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "robotera/xhand/xhand_right",
+      "title": "XHand",
+      "manufacturer": "ROBOTERA",
+      "source_usd": "assets/hands/robotera/xhand/xhand_right/processed/20261106T074357Z-convert-eb463aff/import/import.usda",
+      "source_sha256": "28184a2d90f69a6e6ae7d6420d00495d091e868eb885182de12be6b55c506d33",
+      "render": "docs/media/hands/robotera--xhand--xhand_right.png",
+      "source_repository": "https://github.com/facebookresearch/spider",
+      "source_commit": "44717007de41cbef7565dff7ff9f4453557a2d3d",
+      "license": {
+        "status": "reviewed",
+        "expression": "LicenseRef-Meta-CC-BY-NC",
+        "evidence_paths": [
+          "LICENSE"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": [
+          "noncommercial only"
+        ]
+      },
+      "mesh_count": 38,
+      "display_axes": [
+        2,
+        1,
+        0
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": -90
+    },
+    {
+      "asset_id": "tesollo/dg5f/dg5f_right",
+      "title": "DG5F",
+      "manufacturer": "TESOLLO",
+      "source_usd": "assets/hands/tesollo/dg5f/dg5f_right/processed/20261106T074028Z-convert-dff30597/import/import.usda",
+      "source_sha256": "8876c002c8765835d4465eabb17e530b5df3f93cd7f7406481f647e02a9e3bc5",
+      "render": "docs/media/hands/tesollo--dg5f--dg5f_right.png",
+      "source_repository": "https://github.com/tesollodelto/dg5f_ros2",
+      "source_commit": "0cb45ae9474caa92410dfa820346da8ffbae8405",
+      "license": {
+        "status": "reviewed",
+        "expression": "BSD-3-Clause",
+        "evidence_paths": [
+          "LICENSE"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": []
+      },
+      "mesh_count": 56,
+      "display_axes": [
+        1,
+        0,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "psyonic/ability_hand/ability_hand_right_large",
+      "title": "Ability Hand",
+      "manufacturer": "PSYONIC",
+      "source_usd": "assets/hands/psyonic/ability_hand/ability_hand_right_large/processed/20261106T074041Z-convert-ab114354/import/import.usda",
+      "source_sha256": "3cf42ccdbdac41b112b6607aba173590cad1aff5301a7e54031211f3e9d4b0fd",
+      "render": "docs/media/hands/psyonic--ability_hand--ability_hand_right_large.png",
+      "source_repository": "https://github.com/psyonicinc/ability-hand-api",
+      "source_commit": "34c9a9324d3739d976e6de441e56ccefafd0000b",
+      "license": {
+        "status": "reviewed",
+        "expression": "MIT",
+        "evidence_paths": [
+          "LICENSE"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": []
+      },
+      "mesh_count": 23,
+      "display_axes": [
+        0,
+        1,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "schunk/svh/schunk_svh_hand_right",
+      "title": "SVH",
+      "manufacturer": "SCHUNK",
+      "source_usd": "assets/hands/schunk/svh/schunk_svh_hand_right/processed/20261106T074053Z-convert-acbac7c2/import/import.usda",
+      "source_sha256": "6fd7f2fa0de29210bacae61dcb729d2ae2d6a6e94e7c9902cf410447612f972c",
+      "render": "docs/media/hands/schunk--svh--schunk_svh_hand_right.png",
+      "source_repository": "https://github.com/dexsuite/dex-urdf",
+      "source_commit": "f5e7132f22108164577fea4c25ef99b5cc0e1900",
+      "license": {
+        "status": "reviewed",
+        "expression": "GPL-3.0",
+        "evidence_paths": [
+          "LICENSE",
+          "robots/hands/schunk_hand/LICENSE"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": []
+      },
+      "mesh_count": 58,
+      "display_axes": [
+        1,
+        0,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "barrett/barrett_hand/bhand_model",
+      "title": "Barrett Hand",
+      "manufacturer": "BARRETT",
+      "source_usd": "assets/hands/barrett/barrett_hand/bhand_model/processed/20261106T074109Z-convert-dbd1100c/import/import.usda",
+      "source_sha256": "be7d6bfb148f6f4fbb9f4dff62f191cd493a0a6f915eb2348e86c9231769de90",
+      "render": "docs/media/hands/barrett--barrett_hand--bhand_model.png",
+      "source_repository": "https://github.com/dexsuite/dex-urdf",
+      "source_commit": "f5e7132f22108164577fea4c25ef99b5cc0e1900",
+      "license": {
+        "status": "reviewed",
+        "expression": "MIT AND BSD-2-Clause",
+        "evidence_paths": [
+          "LICENSE",
+          "robots/hands/barrett_hand/LICENSE"
+        ],
+        "scope": "Root DexSuite MIT plus model-specific two-condition Barrett redistribution notice",
+        "restrictions": []
+      },
+      "mesh_count": 17,
+      "display_axes": [
+        2,
+        0,
+        1
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "robotis/hx5/urdf_hx5_d20_right",
+      "title": "HX5",
+      "manufacturer": "ROBOTIS",
+      "source_usd": "assets/hands/robotis/hx5/urdf_hx5_d20_right/processed/20261106T074121Z-convert-e9072e1f/import/import.usda",
+      "source_sha256": "cadd1c85114eab60352cfa3dd5554f669fe0a0e72d95dd1f18002df0655b45dc",
+      "render": "docs/media/hands/robotis--hx5--urdf_hx5_d20_right.png",
+      "source_repository": "https://github.com/whats-lab/dexterous-hand-urdf",
+      "source_commit": "6c5d8bd137e4ea375be04fa77fac7256e4772ed2",
+      "license": {
+        "status": "reviewed",
+        "expression": "Apache-2.0",
+        "evidence_paths": [
+          "dexhand_description/robotis_hx5_d20/LICENSE"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": []
+      },
+      "mesh_count": 42,
+      "display_axes": [
+        1,
+        0,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "orca/orca_hand/v1_models_urdf_orcahand_right",
+      "title": "ORCA Hand",
+      "manufacturer": "ORCA",
+      "source_usd": "assets/hands/orca/orca_hand/v1_models_urdf_orcahand_right/processed/20261106T074409Z-convert-5c4776b3/import/import.usda",
+      "source_sha256": "c9a87be743201b45341f2ff304f7a1f20ed6634c81a8aa6307148e0d07a13711",
+      "render": "docs/media/hands/orca--orca_hand--v1_models_urdf_orcahand_right.png",
+      "source_repository": "https://github.com/orcahand/orcahand_description",
+      "source_commit": "d679c85c168c330a48d83d20e8dcf52c7b517ef1",
+      "license": {
+        "status": "reviewed",
+        "expression": "MIT",
+        "evidence_paths": [
+          "LICENSE"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": []
+      },
+      "mesh_count": 31,
+      "display_axes": [
+        0,
+        1,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "dexrobot/dexhand021/dexhand021_right",
+      "title": "DexHand021",
+      "manufacturer": "DEXROBOT",
+      "source_usd": "assets/hands/dexrobot/dexhand021/dexhand021_right/processed/20261106T074134Z-convert-532410d0/import/import.usda",
+      "source_sha256": "dc31aa1f7729991b80b24032805d1c47bbfb44626b4636d4911f8ddc9fd53b18",
+      "render": "docs/media/hands/dexrobot--dexhand021--dexhand021_right.png",
+      "source_repository": "https://github.com/DexRobot/dexrobot_urdf",
+      "source_commit": "eb5ecde3c71d5e88964d4bc37685bdaafea8e949",
+      "license": {
+        "status": "reviewed",
+        "expression": "Apache-2.0",
+        "evidence_paths": [
+          "LICENSE"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": []
+      },
+      "mesh_count": 114,
+      "display_axes": [
+        1,
+        0,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "oymotion/rohand/urdf_rohand_right",
+      "title": "ROHand",
+      "manufacturer": "OYMOTION",
+      "source_usd": "assets/hands/oymotion/rohand/urdf_rohand_right/processed/20261106T074150Z-convert-dd4f705a/import/import.usda",
+      "source_sha256": "e5c3a9ff8117cf2355053337d157db31fa88e72eacce96638c2090f9829b047d",
+      "render": "docs/media/hands/oymotion--rohand--urdf_rohand_right.png",
+      "source_repository": "https://github.com/oymotion/rohand_urdf_ros1",
+      "source_commit": "4d0157f8ba732a8332300619697a646ef7f6c36a",
+      "license": {
+        "status": "reviewed",
+        "expression": "MIT",
+        "evidence_paths": [
+          "LICENSE"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": []
+      },
+      "mesh_count": 52,
+      "display_axes": [
+        1,
+        2,
+        0
+      ],
+      "vertical_sign": -1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "linkerbot/linkerhand_l20/right_linkerhand_l20_right",
+      "title": "LinkerHand L20",
+      "manufacturer": "LINKERBOT",
+      "source_usd": "assets/hands/linkerbot/linkerhand_l20/right_linkerhand_l20_right/processed/20261106T074000Z-convert-e32574b5/import/import.usda",
+      "source_sha256": "9519c412c54204d721f0b624a226d4fbad1a989910a1eb8f3a2a420a10c6a651",
+      "render": "docs/media/hands/linkerbot--linkerhand_l20--right_linkerhand_l20_right.png",
+      "source_repository": "https://github.com/linker-bot/linkerhand-urdf",
+      "source_commit": "49f26021b0a91ff5c33150df22970c07bb548672",
+      "license": {
+        "status": "reviewed",
+        "expression": "Apache-2.0",
+        "evidence_paths": [
+          "LICENSE"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": []
+      },
+      "mesh_count": 44,
+      "display_axes": [
+        1,
+        0,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    },
+    {
+      "asset_id": "sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave",
+      "title": "Sharpa Wave",
+      "manufacturer": "SHARPA",
+      "source_usd": "assets/hands/sharpa/sharpa_wave_wave_01/right_sharpa_wave_right_sharpa_wave/processed/20261106T074014Z-convert-d44bdc55/import/import.usda",
+      "source_sha256": "ebf073186069967575fed02d258cc44fbee92d139f464440c8f106489461bcd7",
+      "render": "docs/media/hands/sharpa--sharpa_wave_wave_01--right_sharpa_wave_right_sharpa_wave.png",
+      "source_repository": "https://github.com/sharpa-robotics/sharpa-urdf-usd-xml",
+      "source_commit": "d323b371d02f4fc04a0873c19c5234cae6d803dd",
+      "license": {
+        "status": "reviewed",
+        "expression": "Apache-2.0",
+        "evidence_paths": [
+          "LICENSE.txt",
+          "NOTICE.txt"
+        ],
+        "scope": "Separate third-party model assets, original notices retained; no relicensing",
+        "restrictions": []
+      },
+      "mesh_count": 54,
+      "display_axes": [
+        1,
+        0,
+        2
+      ],
+      "vertical_sign": 1,
+      "image_rotation_degrees": 0
+    }
+  ]
+}

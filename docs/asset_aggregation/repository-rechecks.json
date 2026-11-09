@@ -1,0 +1,40 @@
+{
+  "seed_robotics": {
+    "commit": "8a7f8de4d725df1228c1c0c93ad28ed2e646f78b",
+    "model_paths": []
+  },
+  "qb_robotics": {
+    "commit": "fbeda6e8873a3b8ef882411bf7bf9af4acb6bb37",
+    "url": "https://bitbucket.org/qbrobotics/qbhand-ros"
+  },
+  "roboparty": {
+    "manifest_path": "/root/gpufree-data/research-repos/rp_dexhand/resources/resources-2026.10.05/manifest.json",
+    "archives": [
+      {
+        "filename": "DH116_URDF_MJCF_Files_2026_4_9.7z",
+        "original_filename": "DH116_URDF_MJCF_Files_2026_4_9.7z",
+        "size_bytes": 7220054,
+        "sha256": "e1de545c27d8ab8b36af62ebb28d4933e024cb5edb70a7b227e6de84f33f5a98",
+        "category": "models",
+        "source_version": "2026-04-09",
+        "target": "DH116",
+        "source_url": "https://roboparty.feishu.cn/docx/E4pUdKUfWoplqHxbR9CcnNUfn4d",
+        "source_revision": 7,
+        "download_url": "https://github.com/Roboparty/rp_dexhand/releases/download/resources-2026.10.05/DH116_URDF_MJCF_Files_2026_4_9.7z"
+      },
+      {
+        "filename": "DH116S_URDF_MJCF_Files_2026_4_9.7z",
+        "original_filename": "DH116S_URDF_MJCF_Files_2026_4_9.7z",
+        "size_bytes": 9563409,
+        "sha256": "8143715828fe7196ff2906aee25f929c1b5b15127d6b6c45c66fd93e60560617",
+        "category": "models",
+        "source_version": "2026-04-09",
+        "target": "DH116S",
+        "source_url": "https://roboparty.feishu.cn/docx/E4pUdKUfWoplqHxbR9CcnNUfn4d",
+        "source_revision": 7,
+        "download_url": "https://github.com/Roboparty/rp_dexhand/releases/download/resources-2026.10.05/DH116S_URDF_MJCF_Files_2026_4_9.7z"
+      }
+    ],
+    "licensing_statement": "Internal snapshot; public redistribution not approved by this record."
+  }
+}

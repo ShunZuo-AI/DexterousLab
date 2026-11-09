@@ -1,0 +1,10 @@
+hand = "allegro"
+object = "cube"
+scene = "tabletop"
+task = "lift"
+backend = "physx"
+
+[object_overrides]
+position_xyz = [-0.5, 0.05, 0.3]
+rotation_xyzw = [0.0, 0.0, 0.3826834323650898, 0.9238795325112867]
+scale = [1.2, 1.2, 1.2]
