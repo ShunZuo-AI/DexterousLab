@@ -84,14 +84,11 @@ dexlab scene run --hand shadow --object cube --physics physx
 
 Shadow 使用运动学基座路径，两组不作为同硬件性能排名。当前尚无成功抓取基准。[实验报告与日志](docs/experiments/first_grasp_experiment.md)。
 
-<details>
-<summary>查看真实仿真截图（闭合阶段）</summary>
+### 真实仿真截图（闭合阶段）
 
 | Allegro + KUKA | Shadow |
 |---|---|
 | ![Allegro闭合阶段，本次未成功抬升保持](docs/media/allegro-tabletop.jpg) | ![Shadow闭合阶段，本次未成功抬升保持](docs/media/shadow-tabletop.jpg) |
-
-</details>
 
 单元测试记录：**111 passed**。[测试日志](docs/experiments/first_grasp_final_tests.log)。
 
