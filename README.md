@@ -1,10 +1,6 @@
-<p align="center">
-  <img src="docs/media/dexterouslab-concept-cover.png" alt="DexterousLab 概念封面：用户提供的原始视觉设计，中央机器人手、浅蓝玻璃光带和多手型生态；品牌及能力文字为概念表达，实际实现以正文为准。" width="100%" />
-</p>
-
-<p align="center">
-  <img src="docs/media/readme-style/wordmark.svg" alt="DexterousLab — A shared workspace for dexterous manipulation research" width="820" />
-</p>
+<h1 align="center">
+  <img src="docs/media/readme-style/wordmark.svg" alt="DexterousLab" width="820" />
+</h1>
 
 <p align="center">
   <strong>多种灵巧手 · 可组合的场景 · 可复核的实验</strong><br />
@@ -23,6 +19,10 @@
   <a href="#experiments"><img src="docs/media/readme-style/nav-experiments.svg" alt="实验展示" width="156" /></a>
   <a href="#architecture"><img src="docs/media/readme-style/nav-architecture.svg" alt="框架逻辑" width="156" /></a>
   <a href="#documentation"><img src="docs/media/readme-style/nav-documentation.svg" alt="文档中心" width="156" /></a>
+</p>
+
+<p align="center">
+  <img src="docs/media/dexterouslab-concept-cover.png" alt="DexterousLab 概念封面：用户提供的原始视觉设计，中央机器人手、浅蓝玻璃光带和多手型生态；品牌及能力文字为概念表达，实际实现以正文为准。" width="100%" />
 </p>
 
 <p align="center">
