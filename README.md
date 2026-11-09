@@ -13,7 +13,7 @@
 <p align="center">
   <a href="#news">📰 News</a> &nbsp; · &nbsp;
   <a href="#introduction">🧭 项目介绍</a> &nbsp; · &nbsp;
-  <a href="#features">✨ 当前能力</a> &nbsp; · &nbsp;
+  <a href="#features">✨ 核心功能</a> &nbsp; · &nbsp;
   <a href="#quick-start">🚀 快速开始</a> &nbsp; · &nbsp;
   <a href="#experiments">🧪 实验结果</a> &nbsp; · &nbsp;
   <a href="#documentation">📚 文档</a>
@@ -38,22 +38,37 @@
 
 项目将**灵巧手、物体、场景、任务和实验记录**统一组织，通过配置组合实验条件，减少重复搭建环境和处理资产的工作，让研究者专注于算法开发与实验分析。
 
-其核心作用是提供统一的实验基础：管理多手型资产、构建桌面仿真、执行控制尝试，并保存状态、接触和结果，为抓取算法接入、对照研究与数据集构建提供支持。当前实现范围见下表。
+其核心作用是提供统一的实验基础：管理多手型资产、构建桌面仿真、执行控制尝试，并保存状态、接触和结果，为抓取算法接入、对照研究与数据集构建提供支持。
 
 <a id="features"></a>
 
-## ✨ 当前能力
+## ✨ 核心功能
 
-| 模块 | 已实现内容 |
-|---|---|
-| 🖐️ 灵巧手资产 | 22 个配置通过资产级物理验证，覆盖 17 个厂商 / 项目；支持查询、转换与预览 |
-| 🧩 桌面环境 | Allegro + KUKA、Shadow；Cube / Cylinder / Sphere；通过配置切换 |
-| 📊 数据记录 | 关节、手掌、物体和指尖接触状态；配置快照、JSONL / NPZ、日志与截图 |
-| 🔬 抓取研究 | 候选与数据接口；DexGraspNet 能量和退火优化组件，完整生成与验证闭环仍待接通 |
+### 🖐️ 多手型资产管理
 
-工作流：**配置选择 → 场景构建 → 动作执行 → 状态采集 → 结果评测**。
+统一查询手型、来源与许可，校验模型文件，将已接入的URDF转换为USD，并在云桌面预览、运行资产级物理检查。已有 **22个配置、17个厂商 / 项目**通过验证。入口：`dexlab assets`。[手型清单](docs/asset_aggregation/coverage.md) · [模型预览](docs/asset-preview.md)。
 
-资产级验证不等于桌面抓取适配；当前桌面任务支持 **Allegro 和 Shadow**。[查看手型清单](docs/asset_aggregation/coverage.md)。
+### 🧩 配置驱动的场景构建
+
+通过配置选择灵巧手、物体和桌面任务，调整物体位姿、尺寸、质量与摩擦参数，无需为每个组合重写环境。桌面场景已接入 **Allegro + KUKA、Shadow**，支持 **立方体、圆柱、球体**。入口：`dexlab scene run`。[配置说明](docs/reference/usage-details.md)。
+
+### 🎮 抓取动作与仿真执行
+
+执行接近、下降、手指闭合、抬升和保持，记录不同阶段的物理响应与结果。Allegro通过KUKA机械臂运动，Shadow使用规定的基座路径及独立关节 / 腱控制；当前为人工配置的抓取基线。入口：`scripts/first_grasp_experiment.py`。[实验参数](configs/experiments/first_grasp.toml)。
+
+### 📊 状态采集与实验记录
+
+采集关节位置 / 速度、动作、手掌与物体姿态、指尖接触力和接触点，保存 **JSONL、数值NPZ、配置快照与日志**；渲染模式可保存阶段截图。每次运行独立建目录，成功与失败记录都保留，便于分析和复核。[数据约定](docs/data-contract.md)。
+
+### 🔁 姿态重放与批量评测
+
+保存仿真实测姿态，恢复机器人与物体状态后重放，或批量运行候选文件，统计已评估结果与失败原因。当前支持 **Shadow + Cube / Sphere / Cylinder**，入口为 `dexlab experiment` 下的 `capture`、`replay`、`batch`。[操作示例](docs/research/dexgarmentlab_usage.md)。
+
+### 🔬 抓取算法接入与研究
+
+提供统一的抓取候选、生成器 / 验证器抽象接口和数据写入接口；已迁移 **DexGraspNet能量函数与退火优化核心组件**。完整候选生成、通用物理验证和学习式执行策略仍待接通。[源码分析与迁移状态](docs/paper_reproductions/README.md)。
+
+**实验流程：资产选择 → 场景构建 → 动作执行 → 数据采集 → 重放与评测。** 资产级验证不代表已适配桌面抓取；当前桌面任务手型仍为Allegro和Shadow。
 
 <a id="quick-start"></a>
 
