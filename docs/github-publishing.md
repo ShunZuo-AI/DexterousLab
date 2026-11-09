@@ -45,4 +45,4 @@ git push -u origin main
 
 README 保留当前实验结果与功能边界。共享环境下的测试不等于全新机器的安装验收；参考源码缺失时，相关源码对照测试会跳过。
 
-第一方代码尚未指定独立根许可证。第三方模型、论文组件和官方商品图片各自保留来源与许可说明，不能因上传到GitHub就将它们统一声明为MIT或Apache许可证。相关记录见 [算法归属](paper_reproductions/ATTRIBUTION.md) 与 [商品图片来源](media/official-products/README.md)。
+GitHub 仓库创建者已选择 [Apache License 2.0](../LICENSE)，首次发布时保留并合并了该许可证提交。项目第一方代码采用该许可证；第三方模型、论文组件和官方商品图片仍各自保留来源与许可说明。相关记录见 [算法归属](paper_reproductions/ATTRIBUTION.md) 与 [商品图片来源](media/official-products/README.md)。

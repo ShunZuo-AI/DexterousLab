@@ -266,7 +266,7 @@ dexlab arena run dexsuite_lift --steps 100 --num-envs 1 --backend physx
 
 DexterousLab 使用已安装的 Isaac Sim、Isaac Lab 和 IsaacLab-Arena，并参考多家灵巧手项目及抓取研究实现。第三方代码、模型、数据和权重保留各自的许可，不能将整个资产库视为统一授权。
 
-模型来源与 commit 见 [资产清单](assets/manifests/hands.json)，论文组件归属见 [ATTRIBUTION](docs/paper_reproductions/ATTRIBUTION.md)。当前仓库尚未提供覆盖第一方代码的独立根许可证；对外发布前需明确第一方许可证，并按模型逐项确认再分发范围。
+项目第一方代码采用 [Apache License 2.0](LICENSE)。模型来源与 commit 见 [资产清单](assets/manifests/hands.json)，论文组件归属见 [ATTRIBUTION](docs/paper_reproductions/ATTRIBUTION.md)。第三方模型、参考实现、论文派生组件与商品图片保留各自的许可及版权，不因仓库根许可证而被重新授权。
 
 </details>
 

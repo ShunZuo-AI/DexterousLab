@@ -232,4 +232,4 @@ cd /root/gpufree-data/DexterousLab
 实际 GPU 环境构建和步进用上面的 CLI 命令单独验收，保留日志。
 官方 Arena 回归测试的范围与结果见 `docs/m2-validation.md`，没有把选定文件通过声称为整个官方测试套件通过。
 
-项目目录说明见 `docs/architecture.md`。当前没有 GitHub 远端、没有推送，也没有安装额外依赖。
+项目目录说明见 `docs/architecture.md`。项目现已配置独立 GitHub 仓库 `ShunZuo-AI/DexterousLab`；仿真继续复用原有共享 Python 环境，发布过程未安装额外 Python 依赖。
