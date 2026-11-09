@@ -1,6 +1,4 @@
-<h1 align="center">
-  <img src="docs/media/readme-style/wordmark.svg" alt="DexterousLab" width="820" />
-</h1>
+<h1 align="center" title="DexterousLab">𝓓𝓮𝔁𝓽𝓮𝓻𝓸𝓾𝓼𝓛𝓪𝓫</h1>
 
 <p align="center">
   <strong>多种灵巧手 · 可组合的场景 · 可复核的实验</strong><br />
@@ -26,7 +24,7 @@
 </p>
 
 <p align="center">
-  <sub>封面为概念视觉，图中品牌与能力文案不作为已实现功能的证明。<a href="docs/media/README.md">图片来源</a></sub>
+  <sub>概念封面 · 实际支持范围见正文 · <a href="docs/media/README.md">图片来源</a></sub>
 </p>
 
 ---
