@@ -1,0 +1,20 @@
+[
+  {
+    "name": "data.zip",
+    "url": "https://drive.google.com/uc?export=download&id=1WRV7m9AAfDOFE6Z9InIRJwhhlRUSQzCX",
+    "license": "See YCB/ContactDB and original package terms; not established as one license",
+    "source_page": "https://github.com/tengyu-liu/GenDexGrasp#data-preparation"
+  },
+  {
+    "name": "MultiDex.zip",
+    "url": "https://drive.google.com/uc?export=download&id=1r0rV5eEtvoy8bF02uwo1bFfMn7Ya3gJx",
+    "license": "See YCB/ContactDB and original package terms; not established as one license",
+    "source_page": "https://github.com/tengyu-liu/GenDexGrasp#data-preparation"
+  },
+  {
+    "name": "env.zip",
+    "url": "https://drive.google.com/uc?export=download&id=1M_biyC7XcajSvat9FENI93kQtMA46h_3",
+    "license": "See YCB/ContactDB and original package terms; not established as one license",
+    "source_page": "https://github.com/tengyu-liu/GenDexGrasp#data-preparation"
+  }
+]

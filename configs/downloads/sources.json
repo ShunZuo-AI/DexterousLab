@@ -1,0 +1,31 @@
+{
+  "dexgraspnet": {
+    "page": "https://pku-epic.github.io/DexGraspNet/",
+    "directory": "https://mirrors.pku.edu.cn/dl-release/DexGraspNet-ICRA2023/",
+    "license": "CC-BY-NC-4.0"
+  },
+  "dexgraspnet2": {
+    "page": "https://github.com/PKU-EPIC/DexGraspNet2",
+    "hf_repository": "lhrlhr/DexGraspNet2.0",
+    "license": "CC-BY-NC-4.0"
+  },
+  "oakink": {
+    "page": "https://oakink.net/",
+    "hf_repository": "oakink/OakInk-v1",
+    "license": "CC-BY-NC-SA-3.0"
+  },
+  "gendexgrasp": {
+    "page": "https://github.com/tengyu-liu/GenDexGrasp#data-preparation",
+    "license": "See YCB/ContactDB and original package terms; not established as one license",
+    "google_drive": {
+      "data.zip": "1WRV7m9AAfDOFE6Z9InIRJwhhlRUSQzCX",
+      "MultiDex.zip": "1r0rV5eEtvoy8bF02uwo1bFfMn7Ya3gJx",
+      "env.zip": "1M_biyC7XcajSvat9FENI93kQtMA46h_3"
+    }
+  },
+  "objaverse-xl": {
+    "page": "https://github.com/allenai/objaverse-xl#license",
+    "license": "ODC-By-1.0 database; each object retains its own license",
+    "manifest_required": true
+  }
+}

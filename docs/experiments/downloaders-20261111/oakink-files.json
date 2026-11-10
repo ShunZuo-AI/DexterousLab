@@ -1,0 +1,72 @@
+[
+  {
+    "name": "OakBase.zip",
+    "url": "https://hf-mirror.com/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/OakBase.zip",
+    "canonical_url": "https://huggingface.co/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/OakBase.zip",
+    "bytes": 4366744375,
+    "sha256": "58a0ea15a39e3de036d2c7abbcaa81f4b91e840867258b7e70bdf91c2013f756",
+    "revision": "c15950e6ceefb1b7ac3a82acc6318ef0f680d71c",
+    "license": "CC-BY-NC-SA-3.0",
+    "source_page": "https://oakink.net/"
+  },
+  {
+    "name": "image/obj.zip",
+    "url": "https://hf-mirror.com/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/image/obj.zip",
+    "canonical_url": "https://huggingface.co/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/image/obj.zip",
+    "bytes": 7590433,
+    "sha256": "a519ab643a90e05eb7a5cf87c0cc0ceead8b9dfa630775607e79d87aae659c92",
+    "revision": "c15950e6ceefb1b7ac3a82acc6318ef0f680d71c",
+    "license": "CC-BY-NC-SA-3.0",
+    "source_page": "https://oakink.net/"
+  },
+  {
+    "name": "image/stream_zipped/oakink_image_v2.zip",
+    "url": "https://hf-mirror.com/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/image/stream_zipped/oakink_image_v2.zip",
+    "canonical_url": "https://huggingface.co/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/image/stream_zipped/oakink_image_v2.zip",
+    "bytes": 10640372368,
+    "sha256": "a18a5faece550a1116aa8071695922a9ef379f166fba78b9732c02c27a421a43",
+    "revision": "c15950e6ceefb1b7ac3a82acc6318ef0f680d71c",
+    "license": "CC-BY-NC-SA-3.0",
+    "source_page": "https://oakink.net/"
+  },
+  {
+    "name": "shape/OakInkObjectsV2.zip",
+    "url": "https://hf-mirror.com/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/shape/OakInkObjectsV2.zip",
+    "canonical_url": "https://huggingface.co/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/shape/OakInkObjectsV2.zip",
+    "bytes": 1050467188,
+    "sha256": "a969a5befdbccf6d0c5d30b42dfad3078c34e71788b54c644f660b192bcc9fd6",
+    "revision": "c15950e6ceefb1b7ac3a82acc6318ef0f680d71c",
+    "license": "CC-BY-NC-SA-3.0",
+    "source_page": "https://oakink.net/"
+  },
+  {
+    "name": "shape/OakInkVirtualObjectsV2.zip",
+    "url": "https://hf-mirror.com/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/shape/OakInkVirtualObjectsV2.zip",
+    "canonical_url": "https://huggingface.co/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/shape/OakInkVirtualObjectsV2.zip",
+    "bytes": 962778443,
+    "sha256": "eb1a7fd45092571c8cd3509416913e461e8c3d56529e6e7e4bbf5258806dab8a",
+    "revision": "c15950e6ceefb1b7ac3a82acc6318ef0f680d71c",
+    "license": "CC-BY-NC-SA-3.0",
+    "source_page": "https://oakink.net/"
+  },
+  {
+    "name": "shape/metaV2.zip",
+    "url": "https://hf-mirror.com/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/shape/metaV2.zip",
+    "canonical_url": "https://huggingface.co/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/shape/metaV2.zip",
+    "bytes": 15447,
+    "sha256": "8c6ec8ebb98821c589170d98b73ccc84bf1543781b9ac3e4d1e6f01084e73bef",
+    "revision": "c15950e6ceefb1b7ac3a82acc6318ef0f680d71c",
+    "license": "CC-BY-NC-SA-3.0",
+    "source_page": "https://oakink.net/"
+  },
+  {
+    "name": "shape/oakink_shape_v2.zip",
+    "url": "https://hf-mirror.com/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/shape/oakink_shape_v2.zip",
+    "canonical_url": "https://huggingface.co/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/shape/oakink_shape_v2.zip",
+    "bytes": 48324871,
+    "sha256": "d867060a5874acb73e1fcd132b014a2cfd024ef9ed171de53115c98db55c7d42",
+    "revision": "c15950e6ceefb1b7ac3a82acc6318ef0f680d71c",
+    "license": "CC-BY-NC-SA-3.0",
+    "source_page": "https://oakink.net/"
+  }
+]

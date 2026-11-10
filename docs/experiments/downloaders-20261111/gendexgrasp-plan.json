@@ -1,0 +1,13 @@
+{
+  "source": "gendexgrasp",
+  "output_directory": "/root/gpufree-data/DexterousLab/assets/objects/gendexgrasp/downloads",
+  "files": [
+    {
+      "name": "data.zip",
+      "url": "https://drive.google.com/uc?export=download&id=1WRV7m9AAfDOFE6Z9InIRJwhhlRUSQzCX",
+      "license": "See YCB/ContactDB and original package terms; not established as one license",
+      "source_page": "https://github.com/tengyu-liu/GenDexGrasp#data-preparation"
+    }
+  ],
+  "downloaded": false
+}

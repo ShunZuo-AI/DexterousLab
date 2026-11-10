@@ -74,6 +74,18 @@ def _add_experiment_commands(commands):
 def _add_asset_commands(commands):
     assets = commands.add_parser("assets").add_subparsers(dest="action", required=True)
     assets.add_parser("list")
+    download = assets.add_parser("download")
+    download.add_argument("source", choices=(
+        "ycb", "dexgraspnet", "gendexgrasp", "dexgraspnet2", "oakink", "objaverse-xl"
+    ))
+    download.add_argument("--files", nargs="+")
+    download.add_argument("--manifest", type=Path)
+    download.add_argument("--hf-endpoint", help="Explicit Hugging Face mirror; default: HF_ENDPOINT or official host")
+    download.add_argument("--url", help="Official direct link override for DexGraspNet/GenDexGrasp")
+    download.add_argument("--list-files", action="store_true")
+    download.add_argument("--dry-run", action="store_true")
+    download.add_argument("--output-dir", type=Path)
+    download.add_argument("--max-gb", type=positive_int, default=8)
     for action in ("download-ycb", "prepare-ycb"):
         parser = assets.add_parser(action)
         parser.add_argument(
@@ -163,6 +175,10 @@ def _asset_inventory():
 
 
 def _asset_result(args):
+    if args.action == "download":
+        from dexterous_lab.assets.downloads import run_download
+
+        return run_download(args)
     if args.action == "download-ycb":
         from dexterous_lab.assets.ycb import download_objects
 
@@ -262,5 +278,5 @@ def main(argv=None):
             print_json(_scene_inventory())
             return 0
         return _run_simulation(args)
-    except (ValueError, FileNotFoundError, KeyError, TypeError) as exc:
+    except (ValueError, OSError, KeyError, TypeError) as exc:
         parser.error(str(exc))

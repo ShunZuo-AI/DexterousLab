@@ -129,6 +129,21 @@ dexlab scene run --hand allegro --object ycb_mug --physics physx --steps 100
 
 Raw files are stored under `assets/objects/ycb/`; preparation generates `configs/objects/ycb_*.toml`. Models and generated configurations are excluded from Git, so complete both setup steps before the first run. Mass and friction are experimental settings; zero-action tests do not establish grasp success. [Download and validation record](docs/experiments/ycb_objects_20261111.md) · [YCB source and license](https://registry.opendata.aws/ycb-benchmarks/)
 
+### Download Other Object Datasets
+
+All six sources share one download entry point. Select individual files; large datasets are never downloaded in full by default.
+
+| Source | Command |
+|---|---|
+| YCB | `dexlab assets download ycb --files mug` |
+| DexGraspNet | `dexlab assets download dexgraspnet --files meshdata.tar.gz` |
+| GenDexGrasp / MultiDex | `dexlab assets download gendexgrasp --files data.zip` |
+| DexGraspNet 2.0 | `dexlab assets download dexgraspnet2 --files meshdata.tar.gz` |
+| OakInk | `dexlab assets download oakink --files shape/OakInkObjectsV2.zip` |
+| Objaverse-XL | `dexlab assets download objaverse-xl --manifest selected-objects.json` |
+
+Use `--list-files` to inspect packages and `--dry-run` to preview a download. If Hugging Face is unreachable, explicitly add `--hf-endpoint https://hf-mirror.com`. Objaverse requires a selected-object manifest with per-model provenance, license, and SHA-256. Except for the existing YCB workflow, downloaded archives are not automatically converted into simulation assets. [Script, manifest format, and network checks](docs/reference/asset-downloads.md)
+
 ### Run a grasp attempt
 
 Prepare the official asset cache using the [asset setup instructions](docs/installation.md#5-资产录制与测试), then choose a hand:
@@ -175,7 +190,7 @@ Each hand is recorded for **16 seconds · 15 FPS · 480 environment steps**, sho
 |---|---|
 | ![Allegro during closing; this attempt did not successfully lift and hold](docs/media/allegro-tabletop.jpg) | ![Shadow during closing; this attempt did not successfully lift and hold](docs/media/shadow-tabletop.jpg) |
 
-Recorded unit test result: **141 passed**. [Test log](docs/experiments/ycb-20261111/tests.log)
+Recorded unit test result: **174 passed**. [Test log](docs/experiments/downloaders-20261111/tests.log)
 
 <a id="documentation"></a>
 

@@ -1,0 +1,9 @@
+{
+  "url": "https://mirrors.pku.edu.cn/dl-release/DexGraspNet-ICRA2023/meshdata.tar.gz",
+  "status": 206,
+  "content_type": "application/octet-stream",
+  "content_range": "bytes 0-1023/345939166",
+  "sample_bytes": 1024,
+  "gzip_magic": true,
+  "scope": "First 1024 bytes only; full archive not downloaded"
+}

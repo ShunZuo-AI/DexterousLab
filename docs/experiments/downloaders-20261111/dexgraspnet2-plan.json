@@ -1,0 +1,17 @@
+{
+  "source": "dexgraspnet2",
+  "output_directory": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet2/downloads",
+  "files": [
+    {
+      "name": "meshdata.tar.gz",
+      "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/meshdata.tar.gz",
+      "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/meshdata.tar.gz",
+      "bytes": 4617887647,
+      "sha256": "55a13b63f3838881b25ec72187d922454ff5d69ce019816f7f29510b14c13f0f",
+      "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+      "license": "CC-BY-NC-4.0",
+      "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+    }
+  ],
+  "downloaded": false
+}

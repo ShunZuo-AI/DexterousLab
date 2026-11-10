@@ -1,0 +1,182 @@
+[
+  {
+    "name": "DexGraspNet2.0-ckpts.tar",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/DexGraspNet2.0-ckpts.tar",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/DexGraspNet2.0-ckpts.tar",
+    "bytes": 6193233920,
+    "sha256": "47b38cfde4b5c0883aaee759c442541f4a65dcace9f89541080120e50729bd2a",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "acronym.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/acronym.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/acronym.tar.gz",
+    "bytes": 642645887,
+    "sha256": "5242d5e372cc008fec140a4bd05bf6e0abdbc16af532f59e51d8934e8fa969ec",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "acronym_test_scenes.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/acronym_test_scenes.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/acronym_test_scenes.tar.gz",
+    "bytes": 532596421,
+    "sha256": "e24feda731f430fa21edc63e74f43e9fa8d2106e831633f68974848f102aee00",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "dex_graspness_new.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/dex_graspness_new.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/dex_graspness_new.tar.gz",
+    "bytes": 6752575130,
+    "sha256": "38e54590d54b4d4aef848bd956c206cd96d5e22e51138634ba4c6cb5132c148b",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "dex_grasps_new.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/dex_grasps_new.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/dex_grasps_new.tar.gz",
+    "bytes": 41095155348,
+    "sha256": "5311dd86dca9ed2befa1de16e5934a8c53bc3d71116f7366973f510494cb9e01",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "gripper_graspness.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/gripper_graspness.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/gripper_graspness.tar.gz",
+    "bytes": 24582622715,
+    "sha256": "4266dd0d97f7989362e57828ad9a6897e288916393bd85cc9f9194457ea1de24",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "gripper_grasps.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/gripper_grasps.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/gripper_grasps.tar.gz",
+    "bytes": 717396025,
+    "sha256": "04f4c2bc5e6dda8eed9314fac24ac4c807b3eae8b202056960baeb2cec372dd9",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "meshdata.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/meshdata.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/meshdata.tar.gz",
+    "bytes": 4617887647,
+    "sha256": "55a13b63f3838881b25ec72187d922454ff5d69ce019816f7f29510b14c13f0f",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "scenes_0.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_0.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_0.tar.gz",
+    "bytes": 6715047936,
+    "sha256": "557ebc64b0b5beb52a94db0135ff4f824daa673dad96881a30d76148b7d02a18",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "scenes_1.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_1.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_1.tar.gz",
+    "bytes": 15577788702,
+    "sha256": "2f3c16ad1ea30a942c2a5439e172e839ae1d3d4d043759577e89bf6bcb3e704d",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "scenes_2.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_2.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_2.tar.gz",
+    "bytes": 15612651176,
+    "sha256": "3244547486ff33c03d3b6ac7b94bdb498a66118f2b647d837868fc560fe40bd0",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "scenes_3.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_3.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_3.tar.gz",
+    "bytes": 16170722874,
+    "sha256": "c9662632f8285d628192d90240022e62d07aa9bf250e17b0a51ab696831467c3",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "scenes_4.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_4.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_4.tar.gz",
+    "bytes": 16639204712,
+    "sha256": "6f76a7d3e297fdb765cb750690946c041617936572cace9cd6221e7a4d7dfcbf",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "scenes_5.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_5.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_5.tar.gz",
+    "bytes": 15142850091,
+    "sha256": "9339d86374aa877fcb2497cde837d50cac7a72a140ef9948227dddee7f5e6a74",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "scenes_6.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_6.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_6.tar.gz",
+    "bytes": 15383641439,
+    "sha256": "ad666582c30092f5972398915a6b35a05b8cbabdc3b40954b8b7745cb5d76ba7",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "scenes_7.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_7.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_7.tar.gz",
+    "bytes": 15946793524,
+    "sha256": "e61e0572e7b865ef562eb703a7093b3db6e5841631dda69249a6d017b9090b80",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "scenes_8.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_8.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_8.tar.gz",
+    "bytes": 7424005359,
+    "sha256": "ecfb24757959a6e812dd26550afd26e5753d7c0600e0784b00097cf81ac46b4b",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  },
+  {
+    "name": "scenes_9.tar.gz",
+    "url": "https://hf-mirror.com/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_9.tar.gz",
+    "canonical_url": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0/resolve/b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4/scenes_9.tar.gz",
+    "bytes": 12095173173,
+    "sha256": "11ef00adfcc52f3e7c17d989ad131b09c9d392e0faf8f819032df086ab2432a6",
+    "revision": "b7dbc0ce452d5ab2eda66016ba22d6a1e25e71a4",
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://github.com/PKU-EPIC/DexGraspNet2"
+  }
+]

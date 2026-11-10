@@ -129,6 +129,21 @@ dexlab scene run --hand allegro --object ycb_mug --physics physx --steps 100
 
 原始文件位于 `assets/objects/ycb/`；准备命令生成 `configs/objects/ycb_*.toml`。模型与生成配置不随 Git 分发，首次使用需先完成以上两步。质量和摩擦为试验设定，零动作测试不表示抓取成功。[下载与验证记录](docs/experiments/ycb_objects_20261111.md) · [YCB 来源与许可](https://registry.opendata.aws/ycb-benchmarks/)
 
+### 其他物体数据集下载
+
+六类来源共用下载入口；大数据集按文件选择，不默认全量下载。
+
+| 来源 | 命令 |
+|---|---|
+| YCB | `dexlab assets download ycb --files mug` |
+| DexGraspNet | `dexlab assets download dexgraspnet --files meshdata.tar.gz` |
+| GenDexGrasp / MultiDex | `dexlab assets download gendexgrasp --files data.zip` |
+| DexGraspNet 2.0 | `dexlab assets download dexgraspnet2 --files meshdata.tar.gz` |
+| OakInk | `dexlab assets download oakink --files shape/OakInkObjectsV2.zip` |
+| Objaverse-XL | `dexlab assets download objaverse-xl --manifest selected-objects.json` |
+
+使用 `--list-files` 查看可选包，`--dry-run` 查看下载计划。Hugging Face连接受限时可显式追加 `--hf-endpoint https://hf-mirror.com`。Objaverse需先准备带逐模型来源、许可和SHA-256的选择清单。除YCB外，下载归档不自动转成仿真资产。[脚本、清单格式与网络实测](docs/reference/asset-downloads.md)
+
 ### 执行抓取尝试
 
 先按[资产准备说明](docs/installation.md#5-资产录制与测试)准备官方资产缓存，再选择一种手运行：
@@ -175,7 +190,7 @@ Allegro 搭载 KUKA 机械臂；Shadow 使用运动学基座路径。两组控�
 |---|---|
 | ![Allegro 闭合阶段，本次未成功抬升保持](docs/media/allegro-tabletop.jpg) | ![Shadow 闭合阶段，本次未成功抬升保持](docs/media/shadow-tabletop.jpg) |
 
-单元测试记录：**141 passed**。[查看测试日志](docs/experiments/ycb-20261111/tests.log)
+单元测试记录：**174 passed**。[查看测试日志](docs/experiments/downloaders-20261111/tests.log)
 
 <a id="documentation"></a>
 

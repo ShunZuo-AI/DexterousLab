@@ -1,0 +1,18 @@
+{
+  "request": {
+    "name": "shape/metaV2.zip",
+    "url": "https://hf-mirror.com/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/shape/metaV2.zip",
+    "canonical_url": "https://huggingface.co/datasets/oakink/OakInk-v1/resolve/c15950e6ceefb1b7ac3a82acc6318ef0f680d71c/shape/metaV2.zip",
+    "bytes": 15447,
+    "sha256": "8c6ec8ebb98821c589170d98b73ccc84bf1543781b9ac3e4d1e6f01084e73bef",
+    "revision": "c15950e6ceefb1b7ac3a82acc6318ef0f680d71c",
+    "license": "CC-BY-NC-SA-3.0",
+    "source_page": "https://oakink.net/"
+  },
+  "bytes": 15447,
+  "sha256": "8c6ec8ebb98821c589170d98b73ccc84bf1543781b9ac3e4d1e6f01084e73bef",
+  "downloaded_utc": "2026-11-10T17:16:59.506832+00:00",
+  "hash_verified_against_upstream": true,
+  "simulation_status": "not_run",
+  "grasp_success": null
+}

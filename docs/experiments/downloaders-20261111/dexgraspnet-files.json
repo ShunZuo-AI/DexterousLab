@@ -1,0 +1,16 @@
+[
+  {
+    "name": "dexgraspnet.tar.gz",
+    "url": "https://mirrors.pku.edu.cn/dl-release/DexGraspNet-ICRA2023/dexgraspnet.tar.gz",
+    "bytes": 372545902,
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://pku-epic.github.io/DexGraspNet/"
+  },
+  {
+    "name": "meshdata.tar.gz",
+    "url": "https://mirrors.pku.edu.cn/dl-release/DexGraspNet-ICRA2023/meshdata.tar.gz",
+    "bytes": 345939166,
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://pku-epic.github.io/DexGraspNet/"
+  }
+]
