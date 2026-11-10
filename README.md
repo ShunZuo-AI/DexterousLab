@@ -3,6 +3,10 @@
 </h1>
 
 <p align="center">
+  <strong>简体中文</strong> &nbsp; | &nbsp; <a href="README.en.md">English</a>
+</p>
+
+<p align="center">
   🔬 Research Preview &nbsp; · &nbsp; 🐍 Python 3.12 &nbsp; · &nbsp; ⚛️ PhysX &nbsp; · &nbsp; 🧩 配置驱动 &nbsp; · &nbsp; 🤖 IsaacLab-Arena
 </p>
 
