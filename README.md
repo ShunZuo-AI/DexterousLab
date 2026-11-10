@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  🔬 Research Preview &nbsp; · &nbsp; 🐍 Python 3.12 &nbsp; · &nbsp; ⚛️ PhysX &nbsp; · &nbsp; 🧩 Configuration driven &nbsp; · &nbsp; 🤖 Built on IsaacLab-Arena
+  🔬 Research Preview &nbsp; · &nbsp; 🐍 Python 3.12 &nbsp; · &nbsp; ⚛️ PhysX &nbsp; · &nbsp; 🧩 配置驱动 &nbsp; · &nbsp; 🤖 IsaacLab-Arena
 </p>
 
 <p align="center">
@@ -15,22 +15,22 @@
 
 ## 📰 News
 
-- **2026-11-10** — 新增 Allegro / Shadow 真实仿真运动视频，每种手录制16秒，支持离屏录制。[查看视频](#motion-video)。
-- **2026-11-10** — DexterousLab 已发布到 GitHub，开放项目代码、配置、文档与实验记录。
+- **2026-11-10** — 发布 Allegro 与 Shadow 的真实仿真运动视频，每种手录制 16 秒。[查看视频](#motion-video)
+- **2026-11-10** — 项目开源：提供代码、配置、使用文档与实验记录。
 
 <a id="introduction"></a>
 
 ## 🧭 项目介绍
 
-**DexterousLab** 是基于 **NVIDIA Isaac Sim、Isaac Lab 和 IsaacLab-Arena** 的开源模块化科研框架，面向多指灵巧手抓取、操作控制与仿真数据采集。项目通过配置统一组织**灵巧手、物体、场景与任务**，支持资产管理、桌面仿真、控制执行和实验记录，减少重复搭建工作，为算法接入、对照研究与数据集构建提供基础。
+**DexterousLab** 是面向多指灵巧手抓取与仿真数据采集的开源研究框架，基于 NVIDIA Isaac Sim、Isaac Lab 和 IsaacLab-Arena。通过配置选择灵巧手、物体、桌面场景与任务，运行控制实验，并保存关节状态、物体状态、接触数据和实验结果，便于算法接入与对照研究。
 
 <a id="installation"></a>
 
 ## 📦 安装
 
-需要Linux、可用的NVIDIA GPU与驱动、Git；首次准备Arena环境还需要uv。以下命令在同一终端执行，先进入你希望存放项目的可写目录。
+**运行要求：** Linux、NVIDIA GPU 与可用驱动、Git。首次安装 Arena 还需准备 `uv`。以下命令在同一终端执行。
 
-### 1. 克隆 DexterousLab
+### 1. 克隆项目
 
 ```bash
 git clone https://github.com/ShunZuo-AI/DexterousLab.git
@@ -38,15 +38,15 @@ cd DexterousLab
 export DEXLAB_ROOT="$PWD"
 ```
 
-### 2. 准备仿真环境
+### 2. 指定 Arena 环境
 
-**已有Arena环境**：指定其目录，跳过下面的首次安装步骤。当前GPUFree服务器使用：
+**已有可用环境** → 设置 Arena 路径，直接进入第 3 步。当前服务器使用：
 
 ```bash
 export DEXLAB_ARENA_ROOT=/root/gpufree-data/IsaacLab-Arena
 ```
 
-**全新机器首次安装**：在项目旁创建Arena目录，仅使用Arena的 `.venv`。
+**首次安装 Arena** → 在 DexterousLab 同级目录执行：
 
 ```bash
 cd "$DEXLAB_ROOT/.."
@@ -58,97 +58,114 @@ uv sync --extra dev
 export DEXLAB_ARENA_ROOT="$PWD"
 ```
 
-已有可用环境时不要重新执行 `uv sync`。上述全新安装路线依据上游文档整理，尚未在空白机器验收；本机锁文件存在修改，固定源码commit不保证依赖与本机完全一致。[版本与安装详情](docs/installation.md)。
+> 首次安装路线尚未在空白机器验收；本机锁文件存在修改，固定源码版本不能保证依赖完全一致。已有可用环境请跳过 `uv sync`。[安装详情与版本记录](docs/installation.md)
 
-### 3. 启用项目并检查环境
+### 3. 启用命令行
 
-阅读并同意Isaac Sim EULA后，在当前终端运行：
+阅读并同意 Isaac Sim EULA 后执行：
 
 ```bash
 cd "$DEXLAB_ROOT"
 export OMNI_KIT_ACCEPT_EULA=YES ACCEPT_EULA=Y
-export PATH="$PWD/scripts:$PATH"
+export PATH="$DEXLAB_ROOT/scripts:$PATH"
 dexlab doctor
-dexlab scene run --hand allegro --object cube --physics physx --dry-run
 ```
 
-`doctor` 应输出 `ready: true`；启动器自动使用Arena的Python并设置Torch动态库路径，无需再创建环境或执行 `pip install -e .`。模型和缓存不随Git克隆下载，首次场景运行可能联网获取官方资产。
+`doctor` 应返回 `ready: true`。项目复用 Arena 的 `.venv`，启动器自动配置 Torch CUDA 动态库路径。
 
-### 4. 验证首次仿真
+### 4. 验证场景
 
 ```bash
+# 检查配置
+dexlab scene run --hand allegro --object cube --physics physx --dry-run
+
+# 执行 20 步零动作仿真
 dexlab scene run --hand allegro --object cube --physics physx --steps 20
 ```
 
-确认完成20步后，再运行下方实验。已有项目目录时跳过克隆，设置 `DEXLAB_ROOT` 为实际项目路径即可。[常见问题](docs/installation.md#6-常见问题)。
+模型与缓存不随 Git 克隆下载，首次运行可能需要联网获取官方资产。完成 20 步表示环境可运行；抓取实验见下节。[常见问题](docs/installation.md#6-常见问题)
 
 <a id="quick-start"></a>
 
 ## 🚀 快速开始
 
-完成上方安装与环境设置后，在项目目录执行以下命令。
+完成安装后，在项目目录运行。
 
-### 1. 检查环境与加载场景
+### 切换灵巧手与物体
 
 ```bash
-cd "$DEXLAB_ROOT"
-export PATH="$PWD/scripts:$PATH"
-
-dexlab doctor
+# Allegro + Cube
 dexlab scene run --hand allegro --object cube --physics physx
+
+# Allegro + Cylinder
 dexlab scene run --hand allegro --object cylinder --physics physx
+
+# Shadow + Cube
 dexlab scene run --hand shadow --object cube --physics physx
 ```
 
-`scene run` 默认单环境、100 步、无窗口，执行零动作冒烟测试；启动器自动设置 Torch CUDA 动态库路径。
+默认运行 **1 个环境、100 步、无窗口**，用于零动作冒烟测试，不评价抓取能力。
 
-### 2. 执行抓取尝试
+### 执行抓取尝试
+
+先按[资产准备说明](docs/installation.md#5-资产录制与测试)准备官方资产缓存，再选择一种手运行：
 
 ```bash
 "$DEXLAB_ARENA_ROOT/.venv/bin/python" scripts/first_grasp_experiment.py --hand allegro
 "$DEXLAB_ARENA_ROOT/.venv/bin/python" scripts/first_grasp_experiment.py --hand shadow
 ```
 
-抓取脚本要求项目内已有官方资产缓存，准备方式见[资产说明](docs/installation.md#5-资产录制与测试)。每次执行接近、闭合、抬升与保持，共 **480 个环境步**。在已配置的云桌面会话中追加 `--render` 可保存截图；参数位于 [first_grasp.toml](configs/experiments/first_grasp.toml)，结果写入 `outputs/` 的独立运行目录。
+| 项目 | 说明 |
+|---|---|
+| 执行流程 | 接近 → 闭合 → 抬升 → 保持，共 480 个环境步 |
+| 实验配置 | [configs/experiments/first_grasp.toml](configs/experiments/first_grasp.toml) |
+| 数据保存 | 每次运行写入 `outputs/` 下的独立目录 |
+| 录制视频 | 追加 `--record-video`，支持离屏录制 |
+| 保存截图 | 在已配置的云桌面会话中追加 `--render` |
 
 <a id="experiments"></a>
 
 ## 🧪 实验结果
 
+**两种手均完成真实仿真与控制尝试，但本次均未达到 Cube 抬升并保持的成功标准。**
+
+| 实验 | 环境步 / 物理步 | 抓取结果 |
+|---|---|---|
+| Allegro + KUKA · Cube | 480 / 1920 | 未成功抬升并保持 |
+| Shadow · Cube | 480 / 1920 | 未成功抬升并保持 |
+
+Allegro 搭载 KUKA 机械臂；Shadow 使用运动学基座路径。两组控制方式不同，结果用于记录当前基线。[实验报告与日志](docs/experiments/first_grasp_experiment.md)
+
 <a id="motion-video"></a>
 
-### 两种灵巧手的真实仿真运动
+### 仿真运动视频
 
-[![Allegro与Shadow真实运动对照，均未达到抓取成功标准](docs/media/motion-20261110/preview.gif)](docs/media/motion-20261110/comparison.mp4)
+[![Allegro 与 Shadow 的真实仿真运动；两次抓取均未成功](docs/media/motion-20261110/preview.gif)](docs/media/motion-20261110/comparison.mp4)
 
-[对照视频 MP4](docs/media/motion-20261110/comparison.mp4) · [Allegro](docs/media/motion-20261110/allegro.mp4) · [Shadow](docs/media/motion-20261110/shadow.mp4) · [录制说明与证据](docs/experiments/motion-video-20261110.md)
+[▶ 对照视频](docs/media/motion-20261110/comparison.mp4) &nbsp; · &nbsp; [Allegro](docs/media/motion-20261110/allegro.mp4) &nbsp; · &nbsp; [Shadow](docs/media/motion-20261110/shadow.mp4) &nbsp; · &nbsp; [录制说明](docs/experiments/motion-video-20261110.md)
 
-每段16秒、15 FPS，真实运行480个环境步；运动包含接近、闭合、抬升与保持。两次均未成功抓起并保持Cube。追加 `--record-video` 可离屏录制，无需打开云桌面窗口。
+每种手录制 **16 秒 · 15 FPS · 480 个环境步**，展示接近、闭合、抬升与保持过程。
 
-| 首次抓取基线 | 仿真步进 | 抓取结果 |
-|---|---|---|
-| Allegro + KUKA / Cube | 完成 480 环境步、1920 物理步 | 未达到抬升保持标准 |
-| Shadow / Cube | 完成 480 环境步、1920 物理步 | 未达到抬升保持标准 |
-
-Shadow 使用运动学基座路径，两组不作为同硬件性能排名。当前尚无成功抓取基准。[实验报告与日志](docs/experiments/first_grasp_experiment.md)。
-
-### 真实仿真截图（闭合阶段）
+### 闭合阶段截图
 
 | Allegro + KUKA | Shadow |
 |---|---|
-| ![Allegro闭合阶段，本次未成功抬升保持](docs/media/allegro-tabletop.jpg) | ![Shadow闭合阶段，本次未成功抬升保持](docs/media/shadow-tabletop.jpg) |
+| ![Allegro 闭合阶段，本次未成功抬升保持](docs/media/allegro-tabletop.jpg) | ![Shadow 闭合阶段，本次未成功抬升保持](docs/media/shadow-tabletop.jpg) |
 
-单元测试记录：**111 passed**。[测试日志](docs/experiments/first_grasp_final_tests.log)。
+单元测试记录：**111 passed**。[查看测试日志](docs/experiments/first_grasp_final_tests.log)
 
 <a id="documentation"></a>
 
 ## 📚 文档
 
-| 使用与配置 | 研究与扩展 |
+| 文档 | 内容 |
 |---|---|
-| [安装与环境准备](docs/installation.md) | [框架逻辑与目录职责](docs/architecture.md) |
-| [运行命令与配置参考](docs/reference/usage-details.md) | [框架逻辑与目录职责](docs/architecture.md) |
-| [模型图形预览](docs/asset-preview.md) | [论文源码分析与迁移状态](docs/paper_reproductions/README.md) |
-| [采集、重放与批量评测](docs/research/dexgarmentlab_usage.md) | [数据与坐标契约](docs/data-contract.md) |
+| [安装指南](docs/installation.md) | 环境准备、版本记录与常见问题 |
+| [使用参考](docs/reference/usage-details.md) | 运行命令与配置参数 |
+| [框架与目录](docs/architecture.md) | 模块职责与扩展位置 |
+| [资产预览](docs/asset-preview.md) | 模型图形预览 |
+| [数据采集与评测](docs/research/dexgarmentlab_usage.md) | 采集、重放与批量评测 |
+| [数据契约](docs/data-contract.md) | 数据格式、单位与坐标约定 |
+| [论文实现分析](docs/paper_reproductions/README.md) | 源码研究与算法迁移状态 |
 
-第一方代码采用 [Apache 2.0](LICENSE)；第三方模型、论文组件和图片保留各自许可。[算法归属](docs/paper_reproductions/ATTRIBUTION.md) · [官方商品图来源](docs/media/official-products/README.md)。
+第一方代码采用 [Apache 2.0](LICENSE)。第三方模型、论文组件与图片遵循各自许可：[算法归属](docs/paper_reproductions/ATTRIBUTION.md) · [图片来源](docs/media/official-products/README.md)。
