@@ -1,0 +1,191 @@
+{
+  "passed": true,
+  "return_code": 0,
+  "error": null,
+  "command": [
+    "/root/gpufree-data/IsaacLab-Arena/.venv/bin/python",
+    "-m",
+    "dexterous_lab.integrations.arena.worker",
+    "/root/gpufree-data/DexterousLab/outputs/20261110T162817Z-scene-d57121c6/request.json"
+  ],
+  "simulation": {
+    "environment": "dexlab_tabletop",
+    "steps_completed": 100,
+    "num_envs": 1,
+    "device": "cuda:0",
+    "physics_class": "PhysxCfg",
+    "simulated_seconds": 3.3333333333333335,
+    "action_dim": 20,
+    "physics_steps_completed": 400,
+    "research_state_checks": 101,
+    "scene_validation": {
+      "robot_loaded": true,
+      "object_loaded": true,
+      "dynamic_rigid_body": true,
+      "collision_paths": [
+        "/World/envs/env_0/Object/geometry/mesh"
+      ],
+      "backend_masses_kg": [
+        0.10000000149011612
+      ],
+      "backend_materials_static_dynamic_restitution": [
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ]
+      ],
+      "backend_inertias_kg_m2": [
+        [
+          0.00011599049321375787,
+          1.4827285212959396e-06,
+          -4.345336492406204e-06,
+          1.4827285212959396e-06,
+          0.00013446545926854014,
+          3.9577889765496366e-07,
+          -4.345336492406204e-06,
+          3.957791250286391e-07,
+          0.00013248494360595942
+        ]
+      ],
+      "spawned_local_extents_m": [
+        0.11698400229215622,
+        0.09313100017607212,
+        0.08130299916956574
+      ],
+      "object_kind": "usd",
+      "asset_version": "ycb-google16k-centered-v1:2d40b407e9e97402",
+      "contact_filter_paths": [
+        "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_ffknuckle/rh_ffproximal/rh_ffmiddle/rh_ffdistal",
+        "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_mfknuckle/rh_mfproximal/rh_mfmiddle/rh_mfdistal",
+        "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_rfknuckle/rh_rfproximal/rh_rfmiddle/rh_rfdistal",
+        "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_lfmetacarpal/rh_lfknuckle/rh_lfproximal/rh_lfmiddle/rh_lfdistal",
+        "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_thbase/rh_thproximal/rh_thhub/rh_thmiddle/rh_thdistal"
+      ],
+      "mesh": {
+        "path": "object_mesh.obj",
+        "frame": "O",
+        "length_unit": "m",
+        "vertices": 8185,
+        "faces": 16378,
+        "extents_m": [
+          0.11698400229215622,
+          0.09313100017607212,
+          0.08130299916956574
+        ],
+        "curved_surface_tessellated": false
+      }
+    },
+    "terminated_count": 0,
+    "truncated_count": 0,
+    "finite_observations": true,
+    "grasp_success": null,
+    "policy": "zero_action",
+    "python_prefix": "/root/gpufree-data/IsaacLab-Arena/.venv",
+    "versions": {
+      "isaacsim": "6.2.0.0",
+      "isaaclab": "28.0.0",
+      "isaaclab_arena": "0.3.0",
+      "torch": "2.11.0+cu130"
+    },
+    "object_spawn": {
+      "class": "UsdFileCfg",
+      "size": null,
+      "radius": null,
+      "height": null,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initial_position_xyz": [
+        -0.55,
+        0.0,
+        0.2986515
+      ],
+      "initial_rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "grasp_success": null,
+  "scope": "zero-action environment smoke test; no grasp validation"
+}

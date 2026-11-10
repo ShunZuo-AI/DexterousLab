@@ -74,6 +74,12 @@ def _add_experiment_commands(commands):
 def _add_asset_commands(commands):
     assets = commands.add_parser("assets").add_subparsers(dest="action", required=True)
     assets.add_parser("list")
+    for action in ("download-ycb", "prepare-ycb"):
+        parser = assets.add_parser(action)
+        parser.add_argument(
+            "--objects", nargs="+", choices=("cracker_box", "mustard_bottle", "mug"),
+            default=["cracker_box", "mustard_bottle", "mug"],
+        )
     assets.add_parser("manufacturers")
     assets.add_parser("hands").add_argument("--manufacturer")
     for action in ("inspect", "fetch", "convert", "validate", "preview"):
@@ -157,6 +163,14 @@ def _asset_inventory():
 
 
 def _asset_result(args):
+    if args.action == "download-ycb":
+        from dexterous_lab.assets.ycb import download_objects
+
+        return download_objects(args.objects)
+    if args.action == "prepare-ycb":
+        from dexterous_lab.assets.ycb_prepare import prepare_objects
+
+        return prepare_objects(args.objects)
     if args.action == "list":
         return _asset_inventory()
 

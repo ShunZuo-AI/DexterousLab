@@ -1,0 +1,14 @@
+{
+  "asset_id": "ycb/003_cracker_box",
+  "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/003_cracker_box_google_16k.tgz",
+  "source": "https://registry.opendata.aws/ycb-benchmarks/",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Yale-CMU-Berkeley (YCB) Object and Model Set; Yale University and Berkeley",
+  "downloaded_utc": "2026-11-10T16:19:55.094839+00:00",
+  "archive_bytes": 11434893,
+  "archive_sha256": "0f084b0212274700d416384b9bc290521257d2b15ab66f68768a6a22806226b6",
+  "checksum_scope": "Locally measured SHA-256; no publisher checksum was provided",
+  "resolution": "google_16k",
+  "length_unit": "m"
+}

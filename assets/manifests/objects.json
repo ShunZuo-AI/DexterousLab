@@ -177,6 +177,105 @@
       "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/objects/custom/sphere/checksums.json",
       "updated_utc": "2026-11-06T09:54:05.884406+00:00",
       "last_run": "/root/gpufree-data/DexterousLab/assets/objects/custom/sphere/runs/20261106T095348Z-scene-9bc1c816"
+    },
+    {
+      "asset_id": "ycb/003_cracker_box",
+      "category": "objects",
+      "manufacturer": null,
+      "model": "ycb",
+      "variant": "003_cracker_box",
+      "source_repository": "https://registry.opendata.aws/ycb-benchmarks/",
+      "source_commit": null,
+      "source_file_path": "003_cracker_box/google_16k/textured.obj",
+      "local_raw_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box/raw/003_cracker_box/google_16k/textured.obj",
+      "local_processed_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box/processed/20261110T162100Z-ycb-prepare-ee78f7de/object.usd",
+      "isaaclab_asset_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box/processed/20261110T162100Z-ycb-prepare-ee78f7de/object.usd",
+      "license": {
+        "status": "reviewed",
+        "spdx": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://registry.opendata.aws/ycb-benchmarks/"
+      },
+      "download_status": "fetched",
+      "conversion_status": "converted",
+      "simulation_status": "passed",
+      "fetch_enabled": false,
+      "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box/checksums.json",
+      "notes": [
+        "Downloaded mesh only; prepare-ycb and physics validation are separate steps"
+      ],
+      "asset_directory": "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box",
+      "scene_object": "ycb_cracker_box",
+      "processed_sha256": "5c357fba38386d02b54b643b273811e21a85d5bafdd5e34a511389333c7a0947",
+      "preparation_report": "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box/preparation.json",
+      "updated_utc": "2026-11-10T16:22:02.284338+00:00",
+      "last_run": "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box/runs/20261110T162144Z-scene-8aedba3a"
+    },
+    {
+      "asset_id": "ycb/006_mustard_bottle",
+      "category": "objects",
+      "manufacturer": null,
+      "model": "ycb",
+      "variant": "006_mustard_bottle",
+      "source_repository": "https://registry.opendata.aws/ycb-benchmarks/",
+      "source_commit": null,
+      "source_file_path": "006_mustard_bottle/google_16k/textured.obj",
+      "local_raw_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle/raw/006_mustard_bottle/google_16k/textured.obj",
+      "local_processed_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle/processed/20261110T162306Z-ycb-prepare-1b22ed6b/object.usd",
+      "isaaclab_asset_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle/processed/20261110T162306Z-ycb-prepare-1b22ed6b/object.usd",
+      "license": {
+        "status": "reviewed",
+        "spdx": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://registry.opendata.aws/ycb-benchmarks/"
+      },
+      "download_status": "fetched",
+      "conversion_status": "converted",
+      "simulation_status": "passed",
+      "fetch_enabled": false,
+      "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle/checksums.json",
+      "notes": [
+        "Downloaded mesh only; prepare-ycb and physics validation are separate steps"
+      ],
+      "asset_directory": "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle",
+      "scene_object": "ycb_mustard_bottle",
+      "processed_sha256": "a258a148cb57d987b00ec65626816efe0a57dc62d4600cad541c1d548c78b848",
+      "preparation_report": "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle/preparation.json",
+      "updated_utc": "2026-11-10T16:24:01.588050+00:00",
+      "last_run": "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle/runs/20261110T162343Z-scene-30f542a2"
+    },
+    {
+      "asset_id": "ycb/025_mug",
+      "category": "objects",
+      "manufacturer": null,
+      "model": "ycb",
+      "variant": "025_mug",
+      "source_repository": "https://registry.opendata.aws/ycb-benchmarks/",
+      "source_commit": null,
+      "source_file_path": "025_mug/google_16k/textured.obj",
+      "local_raw_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/raw/025_mug/google_16k/textured.obj",
+      "local_processed_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/processed/20261110T162647Z-ycb-prepare-c67e6d70/object.usd",
+      "isaaclab_asset_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/processed/20261110T162647Z-ycb-prepare-c67e6d70/object.usd",
+      "license": {
+        "status": "reviewed",
+        "spdx": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://registry.opendata.aws/ycb-benchmarks/"
+      },
+      "download_status": "fetched",
+      "conversion_status": "converted",
+      "simulation_status": "passed",
+      "fetch_enabled": false,
+      "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/checksums.json",
+      "notes": [
+        "Downloaded mesh only; prepare-ycb and physics validation are separate steps"
+      ],
+      "asset_directory": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug",
+      "scene_object": "ycb_mug",
+      "processed_sha256": "7ef758c3cc44d7cf540dfdab4703db536dc020478e5b0b8658f0cb3859f93f40",
+      "preparation_report": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/preparation.json",
+      "updated_utc": "2026-11-10T16:27:45.606899+00:00",
+      "last_run": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/runs/20261110T162724Z-scene-2fb2932b"
     }
   ]
 }

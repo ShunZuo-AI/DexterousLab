@@ -74,8 +74,15 @@ class ObjectConfig:
             raise ValueError("sphere requires equal size and scale on all axes")
         if self.kind == "cylinder" and (self.size[0] != self.size[1] or self.scale[0] != self.scale[1]):
             raise ValueError("cylinder requires equal x/y size and scale")
-        if self.kind == "usd" and (not self.usd_path or not Path(self.usd_path).is_file()):
-            raise ValueError("External USD requires an existing local usd_path; no automatic conversion")
+        if self.kind == "usd":
+            if not self.usd_path:
+                raise ValueError("External USD requires an existing local usd_path; no automatic conversion")
+            path = Path(self.usd_path)
+            if not path.is_absolute():
+                path = PROJECT_ROOT / path
+            if not path.is_file():
+                raise ValueError("External USD requires an existing local usd_path; no automatic conversion")
+            self.usd_path = str(path.resolve())
 
 
 @dataclass

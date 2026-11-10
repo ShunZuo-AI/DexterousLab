@@ -19,6 +19,7 @@
 
 ## 📰 News
 
+- **2026-11-11** — Added download and preparation commands for three YCB objects, with real PhysX simulation validation. [Validation record](docs/experiments/ycb_objects_20261111.md)
 - **2026-11-10** — Released real simulation recordings of Allegro and Shadow, with 16 seconds of footage per hand. [Watch the videos](#motion-video)
 - **2026-11-10** — Open-sourced the project code, configurations, documentation, and experiment records.
 
@@ -110,6 +111,24 @@ dexlab scene run --hand shadow --object cube --physics physx
 
 By default, each command runs **1 environment for 100 steps in headless mode**. These are zero-action smoke tests, not evaluations of grasping ability.
 
+### Download Real Objects
+
+Three YCB samples are available: a cracker box, a mustard bottle, and a mug. The mesh and texture archives total approximately 30 MB and are stored inside the project.
+
+```bash
+# Download three samples; repeated runs verify and reuse existing files
+dexlab assets download-ycb --objects cracker_box mustard_bottle mug
+
+# Convert with the installed Isaac Lab and generate local object configurations
+dexlab assets prepare-ycb --objects cracker_box mustard_bottle mug
+
+# Run 100 zero-action simulation steps with real object geometry
+dexlab scene run --hand allegro --object ycb_mustard_bottle --physics physx --steps 100
+dexlab scene run --hand allegro --object ycb_mug --physics physx --steps 100
+```
+
+Raw files are stored under `assets/objects/ycb/`; preparation generates `configs/objects/ycb_*.toml`. Models and generated configurations are excluded from Git, so complete both setup steps before the first run. Mass and friction are experimental settings; zero-action tests do not establish grasp success. [Download and validation record](docs/experiments/ycb_objects_20261111.md) · [YCB source and license](https://registry.opendata.aws/ycb-benchmarks/)
+
 ### Run a grasp attempt
 
 Prepare the official asset cache using the [asset setup instructions](docs/installation.md#5-资产录制与测试), then choose a hand:
@@ -156,7 +175,7 @@ Each hand is recorded for **16 seconds · 15 FPS · 480 environment steps**, sho
 |---|---|
 | ![Allegro during closing; this attempt did not successfully lift and hold](docs/media/allegro-tabletop.jpg) | ![Shadow during closing; this attempt did not successfully lift and hold](docs/media/shadow-tabletop.jpg) |
 
-Recorded unit test result: **111 passed**. [Test log](docs/experiments/first_grasp_final_tests.log)
+Recorded unit test result: **141 passed**. [Test log](docs/experiments/ycb-20261111/tests.log)
 
 <a id="documentation"></a>
 

@@ -14,7 +14,7 @@ from dexterous_lab.robots.registry import HandRegistry
 
 def test_hand_and_object_discovery():
     assert HandRegistry().names() == ["allegro", "shadow"]
-    assert ObjectRegistry().names() == ["cube", "cylinder", "sphere"]
+    assert {"cube", "cylinder", "sphere"}.issubset(ObjectRegistry().names())
     assert HandRegistry().get("shadow").palm_frame == "rh_palm"
     assert ObjectRegistry().get("cylinder").registry_name == "dexlab_cylinder"
 

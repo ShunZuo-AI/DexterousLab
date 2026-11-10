@@ -1,0 +1,60 @@
+{
+  "asset_id": "ycb/006_mustard_bottle",
+  "object_id": "ycb_mustard_bottle",
+  "status": "prepared",
+  "preparation_version": "ycb-google16k-centered-v1",
+  "raw_mesh": "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle/raw/006_mustard_bottle/google_16k/textured.obj",
+  "source_sha256": "aa81d47a5c37431c7c0b602e78982091af97219bff03ad5a63dc0f7e94153b19",
+  "usd_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle/processed/20261110T162306Z-ycb-prepare-1b22ed6b/object.usd",
+  "config_path": "/root/gpufree-data/DexterousLab/configs/objects/ycb_mustard_bottle.toml",
+  "config_sha256": "20eaa70ebd01a1a5af0d2710b8a3d50328330a61c3ad0035cc3d6eeda6d97ac4",
+  "vertices": 8423,
+  "faces": 16384,
+  "source_extents_m": [
+    0.09719799999999999,
+    0.066621,
+    0.191301
+  ],
+  "converted_extents_m": [
+    0.0971979983150959,
+    0.06662100087851286,
+    0.19130100682377815
+  ],
+  "source_center_in_source_frame_m": [
+    -0.015338999999999998,
+    -0.0234985,
+    0.09249750000000001
+  ],
+  "length_unit": "m",
+  "stage_meters_per_unit": 1.0,
+  "collision_approximation": "convexHull",
+  "material_count": 1,
+  "texture_paths": [
+    "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle/processed/20261110T162306Z-ycb-prepare-1b22ed6b/textures/texture_map.png"
+  ],
+  "processed_checksums": [
+    {
+      "path": "processed/20261110T162306Z-ycb-prepare-1b22ed6b/.asset_hash",
+      "sha256": "72ebbd2b77c5cc9ee9bdbc7e4be95f3d7352b7b1733d6592c68a25e3e23c4150"
+    },
+    {
+      "path": "processed/20261110T162306Z-ycb-prepare-1b22ed6b/config.yaml",
+      "sha256": "32cb004960aed32b00f791879768a9f2b51bf5afc27da8dfe0dae24a420e3ab3"
+    },
+    {
+      "path": "processed/20261110T162306Z-ycb-prepare-1b22ed6b/object.usd",
+      "sha256": "a258a148cb57d987b00ec65626816efe0a57dc62d4600cad541c1d548c78b848"
+    },
+    {
+      "path": "processed/20261110T162306Z-ycb-prepare-1b22ed6b/textures/texture_map.png",
+      "sha256": "1e0114f5ce3c98fbf7e14f7bd8c46a995b992d0a92b7370cb5fbd046e0e2c63d"
+    }
+  ],
+  "physics_parameters": {
+    "mass_kg": 0.1,
+    "friction": 0.7,
+    "scope": "Assumed smoke-test values, not measured YCB mass/friction"
+  },
+  "simulation_status": "not_run",
+  "grasp_success": null
+}

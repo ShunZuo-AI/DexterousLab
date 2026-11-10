@@ -1,0 +1,120 @@
+{
+  "kind": "scene",
+  "steps": 100,
+  "num_envs": 1,
+  "seed": 42,
+  "backend": "physx",
+  "policy": "zero_action",
+  "config": {
+    "hand_id": "shadow",
+    "object_id": "ycb_mug",
+    "backend": "physx",
+    "robot": {
+      "hand_id": "shadow",
+      "registry_name": "dexlab_shadow",
+      "requires_arm": false,
+      "joint_names": [
+        "rh_WRJ2",
+        "rh_WRJ1",
+        "rh_FFJ4",
+        "rh_FFJ3",
+        "rh_MFJ4",
+        "rh_MFJ3",
+        "rh_RFJ4",
+        "rh_RFJ3",
+        "rh_LFJ5",
+        "rh_LFJ4",
+        "rh_LFJ3",
+        "rh_THJ5",
+        "rh_THJ4",
+        "rh_THJ3",
+        "rh_THJ2",
+        "rh_THJ1"
+      ],
+      "fingertip_names": [
+        "rh_ffdistal",
+        "rh_mfdistal",
+        "rh_rfdistal",
+        "rh_lfdistal",
+        "rh_thdistal"
+      ],
+      "action_dim": 20,
+      "tendon_names": [
+        "rh_FFJ0",
+        "rh_MFJ0",
+        "rh_RFJ0",
+        "rh_LFJ0"
+      ],
+      "factory": "dexterous_lab.robots.shadow:create_hand",
+      "palm_frame": "rh_palm",
+      "position_xyz": [
+        -0.55,
+        -0.25,
+        0.5
+      ],
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ]
+    },
+    "object": {
+      "registry_name": "ycb_mug",
+      "factory": "dexterous_lab.objects.factories:create_object",
+      "kind": "usd",
+      "position_xyz": [
+        -0.55,
+        0.0,
+        0.2986515
+      ],
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": [
+        0.116984,
+        0.093131,
+        0.081303
+      ],
+      "mass": 0.1,
+      "friction": 0.7,
+      "usd_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/processed/20261110T162647Z-ycb-prepare-c67e6d70/object.usd",
+      "asset_version": "ycb-google16k-centered-v1:2d40b407e9e97402"
+    },
+    "scene": {
+      "name": "tabletop",
+      "table_position_xyz": [
+        -0.55,
+        0.0,
+        0.235
+      ],
+      "table_size": [
+        0.8,
+        1.0,
+        0.04
+      ],
+      "light_intensity": 2000.0,
+      "dt": 0.008333333333333333,
+      "decimation": 4
+    },
+    "task": {
+      "name": "lift",
+      "episode_length_s": 5.0,
+      "goal_delta_xyz": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "position_tolerance": 0.02
+    }
+  },
+  "run_dir": "/root/gpufree-data/DexterousLab/outputs/20261110T162817Z-scene-d57121c6"
+}

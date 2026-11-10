@@ -1,0 +1,121 @@
+{
+  "kind": "scene",
+  "config": {
+    "hand_id": "allegro",
+    "object_id": "ycb_cracker_box",
+    "backend": "physx",
+    "robot": {
+      "hand_id": "allegro",
+      "registry_name": "kuka_allegro",
+      "requires_arm": true,
+      "joint_names": [
+        "iiwa7_joint_1",
+        "iiwa7_joint_2",
+        "iiwa7_joint_3",
+        "iiwa7_joint_4",
+        "iiwa7_joint_5",
+        "iiwa7_joint_6",
+        "iiwa7_joint_7",
+        "index_joint_0",
+        "index_joint_1",
+        "index_joint_2",
+        "index_joint_3",
+        "middle_joint_0",
+        "middle_joint_1",
+        "middle_joint_2",
+        "middle_joint_3",
+        "ring_joint_0",
+        "ring_joint_1",
+        "ring_joint_2",
+        "ring_joint_3",
+        "thumb_joint_0",
+        "thumb_joint_1",
+        "thumb_joint_2",
+        "thumb_joint_3"
+      ],
+      "fingertip_names": [
+        "index_link_3",
+        "middle_link_3",
+        "ring_link_3",
+        "thumb_link_3"
+      ],
+      "action_dim": 23,
+      "tendon_names": [],
+      "factory": "dexterous_lab.robots.allegro:create_hand",
+      "palm_frame": "palm_link",
+      "position_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "object": {
+      "registry_name": "ycb_cracker_box",
+      "factory": "dexterous_lab.objects.factories:create_object",
+      "kind": "usd",
+      "position_xyz": [
+        -0.55,
+        0.0,
+        0.3647185
+      ],
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": [
+        0.0718,
+        0.16403600000000002,
+        0.213437
+      ],
+      "mass": 0.1,
+      "friction": 0.7,
+      "usd_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box/processed/20261110T162100Z-ycb-prepare-ee78f7de/object.usd",
+      "asset_version": "ycb-google16k-centered-v1:387d3c0e36330051"
+    },
+    "scene": {
+      "name": "tabletop",
+      "table_position_xyz": [
+        -0.55,
+        0.0,
+        0.235
+      ],
+      "table_size": [
+        0.8,
+        1.0,
+        0.04
+      ],
+      "light_intensity": 2000.0,
+      "dt": 0.008333333333333333,
+      "decimation": 4
+    },
+    "task": {
+      "name": "lift",
+      "episode_length_s": 5.0,
+      "goal_delta_xyz": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "position_tolerance": 0.02
+    }
+  },
+  "backend": "physx",
+  "steps": 100,
+  "num_envs": 1,
+  "seed": 42,
+  "policy": "zero_action",
+  "run_dir": "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box/runs/20261110T162144Z-scene-8aedba3a"
+}

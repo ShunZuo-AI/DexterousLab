@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "return_code": 0,
+  "error": null,
+  "command": [
+    "/root/gpufree-data/IsaacLab-Arena/.venv/bin/python",
+    "-m",
+    "dexterous_lab.integrations.arena.worker",
+    "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box/runs/20261110T162144Z-scene-8aedba3a/request.json"
+  ],
+  "simulation": {
+    "environment": "dexlab_tabletop",
+    "steps_completed": 100,
+    "num_envs": 1,
+    "device": "cuda:0",
+    "physics_class": "PhysxCfg",
+    "simulated_seconds": 3.3333333333333335,
+    "action_dim": 23,
+    "physics_steps_completed": 400,
+    "research_state_checks": 101,
+    "scene_validation": {
+      "robot_loaded": true,
+      "object_loaded": true,
+      "dynamic_rigid_body": true,
+      "collision_paths": [
+        "/World/envs/env_0/Object/geometry/mesh"
+      ],
+      "backend_masses_kg": [
+        0.10000000149011612
+      ],
+      "backend_materials_static_dynamic_restitution": [
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ]
+      ],
+      "backend_inertias_kg_m2": [
+        [
+          0.0005743841174989939,
+          -1.6432717586667422e-07,
+          2.027591563091846e-06,
+          -1.6432711902325536e-07,
+          0.0004011740384157747,
+          -6.053405741113238e-07,
+          2.0275911083444953e-06,
+          -6.053405741113238e-07,
+          0.0002466274600010365
+        ]
+      ],
+      "spawned_local_extents_m": [
+        0.07180000096559525,
+        0.16403600573539734,
+        0.21343700657598674
+      ],
+      "object_kind": "usd",
+      "asset_version": "ycb-google16k-centered-v1:387d3c0e36330051",
+      "contact_filter_paths": [
+        "/World/envs/env_[^/]+/Robot/ee_link/index_link_3",
+        "/World/envs/env_[^/]+/Robot/ee_link/middle_link_3",
+        "/World/envs/env_[^/]+/Robot/ee_link/ring_link_3",
+        "/World/envs/env_[^/]+/Robot/ee_link/thumb_link_3"
+      ],
+      "mesh": {
+        "path": "object_mesh.obj",
+        "frame": "O",
+        "length_unit": "m",
+        "vertices": 8194,
+        "faces": 16384,
+        "extents_m": [
+          0.07180000096559525,
+          0.16403600573539734,
+          0.21343700657598674
+        ],
+        "curved_surface_tessellated": false
+      }
+    },
+    "terminated_count": 0,
+    "truncated_count": 0,
+    "finite_observations": true,
+    "grasp_success": null,
+    "policy": "zero_action",
+    "python_prefix": "/root/gpufree-data/IsaacLab-Arena/.venv",
+    "versions": {
+      "isaacsim": "6.2.0.0",
+      "isaaclab": "28.0.0",
+      "isaaclab_arena": "0.3.0",
+      "torch": "2.11.0+cu130"
+    },
+    "object_spawn": {
+      "class": "UsdFileCfg",
+      "size": null,
+      "radius": null,
+      "height": null,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initial_position_xyz": [
+        -0.55,
+        0.0,
+        0.3647185
+      ],
+      "initial_rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "grasp_success": null,
+  "scope": "zero-action environment smoke test; no grasp validation"
+}

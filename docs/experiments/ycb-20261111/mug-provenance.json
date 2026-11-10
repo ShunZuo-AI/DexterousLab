@@ -1,0 +1,14 @@
+{
+  "asset_id": "ycb/025_mug",
+  "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/025_mug_google_16k.tgz",
+  "source": "https://registry.opendata.aws/ycb-benchmarks/",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Yale-CMU-Berkeley (YCB) Object and Model Set; Yale University and Berkeley",
+  "downloaded_utc": "2026-11-10T16:24:19.245201+00:00",
+  "archive_bytes": 7658239,
+  "archive_sha256": "4b640afc1baaa940b66948d1e59426d8da2c5a16558c7c7a118bbe28d0737de5",
+  "checksum_scope": "Locally measured SHA-256; no publisher checksum was provided",
+  "resolution": "google_16k",
+  "length_unit": "m"
+}

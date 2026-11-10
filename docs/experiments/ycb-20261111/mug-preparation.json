@@ -1,0 +1,95 @@
+{
+  "asset_id": "ycb/025_mug",
+  "object_id": "ycb_mug",
+  "status": "prepared",
+  "preparation_version": "ycb-google16k-centered-v1",
+  "raw_mesh": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/raw/025_mug/google_16k/textured.obj",
+  "source_sha256": "2d40b407e9e97402de788bebaa703ff03d682da95318db5ff9bfa1aa083b3a57",
+  "usd_path": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/processed/20261110T162647Z-ycb-prepare-c67e6d70/object.usd",
+  "converter_input": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/processed/20261110T162647Z-ycb-prepare-c67e6d70/source_mesh/textured.obj",
+  "repair": {
+    "modified": true,
+    "invalid_normals": 1,
+    "operation": "Drop all imported normals and normal indices; importer recomputes normals",
+    "preserved": "Raw files unchanged; vertex positions, face vertex indices and UV indices preserved"
+  },
+  "config_path": "/root/gpufree-data/DexterousLab/configs/objects/ycb_mug.toml",
+  "config_sha256": "b6249df6fe132d1403bddaaad5f74baaff954b501b5a03665a75387148b0fa1b",
+  "vertices": 10690,
+  "faces": 16384,
+  "source_extents_m": [
+    0.116984,
+    0.093131,
+    0.081303
+  ],
+  "converted_extents_m": [
+    0.11698400229215622,
+    0.09313100017607212,
+    0.08130299916956574
+  ],
+  "source_center_in_source_frame_m": [
+    -0.008857000000000004,
+    0.0173395,
+    0.040119499999999995
+  ],
+  "length_unit": "m",
+  "stage_meters_per_unit": 1.0,
+  "collision_approximation": "convexDecomposition",
+  "material_count": 1,
+  "texture_paths": [
+    "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/processed/20261110T162647Z-ycb-prepare-c67e6d70/textures/texture_map.png"
+  ],
+  "processed_checksums": [
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/.asset_hash",
+      "sha256": "17aedc774228fd9a1b75e90e3bbe509b39696e709f4202ece2513aaf97ba3c0f"
+    },
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/config.yaml",
+      "sha256": "d2eff844029e6005090b8476ca5fdcda79057fd6674394241fddb2c527b75804"
+    },
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/object.usd",
+      "sha256": "7ef758c3cc44d7cf540dfdab4703db536dc020478e5b0b8658f0cb3859f93f40"
+    },
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/source_mesh/kinbody.xml",
+      "sha256": "602710ac679f8a3f8d562a808017d9a7dd8cd8a4167cad233fa707f2e555f90c"
+    },
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/source_mesh/nontextured.ply",
+      "sha256": "54d3d9ac42fe488888c62cc4469e6dfe0be5a4867a20b0090e378f2adb2141c6"
+    },
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/source_mesh/nontextured.stl",
+      "sha256": "0372292ea626695a7a1cfe9b98ebd1fac89dc2ac8542eeb839d97d7e928a1082"
+    },
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/source_mesh/texture_map.png",
+      "sha256": "1131a0ee591d59e0a77e55ff9d72aeac07af76a0f9ed09cbd01489498649ef1f"
+    },
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/source_mesh/textured.dae",
+      "sha256": "c5e287b1846583800ff467399476f2c79d657eb5cbfa97007a2cdfd7be876262"
+    },
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/source_mesh/textured.mtl",
+      "sha256": "a779e1d8a29bdbc18ee724b7faa2e1e53591cbc2ee451ff38c64df7222c3f31e"
+    },
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/source_mesh/textured.obj",
+      "sha256": "ba8eab4a0eb0b31a17e6b8fcc6afa070ab574b6379d4358240148cf007f5ec87"
+    },
+    {
+      "path": "processed/20261110T162647Z-ycb-prepare-c67e6d70/textures/texture_map.png",
+      "sha256": "1131a0ee591d59e0a77e55ff9d72aeac07af76a0f9ed09cbd01489498649ef1f"
+    }
+  ],
+  "physics_parameters": {
+    "mass_kg": 0.1,
+    "friction": 0.7,
+    "scope": "Assumed smoke-test values, not measured YCB mass/friction"
+  },
+  "simulation_status": "not_run",
+  "grasp_success": null
+}

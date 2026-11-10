@@ -156,7 +156,7 @@ KUKA 原始观测依赖官方任务的 `object_pose` 指令，新场景使用自
 ### 外部资产
 
 可新建 `configs/objects/my_object.toml`，设置 `kind="usd"` 和已有本地 `usd_path`，
-再用 `--object my_object`。资产必须含兼容的单刚体、碰撞和质量属性；此入口尚未完成外部 USD 资产的仿真验收。
+再用 `--object my_object`。资产必须含兼容的单刚体、碰撞和质量属性；YCB饼干盒、芥末瓶和杯子已通过此入口的100步PhysX冒烟测试；其他外部资产仍需逐个验证，见[下载与验证记录](../experiments/ycb_objects_20261111.md)。
 程序不会自动将 URDF/Mesh 转成 USD，不会把未注册的 cup 静默替换成 cube。
 杯子、URDF、Mesh 转换与复杂碰撞处理留作后续实现。
 

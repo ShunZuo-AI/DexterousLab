@@ -1,0 +1,78 @@
+[
+  {
+    "hand": "allegro",
+    "object": "cracker_box",
+    "run_directory": "assets/objects/ycb/003_cracker_box/runs/20261110T162144Z-scene-8aedba3a",
+    "steps": 100,
+    "physics_steps": 400,
+    "action_dim": 23,
+    "geometry_support": {
+      "frames": 101,
+      "min_visual_mesh_table_gap_m": -0.0013654894267959294,
+      "final_visual_mesh_table_gap_m": -0.0010671680603986378,
+      "last_20_positions_range_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scope": "Visual geometry relative to table top only; not full collision or grasp validation"
+    }
+  },
+  {
+    "hand": "allegro",
+    "object": "mustard_bottle",
+    "run_directory": "assets/objects/ycb/006_mustard_bottle/runs/20261110T162343Z-scene-30f542a2",
+    "steps": 100,
+    "physics_steps": 400,
+    "action_dim": 23,
+    "geometry_support": {
+      "frames": 101,
+      "min_visual_mesh_table_gap_m": -0.001890522196009714,
+      "final_visual_mesh_table_gap_m": -0.0018688862032696374,
+      "last_20_positions_range_m": [
+        0.0017620325088500977,
+        0.003063805401325226,
+        0.00037026405334472656
+      ],
+      "scope": "Visual geometry relative to table top only; not full collision or grasp validation"
+    }
+  },
+  {
+    "hand": "allegro",
+    "object": "mug",
+    "run_directory": "assets/objects/ycb/025_mug/runs/20261110T162724Z-scene-2fb2932b",
+    "steps": 100,
+    "physics_steps": 400,
+    "action_dim": 23,
+    "geometry_support": {
+      "frames": 101,
+      "min_visual_mesh_table_gap_m": 9.206398082772793e-08,
+      "final_visual_mesh_table_gap_m": 2.369004509783501e-07,
+      "last_20_positions_range_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scope": "Visual geometry relative to table top only; not full collision or grasp validation"
+    }
+  },
+  {
+    "hand": "shadow",
+    "object": "mug",
+    "run_directory": "outputs/20261110T162817Z-scene-d57121c6",
+    "steps": 100,
+    "physics_steps": 400,
+    "action_dim": 20,
+    "geometry_support": {
+      "frames": 101,
+      "min_visual_mesh_table_gap_m": 4.611935759402108e-07,
+      "final_visual_mesh_table_gap_m": 4.6866360814412644e-07,
+      "last_20_positions_range_m": [
+        5.960464477539063e-08,
+        1.0128132998943329e-08,
+        2.9802322387695312e-08
+      ],
+      "scope": "Visual geometry relative to table top only; not full collision or grasp validation"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "frames": 101,
+  "min_visual_mesh_table_gap_m": 4.611935759402108e-07,
+  "final_visual_mesh_table_gap_m": 4.6866360814412644e-07,
+  "last_20_positions_range_m": [
+    5.960464477539063e-08,
+    1.0128132998943329e-08,
+    2.9802322387695312e-08
+  ],
+  "scope": "Visual geometry relative to table top only; not full collision or grasp validation"
+}

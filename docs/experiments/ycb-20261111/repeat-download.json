@@ -1,0 +1,17 @@
+[
+  {
+    "asset_id": "ycb/003_cracker_box",
+    "status": "already_present",
+    "directory": "/root/gpufree-data/DexterousLab/assets/objects/ycb/003_cracker_box"
+  },
+  {
+    "asset_id": "ycb/006_mustard_bottle",
+    "status": "already_present",
+    "directory": "/root/gpufree-data/DexterousLab/assets/objects/ycb/006_mustard_bottle"
+  },
+  {
+    "asset_id": "ycb/025_mug",
+    "status": "already_present",
+    "directory": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug"
+  }
+]

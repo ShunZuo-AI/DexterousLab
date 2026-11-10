@@ -19,6 +19,7 @@
 
 ## 📰 News
 
+- **2026-11-11** — 新增三个 YCB 物体样本的下载与准备命令，完成真实 PhysX 仿真验证。[查看记录](docs/experiments/ycb_objects_20261111.md)
 - **2026-11-10** — 发布 Allegro 与 Shadow 的真实仿真运动视频，每种手录制 16 秒。[查看视频](#motion-video)
 - **2026-11-10** — 项目开源：提供代码、配置、使用文档与实验记录。
 
@@ -110,6 +111,24 @@ dexlab scene run --hand shadow --object cube --physics physx
 
 默认运行 **1 个环境、100 步、无窗口**，用于零动作冒烟测试，不评价抓取能力。
 
+### 下载真实物体
+
+提供 YCB 的饼干盒、芥末瓶和杯子三个样本。下载包合计约 30 MB，包含网格与纹理，保存在项目内。
+
+```bash
+# 下载三个样本；重复执行会校验并复用已有文件
+dexlab assets download-ycb --objects cracker_box mustard_bottle mug
+
+# 使用现有 Isaac Lab 转换为 USD，并生成本地物体配置
+dexlab assets prepare-ycb --objects cracker_box mustard_bottle mug
+
+# 加载真实物体，执行 100 步零动作仿真
+dexlab scene run --hand allegro --object ycb_mustard_bottle --physics physx --steps 100
+dexlab scene run --hand allegro --object ycb_mug --physics physx --steps 100
+```
+
+原始文件位于 `assets/objects/ycb/`；准备命令生成 `configs/objects/ycb_*.toml`。模型与生成配置不随 Git 分发，首次使用需先完成以上两步。质量和摩擦为试验设定，零动作测试不表示抓取成功。[下载与验证记录](docs/experiments/ycb_objects_20261111.md) · [YCB 来源与许可](https://registry.opendata.aws/ycb-benchmarks/)
+
 ### 执行抓取尝试
 
 先按[资产准备说明](docs/installation.md#5-资产录制与测试)准备官方资产缓存，再选择一种手运行：
@@ -156,7 +175,7 @@ Allegro 搭载 KUKA 机械臂；Shadow 使用运动学基座路径。两组控�
 |---|---|
 | ![Allegro 闭合阶段，本次未成功抬升保持](docs/media/allegro-tabletop.jpg) | ![Shadow 闭合阶段，本次未成功抬升保持](docs/media/shadow-tabletop.jpg) |
 
-单元测试记录：**111 passed**。[查看测试日志](docs/experiments/first_grasp_final_tests.log)
+单元测试记录：**141 passed**。[查看测试日志](docs/experiments/ycb-20261111/tests.log)
 
 <a id="documentation"></a>
 
