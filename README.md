@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="docs/media/readme-badges.svg" alt="Research Preview · Python 3.12 · PhysX · Configuration driven · Built on IsaacLab-Arena" width="720" />
+  🔬 Research Preview &nbsp; · &nbsp; 🐍 Python 3.12 &nbsp; · &nbsp; ⚛️ PhysX &nbsp; · &nbsp; 🧩 Configuration driven &nbsp; · &nbsp; 🤖 Built on IsaacLab-Arena
 </p>
 
 <p align="center">
