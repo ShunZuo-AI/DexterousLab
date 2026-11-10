@@ -32,3 +32,47 @@ def test_relative_output_directory_passes_absolute_request_to_child(tmp_path, mo
         command = process.call_args.args[0]
         assert Path(command[-1]).is_absolute()
         assert Path(command[-1]).is_file()
+
+
+def test_worker_timeout_terminates_and_reaps_process():
+    import subprocess
+    from unittest.mock import Mock
+
+    from dexterous_lab.runtime import wait_for_process
+
+    child = Mock()
+    child.wait.side_effect = [subprocess.TimeoutExpired("worker", 1), 0]
+    assert wait_for_process(child, 1) == (None, "TimeoutExpired")
+    child.terminate.assert_called_once()
+    child.kill.assert_not_called()
+    assert child.wait.call_count == 2
+
+
+def test_worker_ignoring_termination_is_killed_and_reaped():
+    import subprocess
+    from unittest.mock import Mock
+
+    from dexterous_lab.runtime import wait_for_process
+
+    child = Mock()
+    child.wait.side_effect = [
+        subprocess.TimeoutExpired("worker", 1),
+        subprocess.TimeoutExpired("worker", 10),
+        -9,
+    ]
+    assert wait_for_process(child, 1) == (None, "TimeoutExpired")
+    child.terminate.assert_called_once()
+    child.kill.assert_called_once()
+    child.wait.assert_called_with()
+
+
+def test_worker_interruption_also_reaps_process():
+    from unittest.mock import Mock
+
+    from dexterous_lab.runtime import wait_for_process
+
+    child = Mock()
+    child.wait.side_effect = [KeyboardInterrupt(), 0]
+    assert wait_for_process(child, 300) == (None, "KeyboardInterrupt")
+    child.terminate.assert_called_once()
+    assert child.wait.call_count == 2

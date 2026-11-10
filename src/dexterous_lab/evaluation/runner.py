@@ -9,7 +9,7 @@ import uuid
 from dexterous_lab.assets.catalog import save_json
 from dexterous_lab.config import PROJECT_ROOT
 from dexterous_lab.grasp_synthesis.candidate import GraspCandidate
-from dexterous_lab.runtime import runtime_environment, shared_python
+from dexterous_lab.runtime import runtime_environment, shared_python, wait_for_process
 from dexterous_lab.scenes.builder import SceneBuilder
 
 
@@ -49,15 +49,8 @@ class EvaluationRunner:
         command = [shared_python(), '-m', 'dexterous_lab.evaluation.worker', str(output / 'request.json')]
         with (output / 'simulation.log').open('x') as stream:
             child = subprocess.Popen(command, env=runtime_environment(), cwd=output, stdout=stream, stderr=subprocess.STDOUT)
-            try:
-                code = child.wait(timeout=timeout)
-            except subprocess.TimeoutExpired:
-                child.terminate()
-                try:
-                    child.wait(timeout=10)
-                except subprocess.TimeoutExpired:
-                    child.kill()
-                    child.wait()
+            code, error = wait_for_process(child, timeout)
+            if error is not None:
                 code = -1
         report = output / 'report.json'
         summary = json.loads(report.read_text()) if report.exists() else None

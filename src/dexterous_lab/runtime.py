@@ -48,6 +48,24 @@ def write_json(path, data):
         stream.write("\n")
 
 
+def wait_for_process(child, timeout, termination_timeout=10):
+    """Wait for a worker, terminating and reaping it on timeout or interruption.
+
+    Returns:
+        Exit code and no error on completion; None and the exception name otherwise.
+    """
+    try:
+        return child.wait(timeout=timeout), None
+    except (subprocess.TimeoutExpired, KeyboardInterrupt) as exc:
+        child.terminate()
+        try:
+            child.wait(timeout=termination_timeout)
+        except subprocess.TimeoutExpired:
+            child.kill()
+            child.wait()
+        return None, type(exc).__name__
+
+
 def run_worker(request, output_root=None, timeout=300):
     root = (Path(output_root) if output_root else PROJECT_ROOT / "outputs").absolute()
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -62,16 +80,7 @@ def run_worker(request, output_root=None, timeout=300):
     try:
         with (run_dir / "simulation.log").open("x", encoding="utf-8") as stream:
             child = subprocess.Popen(command, cwd=run_dir, env=runtime_environment(), stdout=stream, stderr=subprocess.STDOUT)
-            try:
-                return_code = child.wait(timeout=timeout)
-            except (subprocess.TimeoutExpired, KeyboardInterrupt) as exc:
-                child.terminate()
-                try:
-                    child.wait(timeout=15)
-                except subprocess.TimeoutExpired:
-                    child.kill()
-                    child.wait()
-                error = type(exc).__name__
+            return_code, error = wait_for_process(child, timeout, termination_timeout=15)
     except OSError as exc:
         error = str(exc)
     evidence_path = run_dir / "simulation_result.json"

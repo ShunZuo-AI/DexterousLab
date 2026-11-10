@@ -169,6 +169,7 @@ The supporting documents below are currently primarily in Chinese.
 | [Installation guide](docs/installation.md) | Environment setup, version records, and troubleshooting |
 | [Usage reference](docs/reference/usage-details.md) | Commands and configuration parameters |
 | [Architecture and directories](docs/architecture.md) | Module responsibilities and extension points |
+| [Development guide](docs/development.md) | Coding conventions, module boundaries, and testing |
 | [Asset preview](docs/asset-preview.md) | Visual model previews |
 | [Data collection and evaluation](docs/research/dexgarmentlab_usage.md) | Collection, replay, and batch evaluation |
 | [Data contract](docs/data-contract.md) | Data formats, units, and coordinate conventions |

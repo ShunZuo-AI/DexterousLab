@@ -1,4 +1,4 @@
-"""Public command line entry point; no simulator imports in the parent process."""
+"""Parse commands and dispatch work without importing the simulator."""
 
 import argparse
 import json
@@ -12,10 +12,16 @@ from dexterous_lab.storage import storage_environment
 
 
 def positive_int(value):
+    """Parse a strictly positive integer command argument."""
     result = int(value)
     if result <= 0:
         raise argparse.ArgumentTypeError("must be positive")
     return result
+
+
+def print_json(value):
+    """Print the JSON representation used by CLI commands."""
+    print(json.dumps(value, indent=2))
 
 
 def doctor():
@@ -48,118 +54,199 @@ print(json.dumps(dict(executable=sys.executable, prefix=sys.prefix, versions=ver
     return 0 if report["ready"] else 1
 
 
-def build_parser():
-    parser = argparse.ArgumentParser(prog="dexlab", description="DexterousLab: bounded simulation and grasp research")
-    commands = parser.add_subparsers(dest="command", required=True)
-    commands.add_parser("doctor")
-    experiments = commands.add_parser('experiment').add_subparsers(dest='action', required=True)
-    for mode in ('capture', 'replay', 'batch'):
-        experiment = experiments.add_parser(mode)
-        experiment.add_argument('--object', dest='object_id', choices=('cube', 'sphere', 'cylinder'), default='cube')
-        experiment.add_argument('--include-sphere', action='store_true')
-        experiment.add_argument('--steps', type=positive_int, default=100)
-        experiment.add_argument('--seed', type=int, default=42)
-        if mode != 'capture':
-            experiment.add_argument('--input', type=Path, required=True)
+def _add_experiment_commands(commands):
+    experiments = commands.add_parser("experiment").add_subparsers(
+        dest="action", required=True
+    )
+    for mode in ("capture", "replay", "batch"):
+        parser = experiments.add_parser(mode)
+        parser.add_argument(
+            "--object", dest="object_id",
+            choices=("cube", "sphere", "cylinder"), default="cube",
+        )
+        parser.add_argument("--include-sphere", action="store_true")
+        parser.add_argument("--steps", type=positive_int, default=100)
+        parser.add_argument("--seed", type=int, default=42)
+        if mode != "capture":
+            parser.add_argument("--input", type=Path, required=True)
+
+
+def _add_asset_commands(commands):
     assets = commands.add_parser("assets").add_subparsers(dest="action", required=True)
     assets.add_parser("list")
     assets.add_parser("manufacturers")
-    hands = assets.add_parser("hands")
-    hands.add_argument("--manufacturer")
+    assets.add_parser("hands").add_argument("--manufacturer")
     for action in ("inspect", "fetch", "convert", "validate", "preview"):
-        entry = assets.add_parser(action)
-        entry.add_argument("--id", required=True)
+        parser = assets.add_parser(action)
+        parser.add_argument("--id", required=True)
         if action == "convert":
-            entry.add_argument("--format", default="usd")
-        if action == "validate":
-            entry.add_argument("--steps", type=positive_int, default=100)
-        if action == "preview":
-            entry.add_argument("--seconds", type=positive_int, default=600,
-                               help="Keep the desktop preview open for this many seconds, at most 3600")
+            parser.add_argument("--format", default="usd")
+        elif action == "validate":
+            parser.add_argument("--steps", type=positive_int, default=100)
+        elif action == "preview":
+            parser.add_argument(
+                "--seconds", type=positive_int, default=600,
+                help="Keep the desktop preview open for this many seconds, at most 3600",
+            )
+
+
+def _add_run_options(parser, default_steps):
+    """Add the options shared by custom and official scene runs."""
+    parser.add_argument("--steps", type=positive_int, default=default_steps)
+    parser.add_argument("--num-envs", type=positive_int, default=1)
+    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--timeout", type=positive_int, default=300)
+    parser.add_argument("--output-dir", type=Path)
+
+
+def _add_scene_commands(commands):
     scenes = commands.add_parser("scene").add_subparsers(dest="action", required=True)
     scenes.add_parser("list")
-    run = scenes.add_parser("run")
-    run.add_argument("--hand")
-    run.add_argument("--object", dest="object_id")
-    run.add_argument("--scene")
-    run.add_argument("--config", type=Path)
-    run.add_argument("--physics", "--backend", dest="backend")
-    run.add_argument("--dry-run", action="store_true")
-    run.add_argument("--headless", action="store_true", help="Explicit acknowledgement; headless is already the default")
-    official = commands.add_parser("arena").add_subparsers(dest="action", required=True)
-    official_run = official.add_parser("run")
-    official_run.add_argument("environment", choices=("cube_goal_pose", "dexsuite_lift"))
-    official_run.add_argument("--physics", "--backend", dest="backend", choices=("physx",), default="physx")
-    official_run.add_argument("--headless", action="store_true")
-    for entry in (run, official_run):
-        entry.add_argument("--steps", type=positive_int, default=20)
-        entry.add_argument("--num-envs", type=positive_int, default=1)
-        entry.add_argument("--seed", type=int, default=42)
-        entry.add_argument("--timeout", type=positive_int, default=300)
-        entry.add_argument("--output-dir", type=Path)
-    run.set_defaults(steps=100)
+    parser = scenes.add_parser("run")
+    parser.add_argument("--hand")
+    parser.add_argument("--object", dest="object_id")
+    parser.add_argument("--scene")
+    parser.add_argument("--config", type=Path)
+    parser.add_argument("--physics", "--backend", dest="backend")
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--headless", action="store_true",
+        help="Explicit acknowledgement; headless is already the default",
+    )
+    _add_run_options(parser, default_steps=100)
+
+
+def _add_arena_commands(commands):
+    arena = commands.add_parser("arena").add_subparsers(dest="action", required=True)
+    parser = arena.add_parser("run")
+    parser.add_argument("environment", choices=("cube_goal_pose", "dexsuite_lift"))
+    parser.add_argument(
+        "--physics", "--backend", dest="backend", choices=("physx",), default="physx"
+    )
+    parser.add_argument("--headless", action="store_true")
+    _add_run_options(parser, default_steps=20)
+
+
+def build_parser():
+    """Build the public CLI without loading Isaac Sim or USD."""
+    parser = argparse.ArgumentParser(
+        prog="dexlab", description="DexterousLab: bounded simulation and grasp research"
+    )
+    commands = parser.add_subparsers(dest="command", required=True)
+    commands.add_parser("doctor")
+    _add_experiment_commands(commands)
+    _add_asset_commands(commands)
+    _add_scene_commands(commands)
+    _add_arena_commands(commands)
     return parser
 
 
+def _asset_inventory():
+    result = {
+        "robots": {},
+        "objects": {},
+        "reserved": ["cup", "imported-hand tabletop controllers", "learned grasp generation"],
+    }
+    for category in ("robots", "objects"):
+        for path in sorted((CONFIG_ROOT / category).glob("*.toml")):
+            result[category][path.stem] = named_config(category, path.stem)
+    result["notice"] = (
+        "Configuration inventory, not evidence of asset availability or successful simulation"
+    )
+    return result
+
+
+def _asset_result(args):
+    if args.action == "list":
+        return _asset_inventory()
+
+    from dexterous_lab.assets.catalog import AssetCatalog
+    from dexterous_lab.assets.manager import AssetManager
+
+    catalog = AssetCatalog()
+    if args.action == "manufacturers":
+        return catalog.manufacturers()
+    if args.action == "hands":
+        return [
+            record for record in catalog.records("hands")
+            if not args.manufacturer or record["manufacturer"] == args.manufacturer
+        ]
+    if args.action == "inspect":
+        return catalog.get(args.id)
+
+    manager = AssetManager(catalog)
+    if args.action == "fetch":
+        return manager.fetch(args.id)
+    if args.action == "convert":
+        return manager.convert(args.id, args.format)
+    if args.action == "validate":
+        return manager.validate(args.id, args.steps)
+    if args.action == "preview":
+        return manager.preview(args.id, args.seconds)
+    raise ValueError(f"Unsupported asset action: {args.action}")
+
+
+def _experiment_result(args):
+    from dexterous_lab.evaluation.runner import EvaluationRunner
+
+    return EvaluationRunner().run(
+        args.action,
+        input_path=getattr(args, "input", None),
+        object_id=args.object_id,
+        include_sphere=args.include_sphere,
+        steps=args.steps,
+        seed=args.seed,
+    )
+
+
+def _scene_inventory():
+    return {
+        "scenes": [path.stem for path in sorted((CONFIG_ROOT / "scenes").glob("*.toml"))],
+        "backends": ["physx"],
+        "policy": "zero_action",
+        "grasp_validation": False,
+    }
+
+
+def _run_simulation(args):
+    if args.num_envs > 4 or args.steps > 1000:
+        raise ValueError("First-version smoke runs are limited to 4 environments and 1000 steps")
+    request = {
+        "kind": args.command,
+        "steps": args.steps,
+        "num_envs": args.num_envs,
+        "seed": args.seed,
+        "backend": args.backend or "physx",
+        "policy": "zero_action",
+    }
+    if args.command == "scene":
+        request["config"] = load_scene(
+            args.config, args.hand, args.object_id, args.scene, args.backend
+        )
+        if args.dry_run:
+            print_json(request)
+            return 0
+    else:
+        request["environment"] = args.environment
+    return run_worker(request, args.output_dir, args.timeout)
+
+
 def main(argv=None):
+    """Dispatch one command and report configuration errors through argparse."""
     parser = build_parser()
     args = parser.parse_args(argv)
     try:
         if args.command == "doctor":
             return doctor()
-        if args.command == 'experiment':
-            from dexterous_lab.evaluation.runner import EvaluationRunner
-
-            result = EvaluationRunner().run(args.action, input_path=getattr(args, 'input', None),
-                object_id=args.object_id, include_sphere=args.include_sphere, steps=args.steps, seed=args.seed)
-            print(json.dumps(result, indent=2))
-            return 0
         if args.command == "assets":
-            if args.action != "list":
-                from dexterous_lab.assets.catalog import AssetCatalog
-                from dexterous_lab.assets.manager import AssetManager
-
-                catalog = AssetCatalog()
-                manager = AssetManager(catalog)
-                if args.action == "manufacturers":
-                    result = catalog.manufacturers()
-                elif args.action == "hands":
-                    result = [record for record in catalog.records("hands")
-                              if not args.manufacturer or record["manufacturer"] == args.manufacturer]
-                elif args.action == "inspect":
-                    result = catalog.get(args.id)
-                elif args.action == "fetch":
-                    result = manager.fetch(args.id)
-                elif args.action == "convert":
-                    result = manager.convert(args.id, args.format)
-                elif args.action == "validate":
-                    result = manager.validate(args.id, args.steps)
-                else:
-                    result = manager.preview(args.id, args.seconds)
-                print(json.dumps(result, indent=2))
-                return 0
-            result = {"robots": {}, "objects": {}, "reserved": ["cup", "imported-hand tabletop controllers", "learned grasp generation"]}
-            for category in ("robots", "objects"):
-                for path in sorted((CONFIG_ROOT / category).glob("*.toml")):
-                    result[category][path.stem] = named_config(category, path.stem)
-            result["notice"] = "Configuration inventory, not evidence of asset availability or successful simulation"
-            print(json.dumps(result, indent=2))
+            print_json(_asset_result(args))
+            return 0
+        if args.command == "experiment":
+            print_json(_experiment_result(args))
             return 0
         if args.command == "scene" and args.action == "list":
-            print(json.dumps({"scenes": [path.stem for path in sorted((CONFIG_ROOT / "scenes").glob("*.toml"))],
-                              "backends": ["physx"], "policy": "zero_action", "grasp_validation": False}, indent=2))
+            print_json(_scene_inventory())
             return 0
-        if args.num_envs > 4 or args.steps > 1000:
-            raise ValueError("First-version smoke runs are limited to 4 environments and 1000 steps")
-        request = {"kind": args.command, "steps": args.steps, "num_envs": args.num_envs, "seed": args.seed,
-                   "backend": args.backend or "physx", "policy": "zero_action"}
-        if args.command == "scene":
-            request["config"] = load_scene(args.config, args.hand, args.object_id, args.scene, args.backend)
-            if args.dry_run:
-                print(json.dumps(request, indent=2))
-                return 0
-        else:
-            request["environment"] = args.environment
-        return run_worker(request, args.output_dir, args.timeout)
+        return _run_simulation(args)
     except (ValueError, FileNotFoundError, KeyError, TypeError) as exc:
         parser.error(str(exc))

@@ -10,8 +10,14 @@ import uuid
 
 from dexterous_lab.assets.catalog import AssetCatalog, save_json, sha256_file
 from dexterous_lab.assets.checks import inspect_urdf
-from dexterous_lab.config import CONFIG_ROOT, checked_dataclass, named_config, ObjectConfig
-from dexterous_lab.runtime import arena_root, run_worker, runtime_environment, shared_python
+from dexterous_lab.config import CONFIG_ROOT, ObjectConfig, checked_dataclass, named_config
+from dexterous_lab.runtime import (
+    arena_root,
+    run_worker,
+    runtime_environment,
+    shared_python,
+    wait_for_process,
+)
 from dexterous_lab.storage import DATA_ROOT
 
 
@@ -146,15 +152,8 @@ class AssetManager:
         command = [shared_python(), "-m", "dexterous_lab.assets.worker", str(run_dir / "request.json")]
         with (run_dir / "simulation.log").open("x") as stream:
             child = subprocess.Popen(command, env=runtime_environment(), cwd=run_dir, stdout=stream, stderr=subprocess.STDOUT)
-            try:
-                code = child.wait(timeout=timeout)
-            except (subprocess.TimeoutExpired, KeyboardInterrupt):
-                child.terminate()
-                try:
-                    child.wait(timeout=10)
-                except subprocess.TimeoutExpired:
-                    child.kill()
-                    child.wait()
+            code, error = wait_for_process(child, timeout)
+            if error is not None:
                 code = -1
         evidence = run_dir / "evidence.json"
         result = json.loads(evidence.read_text()) if evidence.is_file() else {}

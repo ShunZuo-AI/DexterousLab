@@ -167,6 +167,7 @@ Allegro 搭载 KUKA 机械臂；Shadow 使用运动学基座路径。两组控�
 | [安装指南](docs/installation.md) | 环境准备、版本记录与常见问题 |
 | [使用参考](docs/reference/usage-details.md) | 运行命令与配置参数 |
 | [框架与目录](docs/architecture.md) | 模块职责与扩展位置 |
+| [开发指南](docs/development.md) | 代码规范、模块边界与测试方法 |
 | [资产预览](docs/asset-preview.md) | 模型图形预览 |
 | [数据采集与评测](docs/research/dexgarmentlab_usage.md) | 采集、重放与批量评测 |
 | [数据契约](docs/data-contract.md) | 数据格式、单位与坐标约定 |
