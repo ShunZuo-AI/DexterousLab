@@ -9,7 +9,7 @@
 <p align="center">
   <a href="#news"><img src="docs/media/readme-style/button-news.svg" alt="📰 News" width="130" /></a>
   <a href="#introduction"><img src="docs/media/readme-style/button-introduction.svg" alt="🧭 项目介绍" width="130" /></a>
-  <a href="#features"><img src="docs/media/readme-style/button-features.svg" alt="✨ 核心功能" width="130" /></a>
+  <a href="#installation">📦 安装教程</a> &nbsp;
   <a href="#quick-start"><img src="docs/media/readme-style/button-quick-start.svg" alt="🚀 快速开始" width="130" /></a>
   <a href="#experiments"><img src="docs/media/readme-style/button-experiments.svg" alt="🧪 实验结果" width="130" /></a>
   <a href="#documentation"><img src="docs/media/readme-style/button-documentation.svg" alt="📚 文档" width="130" /></a>
@@ -37,35 +37,23 @@
 
 其核心作用是提供统一的实验基础：管理多手型资产、构建桌面仿真、执行控制尝试，并保存状态、接触和结果，为抓取算法接入、对照研究与数据集构建提供支持。
 
-<a id="features"></a>
+<a id="installation"></a>
 
-## ✨ 核心功能
+## 📦 安装
 
-### 🖐️ 多手型资产管理
+**已有可用的Arena环境：** 克隆项目后设置路径即可，不需要创建第二个Python环境。
 
-统一查询手型、来源与许可，校验模型文件，将已接入的URDF转换为USD，并在云桌面预览、运行资产级物理检查。已有 **22个配置、17个厂商 / 项目**通过验证。入口：`dexlab assets`。[手型清单](docs/asset_aggregation/coverage.md) · [模型预览](docs/asset-preview.md)。
+```bash
+# 新用户首次获取项目；当前服务器已有目录时跳过clone
+cd /root/gpufree-data
+git clone https://github.com/ShunZuo-AI/DexterousLab.git
+cd DexterousLab
+export DEXLAB_ARENA_ROOT=/root/gpufree-data/IsaacLab-Arena
+export PATH="$PWD/scripts:$PATH"
+dexlab doctor
+```
 
-### 🧩 配置驱动的场景构建
-
-通过配置选择灵巧手、物体和桌面任务，调整物体位姿、尺寸、质量与摩擦参数，无需为每个组合重写环境。桌面场景已接入 **Allegro + KUKA、Shadow**，支持 **立方体、圆柱、球体**。入口：`dexlab scene run`。[配置说明](docs/reference/usage-details.md)。
-
-### 🎮 抓取动作与仿真执行
-
-执行接近、下降、手指闭合、抬升和保持，记录不同阶段的物理响应与结果。Allegro通过KUKA机械臂运动，Shadow使用规定的基座路径及独立关节 / 腱控制；当前为人工配置的抓取基线。入口：`scripts/first_grasp_experiment.py`。[实验参数](configs/experiments/first_grasp.toml)。
-
-### 📊 状态采集与实验记录
-
-采集关节位置 / 速度、动作、手掌与物体姿态、指尖接触力和接触点，保存 **JSONL、数值NPZ、配置快照与日志**；渲染模式可保存阶段截图。每次运行独立建目录，成功与失败记录都保留，便于分析和复核。[数据约定](docs/data-contract.md)。
-
-### 🔁 姿态重放与批量评测
-
-保存仿真实测姿态，恢复机器人与物体状态后重放，或批量运行候选文件，统计已评估结果与失败原因。当前支持 **Shadow + Cube / Sphere / Cylinder**，入口为 `dexlab experiment` 下的 `capture`、`replay`、`batch`。[操作示例](docs/research/dexgarmentlab_usage.md)。
-
-### 🔬 抓取算法接入与研究
-
-提供统一的抓取候选、生成器 / 验证器抽象接口和数据写入接口；已迁移 **DexGraspNet能量函数与退火优化核心组件**。完整候选生成、通用物理验证和学习式执行策略仍待接通。[源码分析与迁移状态](docs/paper_reproductions/README.md)。
-
-**实验流程：资产选择 → 场景构建 → 动作执行 → 数据采集 → 重放与评测。** 资产级验证不代表已适配桌面抓取；当前桌面任务手型仍为Allegro和Shadow。
+**全新机器：** 先准备兼容的Isaac Sim / Isaac Lab / Arena环境，再执行上述项目步骤。[完整安装教程、版本说明与排错](docs/installation.md)。
 
 <a id="quick-start"></a>
 
@@ -131,6 +119,7 @@ Shadow 使用运动学基座路径，两组不作为同硬件性能排名。当�
 
 | 使用与配置 | 研究与扩展 |
 |---|---|
+| [安装与环境准备](docs/installation.md) | [框架逻辑与目录职责](docs/architecture.md) |
 | [运行命令与配置参考](docs/reference/usage-details.md) | [框架逻辑与目录职责](docs/architecture.md) |
 | [模型图形预览](docs/asset-preview.md) | [论文源码分析与迁移状态](docs/paper_reproductions/README.md) |
 | [采集、重放与批量评测](docs/research/dexgarmentlab_usage.md) | [数据与坐标契约](docs/data-contract.md) |
