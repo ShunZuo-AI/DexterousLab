@@ -41,30 +41,70 @@
 
 ## 📦 安装
 
-**已有可用的Arena环境：** 克隆项目后设置路径即可，不需要创建第二个Python环境。
+需要Linux、可用的NVIDIA GPU与驱动、Git；首次准备Arena环境还需要uv。以下命令在同一终端执行，先进入你希望存放项目的可写目录。
+
+### 1. 克隆 DexterousLab
 
 ```bash
-# 新用户首次获取项目；当前服务器已有目录时跳过clone
-cd /root/gpufree-data
 git clone https://github.com/ShunZuo-AI/DexterousLab.git
 cd DexterousLab
-export DEXLAB_ARENA_ROOT=/root/gpufree-data/IsaacLab-Arena
-export PATH="$PWD/scripts:$PATH"
-dexlab doctor
+export DEXLAB_ROOT="$PWD"
 ```
 
-**全新机器：** 先准备兼容的Isaac Sim / Isaac Lab / Arena环境，再执行上述项目步骤。[完整安装教程、版本说明与排错](docs/installation.md)。
+### 2. 准备仿真环境
+
+**已有Arena环境**：指定其目录，跳过下面的首次安装步骤。当前GPUFree服务器使用：
+
+```bash
+export DEXLAB_ARENA_ROOT=/root/gpufree-data/IsaacLab-Arena
+```
+
+**全新机器首次安装**：在项目旁创建Arena目录，仅使用Arena的 `.venv`。
+
+```bash
+cd "$DEXLAB_ROOT/.."
+git clone https://github.com/isaac-sim/IsaacLab-Arena.git
+cd IsaacLab-Arena
+git checkout 5fb3bd8a639578d46f4b5ed67b9b5239e1281b9a
+git submodule update --init --recursive
+uv sync --extra dev
+export DEXLAB_ARENA_ROOT="$PWD"
+```
+
+已有可用环境时不要重新执行 `uv sync`。上述全新安装路线依据上游文档整理，尚未在空白机器验收；本机锁文件存在修改，固定源码commit不保证依赖与本机完全一致。[版本与安装详情](docs/installation.md)。
+
+### 3. 启用项目并检查环境
+
+阅读并同意Isaac Sim EULA后，在当前终端运行：
+
+```bash
+cd "$DEXLAB_ROOT"
+export OMNI_KIT_ACCEPT_EULA=YES ACCEPT_EULA=Y
+export PATH="$PWD/scripts:$PATH"
+dexlab doctor
+dexlab scene run --hand allegro --object cube --physics physx --dry-run
+```
+
+`doctor` 应输出 `ready: true`；启动器自动使用Arena的Python并设置Torch动态库路径，无需再创建环境或执行 `pip install -e .`。模型和缓存不随Git克隆下载，首次场景运行可能联网获取官方资产。
+
+### 4. 验证首次仿真
+
+```bash
+dexlab scene run --hand allegro --object cube --physics physx --steps 20
+```
+
+确认完成20步后，再运行下方实验。已有项目目录时跳过克隆，设置 `DEXLAB_ROOT` 为实际项目路径即可。[常见问题](docs/installation.md#6-常见问题)。
 
 <a id="quick-start"></a>
 
 ## 🚀 快速开始
 
-以下命令使用当前服务器已有的 Arena Python 环境，无需新建环境或重新安装 Isaac Sim。
+完成上方安装与环境设置后，在项目目录执行以下命令。
 
 ### 1. 检查环境与加载场景
 
 ```bash
-cd /root/gpufree-data/DexterousLab
+cd "$DEXLAB_ROOT"
 export PATH="$PWD/scripts:$PATH"
 
 dexlab doctor
@@ -78,11 +118,11 @@ dexlab scene run --hand shadow --object cube --physics physx
 ### 2. 执行抓取尝试
 
 ```bash
-/root/gpufree-data/IsaacLab-Arena/.venv/bin/python scripts/first_grasp_experiment.py --hand allegro
-/root/gpufree-data/IsaacLab-Arena/.venv/bin/python scripts/first_grasp_experiment.py --hand shadow
+"$DEXLAB_ARENA_ROOT/.venv/bin/python" scripts/first_grasp_experiment.py --hand allegro
+"$DEXLAB_ARENA_ROOT/.venv/bin/python" scripts/first_grasp_experiment.py --hand shadow
 ```
 
-每次执行接近、闭合、抬升与保持，共 **480 个环境步**。在已配置的云桌面会话中追加 `--render` 可保存截图；参数位于 [first_grasp.toml](configs/experiments/first_grasp.toml)，结果写入 `outputs/` 的独立运行目录。
+抓取脚本要求项目内已有官方资产缓存，准备方式见[资产说明](docs/installation.md#5-资产录制与测试)。每次执行接近、闭合、抬升与保持，共 **480 个环境步**。在已配置的云桌面会话中追加 `--render` 可保存截图；参数位于 [first_grasp.toml](configs/experiments/first_grasp.toml)，结果写入 `outputs/` 的独立运行目录。
 
 <a id="experiments"></a>
 
