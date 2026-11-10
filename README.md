@@ -7,15 +7,6 @@
 </p>
 
 <p align="center">
-  <a href="#news"><img src="docs/media/readme-style/button-news.svg" alt="📰 News" width="130" /></a>
-  <a href="#introduction"><img src="docs/media/readme-style/button-introduction.svg" alt="🧭 项目介绍" width="130" /></a>
-  <a href="#installation">📦 安装教程</a> &nbsp;
-  <a href="#quick-start"><img src="docs/media/readme-style/button-quick-start.svg" alt="🚀 快速开始" width="130" /></a>
-  <a href="#experiments"><img src="docs/media/readme-style/button-experiments.svg" alt="🧪 实验结果" width="130" /></a>
-  <a href="#documentation"><img src="docs/media/readme-style/button-documentation.svg" alt="📚 文档" width="130" /></a>
-</p>
-
-<p align="center">
   <img src="docs/media/dexterouslab-concept-cover.png" alt="DexterousLab 概念封面；实际支持范围见正文。" width="100%" /><br />
   <sub>概念封面 · <a href="docs/media/README.md">图片来源</a></sub>
 </p>
