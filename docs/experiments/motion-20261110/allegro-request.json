@@ -1,0 +1,230 @@
+{
+  "hand": "allegro",
+  "probe": false,
+  "render": true,
+  "record_video": true,
+  "seed": 42,
+  "isaacsim_asset_root": "/root/gpufree-data/DexterousLab/assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2",
+  "script_sha256": "a50cfd2e9f32ced558cfbde6b3d8ab1ce8d596a79f56621a4f8ba0a13650b3e7",
+  "configuration": {
+    "settle_steps": 15,
+    "approach_steps": 150,
+    "descend_steps": 90,
+    "close_steps": 90,
+    "lift_steps": 90,
+    "hold_steps": 45,
+    "pregrasp_height_m": 0.12,
+    "lift_height_m": 0.1,
+    "ik_damping": 0.05,
+    "max_joint_step_rad": 0.15,
+    "robot_gravity_compensation": true,
+    "criteria": {
+      "lift_height_m": 0.03,
+      "hold_steps": 20,
+      "max_linear_speed_m_s": 0.1,
+      "contact_force_threshold_n": 0.01
+    },
+    "allegro": {
+      "robot_base_position_xyz": [
+        0.0,
+        0.0,
+        0.255
+      ],
+      "palm_euler_xyz_rad": [
+        3.141592653589793,
+        0.0,
+        2.356194490192345
+      ],
+      "palm_offset_from_object_m": [
+        0.03676955262170048,
+        -0.04808326112068523,
+        0.065
+      ],
+      "open_joints": {
+        "index_joint_0": 0.0,
+        "index_joint_1": 0.0,
+        "index_joint_2": 0.0,
+        "index_joint_3": 0.0,
+        "middle_joint_0": 0.0,
+        "middle_joint_1": 0.0,
+        "middle_joint_2": 0.0,
+        "middle_joint_3": 0.0,
+        "ring_joint_0": 0.0,
+        "ring_joint_1": 0.0,
+        "ring_joint_2": 0.0,
+        "ring_joint_3": 0.0,
+        "thumb_joint_0": 1.4,
+        "thumb_joint_1": 0.1,
+        "thumb_joint_2": 0.1,
+        "thumb_joint_3": 0.1
+      },
+      "close_joints": {
+        "index_joint_1": 0.9,
+        "index_joint_2": 1.0,
+        "index_joint_3": 0.8,
+        "middle_joint_1": 0.9,
+        "middle_joint_2": 1.0,
+        "middle_joint_3": 0.8,
+        "ring_joint_1": 0.9,
+        "ring_joint_2": 1.0,
+        "ring_joint_3": 0.8,
+        "thumb_joint_0": 1.4,
+        "thumb_joint_1": 0.7,
+        "thumb_joint_2": 0.7,
+        "thumb_joint_3": 0.7
+      }
+    },
+    "shadow": {
+      "palm_euler_xyz_rad": [
+        1.5707963267948966,
+        0.0,
+        0.0
+      ],
+      "palm_offset_from_object_m": [
+        -0.02,
+        0.09,
+        0.09
+      ],
+      "open_joints": {
+        "rh_WRJ2": 0.0,
+        "rh_WRJ1": 0.0,
+        "rh_THJ5": 0.4,
+        "rh_THJ4": 0.0,
+        "rh_THJ3": 0.0,
+        "rh_THJ2": 0.0,
+        "rh_THJ1": 0.0
+      },
+      "close_joints": {
+        "rh_FFJ3": 0.9,
+        "rh_FFJ2": 0.8,
+        "rh_FFJ1": 0.8,
+        "rh_MFJ3": 0.9,
+        "rh_MFJ2": 0.8,
+        "rh_MFJ1": 0.8,
+        "rh_RFJ3": 0.9,
+        "rh_RFJ2": 0.8,
+        "rh_RFJ1": 0.8,
+        "rh_LFJ3": 0.9,
+        "rh_LFJ2": 0.8,
+        "rh_LFJ1": 0.8,
+        "rh_THJ5": 0.5,
+        "rh_THJ4": 0.7,
+        "rh_THJ2": 0.5,
+        "rh_THJ1": 0.6
+      }
+    }
+  },
+  "specification": {
+    "hand_id": "allegro",
+    "object_id": "cube",
+    "backend": "physx",
+    "robot": {
+      "hand_id": "allegro",
+      "registry_name": "kuka_allegro",
+      "requires_arm": true,
+      "joint_names": [
+        "iiwa7_joint_1",
+        "iiwa7_joint_2",
+        "iiwa7_joint_3",
+        "iiwa7_joint_4",
+        "iiwa7_joint_5",
+        "iiwa7_joint_6",
+        "iiwa7_joint_7",
+        "index_joint_0",
+        "index_joint_1",
+        "index_joint_2",
+        "index_joint_3",
+        "middle_joint_0",
+        "middle_joint_1",
+        "middle_joint_2",
+        "middle_joint_3",
+        "ring_joint_0",
+        "ring_joint_1",
+        "ring_joint_2",
+        "ring_joint_3",
+        "thumb_joint_0",
+        "thumb_joint_1",
+        "thumb_joint_2",
+        "thumb_joint_3"
+      ],
+      "fingertip_names": [
+        "index_link_3",
+        "middle_link_3",
+        "ring_link_3",
+        "thumb_link_3"
+      ],
+      "action_dim": 23,
+      "tendon_names": [],
+      "factory": "dexterous_lab.robots.allegro:create_hand",
+      "palm_frame": "palm_link",
+      "position_xyz": [
+        0.0,
+        0.0,
+        0.255
+      ],
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "object": {
+      "registry_name": "dexlab_cube",
+      "factory": "dexterous_lab.objects.factories:create_object",
+      "kind": "cube",
+      "position_xyz": [
+        -0.55,
+        0.0,
+        0.285
+      ],
+      "rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "mass": 0.1,
+      "friction": 0.7,
+      "usd_path": null,
+      "asset_version": "procedural-cube-v1"
+    },
+    "scene": {
+      "name": "tabletop",
+      "table_position_xyz": [
+        -0.55,
+        0.0,
+        0.235
+      ],
+      "table_size": [
+        0.8,
+        1.0,
+        0.04
+      ],
+      "light_intensity": 2000.0,
+      "dt": 0.008333333333333333,
+      "decimation": 4
+    },
+    "task": {
+      "name": "lift",
+      "episode_length_s": 30.0,
+      "goal_delta_xyz": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "position_tolerance": 0.02
+    }
+  },
+  "run_dir": "/root/gpufree-data/DexterousLab/outputs/20261110T070333Z-first-grasp-allegro-8de52169"
+}

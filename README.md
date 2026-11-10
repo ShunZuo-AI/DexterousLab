@@ -7,12 +7,12 @@
 </p>
 
 <p align="center">
-  <a href="#news">📰 News</a> &nbsp; · &nbsp;
-  <a href="#introduction">🧭 项目介绍</a> &nbsp; · &nbsp;
-  <a href="#features">✨ 核心功能</a> &nbsp; · &nbsp;
-  <a href="#quick-start">🚀 快速开始</a> &nbsp; · &nbsp;
-  <a href="#experiments">🧪 实验结果</a> &nbsp; · &nbsp;
-  <a href="#documentation">📚 文档</a>
+  <a href="#news"><img src="docs/media/readme-style/button-news.svg" alt="📰 News" width="130" /></a>
+  <a href="#introduction"><img src="docs/media/readme-style/button-introduction.svg" alt="🧭 项目介绍" width="130" /></a>
+  <a href="#features"><img src="docs/media/readme-style/button-features.svg" alt="✨ 核心功能" width="130" /></a>
+  <a href="#quick-start"><img src="docs/media/readme-style/button-quick-start.svg" alt="🚀 快速开始" width="130" /></a>
+  <a href="#experiments"><img src="docs/media/readme-style/button-experiments.svg" alt="🧪 实验结果" width="130" /></a>
+  <a href="#documentation"><img src="docs/media/readme-style/button-documentation.svg" alt="📚 文档" width="130" /></a>
 </p>
 
 <p align="center">
@@ -24,6 +24,7 @@
 
 ## 📰 News
 
+- **2026-11-10** — 新增 Allegro / Shadow 真实仿真运动视频，每种手录制16秒，支持离屏录制。[查看视频](#motion-video)。
 - **2026-11-10** — DexterousLab 已发布到 GitHub，开放项目代码、配置、文档与实验记录。
 
 <a id="introduction"></a>
@@ -98,6 +99,16 @@ dexlab scene run --hand shadow --object cube --physics physx
 <a id="experiments"></a>
 
 ## 🧪 实验结果
+
+<a id="motion-video"></a>
+
+### 两种灵巧手的真实仿真运动
+
+[![Allegro与Shadow真实运动对照，均未达到抓取成功标准](docs/media/motion-20261110/preview.gif)](docs/media/motion-20261110/comparison.mp4)
+
+[对照视频 MP4](docs/media/motion-20261110/comparison.mp4) · [Allegro](docs/media/motion-20261110/allegro.mp4) · [Shadow](docs/media/motion-20261110/shadow.mp4) · [录制说明与证据](docs/experiments/motion-video-20261110.md)
+
+每段16秒、15 FPS，真实运行480个环境步；运动包含接近、闭合、抬升与保持。两次均未成功抓起并保持Cube。追加 `--record-video` 可离屏录制，无需打开云桌面窗口。
 
 | 首次抓取基线 | 仿真步进 | 抓取结果 |
 |---|---|---|

@@ -1,0 +1,131 @@
+{
+  "articulation_joint_names": [
+    "rh_WRJ2",
+    "rh_WRJ1",
+    "rh_FFJ4",
+    "rh_FFJ3",
+    "rh_FFJ2",
+    "rh_FFJ1",
+    "rh_LFJ5",
+    "rh_LFJ4",
+    "rh_LFJ3",
+    "rh_LFJ2",
+    "rh_LFJ1",
+    "rh_MFJ4",
+    "rh_MFJ3",
+    "rh_MFJ2",
+    "rh_MFJ1",
+    "rh_RFJ4",
+    "rh_RFJ3",
+    "rh_RFJ2",
+    "rh_RFJ1",
+    "rh_THJ5",
+    "rh_THJ4",
+    "rh_THJ3",
+    "rh_THJ2",
+    "rh_THJ1"
+  ],
+  "body_names": [
+    "rh_forearm",
+    "rh_wrist",
+    "rh_palm",
+    "rh_ffknuckle",
+    "rh_ffproximal",
+    "rh_ffmiddle",
+    "rh_ffdistal",
+    "rh_lfmetacarpal",
+    "rh_lfknuckle",
+    "rh_lfproximal",
+    "rh_lfmiddle",
+    "rh_lfdistal",
+    "rh_mfknuckle",
+    "rh_mfproximal",
+    "rh_mfmiddle",
+    "rh_mfdistal",
+    "rh_rfknuckle",
+    "rh_rfproximal",
+    "rh_rfmiddle",
+    "rh_rfdistal",
+    "rh_thbase",
+    "rh_thproximal",
+    "rh_thhub",
+    "rh_thmiddle",
+    "rh_thdistal"
+  ],
+  "configured_control_joints": [
+    "rh_WRJ2",
+    "rh_WRJ1",
+    "rh_FFJ4",
+    "rh_FFJ3",
+    "rh_MFJ4",
+    "rh_MFJ3",
+    "rh_RFJ4",
+    "rh_RFJ3",
+    "rh_LFJ5",
+    "rh_LFJ4",
+    "rh_LFJ3",
+    "rh_THJ5",
+    "rh_THJ4",
+    "rh_THJ3",
+    "rh_THJ2",
+    "rh_THJ1"
+  ],
+  "tendon_coordinates": [
+    "rh_FFJ0",
+    "rh_MFJ0",
+    "rh_RFJ0",
+    "rh_LFJ0"
+  ],
+  "action_dim": 20,
+  "action_term_names": [
+    "joints",
+    "tendons"
+  ],
+  "action_terms": [
+    {
+      "name": "joints",
+      "start": 0,
+      "stop": 16,
+      "joint_names": [
+        "rh_WRJ2",
+        "rh_WRJ1",
+        "rh_FFJ4",
+        "rh_FFJ3",
+        "rh_LFJ5",
+        "rh_LFJ4",
+        "rh_LFJ3",
+        "rh_MFJ4",
+        "rh_MFJ3",
+        "rh_RFJ4",
+        "rh_RFJ3",
+        "rh_THJ5",
+        "rh_THJ4",
+        "rh_THJ3",
+        "rh_THJ2",
+        "rh_THJ1"
+      ],
+      "tendon_names": []
+    },
+    {
+      "name": "tendons",
+      "start": 16,
+      "stop": 20,
+      "joint_names": [],
+      "tendon_names": [
+        "rh_FFJ0",
+        "rh_MFJ0",
+        "rh_RFJ0",
+        "rh_LFJ0"
+      ]
+    }
+  ],
+  "fingertip_body_names": [
+    "rh_ffdistal",
+    "rh_mfdistal",
+    "rh_rfdistal",
+    "rh_lfdistal",
+    "rh_thdistal"
+  ],
+  "requires_arm": false,
+  "robot_usd_path": "/root/gpufree-data/DexterousLab/assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/Robots_Multiphysics/ShadowRobot/ShadowHandMultiPhysics_v0/right_hand/right_hand.usda"
+}

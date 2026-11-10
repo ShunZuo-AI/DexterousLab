@@ -1,0 +1,8 @@
+{
+  "local_readme_links_checked": 44,
+  "syntax": "passed",
+  "mp4_streams": "240 frames at 15fps, 16s each",
+  "gif_duration_s": 16,
+  "source_video_hashes": "passed",
+  "tests": "111 passed in 3.22s"
+}

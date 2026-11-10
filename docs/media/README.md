@@ -2,7 +2,7 @@
 
 ## 艺术字与图标排版
 
-当前README正标题使用顶部居中的 `readme-style/wordmark.svg` 艺术字图片；所有章节和步骤子标题、数字概览、导航与页脚使用文字。小型图标和技术徽章继续使用本地SVG，旧版章节装饰素材保留但不再引用。[设计规范、参考项目与生成方式](../readme-visual-design.md)。
+当前README正标题恢复使用顶部居中的 `readme-style/wordmark.svg` 艺术字图片，背景为直角；章节子标题保持文字。`readme-style/button-*.svg` 提供六个可点击的蓝白圆角导航按钮。[设计说明](../readme-visual-design.md)。
 
 ## 项目封面
 

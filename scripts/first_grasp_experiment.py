@@ -10,8 +10,10 @@ import hashlib
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+import shutil
 import subprocess
 import sys
+import time
 import uuid
 
 PROJECT = Path(__file__).resolve().parents[1]
@@ -45,7 +47,8 @@ def launch(args):
     local_asset_root = PROJECT / 'assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2'
     if not local_asset_root.is_dir():
         raise ValueError('Previously downloaded official cache is missing; this experiment does not download assets')
-    request = {'hand': args.hand, 'probe': args.probe, 'render': args.render, 'seed': 42,
+    request = {'hand': args.hand, 'probe': args.probe, 'render': args.render,
+               'record_video': args.record_video, 'seed': 42,
                'isaacsim_asset_root': str(local_asset_root), 'script_sha256': hashlib.sha256(source).hexdigest(),
                'configuration': configuration, 'specification': specification, 'run_dir': str(directory)}
     save_json(directory / 'request.json', request)
@@ -98,6 +101,12 @@ def run(request):
         env_cfg.terminations.success = None
         if config.get('robot_gravity_compensation', False):
             env_cfg.scene.robot.spawn.rigid_props.disable_gravity = True
+        if request.get('record_video'):
+            from isaaclab_visualizers.kit import KitVisualizerCfg
+
+            env_cfg.sim.default_visualizer_cfg = KitVisualizerCfg(
+                headless=True, window_width=960, window_height=540,
+                eye=(-1.15, -0.8, 0.9), lookat=(-0.55, 0, 0.36))
         return env_cfg
     description.env_cfg_callback = configure_experiment
     env = ArenaEnvBuilder(description, ArenaEnvBuilderCfg(
@@ -155,6 +164,11 @@ def run(request):
         T_B_H[:3, 3] = Rotation.from_quat(root_start[3:]).as_matrix().T @ (palm[:3] - root_start[:3])
         if request['render']:
             state.env.sim.set_camera_view(eye=(-1.15, -0.8, 0.9), target=(-0.55, 0, 0.36))
+        video_frames = []
+        if request.get('record_video'):
+            (output / 'video_frames').mkdir(exist_ok=False)
+            video_visualizer = next(visualizer for visualizer in state.env.sim.visualizers
+                                    if hasattr(visualizer, 'render_rgb_array'))
         collector = DatasetCollector(output / 'trajectory', {'request': request, 'robot_mapping': mapping,
             'scope': 'One scripted, untrained grasp-and-lift attempt',
             'object_manipulation': 'dynamic only; no attachment or object pose writes after reset',
@@ -285,11 +299,29 @@ def run(request):
                 all_metrics.append(metric)
                 if request['render']:
                     state.env.sim.render()
+                if request.get('record_video') and step % 2 == 0:
+                    from PIL import Image
+
+                    frame_path = output / 'video_frames' / f'{len(video_frames):06d}.png'
+                    deadline = time.monotonic() + 60
+                    while True:
+                        state.env.sim.render()
+                        frame = video_visualizer.render_rgb_array()
+                        if frame.size and np.any(frame):
+                            Image.fromarray(frame).save(frame_path)
+                            break
+                        if time.monotonic() >= deadline:
+                            raise RuntimeError(f'Offscreen frame capture timed out: {frame_path}')
+                        time.sleep(0.002)
+                    video_frames.append({'frame': len(video_frames), 'step': step,
+                                         'simulation_time_s': step * float(state.env.step_dt), 'phase': phase})
                 if local == count:
                     print(json.dumps(metric), flush=True)
             phases.append({'phase': phase, 'first_step': phase_start + 1, 'last_step': step,
                            'end_metrics': all_metrics[-1]})
-            if request['render']:
+            if request.get('record_video'):
+                Image.fromarray(frame).save(output / f'{phase}.png')
+            elif request['render']:
                 try:
                     from omni.kit.viewport.utility import capture_viewport_to_file, get_active_viewport
                     capture = capture_viewport_to_file(get_active_viewport(), str(output / f'{phase}.png'))
@@ -314,6 +346,18 @@ def run(request):
                 'scope': 'Detailed PhysX contacts for configured fingertips only plus analytic cube/table vertical gap; all-link self-collision is not audited'},
             shadow_base_control='prescribed kinematic support trajectory' if not arm_ids else None)
         save_json(output / 'phase_metrics.json', all_metrics)
+        if request.get('record_video'):
+            frame_rate = 1.0 / (2 * float(state.env.step_dt))
+            command = ['ffmpeg', '-nostdin', '-v', 'error', '-n', '-framerate', str(frame_rate),
+                       '-i', str(output / 'video_frames/%06d.png'), '-vf',
+                       'scale=960:540:force_original_aspect_ratio=decrease,pad=960:540:(ow-iw)/2:(oh-ih)/2',
+                       '-c:v', 'libx264', '-crf', '19', '-pix_fmt', 'yuv420p', '-movflags', '+faststart',
+                       str(output / 'motion.mp4')]
+            subprocess.run(command, check=True, timeout=90, capture_output=True)
+            result['video'] = {'path': str(output / 'motion.mp4'), 'frames': len(video_frames),
+                               'fps': frame_rate, 'duration_s': len(video_frames) / frame_rate,
+                               'scope': 'Actual viewport frames every two environment steps; no interpolated motion'}
+            save_json(output / 'video_frames.json', {'frames': video_frames, 'encoding_command': command})
         collector.finish(result)
         collector = None
     except Exception as exc:
@@ -335,8 +379,15 @@ def main():
     parser.add_argument('--config', type=Path, default=PROJECT / 'configs/experiments/first_grasp.toml')
     parser.add_argument('--probe', action='store_true')
     parser.add_argument('--render', action='store_true')
+    parser.add_argument('--record-video', action='store_true', help='Capture real viewport motion as MP4; enables render')
     parser.add_argument('--request', type=Path)
     args = parser.parse_args()
+    if args.record_video:
+        args.render = True
+        if args.probe:
+            parser.error('--record-video cannot be combined with --probe')
+        if shutil.which('ffmpeg') is None:
+            parser.error('--record-video requires ffmpeg on PATH')
     if not args.request:
         return launch(args)
     request = json.loads(args.request.read_text())
@@ -346,10 +397,12 @@ def main():
     from dexterous_lab.storage import DATA_ROOT
 
     sim_args = get_isaaclab_arena_cli_parser().parse_args([])
-    sim_args.device, sim_args.visualizer, sim_args.enable_cameras = 'cuda:0', ['kit'] if request['render'] else None, False
+    sim_args.device, sim_args.visualizer, sim_args.enable_cameras = 'cuda:0', ['kit'] if request['render'] else None, bool(request.get('record_video'))
     if request['render']:
-        sim_args.headless = False
+        sim_args.headless = bool(request.get('record_video'))
     sim_args.kit_args = f'--portable-root {DATA_ROOT / ".cache/kit"}'
+    if request.get('record_video'):
+        sim_args.kit_args += ' --no-window --enable omni.kit.viewport.window --enable omni.kit.viewport.utility'
     with SimulationAppContext(sim_args):
         run(request)
     return 0

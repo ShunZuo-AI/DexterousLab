@@ -1,0 +1,44 @@
+{
+  "robot_loaded": true,
+  "object_loaded": true,
+  "dynamic_rigid_body": true,
+  "collision_paths": [
+    "/World/envs/env_0/Object/geometry/mesh"
+  ],
+  "backend_masses_kg": [
+    0.10000000149011612
+  ],
+  "backend_materials_static_dynamic_restitution": [
+    [
+      0.699999988079071,
+      0.699999988079071,
+      0.0
+    ]
+  ],
+  "backend_inertias_kg_m2": [
+    [
+      4.166667349636555e-05,
+      0.0,
+      0.0,
+      0.0,
+      4.166667349636555e-05,
+      0.0,
+      0.0,
+      0.0,
+      4.166667349636555e-05
+    ]
+  ],
+  "spawned_local_extents_m": [
+    0.05000000074505806,
+    0.05000000074505806,
+    0.05000000074505806
+  ],
+  "object_kind": "cube",
+  "asset_version": "procedural-cube-v1",
+  "contact_filter_paths": [
+    "/World/envs/env_[^/]+/Robot/ee_link/index_link_3",
+    "/World/envs/env_[^/]+/Robot/ee_link/middle_link_3",
+    "/World/envs/env_[^/]+/Robot/ee_link/ring_link_3",
+    "/World/envs/env_[^/]+/Robot/ee_link/thumb_link_3"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "robot_loaded": true,
+  "object_loaded": true,
+  "dynamic_rigid_body": true,
+  "collision_paths": [
+    "/World/envs/env_0/Object/geometry/mesh"
+  ],
+  "backend_masses_kg": [
+    0.10000000149011612
+  ],
+  "backend_materials_static_dynamic_restitution": [
+    [
+      0.699999988079071,
+      0.699999988079071,
+      0.0
+    ]
+  ],
+  "backend_inertias_kg_m2": [
+    [
+      4.166667349636555e-05,
+      0.0,
+      0.0,
+      0.0,
+      4.166667349636555e-05,
+      0.0,
+      0.0,
+      0.0,
+      4.166667349636555e-05
+    ]
+  ],
+  "spawned_local_extents_m": [
+    0.05000000074505806,
+    0.05000000074505806,
+    0.05000000074505806
+  ],
+  "object_kind": "cube",
+  "asset_version": "procedural-cube-v1",
+  "contact_filter_paths": [
+    "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_ffknuckle/rh_ffproximal/rh_ffmiddle/rh_ffdistal",
+    "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_mfknuckle/rh_mfproximal/rh_mfmiddle/rh_mfdistal",
+    "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_rfknuckle/rh_rfproximal/rh_rfmiddle/rh_rfdistal",
+    "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_lfmetacarpal/rh_lfknuckle/rh_lfproximal/rh_lfmiddle/rh_lfdistal",
+    "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_thbase/rh_thproximal/rh_thhub/rh_thmiddle/rh_thdistal"
+  ]
+}

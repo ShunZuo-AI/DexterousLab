@@ -1,0 +1,606 @@
+{
+  "runs": {
+    "allegro": {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261110T070333Z-first-grasp-allegro-8de52169",
+      "result": {
+        "simulation_completed": true,
+        "grasp_success": false,
+        "hand": "allegro",
+        "steps_completed": 480,
+        "failure_reason": "no_lift",
+        "max_lift_m": 0.0020741820335388184,
+        "max_tip_force_n": 28.509990692138672,
+        "peak_active_tip_count": 3,
+        "final_hold_steps": 0,
+        "max_hold_steps": 0,
+        "phases": [
+          {
+            "phase": "settle",
+            "first_step": 1,
+            "last_step": 15,
+            "end_metrics": {
+              "step": 15,
+              "phase": "settle",
+              "object_lift_m": -0.005000114440917969,
+              "object_speed_m_s": 0.00010844812641153112,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.4413905143737793,
+                -0.11264006048440933,
+                0.9743693470954895
+              ],
+              "palm_actual_xyz": [
+                -0.4413904547691345,
+                -0.11263987421989441,
+                0.9743692278862
+              ],
+              "cube_bottom_to_table_top_m": -3.73233921491245e-07
+            }
+          },
+          {
+            "phase": "approach",
+            "first_step": 16,
+            "last_step": 165,
+            "end_metrics": {
+              "step": 165,
+              "phase": "approach",
+              "object_lift_m": -0.005000114440917969,
+              "object_speed_m_s": 0.00010844655480468646,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5132304473782996,
+                -0.04808326112068523,
+                0.47
+              ],
+              "palm_actual_xyz": [
+                -0.5131694078445435,
+                -0.0525350384414196,
+                0.5002809762954712
+              ],
+              "cube_bottom_to_table_top_m": -3.73233921491245e-07
+            }
+          },
+          {
+            "phase": "descend",
+            "first_step": 166,
+            "last_step": 255,
+            "end_metrics": {
+              "step": 255,
+              "phase": "descend",
+              "object_lift_m": -0.005000114440917969,
+              "object_speed_m_s": 0.0001084469331544824,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5132304473782996,
+                -0.04808326112068523,
+                0.35
+              ],
+              "palm_actual_xyz": [
+                -0.531288743019104,
+                -0.056526731699705124,
+                0.4110216200351715
+              ],
+              "cube_bottom_to_table_top_m": -3.73233921491245e-07
+            }
+          },
+          {
+            "phase": "close",
+            "first_step": 256,
+            "last_step": 345,
+            "end_metrics": {
+              "step": 345,
+              "phase": "close",
+              "object_lift_m": -0.004656553268432617,
+              "object_speed_m_s": 0.0585121214389801,
+              "max_tip_normal_force_n": 1.5373218059539795,
+              "active_tip_count": 2,
+              "palm_target_xyz": [
+                -0.5132304473782996,
+                -0.04808326112068523,
+                0.35
+              ],
+              "palm_actual_xyz": [
+                -0.5167611837387085,
+                -0.046299323439598083,
+                0.35447052121162415
+              ],
+              "min_tip_object_separation_m": -6.472226232290268e-06,
+              "cube_bottom_to_table_top_m": -6.309562270434554e-07
+            }
+          },
+          {
+            "phase": "lift",
+            "first_step": 346,
+            "last_step": 435,
+            "end_metrics": {
+              "step": 435,
+              "phase": "lift",
+              "object_lift_m": -0.005000114440917969,
+              "object_speed_m_s": 0.00011743680079234764,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5132304473782996,
+                -0.04808326112068523,
+                0.44999999999999996
+              ],
+              "palm_actual_xyz": [
+                -0.5119307041168213,
+                -0.0475328154861927,
+                0.44033753871917725
+              ],
+              "cube_bottom_to_table_top_m": -3.490332059485901e-07
+            }
+          },
+          {
+            "phase": "hold",
+            "first_step": 436,
+            "last_step": 480,
+            "end_metrics": {
+              "step": 480,
+              "phase": "hold",
+              "object_lift_m": -0.005000114440917969,
+              "object_speed_m_s": 0.00011743761569960043,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5132304473782996,
+                -0.04808326112068523,
+                0.44999999999999996
+              ],
+              "palm_actual_xyz": [
+                -0.513556957244873,
+                -0.048355359584093094,
+                0.45096656680107117
+              ],
+              "cube_bottom_to_table_top_m": -3.490332059485901e-07
+            }
+          }
+        ],
+        "actual_joint_count": 23,
+        "action_dim": 23,
+        "robot_usd_path": "/root/gpufree-data/DexterousLab/assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/IsaacLab/Robots/KukaAllegro/kuka.usd",
+        "object_asset": "dexterous_lab.assets.primitives:Cube",
+        "collision_penetration": {
+          "min_tip_object_separation_m": -0.00011601252481341362,
+          "contact_api_error": null,
+          "max_tip_object_penetration_m": 0.00011601252481341362,
+          "min_cube_bottom_to_table_top_m": -2.4187904807404514e-06,
+          "scope": "Detailed PhysX contacts for configured fingertips only plus analytic cube/table vertical gap; all-link self-collision is not audited"
+        },
+        "shadow_base_control": null,
+        "video": {
+          "path": "/root/gpufree-data/DexterousLab/outputs/20261110T070333Z-first-grasp-allegro-8de52169/motion.mp4",
+          "frames": 240,
+          "fps": 15.0,
+          "duration_s": 16.0,
+          "scope": "Actual viewport frames every two environment steps; no interpolated motion"
+        }
+      },
+      "frame_count": 240,
+      "unique_source_frames": 240,
+      "moving_joints": [
+        "iiwa7_joint_1",
+        "iiwa7_joint_2",
+        "iiwa7_joint_3",
+        "iiwa7_joint_4",
+        "iiwa7_joint_5",
+        "iiwa7_joint_6",
+        "iiwa7_joint_7",
+        "index_joint_0",
+        "middle_joint_0",
+        "ring_joint_0",
+        "thumb_joint_0",
+        "index_joint_1",
+        "middle_joint_1",
+        "ring_joint_1",
+        "thumb_joint_1",
+        "index_joint_2",
+        "middle_joint_2",
+        "ring_joint_2",
+        "thumb_joint_2",
+        "index_joint_3",
+        "middle_joint_3",
+        "ring_joint_3",
+        "thumb_joint_3"
+      ],
+      "max_joint_excursion_rad": 2.1190644471755036,
+      "video_probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 960,
+            "height": 540,
+            "coded_width": 960,
+            "coded_height": 540,
+            "closed_captions": 0,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "chroma_location": "left",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "r_frame_rate": "15/1",
+            "avg_frame_rate": "15/1",
+            "time_base": "1/15360",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 245760,
+            "duration": "16.000000",
+            "bit_rate": "288286",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "240",
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/root/gpufree-data/DexterousLab/outputs/20261110T070333Z-first-grasp-allegro-8de52169/motion.mp4",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "16.000000",
+          "size": "580303",
+          "bit_rate": "290151",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf58.76.100"
+          }
+        }
+      },
+      "video_sha256": "b359d0c65f9bf999260a35bd977ed734a25375800eb87c0ed4ea94dbfbb31ad3"
+    },
+    "shadow": {
+      "run_directory": "/root/gpufree-data/DexterousLab/outputs/20261110T070638Z-first-grasp-shadow-8a649e8a",
+      "result": {
+        "simulation_completed": true,
+        "grasp_success": false,
+        "hand": "shadow",
+        "steps_completed": 480,
+        "failure_reason": "no_lift",
+        "max_lift_m": 0.0,
+        "max_tip_force_n": 0.5153658986091614,
+        "peak_active_tip_count": 3,
+        "final_hold_steps": 0,
+        "max_hold_steps": 0,
+        "phases": [
+          {
+            "phase": "settle",
+            "first_step": 1,
+            "last_step": 15,
+            "end_metrics": {
+              "step": 15,
+              "phase": "settle",
+              "object_lift_m": -0.005000263452529907,
+              "object_speed_m_s": 0.0002208696532761678,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.550000011920929,
+                -0.2600000202655792,
+                0.7470099925994873
+              ],
+              "palm_actual_xyz": [
+                -0.550000011920929,
+                -0.2600000202655792,
+                0.7470099925994873
+              ],
+              "cube_bottom_to_table_top_m": -1.0622398449178228e-06
+            }
+          },
+          {
+            "phase": "approach",
+            "first_step": 16,
+            "last_step": 165,
+            "end_metrics": {
+              "step": 165,
+              "phase": "approach",
+              "object_lift_m": -0.005000263452529907,
+              "object_speed_m_s": 0.00022134900791570544,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5700000000000001,
+                0.08999999999999997,
+                0.495
+              ],
+              "palm_actual_xyz": [
+                -0.5699999928474426,
+                0.08999999612569809,
+                0.4950000047683716
+              ],
+              "cube_bottom_to_table_top_m": -1.0498089006993894e-06
+            }
+          },
+          {
+            "phase": "descend",
+            "first_step": 166,
+            "last_step": 255,
+            "end_metrics": {
+              "step": 255,
+              "phase": "descend",
+              "object_lift_m": -0.005000263452529907,
+              "object_speed_m_s": 0.00022125648683868349,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5700000000000001,
+                0.09,
+                0.375
+              ],
+              "palm_actual_xyz": [
+                -0.5699999928474426,
+                0.08999999612569809,
+                0.3750000298023224
+              ],
+              "cube_bottom_to_table_top_m": -1.0487169805895036e-06
+            }
+          },
+          {
+            "phase": "close",
+            "first_step": 256,
+            "last_step": 345,
+            "end_metrics": {
+              "step": 345,
+              "phase": "close",
+              "object_lift_m": -0.001605987548828125,
+              "object_speed_m_s": 0.027126966044306755,
+              "max_tip_normal_force_n": 0.32971614599227905,
+              "active_tip_count": 3,
+              "palm_target_xyz": [
+                -0.5700000000000001,
+                0.09,
+                0.375
+              ],
+              "palm_actual_xyz": [
+                -0.5700619220733643,
+                0.09000009298324585,
+                0.3750000298023224
+              ],
+              "min_tip_object_separation_m": -1.2608245015144348e-05,
+              "cube_bottom_to_table_top_m": -4.926332319188376e-06
+            }
+          },
+          {
+            "phase": "lift",
+            "first_step": 346,
+            "last_step": 435,
+            "end_metrics": {
+              "step": 435,
+              "phase": "lift",
+              "object_lift_m": -0.005000263452529907,
+              "object_speed_m_s": 0.00022335592075251043,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5700000000000001,
+                0.09,
+                0.475
+              ],
+              "palm_actual_xyz": [
+                -0.5699864029884338,
+                0.09000002592802048,
+                0.4750000238418579
+              ],
+              "cube_bottom_to_table_top_m": -1.059529584679364e-06
+            }
+          },
+          {
+            "phase": "hold",
+            "first_step": 436,
+            "last_step": 480,
+            "end_metrics": {
+              "step": 480,
+              "phase": "hold",
+              "object_lift_m": -0.005000263452529907,
+              "object_speed_m_s": 0.00022375561820808798,
+              "max_tip_normal_force_n": 0.0,
+              "active_tip_count": 0,
+              "palm_target_xyz": [
+                -0.5700000000000001,
+                0.09,
+                0.475
+              ],
+              "palm_actual_xyz": [
+                -0.5699862241744995,
+                0.09000003337860107,
+                0.4750000238418579
+              ],
+              "cube_bottom_to_table_top_m": -1.0606548992431186e-06
+            }
+          }
+        ],
+        "actual_joint_count": 24,
+        "action_dim": 20,
+        "robot_usd_path": "/root/gpufree-data/DexterousLab/assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/Robots_Multiphysics/ShadowRobot/ShadowHandMultiPhysics_v0/right_hand/right_hand.usda",
+        "object_asset": "dexterous_lab.assets.primitives:Cube",
+        "collision_penetration": {
+          "min_tip_object_separation_m": -1.5370547771453857e-05,
+          "contact_api_error": null,
+          "max_tip_object_penetration_m": 1.5370547771453857e-05,
+          "min_cube_bottom_to_table_top_m": -5.7988602972791625e-06,
+          "scope": "Detailed PhysX contacts for configured fingertips only plus analytic cube/table vertical gap; all-link self-collision is not audited"
+        },
+        "shadow_base_control": "prescribed kinematic support trajectory",
+        "video": {
+          "path": "/root/gpufree-data/DexterousLab/outputs/20261110T070638Z-first-grasp-shadow-8a649e8a/motion.mp4",
+          "frames": 240,
+          "fps": 15.0,
+          "duration_s": 16.0,
+          "scope": "Actual viewport frames every two environment steps; no interpolated motion"
+        }
+      },
+      "frame_count": 240,
+      "unique_source_frames": 240,
+      "moving_joints": [
+        "rh_WRJ1",
+        "rh_FFJ4",
+        "rh_FFJ3",
+        "rh_FFJ2",
+        "rh_FFJ1",
+        "rh_LFJ3",
+        "rh_LFJ2",
+        "rh_LFJ1",
+        "rh_MFJ3",
+        "rh_MFJ2",
+        "rh_MFJ1",
+        "rh_RFJ3",
+        "rh_RFJ2",
+        "rh_RFJ1",
+        "rh_THJ5",
+        "rh_THJ4",
+        "rh_THJ3",
+        "rh_THJ2",
+        "rh_THJ1"
+      ],
+      "max_joint_excursion_rad": 1.3086152076721191,
+      "video_probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 960,
+            "height": 540,
+            "coded_width": 960,
+            "coded_height": 540,
+            "closed_captions": 0,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "chroma_location": "left",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "r_frame_rate": "15/1",
+            "avg_frame_rate": "15/1",
+            "time_base": "1/15360",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 245760,
+            "duration": "16.000000",
+            "bit_rate": "205858",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "240",
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/root/gpufree-data/DexterousLab/outputs/20261110T070638Z-first-grasp-shadow-8a649e8a/motion.mp4",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "16.000000",
+          "size": "415399",
+          "bit_rate": "207699",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf58.76.100"
+          }
+        }
+      },
+      "video_sha256": "41f7e92fe891ec79e2536d3d4b878e893622cf3c192b57a65780c81bce3f7a5e"
+    }
+  },
+  "encoding_commands": [
+    [
+      "ffmpeg",
+      "-nostdin",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "docs/media/motion-20261110/allegro.mp4",
+      "-i",
+      "docs/media/motion-20261110/shadow.mp4",
+      "-filter_complex",
+      "[0:v]pad=960:640:0:60:color=0x11243b,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='ALLEGRO + KUKA':x=24:y=15:fontsize=26:fontcolor=white,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='7 arm + 16 hand joints | DLS arm control':x=24:y=608:fontsize=18:fontcolor=white[left];[1:v]pad=960:640:0:60:color=0x11243b,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='SHADOW HAND':x=24:y=15:fontsize=26:fontcolor=white,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='24 joints / 20 actions | prescribed base path':x=24:y=608:fontsize=18:fontcolor=white[right];[left][right]hstack=inputs=2,pad=1920:690:0:0:color=0x11243b,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Actual PhysX simulation | 1x simulation time | Both trials failed lift-and-hold':x=24:y=653:fontsize=22:fontcolor=0xbad8f5[out]",
+      "-map",
+      "[out]",
+      "-c:v",
+      "libx264",
+      "-crf",
+      "20",
+      "-pix_fmt",
+      "yuv420p",
+      "-movflags",
+      "+faststart",
+      "docs/media/motion-20261110/comparison.mp4"
+    ],
+    [
+      "ffmpeg",
+      "-nostdin",
+      "-v",
+      "error",
+      "-y",
+      "-i",
+      "docs/media/motion-20261110/comparison.mp4",
+      "-filter_complex",
+      "fps=10,scale=960:-1:flags=lanczos,split[a][b];[a]palettegen=stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=3",
+      "-loop",
+      "0",
+      "docs/media/motion-20261110/preview.gif"
+    ]
+  ],
+  "scope": "Two actual simulated motion trials, not successful grasps or a fair hardware ranking.",
+  "source_timing": "Every two environment steps at 1/30s, encoded at 15fps; GIF preview subsampled to 10fps."
+}

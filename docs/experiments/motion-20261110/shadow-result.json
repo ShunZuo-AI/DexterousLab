@@ -1,0 +1,178 @@
+{
+  "simulation_completed": true,
+  "grasp_success": false,
+  "hand": "shadow",
+  "steps_completed": 480,
+  "failure_reason": "no_lift",
+  "max_lift_m": 0.0,
+  "max_tip_force_n": 0.5153658986091614,
+  "peak_active_tip_count": 3,
+  "final_hold_steps": 0,
+  "max_hold_steps": 0,
+  "phases": [
+    {
+      "phase": "settle",
+      "first_step": 1,
+      "last_step": 15,
+      "end_metrics": {
+        "step": 15,
+        "phase": "settle",
+        "object_lift_m": -0.005000263452529907,
+        "object_speed_m_s": 0.0002208696532761678,
+        "max_tip_normal_force_n": 0.0,
+        "active_tip_count": 0,
+        "palm_target_xyz": [
+          -0.550000011920929,
+          -0.2600000202655792,
+          0.7470099925994873
+        ],
+        "palm_actual_xyz": [
+          -0.550000011920929,
+          -0.2600000202655792,
+          0.7470099925994873
+        ],
+        "cube_bottom_to_table_top_m": -1.0622398449178228e-06
+      }
+    },
+    {
+      "phase": "approach",
+      "first_step": 16,
+      "last_step": 165,
+      "end_metrics": {
+        "step": 165,
+        "phase": "approach",
+        "object_lift_m": -0.005000263452529907,
+        "object_speed_m_s": 0.00022134900791570544,
+        "max_tip_normal_force_n": 0.0,
+        "active_tip_count": 0,
+        "palm_target_xyz": [
+          -0.5700000000000001,
+          0.08999999999999997,
+          0.495
+        ],
+        "palm_actual_xyz": [
+          -0.5699999928474426,
+          0.08999999612569809,
+          0.4950000047683716
+        ],
+        "cube_bottom_to_table_top_m": -1.0498089006993894e-06
+      }
+    },
+    {
+      "phase": "descend",
+      "first_step": 166,
+      "last_step": 255,
+      "end_metrics": {
+        "step": 255,
+        "phase": "descend",
+        "object_lift_m": -0.005000263452529907,
+        "object_speed_m_s": 0.00022125648683868349,
+        "max_tip_normal_force_n": 0.0,
+        "active_tip_count": 0,
+        "palm_target_xyz": [
+          -0.5700000000000001,
+          0.09,
+          0.375
+        ],
+        "palm_actual_xyz": [
+          -0.5699999928474426,
+          0.08999999612569809,
+          0.3750000298023224
+        ],
+        "cube_bottom_to_table_top_m": -1.0487169805895036e-06
+      }
+    },
+    {
+      "phase": "close",
+      "first_step": 256,
+      "last_step": 345,
+      "end_metrics": {
+        "step": 345,
+        "phase": "close",
+        "object_lift_m": -0.001605987548828125,
+        "object_speed_m_s": 0.027126966044306755,
+        "max_tip_normal_force_n": 0.32971614599227905,
+        "active_tip_count": 3,
+        "palm_target_xyz": [
+          -0.5700000000000001,
+          0.09,
+          0.375
+        ],
+        "palm_actual_xyz": [
+          -0.5700619220733643,
+          0.09000009298324585,
+          0.3750000298023224
+        ],
+        "min_tip_object_separation_m": -1.2608245015144348e-05,
+        "cube_bottom_to_table_top_m": -4.926332319188376e-06
+      }
+    },
+    {
+      "phase": "lift",
+      "first_step": 346,
+      "last_step": 435,
+      "end_metrics": {
+        "step": 435,
+        "phase": "lift",
+        "object_lift_m": -0.005000263452529907,
+        "object_speed_m_s": 0.00022335592075251043,
+        "max_tip_normal_force_n": 0.0,
+        "active_tip_count": 0,
+        "palm_target_xyz": [
+          -0.5700000000000001,
+          0.09,
+          0.475
+        ],
+        "palm_actual_xyz": [
+          -0.5699864029884338,
+          0.09000002592802048,
+          0.4750000238418579
+        ],
+        "cube_bottom_to_table_top_m": -1.059529584679364e-06
+      }
+    },
+    {
+      "phase": "hold",
+      "first_step": 436,
+      "last_step": 480,
+      "end_metrics": {
+        "step": 480,
+        "phase": "hold",
+        "object_lift_m": -0.005000263452529907,
+        "object_speed_m_s": 0.00022375561820808798,
+        "max_tip_normal_force_n": 0.0,
+        "active_tip_count": 0,
+        "palm_target_xyz": [
+          -0.5700000000000001,
+          0.09,
+          0.475
+        ],
+        "palm_actual_xyz": [
+          -0.5699862241744995,
+          0.09000003337860107,
+          0.4750000238418579
+        ],
+        "cube_bottom_to_table_top_m": -1.0606548992431186e-06
+      }
+    }
+  ],
+  "actual_joint_count": 24,
+  "action_dim": 20,
+  "robot_usd_path": "/root/gpufree-data/DexterousLab/assets/cache/https/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.2/Isaac/Robots_Multiphysics/ShadowRobot/ShadowHandMultiPhysics_v0/right_hand/right_hand.usda",
+  "object_asset": "dexterous_lab.assets.primitives:Cube",
+  "collision_penetration": {
+    "min_tip_object_separation_m": -1.5370547771453857e-05,
+    "contact_api_error": null,
+    "max_tip_object_penetration_m": 1.5370547771453857e-05,
+    "min_cube_bottom_to_table_top_m": -5.7988602972791625e-06,
+    "scope": "Detailed PhysX contacts for configured fingertips only plus analytic cube/table vertical gap; all-link self-collision is not audited"
+  },
+  "shadow_base_control": "prescribed kinematic support trajectory",
+  "video": {
+    "path": "/root/gpufree-data/DexterousLab/outputs/20261110T070638Z-first-grasp-shadow-8a649e8a/motion.mp4",
+    "frames": 240,
+    "fps": 15.0,
+    "duration_s": 16.0,
+    "scope": "Actual viewport frames every two environment steps; no interpolated motion"
+  }
+}

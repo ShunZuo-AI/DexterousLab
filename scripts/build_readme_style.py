@@ -17,6 +17,8 @@ INK = '#173d68'
 BLUE = '#4d88c6'
 MUTED = '#7893ae'
 ICONS = {
+    'news': '<path d="M5 4h16v15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8h2 M5 4v15 M9 8h8 M9 12h3 M15 12h2 M9 16h3 M15 16h2"/>',
+    'features': '<path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z M20 2v4 M18 4h4"/>',
     'overview': '<ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/>',
     'quick-start': '<path d="M8 15c-1-6 3-11 12-12 0 9-5 13-12 12Z M8 10 4 11l-1 6 5-2 M13 16l-1 5 6-2 1-5 M7 17l-3 3 M9 19l-2 2"/><circle cx="15" cy="8" r="2"/>',
     'hand-assets': '<path d="M7 13V6a1.5 1.5 0 0 1 3 0v6-8a1.5 1.5 0 0 1 3 0v8-7a1.5 1.5 0 0 1 3 0v8-5a1.5 1.5 0 0 1 3 0v8c0 4-3 6-6 6h-2c-2 0-4-2-5-4l-3-5a1.5 1.5 0 0 1 2-2l2 2Z"/>',
@@ -79,6 +81,23 @@ def save(name, width, height, title, body):
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
+    navigation = [
+        ('news', 'News', 'news'),
+        ('introduction', '项目介绍', 'overview'),
+        ('features', '核心功能', 'features'),
+        ('quick-start', '快速开始', 'quick-start'),
+        ('experiments', '实验结果', 'experiments'),
+        ('documentation', '文档', 'documentation'),
+    ]
+    for key, label, symbol in navigation:
+        primary = key == 'news'
+        background = '#143b68' if primary else '#edf5ff'
+        border = '#143b68' if primary else '#d4e5f7'
+        foreground = '#ffffff' if primary else '#244d77'
+        body = f'<rect x="1" y="3" width="142" height="38" rx="19" fill="{background}" stroke="{border}"/>'
+        body += icon(symbol,15,13,18,'#8dceff' if primary else '#4d88c6')
+        body += letters(label,44,29,16,SANS if primary else CHINESE,foreground)
+        save('button-'+key+'.svg',144,44,label,body)
     for key, english, chinese, number in SECTIONS:
         body = '<rect x="0" y="0" width="1080" height="120" rx="15" fill="url(#wash)"/>'
         body += '<circle cx="53" cy="55" r="30" fill="#e4f0ff"/>'
