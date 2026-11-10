@@ -1,0 +1,132 @@
+[
+  {
+    "status": "already_prepared",
+    "asset_id": "dexgraspnet/ddg-ycb_002_master_chef_can",
+    "object_id": "dgn_can",
+    "raw_mesh": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can/raw/ddg-ycb_002_master_chef_can/coacd/decomposed.obj",
+    "source_sha256": "2fdb19b8f8d370cf04afeca7337b6317a64bde53d9617c1010234c0b8979cfec",
+    "usd_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can/processed/20261110T172649Z-dgn-prepare-0c2607aa/object.usda",
+    "usd_sha256": "51fba666e8b6a15464f0e4a70021d0a83d833c25ce2a4f91e54dd010dd14a416",
+    "config_path": "/root/gpufree-data/DexterousLab/configs/objects/dgn_can.toml",
+    "config_sha256": "28b13b22859bc93e17196b59161018726310a569111b6ee26d87e8e20bbefd3d",
+    "geometry": {
+      "source_extents": [
+        1.180366,
+        1.180366,
+        1.596966
+      ],
+      "source_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meters_per_source_unit": 0.06261874078721776,
+      "extents_m": [
+        0.07391303258804507,
+        0.07391303258804507,
+        0.09999999999999999
+      ],
+      "longest_side_m": 0.1,
+      "scale_scope": "Explicit experimental size; not claimed as original physical dimensions or dataset grasp scale"
+    },
+    "convex_piece_count": 4,
+    "vertices": 952,
+    "faces": 1888,
+    "collision": "Single dynamic rigid body; one convexHull collider for each upstream CoACD piece",
+    "appearance": "Uniform blue display color; original photo textures not included in this package",
+    "mass_kg": 0.1,
+    "friction": 0.7,
+    "physics_scope": "Assumed experimental values",
+    "grasp_success": null,
+    "simulation_status": "not_run"
+  },
+  {
+    "status": "already_prepared",
+    "asset_id": "dexgraspnet/ddg-ycb_011_banana",
+    "object_id": "dgn_banana",
+    "raw_mesh": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_011_banana/raw/ddg-ycb_011_banana/coacd/decomposed.obj",
+    "source_sha256": "2db2ce9601083ab2bf1e79a57b16e9f810b56875d623afaf2d16c97b298cc07a",
+    "usd_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_011_banana/processed/20261110T172649Z-dgn-prepare-0c2607aa/object.usda",
+    "usd_sha256": "2d5625730c0ff564d99d2c1838432714ad1026de2a8eb56fdeb2163438b934e3",
+    "config_path": "/root/gpufree-data/DexterousLab/configs/objects/dgn_banana.toml",
+    "config_sha256": "3a9776e4b58b5219158c8feb1078103b6888570ebc41b521c73cdfcd9d241d54",
+    "geometry": {
+      "source_extents": [
+        1.024504,
+        1.683114,
+        0.34756600000000004
+      ],
+      "source_center": [
+        0.0,
+        0.0,
+        -1.7000000000003124e-05
+      ],
+      "meters_per_source_unit": 0.05941368202035038,
+      "extents_m": [
+        0.06086955488457705,
+        0.1,
+        0.020650175805085103
+      ],
+      "longest_side_m": 0.1,
+      "scale_scope": "Explicit experimental size; not claimed as original physical dimensions or dataset grasp scale"
+    },
+    "convex_piece_count": 3,
+    "vertices": 1936,
+    "faces": 3860,
+    "collision": "Single dynamic rigid body; one convexHull collider for each upstream CoACD piece",
+    "appearance": "Uniform blue display color; original photo textures not included in this package",
+    "mass_kg": 0.1,
+    "friction": 0.7,
+    "physics_scope": "Assumed experimental values",
+    "grasp_success": null,
+    "simulation_status": "not_run"
+  },
+  {
+    "status": "already_prepared",
+    "asset_id": "dexgraspnet/ddg-ycb_013_apple",
+    "object_id": "dgn_apple",
+    "raw_mesh": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_013_apple/raw/ddg-ycb_013_apple/coacd/decomposed.obj",
+    "source_sha256": "e076bc3d8032d189044c692575a03d9d5f19441b03c91daa49f4822108b322d9",
+    "usd_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_013_apple/processed/20261110T172802Z-dgn-prepare-484afcf0/object.usda",
+    "usd_sha256": "54cf1ec1e4411d5ccc481ecbf5f9d910f9952ece2b38b36f48c9a8bd9c9e9110",
+    "config_path": "/root/gpufree-data/DexterousLab/configs/objects/dgn_apple.toml",
+    "config_sha256": "49500edd30d85bb5a5c16f16fe5a3d0f892eb5bdff9bc316d7e5d83727515963",
+    "geometry": {
+      "source_extents": [
+        1.705186,
+        1.705186,
+        1.631048
+      ],
+      "source_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meters_per_source_unit": 0.058644628797093104,
+      "extents_m": [
+        0.1,
+        0.1,
+        0.09565220451024112
+      ],
+      "longest_side_m": 0.1,
+      "numerical_hull_repairs": [
+        {
+          "piece": "coacd_convex_piece_0.obj",
+          "operation": "Recompute hull for near-convex numerical geometry",
+          "relative_volume_difference": 2.5908974538401715e-08
+        }
+      ],
+      "scale_scope": "Explicit experimental size; not claimed as original physical dimensions or dataset grasp scale"
+    },
+    "convex_piece_count": 8,
+    "vertices": 1703,
+    "faces": 3374,
+    "collision": "Single dynamic rigid body; one convexHull collider for each upstream CoACD piece",
+    "appearance": "Uniform blue display color; original photo textures not included in this package",
+    "mass_kg": 0.1,
+    "friction": 0.7,
+    "physics_scope": "Assumed experimental values",
+    "grasp_success": null,
+    "simulation_status": "not_run"
+  }
+]

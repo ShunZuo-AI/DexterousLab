@@ -1,0 +1,58 @@
+[
+  {
+    "hand": "allegro",
+    "object": "dgn_can",
+    "run_directory": "assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can/runs/20261110T172746Z-scene-94609d25",
+    "environment_steps": 100,
+    "physics_steps": 400,
+    "action_dim": 23,
+    "support": {
+      "frames": 101,
+      "min_visual_mesh_table_gap_m": -0.0031260561805802056,
+      "final_visual_mesh_table_gap_m": -0.00042069995857813014,
+      "scope": "Mesh/table check, not full collision audit or grasp validation"
+    }
+  },
+  {
+    "hand": "allegro",
+    "object": "dgn_banana",
+    "run_directory": "assets/objects/dexgraspnet/ddg-ycb_011_banana/runs/20261110T172832Z-scene-bcd7719d",
+    "environment_steps": 100,
+    "physics_steps": 400,
+    "action_dim": 23,
+    "support": {
+      "frames": 101,
+      "min_visual_mesh_table_gap_m": -1.0712187313854926e-06,
+      "final_visual_mesh_table_gap_m": -1.0600054188847352e-06,
+      "scope": "Mesh/table check, not full collision audit or grasp validation"
+    }
+  },
+  {
+    "hand": "allegro",
+    "object": "dgn_apple",
+    "run_directory": "outputs/20261110T172902Z-scene-a22bd9c5",
+    "environment_steps": 100,
+    "physics_steps": 400,
+    "action_dim": 23,
+    "support": {
+      "frames": 101,
+      "min_visual_mesh_table_gap_m": -8.889446260385014e-05,
+      "final_visual_mesh_table_gap_m": -6.3918620983316465e-06,
+      "scope": "Mesh/table check, not full collision audit or grasp validation"
+    }
+  },
+  {
+    "hand": "shadow",
+    "object": "dgn_banana",
+    "run_directory": "outputs/20261110T172934Z-scene-60ec6cf3",
+    "environment_steps": 100,
+    "physics_steps": 400,
+    "action_dim": 20,
+    "support": {
+      "frames": 101,
+      "min_visual_mesh_table_gap_m": -6.328558969259657e-06,
+      "final_visual_mesh_table_gap_m": -6.27981815365386e-06,
+      "scope": "Mesh/table check, not full collision audit or grasp validation"
+    }
+  }
+]

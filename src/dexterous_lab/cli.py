@@ -86,6 +86,10 @@ def _add_asset_commands(commands):
     download.add_argument("--dry-run", action="store_true")
     download.add_argument("--output-dir", type=Path)
     download.add_argument("--max-gb", type=positive_int, default=8)
+    prepare = assets.add_parser("prepare-dexgraspnet")
+    prepare.add_argument("--objects", nargs="+", choices=("dgn_can", "dgn_banana", "dgn_apple"),
+                         default=["dgn_can", "dgn_banana", "dgn_apple"])
+    prepare.add_argument("--longest-side", type=float, default=0.1)
     for action in ("download-ycb", "prepare-ycb"):
         parser = assets.add_parser(action)
         parser.add_argument(
@@ -127,6 +131,7 @@ def _add_scene_commands(commands):
     parser.add_argument("--config", type=Path)
     parser.add_argument("--physics", "--backend", dest="backend")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--screenshot", action="store_true", help="Save a real offscreen screenshot after stepping")
     parser.add_argument(
         "--headless", action="store_true",
         help="Explicit acknowledgement; headless is already the default",
@@ -179,6 +184,10 @@ def _asset_result(args):
         from dexterous_lab.assets.downloads import run_download
 
         return run_download(args)
+    if args.action == "prepare-dexgraspnet":
+        from dexterous_lab.assets.dexgraspnet_samples import prepare_samples
+
+        return prepare_samples(args.objects, args.longest_side)
     if args.action == "download-ycb":
         from dexterous_lab.assets.ycb import download_objects
 
@@ -250,6 +259,8 @@ def _run_simulation(args):
         "policy": "zero_action",
     }
     if args.command == "scene":
+        if args.screenshot:
+            request["screenshot"] = True
         request["config"] = load_scene(
             args.config, args.hand, args.object_id, args.scene, args.backend
         )

@@ -82,6 +82,24 @@ def validate_research_state(state):
     state.contacts()
 
 
+def save_screenshot(env, path):
+    """Capture actual Kit renderer pixels after the simulation steps."""
+    import time
+    import numpy as np
+    from PIL import Image
+
+    visualizer = next(item for item in env.unwrapped.sim.visualizers if hasattr(item, "render_rgb_array"))
+    deadline = time.monotonic() + 45
+    while time.monotonic() < deadline:
+        env.unwrapped.sim.render()
+        frame = visualizer.render_rgb_array()
+        if frame.size and np.any(frame):
+            Image.fromarray(frame).save(path)
+            return
+        time.sleep(0.002)
+    raise RuntimeError("Offscreen screenshot capture timed out")
+
+
 def main():
     request = json.loads(Path(sys.argv[1]).read_text())
     run_dir = Path(request["run_dir"])
@@ -95,6 +113,11 @@ def main():
     from dexterous_lab.storage import DATA_ROOT
 
     args.kit_args = f"--portable-root {DATA_ROOT / '.cache/kit'}"
+    if request.get("screenshot"):
+        args.visualizer = ["kit"]
+        args.enable_cameras = True
+        args.headless = True
+        args.kit_args += " --no-window --enable omni.kit.viewport.window --enable omni.kit.viewport.utility"
     sys.argv = [sys.argv[0]]
     with SimulationAppContext(args):
         import torch
@@ -107,6 +130,21 @@ def main():
             from dexterous_lab.scenes.tabletop import DexterousLabTabletopEnvironment, TabletopEnvironmentCfg
 
             description = DexterousLabTabletopEnvironment().build(TabletopEnvironmentCfg(specification=request["config"]))
+        if request.get("screenshot"):
+            original_callback = description.env_cfg_callback
+
+            def configure_view(env_cfg):
+                from isaaclab_visualizers.kit import KitVisualizerCfg
+
+                if original_callback is not None:
+                    env_cfg = original_callback(env_cfg)
+                env_cfg.sim.default_visualizer_cfg = KitVisualizerCfg(
+                    headless=True, window_width=960, window_height=540,
+                    eye=(-1.0, -0.6, 0.85), lookat=(-0.55, 0, 0.32),
+                )
+                return env_cfg
+
+            description.env_cfg_callback = configure_view
         builder = ArenaEnvBuilder(description, ArenaEnvBuilderCfg(
             num_envs=request["num_envs"], seed=request["seed"], solve_relations=False,
             presets=request["backend"], device="cuda:0",
@@ -171,6 +209,9 @@ def main():
                 "python_prefix": sys.prefix,
                 "versions": {name: importlib.metadata.version(name) for name in ("isaacsim", "isaaclab", "isaaclab_arena", "torch")},
             }
+            if request.get("screenshot"):
+                save_screenshot(env, run_dir / "scene.png")
+                evidence["screenshot"] = "scene.png"
             if mapping:
                 spawner = env.unwrapped.cfg.scene.object.spawn
                 evidence["object_spawn"] = {

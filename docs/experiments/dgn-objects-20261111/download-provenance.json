@@ -1,0 +1,15 @@
+{
+  "request": {
+    "name": "meshdata.tar.gz",
+    "url": "https://mirrors.pku.edu.cn/dl-release/DexGraspNet-ICRA2023/meshdata.tar.gz",
+    "bytes": 345939166,
+    "license": "CC-BY-NC-4.0",
+    "source_page": "https://pku-epic.github.io/DexGraspNet/"
+  },
+  "bytes": 345939166,
+  "sha256": "10677f2602546634b0510761aaf9f02c36ed30518a0507511247f7c547fc1060",
+  "downloaded_utc": "2026-11-10T17:24:40.958846+00:00",
+  "hash_verified_against_upstream": false,
+  "simulation_status": "not_run",
+  "grasp_success": null
+}

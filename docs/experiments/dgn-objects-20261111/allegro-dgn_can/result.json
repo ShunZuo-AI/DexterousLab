@@ -1,0 +1,133 @@
+{
+  "passed": true,
+  "return_code": 0,
+  "error": null,
+  "command": [
+    "/root/gpufree-data/IsaacLab-Arena/.venv/bin/python",
+    "-m",
+    "dexterous_lab.integrations.arena.worker",
+    "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can/runs/20261110T172746Z-scene-94609d25/request.json"
+  ],
+  "simulation": {
+    "environment": "dexlab_tabletop",
+    "steps_completed": 100,
+    "num_envs": 1,
+    "device": "cuda:0",
+    "physics_class": "PhysxCfg",
+    "simulated_seconds": 3.3333333333333335,
+    "action_dim": 23,
+    "physics_steps_completed": 400,
+    "research_state_checks": 101,
+    "scene_validation": {
+      "robot_loaded": true,
+      "object_loaded": true,
+      "dynamic_rigid_body": true,
+      "collision_paths": [
+        "/World/envs/env_0/Object/piece_0",
+        "/World/envs/env_0/Object/piece_1",
+        "/World/envs/env_0/Object/piece_2",
+        "/World/envs/env_0/Object/piece_3"
+      ],
+      "backend_masses_kg": [
+        0.10000000149011612
+      ],
+      "backend_materials_static_dynamic_restitution": [
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.0
+        ]
+      ],
+      "backend_inertias_kg_m2": [
+        [
+          0.00011565748718567193,
+          7.150294578650573e-08,
+          -1.0089668478485692e-07,
+          7.150294578650573e-08,
+          0.00011559623089851812,
+          1.381240224418434e-07,
+          -1.008966705740022e-07,
+          1.381240082309887e-07,
+          6.49975409032777e-05
+        ]
+      ],
+      "spawned_local_extents_m": [
+        0.07391303032636642,
+        0.07391303032636642,
+        0.10000000149011612
+      ],
+      "object_kind": "usd",
+      "asset_version": "dgn-convex-v1:2fdb19b8f8d370cf",
+      "contact_filter_paths": [
+        "/World/envs/env_[^/]+/Robot/ee_link/index_link_3",
+        "/World/envs/env_[^/]+/Robot/ee_link/middle_link_3",
+        "/World/envs/env_[^/]+/Robot/ee_link/ring_link_3",
+        "/World/envs/env_[^/]+/Robot/ee_link/thumb_link_3"
+      ],
+      "mesh": {
+        "path": "object_mesh.obj",
+        "frame": "O",
+        "length_unit": "m",
+        "vertices": 952,
+        "faces": 1888,
+        "extents_m": [
+          0.07391303032636642,
+          0.07391303032636642,
+          0.10000000149011612
+        ],
+        "curved_surface_tessellated": false
+      }
+    },
+    "terminated_count": 0,
+    "truncated_count": 0,
+    "finite_observations": true,
+    "grasp_success": null,
+    "policy": "zero_action",
+    "python_prefix": "/root/gpufree-data/IsaacLab-Arena/.venv",
+    "versions": {
+      "isaacsim": "6.2.0.0",
+      "isaaclab": "28.0.0",
+      "isaaclab_arena": "0.3.0",
+      "torch": "2.11.0+cu130"
+    },
+    "object_spawn": {
+      "class": "UsdFileCfg",
+      "size": null,
+      "radius": null,
+      "height": null,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initial_position_xyz": [
+        -0.55,
+        0.0,
+        0.308
+      ],
+      "initial_rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "grasp_success": null,
+  "scope": "zero-action environment smoke test; no grasp validation"
+}

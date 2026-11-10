@@ -94,3 +94,11 @@ def test_parser_does_not_import_simulator(monkeypatch):
         "assert not any(name in sys.modules for name in ('isaacsim', 'isaaclab', 'pxr'))"
     )
     subprocess.run([sys.executable, "-c", code], check=True, timeout=30)
+
+
+def test_screenshot_is_explicit_and_does_not_change_default(capsys):
+    assert main(["scene", "run", "--dry-run", "--screenshot"]) == 0
+    request = json.loads(capsys.readouterr().out)
+    assert request["screenshot"] is True
+    assert main(["scene", "run", "--dry-run"]) == 0
+    assert "screenshot" not in json.loads(capsys.readouterr().out)

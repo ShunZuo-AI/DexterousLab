@@ -144,6 +144,17 @@ All six sources share one download entry point. Select individual files; large d
 
 Use `--list-files` to inspect packages and `--dry-run` to preview a download. If Hugging Face is unreachable, explicitly add `--hf-endpoint https://hf-mirror.com`. Objaverse requires a selected-object manifest with per-model provenance, license, and SHA-256. Except for the existing YCB workflow, downloaded archives are not automatically converted into simulation assets. [Script, manifest format, and network checks](docs/reference/asset-downloads.md)
 
+DexGraspNet can, banana, and apple samples are also integrated into the tabletop scene:
+
+```bash
+dexlab assets download dexgraspnet --files meshdata.tar.gz --max-gb 1
+dexlab assets prepare-dexgraspnet --objects dgn_can dgn_banana dgn_apple
+dexlab scene run --hand allegro --object dgn_apple --physics physx --steps 100 --screenshot
+dexlab scene run --hand shadow --object dgn_banana --physics physx --steps 100 --screenshot
+```
+
+The three samples have a 10 cm longest side and retain the upstream convex decomposition. Mass and friction are experimental settings. `--screenshot` saves real offscreen renderer output in the run directory. [USD assets, checks, and screenshots](docs/experiments/dexgraspnet_objects_20261111.md)
+
 ### Run a grasp attempt
 
 Prepare the official asset cache using the [asset setup instructions](docs/installation.md#5-资产录制与测试), then choose a hand:
@@ -190,7 +201,7 @@ Each hand is recorded for **16 seconds · 15 FPS · 480 environment steps**, sho
 |---|---|
 | ![Allegro during closing; this attempt did not successfully lift and hold](docs/media/allegro-tabletop.jpg) | ![Shadow during closing; this attempt did not successfully lift and hold](docs/media/shadow-tabletop.jpg) |
 
-Recorded unit test result: **174 passed**. [Test log](docs/experiments/downloaders-20261111/tests.log)
+Recorded unit test result: **184 passed**. [Test log](docs/experiments/dgn-objects-20261111/tests.log)
 
 <a id="documentation"></a>
 

@@ -144,6 +144,17 @@ dexlab scene run --hand allegro --object ycb_mug --physics physx --steps 100
 
 使用 `--list-files` 查看可选包，`--dry-run` 查看下载计划。Hugging Face连接受限时可显式追加 `--hf-endpoint https://hf-mirror.com`。Objaverse需先准备带逐模型来源、许可和SHA-256的选择清单。除YCB外，下载归档不自动转成仿真资产。[脚本、清单格式与网络实测](docs/reference/asset-downloads.md)
 
+DexGraspNet 的罐头、香蕉与苹果也已接入桌面场景，可按以下命令准备并运行：
+
+```bash
+dexlab assets download dexgraspnet --files meshdata.tar.gz --max-gb 1
+dexlab assets prepare-dexgraspnet --objects dgn_can dgn_banana dgn_apple
+dexlab scene run --hand allegro --object dgn_apple --physics physx --steps 100 --screenshot
+dexlab scene run --hand shadow --object dgn_banana --physics physx --steps 100 --screenshot
+```
+
+三个样本按最长边 10 cm 缩放，使用原始凸分解片段，质量与摩擦为试验值。`--screenshot` 在运行目录保存真实离屏截图。[USD、测试与截图](docs/experiments/dexgraspnet_objects_20261111.md)
+
 ### 执行抓取尝试
 
 先按[资产准备说明](docs/installation.md#5-资产录制与测试)准备官方资产缓存，再选择一种手运行：
@@ -190,7 +201,7 @@ Allegro 搭载 KUKA 机械臂；Shadow 使用运动学基座路径。两组控�
 |---|---|
 | ![Allegro 闭合阶段，本次未成功抬升保持](docs/media/allegro-tabletop.jpg) | ![Shadow 闭合阶段，本次未成功抬升保持](docs/media/shadow-tabletop.jpg) |
 
-单元测试记录：**174 passed**。[查看测试日志](docs/experiments/downloaders-20261111/tests.log)
+单元测试记录：**184 passed**。[查看测试日志](docs/experiments/dgn-objects-20261111/tests.log)
 
 <a id="documentation"></a>
 

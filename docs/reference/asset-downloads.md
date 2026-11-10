@@ -100,3 +100,17 @@ YCB沿用 `assets/objects/ycb/<物体>/raw`，可继续用 `prepare-ycb`与`scen
 YCB为CC BY 4.0；DexGraspNet系列为CC BY-NC 4.0；OakInk数据页为CC BY-NC-SA 3.0；Objaverse-XL整体数据库与逐模型许可分别记录。GenDexGrasp公开包未找到统一数据许可，仍需保留YCB、ContactDB及其他上游归属。工具代码许可不覆盖这些模型与数据。
 
 [2026-11-11实测记录](../experiments/asset_downloaders_20261111.md)区分实际下载、只读取索引、网络阻塞和离线测试。本次没有运行这些新数据集的GPU仿真；YCB三个样本的已有仿真结果见[报告](../experiments/ycb_objects_20261111.md)。
+
+
+## 将DexGraspNet样本加入Isaac Sim
+
+```bash
+dexlab assets download dexgraspnet --files meshdata.tar.gz --max-gb 1
+dexlab assets prepare-dexgraspnet --objects dgn_can dgn_banana dgn_apple
+dexlab scene run --hand allegro --object dgn_can --steps 100
+dexlab scene run --hand allegro --object dgn_apple --steps 100 --screenshot
+```
+
+准备过程只解出选定的三个物体，创建单刚体、多个凸碰撞片段的USD，并生成项目内 `configs/objects/dgn_*.toml`。默认最长边0.1 m，可在首次准备时使用 `--longest-side`设置0.02至0.2 m。已有配置与派生资产不会覆盖；修改过的文件会明确报错。原始归一化尺度与所选实验尺度分别记录，不自动迁移论文抓取姿态。
+
+具体物体、USD文件与真实运行结果见[样本接入报告](../experiments/dexgraspnet_objects_20261111.md)。

@@ -1,0 +1,6 @@
+{
+  "frames": 101,
+  "min_visual_mesh_table_gap_m": -6.328558969259657e-06,
+  "final_visual_mesh_table_gap_m": -6.27981815365386e-06,
+  "scope": "Mesh/table check, not full collision audit or grasp validation"
+}

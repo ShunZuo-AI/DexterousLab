@@ -276,6 +276,105 @@
       "preparation_report": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/preparation.json",
       "updated_utc": "2026-11-10T16:27:45.606899+00:00",
       "last_run": "/root/gpufree-data/DexterousLab/assets/objects/ycb/025_mug/runs/20261110T162724Z-scene-2fb2932b"
+    },
+    {
+      "asset_id": "dexgraspnet/ddg-ycb_002_master_chef_can",
+      "category": "objects",
+      "manufacturer": null,
+      "model": "dexgraspnet",
+      "variant": "ddg-ycb_002_master_chef_can",
+      "source_commit": null,
+      "source_repository": "https://pku-epic.github.io/DexGraspNet/",
+      "source_file_path": "meshdata/ddg-ycb_002_master_chef_can/coacd/decomposed.obj",
+      "local_raw_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can/raw/ddg-ycb_002_master_chef_can/coacd/decomposed.obj",
+      "local_processed_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can/processed/20261110T172649Z-dgn-prepare-0c2607aa/object.usda",
+      "isaaclab_asset_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can/processed/20261110T172649Z-dgn-prepare-0c2607aa/object.usda",
+      "license": {
+        "status": "reviewed",
+        "spdx": "CC-BY-NC-4.0",
+        "upstream": "YCB-derived object; preserve YCB attribution (CC-BY-4.0)"
+      },
+      "download_status": "fetched",
+      "conversion_status": "converted",
+      "simulation_status": "passed",
+      "fetch_enabled": false,
+      "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can/checksums.json",
+      "scene_object": "dgn_can",
+      "notes": [
+        "Selected upstream convex geometry; uniform blue appearance",
+        "Passed 100-step zero-action PhysX scene test; grasp success not evaluated"
+      ],
+      "asset_directory": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can",
+      "processed_sha256": "51fba666e8b6a15464f0e4a70021d0a83d833c25ce2a4f91e54dd010dd14a416",
+      "preparation_report": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can/preparation.json",
+      "updated_utc": "2026-11-10T17:32:20.200384+00:00",
+      "last_run": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_002_master_chef_can/runs/20261110T172746Z-scene-94609d25"
+    },
+    {
+      "asset_id": "dexgraspnet/ddg-ycb_011_banana",
+      "category": "objects",
+      "manufacturer": null,
+      "model": "dexgraspnet",
+      "variant": "ddg-ycb_011_banana",
+      "source_commit": null,
+      "source_repository": "https://pku-epic.github.io/DexGraspNet/",
+      "source_file_path": "meshdata/ddg-ycb_011_banana/coacd/decomposed.obj",
+      "local_raw_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_011_banana/raw/ddg-ycb_011_banana/coacd/decomposed.obj",
+      "local_processed_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_011_banana/processed/20261110T172649Z-dgn-prepare-0c2607aa/object.usda",
+      "isaaclab_asset_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_011_banana/processed/20261110T172649Z-dgn-prepare-0c2607aa/object.usda",
+      "license": {
+        "status": "reviewed",
+        "spdx": "CC-BY-NC-4.0",
+        "upstream": "YCB-derived object; preserve YCB attribution (CC-BY-4.0)"
+      },
+      "download_status": "fetched",
+      "conversion_status": "converted",
+      "simulation_status": "passed",
+      "fetch_enabled": false,
+      "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_011_banana/checksums.json",
+      "scene_object": "dgn_banana",
+      "notes": [
+        "Selected upstream convex geometry; uniform blue appearance",
+        "Passed 100-step zero-action PhysX scene test; grasp success not evaluated"
+      ],
+      "asset_directory": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_011_banana",
+      "processed_sha256": "2d5625730c0ff564d99d2c1838432714ad1026de2a8eb56fdeb2163438b934e3",
+      "preparation_report": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_011_banana/preparation.json",
+      "updated_utc": "2026-11-10T17:32:20.201299+00:00",
+      "last_run": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_011_banana/runs/20261110T172832Z-scene-bcd7719d"
+    },
+    {
+      "asset_id": "dexgraspnet/ddg-ycb_013_apple",
+      "category": "objects",
+      "manufacturer": null,
+      "model": "dexgraspnet",
+      "variant": "ddg-ycb_013_apple",
+      "source_commit": null,
+      "source_repository": "https://pku-epic.github.io/DexGraspNet/",
+      "source_file_path": "meshdata/ddg-ycb_013_apple/coacd/decomposed.obj",
+      "local_raw_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_013_apple/raw/ddg-ycb_013_apple/coacd/decomposed.obj",
+      "local_processed_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_013_apple/processed/20261110T172802Z-dgn-prepare-484afcf0/object.usda",
+      "isaaclab_asset_path": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_013_apple/processed/20261110T172802Z-dgn-prepare-484afcf0/object.usda",
+      "license": {
+        "status": "reviewed",
+        "spdx": "CC-BY-NC-4.0",
+        "upstream": "YCB-derived object; preserve YCB attribution (CC-BY-4.0)"
+      },
+      "download_status": "fetched",
+      "conversion_status": "converted",
+      "simulation_status": "passed",
+      "fetch_enabled": false,
+      "checksum_manifest": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_013_apple/checksums.json",
+      "scene_object": "dgn_apple",
+      "notes": [
+        "Selected upstream convex geometry; uniform blue appearance",
+        "Passed 100-step zero-action PhysX scene test; grasp success not evaluated"
+      ],
+      "asset_directory": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_013_apple",
+      "processed_sha256": "54cf1ec1e4411d5ccc481ecbf5f9d910f9952ece2b38b36f48c9a8bd9c9e9110",
+      "preparation_report": "/root/gpufree-data/DexterousLab/assets/objects/dexgraspnet/ddg-ycb_013_apple/preparation.json",
+      "updated_utc": "2026-11-10T17:32:20.202056+00:00",
+      "last_run": "/root/gpufree-data/DexterousLab/outputs/20261110T172902Z-scene-a22bd9c5"
     }
   ]
 }

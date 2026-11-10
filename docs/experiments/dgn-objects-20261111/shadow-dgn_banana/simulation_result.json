@@ -1,0 +1,116 @@
+{
+  "environment": "dexlab_tabletop",
+  "steps_completed": 100,
+  "num_envs": 1,
+  "device": "cuda:0",
+  "physics_class": "PhysxCfg",
+  "simulated_seconds": 3.3333333333333335,
+  "action_dim": 20,
+  "physics_steps_completed": 400,
+  "research_state_checks": 101,
+  "scene_validation": {
+    "robot_loaded": true,
+    "object_loaded": true,
+    "dynamic_rigid_body": true,
+    "collision_paths": [
+      "/World/envs/env_0/Object/piece_0",
+      "/World/envs/env_0/Object/piece_1",
+      "/World/envs/env_0/Object/piece_2"
+    ],
+    "backend_masses_kg": [
+      0.10000000149011612
+    ],
+    "backend_materials_static_dynamic_restitution": [
+      [
+        0.699999988079071,
+        0.699999988079071,
+        0.0
+      ],
+      [
+        0.699999988079071,
+        0.699999988079071,
+        0.0
+      ],
+      [
+        0.699999988079071,
+        0.699999988079071,
+        0.0
+      ]
+    ],
+    "backend_inertias_kg_m2": [
+      [
+        6.460580334533006e-05,
+        -1.951227750396356e-05,
+        5.499277904164046e-07,
+        -1.9512275684974156e-05,
+        1.4241236385714728e-05,
+        -1.3994122127769515e-07,
+        5.499286999111064e-07,
+        -1.3994167602504604e-07,
+        7.414769061142579e-05
+      ]
+    ],
+    "spawned_local_extents_m": [
+      0.06086955592036247,
+      0.10000000149011612,
+      0.02065017633140087
+    ],
+    "object_kind": "usd",
+    "asset_version": "dgn-convex-v1:2db2ce9601083ab2",
+    "contact_filter_paths": [
+      "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_ffknuckle/rh_ffproximal/rh_ffmiddle/rh_ffdistal",
+      "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_mfknuckle/rh_mfproximal/rh_mfmiddle/rh_mfdistal",
+      "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_rfknuckle/rh_rfproximal/rh_rfmiddle/rh_rfdistal",
+      "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_lfmetacarpal/rh_lfknuckle/rh_lfproximal/rh_lfmiddle/rh_lfdistal",
+      "/World/envs/env_[^/]+/Robot/Geometry/rh_forearm/rh_wrist/rh_palm/rh_thbase/rh_thproximal/rh_thhub/rh_thmiddle/rh_thdistal"
+    ],
+    "mesh": {
+      "path": "object_mesh.obj",
+      "frame": "O",
+      "length_unit": "m",
+      "vertices": 1936,
+      "faces": 3860,
+      "extents_m": [
+        0.06086955592036247,
+        0.10000000149011612,
+        0.02065017633140087
+      ],
+      "curved_surface_tessellated": false
+    }
+  },
+  "terminated_count": 0,
+  "truncated_count": 0,
+  "finite_observations": true,
+  "grasp_success": null,
+  "policy": "zero_action",
+  "python_prefix": "/root/gpufree-data/IsaacLab-Arena/.venv",
+  "versions": {
+    "isaacsim": "6.2.0.0",
+    "isaaclab": "28.0.0",
+    "isaaclab_arena": "0.3.0",
+    "torch": "2.11.0+cu130"
+  },
+  "screenshot": "scene.png",
+  "object_spawn": {
+    "class": "UsdFileCfg",
+    "size": null,
+    "radius": null,
+    "height": null,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "initial_position_xyz": [
+      -0.55,
+      0.0,
+      0.26832508790254256
+    ],
+    "initial_rotation_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  }
+}
