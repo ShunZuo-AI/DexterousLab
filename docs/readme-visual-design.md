@@ -28,7 +28,7 @@
 
 主标题使用本地SVG字形路径，不依赖访客字体；带DexterousLab替代文字。所有章节子标题仍使用普通文字。
 
-此前生成的圆角导航按钮和章节装饰SVG保留为历史素材，不再由首页引用；主标题引用wordmark.svg，子标题使用文字。
+不再使用的圆角导航按钮、徽章与章节装饰SVG已清理；旧文件可从Git历史恢复。主标题引用wordmark.svg，子标题使用文字。
 
 概念封面和厂商商品图继续分别维护来源，见 [视觉素材说明](media/README.md)。事实统计、失败实验结果、算法实现状态和原有启动命令保持原义。
 
@@ -39,4 +39,4 @@ cd /root/gpufree-data/DexterousLab
 /root/gpufree-data/IsaacLab-Arena/.venv/bin/python scripts/build_readme_style.py
 ```
 
-生成器使用共享环境已有的Matplotlib和系统Noto字体；不增加仿真运行依赖。字体只用于创建字形轮廓，不打包字体文件。已生成的SVG位于 `docs/media/readme-style/`。
+生成器使用共享环境已有的Matplotlib和系统Noto字体；不增加仿真运行依赖。字体只用于创建字形轮廓，不打包字体文件。当前仅保留首页使用的 `docs/media/readme-style/wordmark.svg`。运行上述历史生成器会重新生成完整装饰素材集。

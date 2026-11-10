@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-labelledby="title">
-<title id="title">实验展示</title>
-<defs>
-  <linearGradient id="wash"><stop stop-color="#f0f7ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
-  <linearGradient id="ink"><stop stop-color="#143b69"/><stop offset="1" stop-color="#6ba8dd"/></linearGradient>
-  <linearGradient id="rule"><stop stop-color="#91bce6"/><stop offset="1" stop-color="#eaf4ff"/></linearGradient>
-</defs>
-<g transform="translate(3 3) scale(1.0833333333333333)" fill="none" stroke="#4d88c6" color="#4d88c6" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6 M10 3v7l-6 9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2l-6-9V3 M7 15h10"/><circle cx="11" cy="17" r=".8"/><circle cx="14" cy="19" r=".6"/></g>
-</svg>

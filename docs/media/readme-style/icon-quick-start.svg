@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-labelledby="title">
-<title id="title">快速开始</title>
-<defs>
-  <linearGradient id="wash"><stop stop-color="#f0f7ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
-  <linearGradient id="ink"><stop stop-color="#143b69"/><stop offset="1" stop-color="#6ba8dd"/></linearGradient>
-  <linearGradient id="rule"><stop stop-color="#91bce6"/><stop offset="1" stop-color="#eaf4ff"/></linearGradient>
-</defs>
-<g transform="translate(3 3) scale(1.0833333333333333)" fill="none" stroke="#4d88c6" color="#4d88c6" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d="M8 15c-1-6 3-11 12-12 0 9-5 13-12 12Z M8 10 4 11l-1 6 5-2 M13 16l-1 5 6-2 1-5 M7 17l-3 3 M9 19l-2 2"/><circle cx="15" cy="8" r="2"/></g>
-</svg>

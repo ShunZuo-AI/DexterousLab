@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="88" viewBox="0 0 240 88" role="img" aria-labelledby="title">
-<title id="title">17 Manufacturers / projects</title>
-<defs>
-  <linearGradient id="wash"><stop stop-color="#f0f7ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
-  <linearGradient id="ink"><stop stop-color="#143b69"/><stop offset="1" stop-color="#6ba8dd"/></linearGradient>
-  <linearGradient id="rule"><stop stop-color="#91bce6"/><stop offset="1" stop-color="#eaf4ff"/></linearGradient>
-</defs>
-<rect width="240" height="88" rx="12" fill="#f4f9ff"/><path transform="translate(81.38 65) scale(1 -1)" fill="url(#ink)" d="M3.07 0.00 L3.14 0.64 L6.53 0.64 Q8.96 0.64 10.56 1.44 Q12.16 2.24 12.80 5.25 L18.24 30.85 Q18.75 33.47 19.45 36.22 Q20.16 38.98 20.80 41.60 L20.74 41.60 Q17.41 37.89 15.13 36.06 Q12.86 34.24 10.82 34.24 Q9.47 34.24 8.80 35.23 Q8.13 36.22 8.13 37.70 Q10.88 37.63 12.83 37.92 Q14.78 38.21 16.32 39.01 Q17.86 39.81 19.46 41.34 L24.19 45.95 L27.90 45.95 L19.20 4.99 Q18.94 3.97 18.94 3.20 Q18.94 1.60 20.25 1.12 Q21.57 0.64 23.55 0.64 L27.01 0.64 L26.88 0.00 L3.07 0.00 Z M43.97 0.00 L71.24 40.58 L48.77 40.58 Q45.25 40.58 44.36 37.31 L43.46 34.11 L42.82 34.11 L45.57 45.70 L74.18 45.70 L73.80 43.84 L48.77 0.00 L43.97 0.00 Z"/>
-</svg>
